@@ -1,0 +1,222 @@
+{
+  "format": "VGC",
+  "regulation": "Reg M-A",
+  "refreshedAt": "2026-04-20",
+  "source": "sample (hand-curated)",
+  "sets": {
+    "Incineroar": [
+      {
+        "name": "Bulky Pivot",
+        "usage": 0.72,
+        "ability": "Intimidate",
+        "item": "Safety Goggles",
+        "nature": "Sassy",
+        "moves": ["Fake Out", "Knock Off", "Parting Shot", "Flare Blitz"],
+        "spSpread": { "hp": 32, "atk": 4, "def": 8, "spa": 0, "spd": 22, "spe": 0 }
+      },
+      {
+        "name": "Assault Vest",
+        "usage": 0.18,
+        "ability": "Intimidate",
+        "item": "Assault Vest",
+        "nature": "Adamant",
+        "moves": ["Flare Blitz", "Knock Off", "Fake Out", "U-turn"],
+        "spSpread": { "hp": 26, "atk": 24, "def": 0, "spa": 0, "spd": 16, "spe": 0 }
+      }
+    ],
+    "Amoonguss": [
+      {
+        "name": "Redirector",
+        "usage": 0.81,
+        "ability": "Regenerator",
+        "item": "Rocky Helmet",
+        "nature": "Calm",
+        "moves": ["Spore", "Rage Powder", "Pollen Puff", "Clear Smog"],
+        "spSpread": { "hp": 32, "atk": 0, "def": 16, "spa": 0, "spd": 18, "spe": 0 }
+      }
+    ],
+    "Rillaboom": [
+      {
+        "name": "Grassy Terrain Setter",
+        "usage": 0.65,
+        "ability": "Grassy Surge",
+        "item": "Assault Vest",
+        "nature": "Adamant",
+        "moves": ["Wood Hammer", "Fake Out", "Grassy Glide", "U-turn"],
+        "spSpread": { "hp": 20, "atk": 26, "def": 4, "spa": 0, "spd": 10, "spe": 6 }
+      },
+      {
+        "name": "Choice Band",
+        "usage": 0.22,
+        "ability": "Grassy Surge",
+        "item": "Choice Band",
+        "nature": "Adamant",
+        "moves": ["Wood Hammer", "Grassy Glide", "U-turn", "High Horsepower"],
+        "spSpread": { "hp": 8, "atk": 32, "def": 0, "spa": 0, "spd": 2, "spe": 24 }
+      }
+    ],
+    "Kangaskhan": [
+      {
+        "name": "Mega Parental Bond",
+        "usage": 0.94,
+        "ability": "Scrappy",
+        "item": "Kangaskhanite",
+        "nature": "Jolly",
+        "moves": ["Double-Edge", "Fake Out", "Sucker Punch", "Power-Up Punch"],
+        "spSpread": { "hp": 2, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 32 },
+        "mega": true
+      }
+    ],
+    "Farigiraf": [
+      {
+        "name": "Trick Room Setter",
+        "usage": 0.58,
+        "ability": "Armor Tail",
+        "item": "Mental Herb",
+        "nature": "Quiet",
+        "moves": ["Trick Room", "Hyper Voice", "Psychic", "Helping Hand"],
+        "spSpread": { "hp": 32, "atk": 0, "def": 6, "spa": 22, "spd": 6, "spe": 0 }
+      }
+    ],
+    "Dragonite": [
+      {
+        "name": "Mega Sheer Force",
+        "usage": 0.66,
+        "ability": "Multiscale",
+        "item": "Dragonitite",
+        "nature": "Adamant",
+        "moves": ["Dragon Claw", "Extreme Speed", "Iron Head", "Protect"],
+        "spSpread": { "hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 6, "spe": 24 },
+        "mega": true
+      }
+    ],
+    "Gardevoir": [
+      {
+        "name": "Mega Pixilate",
+        "usage": 0.88,
+        "ability": "Trace",
+        "item": "Gardevoirite",
+        "nature": "Modest",
+        "moves": ["Hyper Voice", "Psychic", "Shadow Ball", "Protect"],
+        "spSpread": { "hp": 8, "atk": 0, "def": 0, "spa": 32, "spd": 2, "spe": 24 },
+        "mega": true
+      }
+    ],
+    "Charizard": [
+      {
+        "name": "Mega Sun Y",
+        "usage": 0.91,
+        "ability": "Blaze",
+        "item": "Charizardite Y",
+        "nature": "Modest",
+        "moves": ["Heat Wave", "Solar Beam", "Air Slash", "Protect"],
+        "spSpread": { "hp": 4, "atk": 0, "def": 0, "spa": 32, "spd": 6, "spe": 24 },
+        "mega": true
+      }
+    ],
+    "Pelipper": [
+      {
+        "name": "Rain Setter",
+        "usage": 0.96,
+        "ability": "Drizzle",
+        "item": "Focus Sash",
+        "nature": "Modest",
+        "moves": ["Hurricane", "Hydro Pump", "Tailwind", "Protect"],
+        "spSpread": { "hp": 10, "atk": 0, "def": 0, "spa": 32, "spd": 0, "spe": 24 }
+      }
+    ],
+    "Garchomp": [
+      {
+        "name": "Mega Sand Force",
+        "usage": 0.55,
+        "ability": "Rough Skin",
+        "item": "Garchompite",
+        "nature": "Jolly",
+        "moves": ["Earthquake", "Dragon Claw", "Rock Slide", "Protect"],
+        "spSpread": { "hp": 4, "atk": 32, "def": 0, "spa": 0, "spd": 6, "spe": 24 },
+        "mega": true
+      }
+    ],
+    "Torkoal": [
+      {
+        "name": "Sun Setter",
+        "usage": 0.98,
+        "ability": "Drought",
+        "item": "Charcoal",
+        "nature": "Quiet",
+        "moves": ["Eruption", "Heat Wave", "Earth Power", "Protect"],
+        "spSpread": { "hp": 32, "atk": 0, "def": 6, "spa": 28, "spd": 0, "spe": 0 }
+      }
+    ],
+    "Lucario": [
+      {
+        "name": "Mega Adaptability",
+        "usage": 0.78,
+        "ability": "Inner Focus",
+        "item": "Lucarionite",
+        "nature": "Naive",
+        "moves": ["Close Combat", "Meteor Mash", "Aura Sphere", "Flash Cannon"],
+        "spSpread": { "hp": 0, "atk": 18, "def": 0, "spa": 16, "spd": 0, "spe": 32 },
+        "mega": true
+      }
+    ],
+    "Meganium": [
+      {
+        "name": "Mega Grassy Fairy",
+        "usage": 0.74,
+        "ability": "Overgrow",
+        "item": "Meganite",
+        "nature": "Bold",
+        "moves": ["Dazzling Gleam", "Giga Drain", "Light Screen", "Protect"],
+        "spSpread": { "hp": 32, "atk": 0, "def": 16, "spa": 12, "spd": 6, "spe": 0 },
+        "mega": true
+      }
+    ],
+    "Greninja": [
+      {
+        "name": "Mega Battle Bond",
+        "usage": 0.81,
+        "ability": "Protean",
+        "item": "Greninite",
+        "nature": "Timid",
+        "moves": ["Water Shuriken", "Dark Pulse", "Ice Beam", "Protect"],
+        "spSpread": { "hp": 0, "atk": 0, "def": 0, "spa": 32, "spd": 2, "spe": 32 },
+        "mega": true
+      }
+    ],
+    "Tyranitar": [
+      {
+        "name": "Sand Tank",
+        "usage": 0.63,
+        "ability": "Sand Stream",
+        "item": "Assault Vest",
+        "nature": "Adamant",
+        "moves": ["Rock Slide", "Crunch", "Low Kick", "Ice Punch"],
+        "spSpread": { "hp": 20, "atk": 28, "def": 0, "spa": 0, "spd": 18, "spe": 0 }
+      }
+    ],
+    "Scizor": [
+      {
+        "name": "Mega Technician",
+        "usage": 0.7,
+        "ability": "Technician",
+        "item": "Scizorite",
+        "nature": "Adamant",
+        "moves": ["Bullet Punch", "Bug Bite", "Knock Off", "Swords Dance"],
+        "spSpread": { "hp": 20, "atk": 32, "def": 0, "spa": 0, "spd": 0, "spe": 14 },
+        "mega": true
+      }
+    ],
+    "Indeedee-F": [
+      {
+        "name": "Psychic Surge Support",
+        "usage": 0.86,
+        "ability": "Psychic Surge",
+        "item": "Safety Goggles",
+        "nature": "Calm",
+        "moves": ["Follow Me", "Helping Hand", "Dazzling Gleam", "Trick Room"],
+        "spSpread": { "hp": 32, "atk": 0, "def": 6, "spa": 0, "spd": 28, "spe": 0 }
+      }
+    ]
+  }
+}

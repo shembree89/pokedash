@@ -1,0 +1,88 @@
+{
+  "format": "VGC",
+  "regulation": "Reg M-A",
+  "refreshedAt": "2026-04-20",
+  "source": "sample (hand-curated, replace with Limitless VGC scrape)",
+  "teams": [
+    {
+      "id": "sample-sun-mega-zard",
+      "name": "Sun Mega Zard Y",
+      "player": "Sample",
+      "placement": "Top 8",
+      "tournament": "Sample Regional",
+      "date": "2026-04-18",
+      "pokemon": [
+        { "species": "Charizard", "item": "Charizardite Y", "ability": "Blaze", "mega": true },
+        { "species": "Torkoal", "item": "Charcoal", "ability": "Drought" },
+        { "species": "Amoonguss", "item": "Rocky Helmet", "ability": "Regenerator" },
+        { "species": "Incineroar", "item": "Safety Goggles", "ability": "Intimidate" },
+        { "species": "Farigiraf", "item": "Mental Herb", "ability": "Armor Tail" },
+        { "species": "Garchomp", "item": "Life Orb", "ability": "Rough Skin" }
+      ]
+    },
+    {
+      "id": "sample-rain-pelipper",
+      "name": "Rain Mega Greninja",
+      "player": "Sample",
+      "placement": "Top 16",
+      "tournament": "Sample Regional",
+      "date": "2026-04-18",
+      "pokemon": [
+        { "species": "Pelipper", "item": "Focus Sash", "ability": "Drizzle" },
+        { "species": "Greninja", "item": "Greninite", "ability": "Protean", "mega": true },
+        { "species": "Rillaboom", "item": "Assault Vest", "ability": "Grassy Surge" },
+        { "species": "Incineroar", "item": "Sitrus Berry", "ability": "Intimidate" },
+        { "species": "Amoonguss", "item": "Rocky Helmet", "ability": "Regenerator" },
+        { "species": "Dragonite", "item": "Choice Band", "ability": "Multiscale" }
+      ]
+    },
+    {
+      "id": "sample-trick-room",
+      "name": "Mega Meganium Trick Room",
+      "player": "Sample",
+      "placement": "Top 4",
+      "tournament": "Sample Regional",
+      "date": "2026-04-19",
+      "pokemon": [
+        { "species": "Farigiraf", "item": "Mental Herb", "ability": "Armor Tail" },
+        { "species": "Meganium", "item": "Meganite", "ability": "Overgrow", "mega": true },
+        { "species": "Indeedee-F", "item": "Safety Goggles", "ability": "Psychic Surge" },
+        { "species": "Torkoal", "item": "Charcoal", "ability": "Drought" },
+        { "species": "Amoonguss", "item": "Rocky Helmet", "ability": "Regenerator" },
+        { "species": "Tyranitar", "item": "Assault Vest", "ability": "Sand Stream" }
+      ]
+    },
+    {
+      "id": "sample-kang-sand",
+      "name": "Mega Kangaskhan Sand",
+      "player": "Sample",
+      "placement": "Top 16",
+      "tournament": "Sample Regional",
+      "date": "2026-04-19",
+      "pokemon": [
+        { "species": "Kangaskhan", "item": "Kangaskhanite", "ability": "Scrappy", "mega": true },
+        { "species": "Tyranitar", "item": "Assault Vest", "ability": "Sand Stream" },
+        { "species": "Garchomp", "item": "Life Orb", "ability": "Rough Skin" },
+        { "species": "Incineroar", "item": "Safety Goggles", "ability": "Intimidate" },
+        { "species": "Amoonguss", "item": "Rocky Helmet", "ability": "Regenerator" },
+        { "species": "Scizor", "item": "Choice Band", "ability": "Technician" }
+      ]
+    },
+    {
+      "id": "sample-fairy-spam",
+      "name": "Mega Gardevoir Fairy Spam",
+      "player": "Sample",
+      "placement": "Top 8",
+      "tournament": "Sample Regional",
+      "date": "2026-04-19",
+      "pokemon": [
+        { "species": "Gardevoir", "item": "Gardevoirite", "ability": "Trace", "mega": true },
+        { "species": "Indeedee-F", "item": "Safety Goggles", "ability": "Psychic Surge" },
+        { "species": "Incineroar", "item": "Sitrus Berry", "ability": "Intimidate" },
+        { "species": "Rillaboom", "item": "Assault Vest", "ability": "Grassy Surge" },
+        { "species": "Amoonguss", "item": "Rocky Helmet", "ability": "Regenerator" },
+        { "species": "Lucario", "item": "Focus Sash", "ability": "Inner Focus" }
+      ]
+    }
+  ]
+}

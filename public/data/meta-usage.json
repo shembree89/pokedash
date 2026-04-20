@@ -1,0 +1,26 @@
+{
+  "format": "VGC",
+  "regulation": "Reg M-A",
+  "refreshedAt": "2026-04-20",
+  "source": "sample (hand-curated, replace with Pikalytics scrape)",
+  "sampleSize": 0,
+  "pokemon": [
+    { "rank": 1,  "species": "Incineroar",  "usage": 0.48 },
+    { "rank": 2,  "species": "Amoonguss",   "usage": 0.41 },
+    { "rank": 3,  "species": "Rillaboom",   "usage": 0.33 },
+    { "rank": 4,  "species": "Kangaskhan",  "usage": 0.28 },
+    { "rank": 5,  "species": "Farigiraf",   "usage": 0.26 },
+    { "rank": 6,  "species": "Dragonite",   "usage": 0.24 },
+    { "rank": 7,  "species": "Gardevoir",   "usage": 0.22 },
+    { "rank": 8,  "species": "Charizard",   "usage": 0.19 },
+    { "rank": 9,  "species": "Pelipper",    "usage": 0.18 },
+    { "rank": 10, "species": "Garchomp",    "usage": 0.16 },
+    { "rank": 11, "species": "Torkoal",     "usage": 0.15 },
+    { "rank": 12, "species": "Lucario",     "usage": 0.14 },
+    { "rank": 13, "species": "Meganium",    "usage": 0.13 },
+    { "rank": 14, "species": "Greninja",    "usage": 0.12 },
+    { "rank": 15, "species": "Tyranitar",   "usage": 0.11 },
+    { "rank": 16, "species": "Scizor",      "usage": 0.10 },
+    { "rank": 17, "species": "Indeedee-F",  "usage": 0.09 }
+  ]
+}
