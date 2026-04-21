@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import {
   addManyOwned,
-  addOwned,
   clearOwned,
   removeOwned,
   useOwned,
@@ -11,7 +10,7 @@ import { useDex } from "../data/useDex";
 import TypeBadge from "../components/TypeBadge";
 import { Card, CardBody, CardHeader } from "../components/Card";
 import Button from "../components/Button";
-import { emptySpread } from "../lib/sp-converter";
+import AddPokemonWizard from "../components/AddPokemonWizard";
 import { STAT_KEYS, STAT_LABEL } from "../data/types";
 import type { OwnedPokemon, PokemonType } from "../data/types";
 
@@ -19,6 +18,7 @@ export default function Collection() {
   const owned = useOwned();
   const { lookup, ensureMany } = useDex();
   const [showImport, setShowImport] = useState(false);
+  const [showAddWizard, setShowAddWizard] = useState(false);
   const [importText, setImportText] = useState("");
   const [importError, setImportError] = useState<string | null>(null);
 
@@ -56,16 +56,6 @@ export default function Collection() {
     URL.revokeObjectURL(url);
   };
 
-  const addEmpty = () => {
-    addOwned({
-      species: "Incineroar",
-      ability: "",
-      item: "",
-      nature: "Hardy",
-      moves: ["", "", "", ""],
-      spSpread: emptySpread(),
-    });
-  };
 
   return (
     <div className="flex flex-col gap-5">
@@ -75,10 +65,10 @@ export default function Collection() {
           <span className="text-xs text-[var(--color-muted)]">{owned.length} pokemon</span>
         </div>
         <div className="sm:ml-auto flex flex-wrap gap-2">
-          <Button variant="primary" onClick={() => setShowImport(true)}>
-            Import
+          <Button variant="primary" onClick={() => setShowAddWizard(true)}>
+            Add pokemon
           </Button>
-          <Button onClick={addEmpty}>Add blank</Button>
+          <Button onClick={() => setShowImport(true)}>Import</Button>
           <Button onClick={handleExport} disabled={owned.length === 0}>
             Export
           </Button>
@@ -134,6 +124,8 @@ export default function Collection() {
           </CardBody>
         </Card>
       )}
+
+      {showAddWizard && <AddPokemonWizard onClose={() => setShowAddWizard(false)} />}
 
       {owned.length === 0 ? (
         <Card>
