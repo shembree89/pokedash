@@ -104,6 +104,36 @@ export function saveTeam(team: Omit<SavedTeam, "id" | "createdAt" | "updatedAt">
   return created;
 }
 
+export function createTeam(name: string): SavedTeam {
+  return saveTeam({ name: name || "New team", ownedIds: [] });
+}
+
+export function renameTeam(id: string, name: string): void {
+  const now = new Date().toISOString();
+  setState({
+    ...state,
+    teams: state.teams.map((t) => (t.id === id ? { ...t, name, updatedAt: now } : t)),
+  });
+}
+
+export function setTeamSlots(id: string, ownedIds: string[]): void {
+  const now = new Date().toISOString();
+  setState({
+    ...state,
+    teams: state.teams.map((t) => (t.id === id ? { ...t, ownedIds, updatedAt: now } : t)),
+  });
+}
+
+export function duplicateTeam(id: string): SavedTeam | undefined {
+  const src = state.teams.find((t) => t.id === id);
+  if (!src) return undefined;
+  return saveTeam({ name: `${src.name} (copy)`, ownedIds: [...src.ownedIds] });
+}
+
+export function removeTeam(id: string): void {
+  setState({ ...state, teams: state.teams.filter((t) => t.id !== id) });
+}
+
 export function useOwned(): OwnedPokemon[] {
   return useSyncExternalStore(subscribe, getOwned, getOwned);
 }
