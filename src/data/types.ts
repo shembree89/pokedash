@@ -65,12 +65,31 @@ export interface MetaUsage {
 export interface MetaSet {
   name?: string;
   usage: number;
-  ability: string;
-  item: string;
-  nature: Nature;
+  ability?: string;
+  item?: string;
+  nature?: Nature;
   moves: string[];
-  spSpread: SpSpread;
+  spSpread?: SpSpread;
   mega?: boolean;
+}
+
+export interface MetaUsagePair {
+  name: string;
+  usage: number;
+}
+
+export interface MetaTeammate {
+  species: string;
+  usage: number;
+}
+
+export interface MetaDistribution {
+  species: string;
+  usage: number;
+  moves: MetaUsagePair[];
+  items: MetaUsagePair[];
+  abilities: MetaUsagePair[];
+  teammates: MetaTeammate[];
 }
 
 export interface MetaSets {
@@ -79,6 +98,7 @@ export interface MetaSets {
   refreshedAt: string;
   source: string;
   sets: Record<string, MetaSet[]>;
+  distributions?: Record<string, MetaDistribution>;
 }
 
 export interface MetaTeamMember {
