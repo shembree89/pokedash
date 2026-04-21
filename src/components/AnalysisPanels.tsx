@@ -4,6 +4,7 @@ import { ALL_TYPES } from "../lib/type-chart";
 import {
   defensiveCoverage,
   offensiveCoverage,
+  resolveMeta,
   threatScores,
   type EffectiveMon,
 } from "../lib/threat";
@@ -191,23 +192,8 @@ function ThreatTable({ team }: { team: EffectiveMon[] }) {
       const entry = pokedex.pokemon[u.species];
       if (!entry) continue;
       const topSet = sets?.sets[u.species]?.[0];
-      const usesMega = topSet?.mega && (entry.megas?.length ?? 0) > 0;
-      if (usesMega && entry.megas?.[0]) {
-        const m = entry.megas[0];
-        metaMons.push({
-          species: m.name,
-          types: m.types,
-          baseStats: m.baseStats,
-          ability: m.ability,
-        });
-      } else {
-        metaMons.push({
-          species: entry.name,
-          types: entry.types,
-          baseStats: entry.baseStats,
-          ability: entry.abilities[0],
-        });
-      }
+      const usesMega = !!topSet?.mega && (entry.megas?.length ?? 0) > 0;
+      metaMons.push(resolveMeta(entry, usesMega));
     }
     return threatScores(team, metaMons).slice(0, 12);
   }, [pokedex, usage, sets, team]);

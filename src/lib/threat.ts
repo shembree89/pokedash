@@ -1,17 +1,42 @@
 import type {
   DexEntry,
   DexMega,
+  Nature,
   OwnedPokemon,
   PokemonType,
+  SpSpread,
   StatKey,
 } from "../data/types";
 import { ALL_TYPES, typeMult } from "./type-chart";
+import { calcAllStats } from "./stats";
 
 export interface EffectiveMon {
   species: string;
   types: readonly PokemonType[];
   baseStats: Record<StatKey, number>;
+  stats: Record<StatKey, number>;
   ability?: string;
+  nature?: Nature;
+  spSpread?: SpSpread;
+}
+
+// Used when building an EffectiveMon from pokedex alone (no user data).
+// Represents a generic bulky-offense build so meta mons aren't unfairly
+// weak next to users' spread-optimized team members.
+export function defaultCompetitiveSpread(base: Record<StatKey, number>): {
+  spread: SpSpread;
+  nature: Nature;
+} {
+  const physical = base.atk >= base.spa;
+  const spread: SpSpread = {
+    hp: 32, atk: 0, def: 4, spa: 0, spd: 4, spe: 26,
+  };
+  if (physical) spread.atk = 32;
+  else spread.spa = 32;
+  return {
+    spread,
+    nature: physical ? "Adamant" : "Modest",
+  };
 }
 
 function dexMegaMatchForItem(
@@ -27,38 +52,63 @@ export function resolveOwned(
   entry: DexEntry | undefined,
 ): EffectiveMon {
   if (!entry) {
+    const zero = { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
     return {
       species: mon.species,
       types: [],
-      baseStats: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      baseStats: zero,
+      stats: zero,
       ability: mon.ability,
+      nature: mon.nature,
+      spSpread: mon.spSpread,
     };
   }
+  let species = entry.name;
+  let types = entry.types;
+  let baseStats = entry.baseStats;
+  let ability = mon.ability || entry.abilities[0];
   if (mon.mega) {
     const mega = dexMegaMatchForItem(entry, mon.item) ?? entry.megas?.[0];
     if (mega) {
-      return {
-        species: mega.name,
-        types: mega.types,
-        baseStats: mega.baseStats,
-        ability: mega.ability,
-      };
+      species = mega.name;
+      types = mega.types;
+      baseStats = mega.baseStats;
+      ability = mega.ability;
     }
   }
+  const stats = calcAllStats(baseStats, mon.spSpread, mon.nature);
   return {
-    species: entry.name,
-    types: entry.types,
-    baseStats: entry.baseStats,
-    ability: mon.ability || entry.abilities[0],
+    species,
+    types,
+    baseStats,
+    stats,
+    ability,
+    nature: mon.nature,
+    spSpread: mon.spSpread,
   };
 }
 
+// Build an EffectiveMon for a meta pokemon where we don't know SP/nature.
+// Uses defaultCompetitiveSpread heuristic so comparisons against users'
+// spread-enabled team members stay apples-to-apples.
+export function resolveMeta(entry: DexEntry, useMega = false): EffectiveMon {
+  const mega = useMega ? entry.megas?.[0] : undefined;
+  const baseStats = mega?.baseStats ?? entry.baseStats;
+  const types = mega?.types ?? entry.types;
+  const species = mega?.name ?? entry.name;
+  const ability = mega?.ability ?? entry.abilities[0];
+  const { spread, nature } = defaultCompetitiveSpread(baseStats);
+  const stats = calcAllStats(baseStats, spread, nature);
+  return { species, types, baseStats, stats, ability, nature, spSpread: spread };
+}
+
 // For coverage, assume each mon projects moves of both its STAB types.
-// Primary offensive category: whichever attack stat is higher.
+// Primary offensive category: whichever attack stat is higher (after
+// nature/SP if available).
 export type OffenseCategory = "physical" | "special";
 
-export function offenseCategory(stats: Record<StatKey, number>): OffenseCategory {
-  return stats.atk >= stats.spa ? "physical" : "special";
+export function offenseCategory(mon: EffectiveMon): OffenseCategory {
+  return mon.stats.atk >= mon.stats.spa ? "physical" : "special";
 }
 
 export function bestStabMultVsTarget(
@@ -141,15 +191,15 @@ function defenseStat(stats: Record<StatKey, number>, cat: OffenseCategory): numb
 // (type multiplier × STAB × attacker's relevant attack stat) / defender's relevant defense stat
 // × defender HP factor so bulky mons aren't disproportionately favoured by raw numbers.
 export function damageRatio(attacker: EffectiveMon, defender: EffectiveMon): number {
-  const cat = offenseCategory(attacker.baseStats);
+  const cat = offenseCategory(attacker);
   const best = bestStabMultVsTarget(attacker, defender.types);
   if (best.mult === 0) return 0;
   const stab = best.type ? 1.5 : 1;
-  const off = offenseStat(attacker.baseStats, cat) * stab * best.mult;
-  const def = defenseStat(defender.baseStats, cat);
+  const off = offenseStat(attacker.stats, cat) * stab * best.mult;
+  const def = defenseStat(defender.stats, cat);
   if (def === 0) return Infinity;
   // Include HP in denominator so a 255 HP wall looks bulkier than a 70 HP glass cannon.
-  const hp = Math.max(defender.baseStats.hp, 1);
+  const hp = Math.max(defender.stats.hp, 1);
   return off / (def * Math.sqrt(hp));
 }
 

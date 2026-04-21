@@ -5,6 +5,7 @@ import { updateOwned } from "../store/collection";
 import { useDex } from "../data/useDex";
 import { useData } from "../data/useData";
 import { SP_PER_STAT_MAX, SP_TOTAL_MAX, spTotal, validateSpread } from "../lib/sp-converter";
+import { NATURE_MODS, calcAllStats, natureMultiplier } from "../lib/stats";
 import TypeBadge from "../components/TypeBadge";
 
 const NATURES: Nature[] = [
@@ -14,6 +15,16 @@ const NATURES: Nature[] = [
   "Modest", "Mild", "Quiet", "Bashful", "Rash",
   "Calm", "Gentle", "Sassy", "Careful", "Quirky",
 ];
+
+const STAT_SHORT: Record<StatKey, string> = {
+  hp: "HP", atk: "Atk", def: "Def", spa: "SpA", spd: "SpD", spe: "Spe",
+};
+
+function natureLabel(n: Nature): string {
+  const mod = NATURE_MODS[n];
+  if (!mod.plus || !mod.minus) return `${n} (neutral)`;
+  return `${n} (+${STAT_SHORT[mod.plus]}, −${STAT_SHORT[mod.minus]})`;
+}
 
 interface Props {
   mon: OwnedPokemon;
@@ -43,6 +54,15 @@ export default function SlotEditor({ mon, onClose, onRemoveFromTeam }: Props) {
   const sets = status.state === "ready" ? status.data.sets : null;
   const metaSet = sets?.sets[mon.species]?.[0];
   const megaCapable = (entry?.megas?.length ?? 0) > 0;
+
+  const activeMega = draft.mega
+    ? entry?.megas?.find((m) => m.requiredItem.toLowerCase() === draft.item.toLowerCase())
+        ?? entry?.megas?.[0]
+    : undefined;
+  const baseStats = activeMega?.baseStats ?? entry?.baseStats;
+  const liveStats = baseStats
+    ? calcAllStats(baseStats, draft.spSpread, draft.nature)
+    : null;
 
   const save = () => {
     updateOwned(mon.id, {
@@ -150,7 +170,9 @@ export default function SlotEditor({ mon, onClose, onRemoveFromTeam }: Props) {
                 onChange={(e) => setDraft({ ...draft, nature: e.target.value as Nature })}
                 className="edit-input"
               >
-                {NATURES.map((n) => <option key={n} value={n}>{n}</option>)}
+                {NATURES.map((n) => (
+                  <option key={n} value={n}>{natureLabel(n)}</option>
+                ))}
               </select>
             </Field>
             <Field label="Mega">
@@ -187,22 +209,29 @@ export default function SlotEditor({ mon, onClose, onRemoveFromTeam }: Props) {
             </div>
           </Field>
 
-          <Field label={`SP spread — total ${spTotal(draft.spSpread)}/${SP_TOTAL_MAX}`}>
+          <Field label={`SP spread — total ${spTotal(draft.spSpread)}/${SP_TOTAL_MAX}${activeMega ? " (mega stats)" : ""}`}>
             <div className="flex flex-col gap-1.5">
-              {STAT_KEYS.map((k) => (
-                <SpRow
-                  key={k}
-                  label={STAT_LABEL[k]}
-                  value={draft.spSpread[k]}
-                  max={SP_PER_STAT_MAX}
-                  onChange={(v) =>
-                    setDraft({
-                      ...draft,
-                      spSpread: { ...draft.spSpread, [k]: v } as typeof draft.spSpread,
-                    })
-                  }
-                />
-              ))}
+              {STAT_KEYS.map((k) => {
+                const natureMult = natureMultiplier(draft.nature, k);
+                return (
+                  <SpRow
+                    key={k}
+                    statKey={k}
+                    label={STAT_LABEL[k]}
+                    value={draft.spSpread[k]}
+                    max={SP_PER_STAT_MAX}
+                    base={baseStats?.[k] ?? 0}
+                    finalStat={liveStats?.[k]}
+                    natureMult={natureMult}
+                    onChange={(v) =>
+                      setDraft({
+                        ...draft,
+                        spSpread: { ...draft.spSpread, [k]: v } as typeof draft.spSpread,
+                      })
+                    }
+                  />
+                );
+              })}
             </div>
             {!spValidation.ok && (
               <div className="text-xs text-red-400 mt-2">
@@ -278,26 +307,44 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 }
 
 function SpRow({
+  statKey,
   label,
   value,
   max,
+  base,
+  finalStat,
+  natureMult,
   onChange,
 }: {
+  statKey: StatKey;
   label: string;
   value: number;
   max: number;
+  base: number;
+  finalStat: number | undefined;
+  natureMult: number;
   onChange: (v: number) => void;
 }) {
+  const natureTag =
+    natureMult > 1 ? <span className="text-emerald-400 ml-0.5">+</span>
+    : natureMult < 1 ? <span className="text-red-400 ml-0.5">−</span>
+    : null;
   return (
     <div className="flex items-center gap-2">
-      <span className="w-8 text-xs text-[var(--color-muted)]">{label}</span>
+      <span className="w-8 text-xs text-[var(--color-muted)] shrink-0 flex items-center">
+        {label}{natureTag}
+      </span>
+      <span className="w-10 text-right text-[10px] text-[var(--color-muted)] shrink-0 tabular-nums">
+        b{base}
+      </span>
       <input
         type="range"
         min={0}
         max={max}
         value={value}
         onChange={(e) => onChange(parseInt(e.target.value, 10))}
-        className="flex-1 accent-[var(--color-accent)]"
+        className="flex-1 accent-[var(--color-accent)] min-w-0"
+        aria-label={`${label} SP`}
       />
       <input
         type="number"
@@ -308,8 +355,17 @@ function SpRow({
           const v = parseInt(e.target.value, 10);
           onChange(Number.isNaN(v) ? 0 : Math.max(0, Math.min(max, v)));
         }}
-        className="w-14 edit-input text-right tabular-nums"
+        className="w-12 edit-input text-right tabular-nums shrink-0"
+        aria-label={`${label} SP number`}
       />
+      <span
+        className={`w-10 text-right text-xs tabular-nums shrink-0 font-medium ${
+          natureMult > 1 ? "text-emerald-300" : natureMult < 1 ? "text-red-300" : ""
+        }`}
+        title={`Final ${statKey.toUpperCase()} at level 50`}
+      >
+        {finalStat ?? "—"}
+      </span>
     </div>
   );
 }
