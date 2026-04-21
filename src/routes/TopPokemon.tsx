@@ -93,20 +93,20 @@ export default function TopPokemon() {
         </CardBody>
       </Card>
 
-      <div className="flex flex-wrap gap-2 items-center">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2">
         <input
           type="search"
           placeholder="Search species…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="px-3 py-1.5 rounded bg-[var(--color-surface)] border border-[var(--color-border)] text-sm focus:outline-none focus:border-[var(--color-accent)]"
+          className="w-full sm:w-auto px-3 min-h-10 rounded bg-[var(--color-surface)] border border-[var(--color-border)] text-sm focus:outline-none focus:border-[var(--color-accent)]"
         />
         <div className="flex gap-1">
           {(["all", "owned", "unowned"] as OwnFilter[]).map((f) => (
             <button
               key={f}
               onClick={() => setOwnFilter(f)}
-              className={`px-2.5 py-1 rounded text-xs capitalize ${
+              className={`px-3 min-h-10 rounded text-xs capitalize flex items-center ${
                 ownFilter === f
                   ? "bg-[var(--color-accent)] text-[var(--color-accent-ink)] font-medium"
                   : "bg-[var(--color-surface-hi)] text-[var(--color-muted)] hover:text-[var(--color-fg)]"
@@ -116,13 +116,13 @@ export default function TopPokemon() {
             </button>
           ))}
         </div>
-        <div className="ml-auto flex gap-1 text-xs">
-          <span className="text-[var(--color-muted)] self-center mr-1">Sort</span>
+        <div className="sm:ml-auto flex items-center gap-1 text-xs">
+          <span className="text-[var(--color-muted)] mr-1">Sort</span>
           {(["rank", "name", "usage"] as SortKey[]).map((k) => (
             <button
               key={k}
               onClick={() => setSortKey(k)}
-              className={`px-2 py-1 rounded capitalize ${
+              className={`px-3 min-h-10 rounded capitalize flex items-center ${
                 sortKey === k
                   ? "bg-[var(--color-surface-hi)] text-[var(--color-fg)]"
                   : "text-[var(--color-muted)] hover:text-[var(--color-fg)]"
@@ -135,54 +135,66 @@ export default function TopPokemon() {
       </div>
 
       <Card className="overflow-hidden">
-        <table className="w-full text-sm">
-          <thead className="bg-[var(--color-surface-hi)] text-[var(--color-muted)] text-xs uppercase tracking-wide">
-            <tr>
-              <th className="text-left px-3 py-2 w-12">#</th>
-              <th className="text-left px-3 py-2">Species</th>
-              <th className="text-left px-3 py-2">Types</th>
-              <th className="text-right px-3 py-2 w-20">Usage</th>
-              <th className="text-left px-3 py-2">Common set</th>
-              <th className="text-left px-3 py-2 w-20">Owned</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr
-                key={r.species}
-                className="border-t border-[var(--color-border)] hover:bg-[var(--color-surface-hi)]/50"
-              >
-                <td className="px-3 py-2 text-[var(--color-muted)]">{r.rank}</td>
-                <td className="px-3 py-2 font-medium">{r.species}</td>
-                <td className="px-3 py-2">
-                  <div className="flex gap-1">
-                    {r.types.map((t) => <TypeBadge key={t} type={t} />)}
-                  </div>
-                </td>
-                <td className="px-3 py-2 text-right tabular-nums">
-                  {(r.usage * 100).toFixed(0)}%
-                </td>
-                <td className="px-3 py-2 text-xs text-[var(--color-muted)]">
-                  {r.ability ? `${r.ability} · ${r.item}` : "—"}
-                </td>
-                <td className="px-3 py-2">
-                  {r.owned ? (
-                    <span className="text-[var(--color-accent)] text-xs">✓ owned</span>
-                  ) : (
-                    <span className="text-[var(--color-muted)] text-xs">—</span>
-                  )}
-                </td>
-              </tr>
-            ))}
-            {rows.length === 0 && (
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead className="bg-[var(--color-surface-hi)] text-[var(--color-muted)] text-xs uppercase tracking-wide">
               <tr>
-                <td colSpan={6} className="px-3 py-6 text-center text-[var(--color-muted)] text-sm">
-                  No pokemon match your filters.
-                </td>
+                <th className="text-left px-2 sm:px-3 py-2 w-10">#</th>
+                <th className="text-left px-2 sm:px-3 py-2">Species</th>
+                <th className="text-left px-2 sm:px-3 py-2 hidden md:table-cell">Types</th>
+                <th className="text-right px-2 sm:px-3 py-2 w-16">Usage</th>
+                <th className="text-left px-2 sm:px-3 py-2 hidden lg:table-cell">Common set</th>
+                <th className="text-left px-2 sm:px-3 py-2 w-14">Own</th>
               </tr>
-            )}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr
+                  key={r.species}
+                  className="border-t border-[var(--color-border)] hover:bg-[var(--color-surface-hi)]/50"
+                >
+                  <td className="px-2 sm:px-3 py-2 text-[var(--color-muted)] text-xs tabular-nums">
+                    {r.rank}
+                  </td>
+                  <td className="px-2 sm:px-3 py-2">
+                    <div className="font-medium">{r.species}</div>
+                    <div className="flex gap-1 mt-1 md:hidden">
+                      {r.types.map((t) => <TypeBadge key={t} type={t} />)}
+                    </div>
+                    <div className="text-[11px] text-[var(--color-muted)] mt-0.5 lg:hidden">
+                      {r.ability ? `${r.ability} · ${r.item}` : ""}
+                    </div>
+                  </td>
+                  <td className="px-2 sm:px-3 py-2 hidden md:table-cell">
+                    <div className="flex gap-1">
+                      {r.types.map((t) => <TypeBadge key={t} type={t} />)}
+                    </div>
+                  </td>
+                  <td className="px-2 sm:px-3 py-2 text-right tabular-nums text-xs sm:text-sm">
+                    {(r.usage * 100).toFixed(0)}%
+                  </td>
+                  <td className="px-2 sm:px-3 py-2 text-xs text-[var(--color-muted)] hidden lg:table-cell">
+                    {r.ability ? `${r.ability} · ${r.item}` : "—"}
+                  </td>
+                  <td className="px-2 sm:px-3 py-2">
+                    {r.owned ? (
+                      <span className="text-[var(--color-accent)] text-xs">✓</span>
+                    ) : (
+                      <span className="text-[var(--color-muted)] text-xs">—</span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+              {rows.length === 0 && (
+                <tr>
+                  <td colSpan={6} className="px-3 py-6 text-center text-[var(--color-muted)] text-sm">
+                    No pokemon match your filters.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </Card>
     </div>
   );

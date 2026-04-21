@@ -36,7 +36,7 @@ export default function TopTeams() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex gap-1">
+      <div className="flex flex-wrap gap-1">
         {([
           { key: "all", label: "All teams" },
           { key: "close", label: "≤1 missing" },
@@ -45,7 +45,7 @@ export default function TopTeams() {
           <button
             key={o.key}
             onClick={() => setFilter(o.key)}
-            className={`px-3 py-1.5 rounded text-xs ${
+            className={`px-3 min-h-10 rounded text-xs flex items-center ${
               filter === o.key
                 ? "bg-[var(--color-accent)] text-[var(--color-accent-ink)] font-medium"
                 : "bg-[var(--color-surface-hi)] text-[var(--color-muted)] hover:text-[var(--color-fg)]"
@@ -94,7 +94,7 @@ export default function TopTeams() {
                   return (
                     <div
                       key={i}
-                      className={`flex items-center gap-2 text-sm ${
+                      className={`flex flex-wrap items-center gap-x-2 gap-y-1 text-sm ${
                         ownedThis ? "" : "opacity-60"
                       }`}
                     >
@@ -105,11 +105,11 @@ export default function TopTeams() {
                           <span className="text-[var(--color-muted)]">·</span>
                         )}
                       </span>
-                      <span className="font-medium min-w-32">{p.species}</span>
+                      <span className="font-medium">{p.species}</span>
                       <div className="flex gap-1">
                         {entry?.types.map((t) => <TypeBadge key={t} type={t} />)}
                       </div>
-                      <span className="text-xs text-[var(--color-muted)] ml-auto">
+                      <span className="text-xs text-[var(--color-muted)] ml-auto basis-full sm:basis-auto">
                         {[p.item, p.mega ? "(mega)" : ""].filter(Boolean).join(" ")}
                       </span>
                     </div>

@@ -67,12 +67,14 @@ export default function Collection() {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-wrap items-center gap-2">
-        <h1 className="text-lg font-semibold">Your collection</h1>
-        <span className="text-xs text-[var(--color-muted)]">{owned.length} pokemon</span>
-        <div className="ml-auto flex gap-2">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+        <div className="flex items-baseline gap-2">
+          <h1 className="text-lg font-semibold">Your collection</h1>
+          <span className="text-xs text-[var(--color-muted)]">{owned.length} pokemon</span>
+        </div>
+        <div className="sm:ml-auto flex flex-wrap gap-2">
           <Button variant="primary" onClick={() => setShowImport(true)}>
-            Import pokepaste
+            Import
           </Button>
           <Button onClick={addEmpty}>Add blank</Button>
           <Button onClick={handleExport} disabled={owned.length === 0}>
