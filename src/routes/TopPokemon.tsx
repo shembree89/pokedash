@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useData } from "../data/useData";
+import { useDex } from "../data/useDex";
 import { useOwned } from "../store/collection";
 import { speciesKey } from "../lib/species";
 import TypeBadge from "../components/TypeBadge";
@@ -11,6 +12,7 @@ type SortKey = "rank" | "name" | "usage";
 export default function TopPokemon() {
   const status = useData();
   const owned = useOwned();
+  const { lookup, ensureMany } = useDex();
   const [ownFilter, setOwnFilter] = useState<OwnFilter>("all");
   const [sortKey, setSortKey] = useState<SortKey>("rank");
   const [query, setQuery] = useState("");
@@ -20,14 +22,23 @@ export default function TopPokemon() {
     [owned],
   );
 
+  const speciesList = useMemo(
+    () => (status.state === "ready" ? status.data.usage.pokemon.map((u) => u.species) : []),
+    [status],
+  );
+
+  useEffect(() => {
+    ensureMany(speciesList);
+  }, [speciesList, ensureMany]);
+
   if (status.state === "loading") return <div className="text-[var(--color-muted)]">Loading…</div>;
   if (status.state === "error") return <div className="text-red-400">{status.error.message}</div>;
 
-  const { pokedex, usage, sets } = status.data;
+  const { usage, sets } = status.data;
 
   const rows = usage.pokemon
     .map((u) => {
-      const entry = pokedex.pokemon[u.species];
+      const entry = lookup(u.species);
       const set = sets.sets[u.species]?.[0];
       return {
         rank: u.rank,

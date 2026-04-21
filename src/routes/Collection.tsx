@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   addManyOwned,
   addOwned,
@@ -7,7 +7,7 @@ import {
   useOwned,
 } from "../store/collection";
 import { parsePokepaste, teamToPokepaste, toOwnedPokemon } from "../lib/pokepaste";
-import { useData } from "../data/useData";
+import { useDex } from "../data/useDex";
 import TypeBadge from "../components/TypeBadge";
 import { Card, CardBody, CardHeader } from "../components/Card";
 import Button from "../components/Button";
@@ -17,12 +17,14 @@ import type { OwnedPokemon, PokemonType } from "../data/types";
 
 export default function Collection() {
   const owned = useOwned();
-  const status = useData();
+  const { lookup, ensureMany } = useDex();
   const [showImport, setShowImport] = useState(false);
   const [importText, setImportText] = useState("");
   const [importError, setImportError] = useState<string | null>(null);
 
-  const pokedex = status.state === "ready" ? status.data.pokedex : null;
+  useEffect(() => {
+    ensureMany(owned.map((m) => m.species));
+  }, [owned, ensureMany]);
 
   const handleImport = () => {
     try {
@@ -147,7 +149,7 @@ export default function Collection() {
             <OwnedCard
               key={mon.id}
               mon={mon}
-              types={pokedex?.pokemon[mon.species]?.types ?? []}
+              types={lookup(mon.species)?.types ?? []}
               onDelete={() => removeOwned(mon.id)}
             />
           ))}

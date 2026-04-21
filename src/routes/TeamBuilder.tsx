@@ -8,7 +8,7 @@ import {
   useOwned,
   useTeams,
 } from "../store/collection";
-import { useData } from "../data/useData";
+import { useDex } from "../data/useDex";
 import type { OwnedPokemon } from "../data/types";
 import { validateTeam, TEAM_SIZE, type TeamViolation } from "../lib/team-rules";
 import { resolveOwned } from "../lib/threat";
@@ -32,7 +32,7 @@ function violationLabel(v: TeamViolation): string {
 export default function TeamBuilder() {
   const teams = useTeams();
   const owned = useOwned();
-  const status = useData();
+  const { lookup, ensureMany } = useDex();
   const [activeId, setActiveId] = useState<string | null>(teams[0]?.id ?? null);
   const [editingSlot, setEditingSlot] = useState<number | null>(null);
   const [renameOpen, setRenameOpen] = useState(false);
@@ -42,6 +42,10 @@ export default function TeamBuilder() {
       setActiveId(teams[0]?.id ?? null);
     }
   }, [teams, activeId]);
+
+  useEffect(() => {
+    ensureMany(owned.map((m) => m.species));
+  }, [owned, ensureMany]);
 
   const active = teams.find((t) => t.id === activeId);
   const slotMons: (OwnedPokemon | null)[] = useMemo(() => {
@@ -106,10 +110,7 @@ export default function TeamBuilder() {
     URL.revokeObjectURL(url);
   };
 
-  const pokedex = status.state === "ready" ? status.data.pokedex : null;
-  const resolved = pokedex
-    ? filledMons.map((m) => resolveOwned(m, pokedex.pokemon[m.species]))
-    : [];
+  const resolved = filledMons.map((m) => resolveOwned(m, lookup(m.species)));
 
   if (teams.length === 0) {
     return (
@@ -201,7 +202,7 @@ export default function TeamBuilder() {
         </Card>
       )}
 
-      {active && pokedex && filledMons.length > 0 && (
+      {active && filledMons.length > 0 && (
         <AnalysisPanels team={resolved} />
       )}
 
@@ -262,10 +263,12 @@ function SlotRow({
   onAdd: (id: string) => void;
   availableOwned: OwnedPokemon[];
 }) {
-  const status = useData();
-  const pokedex = status.state === "ready" ? status.data.pokedex : null;
-  const entry = mon && pokedex?.pokemon[mon.species];
-  const resolved = mon && pokedex ? resolveOwned(mon, pokedex.pokemon[mon.species]) : null;
+  const { lookup, ensure } = useDex();
+  useEffect(() => {
+    if (mon) ensure(mon.species);
+  }, [mon, ensure]);
+  const entry = mon ? lookup(mon.species) : undefined;
+  const resolved = mon ? resolveOwned(mon, entry) : null;
   const [picking, setPicking] = useState(false);
 
   if (!mon) {

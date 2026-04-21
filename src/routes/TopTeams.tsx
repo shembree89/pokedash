@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useData } from "../data/useData";
+import { useDex } from "../data/useDex";
 import { useOwned } from "../store/collection";
 import { speciesKey } from "../lib/species";
 import { Card, CardBody, CardHeader } from "../components/Card";
@@ -10,6 +11,7 @@ type BuildFilter = "all" | "full" | "close";
 export default function TopTeams() {
   const status = useData();
   const owned = useOwned();
+  const { lookup, ensureMany } = useDex();
   const [filter, setFilter] = useState<BuildFilter>("all");
 
   const ownedKeys = useMemo(
@@ -17,10 +19,22 @@ export default function TopTeams() {
     [owned],
   );
 
+  const teamSpecies = useMemo(
+    () =>
+      status.state === "ready"
+        ? status.data.teams.teams.flatMap((t) => t.pokemon.map((p) => p.species))
+        : [],
+    [status],
+  );
+
+  useEffect(() => {
+    ensureMany(teamSpecies);
+  }, [teamSpecies, ensureMany]);
+
   if (status.state === "loading") return <div className="text-[var(--color-muted)]">Loading…</div>;
   if (status.state === "error") return <div className="text-red-400">{status.error.message}</div>;
 
-  const { teams, pokedex } = status.data as typeof status.data;
+  const { teams } = status.data;
   const scored = teams.teams
     .map((t) => {
       const ownedCount = t.pokemon.filter((p) => ownedKeys.has(speciesKey(p.species))).length;
@@ -89,7 +103,7 @@ export default function TopTeams() {
               </CardHeader>
               <CardBody className="flex flex-col gap-1.5">
                 {team.pokemon.map((p, i) => {
-                  const entry = pokedex.pokemon[p.species];
+                  const entry = lookup(p.species);
                   const ownedThis = ownedKeys.has(speciesKey(p.species));
                   return (
                     <div

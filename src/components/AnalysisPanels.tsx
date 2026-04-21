@@ -139,11 +139,12 @@ function SpeedTiers({ team }: { team: EffectiveMon[] }) {
       .slice(0, 8)
       .map((u) => {
         const entry = pokedex.pokemon[u.species];
-        return entry ? {
+        if (!entry) return null;
+        return {
           label: entry.name,
           speed: entry.baseStats.spe,
           source: "meta" as const,
-        } : null;
+        };
       })
       .filter((x): x is { label: string; speed: number; source: "meta" } => x != null);
     const teamRows = team.map((m) => ({

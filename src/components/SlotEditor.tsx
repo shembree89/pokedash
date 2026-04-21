@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Nature, OwnedPokemon, StatKey } from "../data/types";
 import { STAT_KEYS, STAT_LABEL } from "../data/types";
 import { updateOwned } from "../store/collection";
+import { useDex } from "../data/useDex";
 import { useData } from "../data/useData";
 import { SP_PER_STAT_MAX, SP_TOTAL_MAX, spTotal, validateSpread } from "../lib/sp-converter";
 import TypeBadge from "../components/TypeBadge";
@@ -36,9 +37,10 @@ export default function SlotEditor({ mon, onClose, onRemoveFromTeam }: Props) {
   const spValidation = validateSpread(draft.spSpread);
   const dirty = JSON.stringify(draft) !== JSON.stringify(mon);
 
-  const pokedex = status.state === "ready" ? status.data.pokedex : null;
+  const { lookup, ensure } = useDex();
+  useEffect(() => { ensure(mon.species); }, [mon.species, ensure]);
+  const entry = lookup(mon.species);
   const sets = status.state === "ready" ? status.data.sets : null;
-  const entry = pokedex?.pokemon[mon.species];
   const metaSet = sets?.sets[mon.species]?.[0];
   const megaCapable = (entry?.megas?.length ?? 0) > 0;
 
