@@ -1,6 +1,6 @@
 {
   "refreshedAt": "2026-04-21",
-  "source": "sample; enriched via pokeapi.co/api/v2/pokemon",
+  "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
       "name": "Amoonguss",
@@ -181,11 +181,11 @@
           ],
           "baseStats": {
             "hp": 91,
-            "atk": 164,
+            "atk": 124,
             "def": 115,
-            "spa": 130,
-            "spd": 120,
-            "spe": 90
+            "spa": 145,
+            "spd": 125,
+            "spe": 100
           },
           "ability": "Sheer Force",
           "requiredItem": "Dragonitite"
@@ -266,6 +266,23 @@
           },
           "ability": "Drought",
           "requiredItem": "Charizardite Y"
+        },
+        {
+          "name": "Mega Charizard X",
+          "types": [
+            "Fire",
+            "Dragon"
+          ],
+          "baseStats": {
+            "hp": 78,
+            "atk": 130,
+            "def": 111,
+            "spa": 130,
+            "spd": 85,
+            "spe": 100
+          },
+          "ability": "Tough Claws",
+          "requiredItem": "Charizardite X"
         }
       ]
     },
@@ -371,11 +388,11 @@
           ],
           "baseStats": {
             "hp": 80,
-            "atk": 102,
-            "def": 130,
-            "spa": 113,
-            "spd": 140,
-            "spe": 85
+            "atk": 92,
+            "def": 115,
+            "spa": 143,
+            "spd": 115,
+            "spe": 80
           },
           "ability": "Grassy Surge",
           "requiredItem": "Meganite"
@@ -409,11 +426,11 @@
           ],
           "baseStats": {
             "hp": 72,
-            "atk": 145,
+            "atk": 125,
             "def": 77,
-            "spa": 153,
+            "spa": 133,
             "spd": 81,
-            "spe": 132
+            "spe": 142
           },
           "ability": "Battle Bond",
           "requiredItem": "Greninite"
@@ -650,6 +667,25 @@
         "Rock Head",
         "Pressure",
         "Unnerve"
+      ],
+      "megas": [
+        {
+          "name": "Mega Aerodactyl",
+          "types": [
+            "Rock",
+            "Flying"
+          ],
+          "baseStats": {
+            "hp": 80,
+            "atk": 135,
+            "def": 85,
+            "spa": 70,
+            "spd": 95,
+            "spe": 150
+          },
+          "ability": "Tough Claws",
+          "requiredItem": "Aerodactylite"
+        }
       ]
     },
     "Archaludon": {
@@ -689,6 +725,25 @@
       "abilities": [
         "Overgrow",
         "Chlorophyll"
+      ],
+      "megas": [
+        {
+          "name": "Mega Venusaur",
+          "types": [
+            "Grass",
+            "Poison"
+          ],
+          "baseStats": {
+            "hp": 80,
+            "atk": 100,
+            "def": 123,
+            "spa": 122,
+            "spd": 120,
+            "spe": 80
+          },
+          "ability": "Thick Fat",
+          "requiredItem": "Venusaurite"
+        }
       ]
     },
     "Gengar": {
@@ -707,6 +762,25 @@
       },
       "abilities": [
         "Cursed Body"
+      ],
+      "megas": [
+        {
+          "name": "Mega Gengar",
+          "types": [
+            "Ghost",
+            "Poison"
+          ],
+          "baseStats": {
+            "hp": 60,
+            "atk": 65,
+            "def": 80,
+            "spa": 170,
+            "spd": 95,
+            "spe": 130
+          },
+          "ability": "Shadow Tag",
+          "requiredItem": "Gengarite"
+        }
       ]
     },
     "Froslass": {
@@ -726,6 +800,25 @@
       "abilities": [
         "Snow Cloak",
         "Cursed Body"
+      ],
+      "megas": [
+        {
+          "name": "Mega Froslass",
+          "types": [
+            "Ice",
+            "Ghost"
+          ],
+          "baseStats": {
+            "hp": 70,
+            "atk": 80,
+            "def": 70,
+            "spa": 140,
+            "spd": 100,
+            "spe": 120
+          },
+          "ability": "Snow Warning",
+          "requiredItem": "Froslassite"
+        }
       ]
     },
     "Milotic": {
@@ -785,6 +878,25 @@
         "Sand Rush",
         "Sand Force",
         "Mold Breaker"
+      ],
+      "megas": [
+        {
+          "name": "Mega Excadrill",
+          "types": [
+            "Ground",
+            "Steel"
+          ],
+          "baseStats": {
+            "hp": 110,
+            "atk": 165,
+            "def": 100,
+            "spa": 65,
+            "spd": 65,
+            "spe": 103
+          },
+          "ability": "Piercing Drill",
+          "requiredItem": "Excadrite"
+        }
       ]
     },
     "Delphox": {
@@ -804,6 +916,25 @@
       "abilities": [
         "Blaze",
         "Magician"
+      ],
+      "megas": [
+        {
+          "name": "Mega Delphox",
+          "types": [
+            "Fire",
+            "Psychic"
+          ],
+          "baseStats": {
+            "hp": 75,
+            "atk": 69,
+            "def": 72,
+            "spa": 159,
+            "spd": 125,
+            "spe": 134
+          },
+          "ability": "Levitate",
+          "requiredItem": "Delphoxite"
+        }
       ]
     },
     "Talonflame": {
@@ -900,6 +1031,25 @@
       "abilities": [
         "Toxic Debris",
         "Corrosion"
+      ],
+      "megas": [
+        {
+          "name": "Mega Glimmora",
+          "types": [
+            "Rock",
+            "Poison"
+          ],
+          "baseStats": {
+            "hp": 83,
+            "atk": 90,
+            "def": 105,
+            "spa": 150,
+            "spd": 96,
+            "spe": 101
+          },
+          "ability": "Adaptability",
+          "requiredItem": "Glimmoranite"
+        }
       ]
     },
     "Ninetales-Alola": {
@@ -938,6 +1088,25 @@
         "Cute Charm",
         "Magic Guard",
         "Unaware"
+      ],
+      "megas": [
+        {
+          "name": "Mega Clefable",
+          "types": [
+            "Fairy",
+            "Flying"
+          ],
+          "baseStats": {
+            "hp": 95,
+            "atk": 80,
+            "def": 93,
+            "spa": 135,
+            "spd": 110,
+            "spe": 70
+          },
+          "ability": "Magic Bounce",
+          "requiredItem": "Clefablite"
+        }
       ]
     },
     "Sylveon": {
@@ -975,6 +1144,25 @@
       "abilities": [
         "Intimidate",
         "Moxie"
+      ],
+      "megas": [
+        {
+          "name": "Mega Gyarados",
+          "types": [
+            "Water",
+            "Dark"
+          ],
+          "baseStats": {
+            "hp": 95,
+            "atk": 155,
+            "def": 109,
+            "spa": 70,
+            "spd": 130,
+            "spe": 81
+          },
+          "ability": "Mold Breaker",
+          "requiredItem": "Gyaradosite"
+        }
       ]
     },
     "Dragapult": {
@@ -1072,6 +1260,25 @@
         "Iron Fist",
         "Klutz",
         "No Guard"
+      ],
+      "megas": [
+        {
+          "name": "Mega Golurk",
+          "types": [
+            "Ground",
+            "Ghost"
+          ],
+          "baseStats": {
+            "hp": 89,
+            "atk": 159,
+            "def": 105,
+            "spa": 70,
+            "spd": 105,
+            "spe": 55
+          },
+          "ability": "Unseen Fist",
+          "requiredItem": "Golurkite"
+        }
       ]
     },
     "Volcarona": {
@@ -1111,6 +1318,24 @@
         "Sturdy",
         "Rock Head",
         "Heavy Metal"
+      ],
+      "megas": [
+        {
+          "name": "Mega Aggron",
+          "types": [
+            "Steel"
+          ],
+          "baseStats": {
+            "hp": 70,
+            "atk": 140,
+            "def": 230,
+            "spa": 60,
+            "spd": 80,
+            "spe": 50
+          },
+          "ability": "Filter",
+          "requiredItem": "Aggronite"
+        }
       ]
     },
     "Starmie": {
@@ -1131,6 +1356,25 @@
         "Illuminate",
         "Natural Cure",
         "Analytic"
+      ],
+      "megas": [
+        {
+          "name": "Mega Starmie",
+          "types": [
+            "Water",
+            "Psychic"
+          ],
+          "baseStats": {
+            "hp": 60,
+            "atk": 100,
+            "def": 105,
+            "spa": 130,
+            "spd": 105,
+            "spe": 120
+          },
+          "ability": "Huge Power",
+          "requiredItem": "Starminite"
+        }
       ]
     },
     "Hydreigon": {
@@ -1169,6 +1413,25 @@
         "Keen Eye",
         "Stall",
         "Prankster"
+      ],
+      "megas": [
+        {
+          "name": "Mega Sableye",
+          "types": [
+            "Dark",
+            "Ghost"
+          ],
+          "baseStats": {
+            "hp": 50,
+            "atk": 85,
+            "def": 125,
+            "spa": 85,
+            "spd": 115,
+            "spe": 20
+          },
+          "ability": "Magic Bounce",
+          "requiredItem": "Sablenite"
+        }
       ]
     },
     "Basculegion": {
