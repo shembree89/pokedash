@@ -3,11 +3,13 @@ import Collection from "./routes/Collection";
 import TopPokemon from "./routes/TopPokemon";
 import TopTeams from "./routes/TopTeams";
 import TeamBuilder from "./routes/TeamBuilder";
+import Wishlist from "./routes/Wishlist";
 import DataFooter from "./components/DataFooter";
 
 const tabs = [
   { to: "/collection", label: "Collection" },
   { to: "/top-pokemon", label: "Top Mons" },
+  { to: "/wishlist", label: "Wishlist" },
   { to: "/top-teams", label: "Top Teams" },
   { to: "/team-builder", label: "Builder" },
 ];
@@ -47,6 +49,7 @@ export default function App() {
           <Route path="/" element={<Navigate to="/top-pokemon" replace />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/top-pokemon" element={<TopPokemon />} />
+          <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/top-teams" element={<TopTeams />} />
           <Route path="/team-builder" element={<TeamBuilder />} />
         </Routes>

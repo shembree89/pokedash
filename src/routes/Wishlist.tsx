@@ -2,16 +2,18 @@ import { useEffect, useMemo, useState } from "react";
 import { useData } from "../data/useData";
 import { useDex } from "../data/useDex";
 import { useOwned } from "../store/collection";
+import { useWishlist } from "../store/wishlist";
 import { speciesKey } from "../lib/species";
-import { Card, CardBody, CardHeader } from "../components/Card";
+import { Card, CardBody } from "../components/Card";
 import PokemonTable, { type PokemonTableRow } from "../components/PokemonTable";
 
 type OwnFilter = "all" | "owned" | "unowned";
 type SortKey = "rank" | "name" | "usage";
 
-export default function TopPokemon() {
+export default function Wishlist() {
   const status = useData();
   const owned = useOwned();
+  const wishlist = useWishlist();
   const { lookup, ensureMany } = useDex();
   const [ownFilter, setOwnFilter] = useState<OwnFilter>("all");
   const [sortKey, setSortKey] = useState<SortKey>("rank");
@@ -22,32 +24,31 @@ export default function TopPokemon() {
     [owned],
   );
 
-  const speciesList = useMemo(
-    () => (status.state === "ready" ? status.data.usage.pokemon.map((u) => u.species) : []),
-    [status],
-  );
+  const wishlistArr = useMemo(() => [...wishlist], [wishlist]);
 
   useEffect(() => {
-    ensureMany(speciesList);
-  }, [speciesList, ensureMany]);
+    ensureMany(wishlistArr);
+  }, [wishlistArr, ensureMany]);
 
   if (status.state === "loading") return <div className="text-[var(--color-muted)]">Loading…</div>;
   if (status.state === "error") return <div className="text-red-400">{status.error.message}</div>;
 
   const { usage, sets } = status.data;
+  const usageByName = new Map(usage.pokemon.map((u) => [u.species, u]));
 
-  const rows: PokemonTableRow[] = usage.pokemon
-    .map((u) => {
-      const entry = lookup(u.species);
-      const set = sets.sets[u.species]?.[0];
+  const rows: PokemonTableRow[] = wishlistArr
+    .map((species): PokemonTableRow => {
+      const entry = lookup(species);
+      const set = sets.sets[species]?.[0];
+      const usageEntry = usageByName.get(species);
       return {
-        rank: u.rank,
-        species: u.species,
-        usage: u.usage,
+        rank: usageEntry?.rank ?? 999,
+        species,
+        usage: usageEntry?.usage ?? 0,
         types: entry?.types ?? [],
         item: set?.item ?? "",
         ability: set?.ability ?? "",
-        owned: ownedKeys.has(speciesKey(u.species)),
+        owned: ownedKeys.has(speciesKey(species)),
       };
     })
     .filter((r) => {
@@ -62,47 +63,27 @@ export default function TopPokemon() {
       return a.species.localeCompare(b.species);
     });
 
-  const topUnowned = usage.pokemon
-    .filter((u) => !ownedKeys.has(speciesKey(u.species)))
-    .slice(0, 5);
+  if (wishlist.size === 0) {
+    return (
+      <Card>
+        <CardBody>
+          <div className="text-sm text-[var(--color-muted)]">
+            Your wishlist is empty. Tap the star next to any pokemon on the Top
+            Mons tab to add it here.
+          </div>
+        </CardBody>
+      </Card>
+    );
+  }
 
   return (
     <div className="flex flex-col gap-5">
-      <Card>
-        <CardHeader>
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="text-sm font-semibold">Top pokemon you don't own</div>
-              <div className="text-xs text-[var(--color-muted)]">
-                The highest-usage meta pokemon missing from your collection.
-              </div>
-            </div>
-            <div className="text-xs text-[var(--color-muted)]">{owned.length} owned</div>
-          </div>
-        </CardHeader>
-        <CardBody>
-          {topUnowned.length === 0 ? (
-            <div className="text-sm text-[var(--color-muted)]">
-              You own every top-{usage.pokemon.length} pokemon in the current meta. Nice.
-            </div>
-          ) : (
-            <ol className="flex flex-wrap gap-2">
-              {topUnowned.map((u) => (
-                <li
-                  key={u.species}
-                  className="px-3 py-1.5 bg-[var(--color-surface-hi)] border border-[var(--color-border)] rounded text-sm"
-                >
-                  <span className="text-[var(--color-muted)] mr-1">#{u.rank}</span>
-                  <span className="font-medium">{u.species}</span>
-                  <span className="text-[var(--color-muted)] ml-2">
-                    {(u.usage * 100).toFixed(0)}%
-                  </span>
-                </li>
-              ))}
-            </ol>
-          )}
-        </CardBody>
-      </Card>
+      <div className="flex items-baseline gap-2">
+        <div className="text-sm font-semibold">Wishlist</div>
+        <div className="text-xs text-[var(--color-muted)]">
+          {wishlist.size} starred
+        </div>
+      </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-2">
         <input
@@ -145,7 +126,10 @@ export default function TopPokemon() {
         </div>
       </div>
 
-      <PokemonTable rows={rows} />
+      <PokemonTable
+        rows={rows}
+        emptyMessage="No pokemon in your wishlist match the current filters."
+      />
     </div>
   );
 }
