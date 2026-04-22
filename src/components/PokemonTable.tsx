@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, type DragEvent } from "react";
 import type { PokemonType } from "../data/types";
 import { isWishlisted, toggleWishlist, useWishlist } from "../store/wishlist";
 import TypeBadge from "./TypeBadge";
@@ -15,15 +15,53 @@ export interface PokemonTableRow {
   owned: boolean;
 }
 
+interface Props {
+  rows: PokemonTableRow[];
+  emptyMessage?: string;
+  onReorder?: (fromIndex: number, toIndex: number) => void;
+}
+
 export default function PokemonTable({
   rows,
   emptyMessage = "No pokemon match your filters.",
-}: {
-  rows: PokemonTableRow[];
-  emptyMessage?: string;
-}) {
-  useWishlist(); // subscribe so stars re-render on toggle
+  onReorder,
+}: Props) {
+  useWishlist();
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
+  const [dropIndex, setDropIndex] = useState<number | null>(null);
+
+  const draggable = !!onReorder;
+
+  const handleDragStart = (e: DragEvent<HTMLTableRowElement>, index: number) => {
+    setDragIndex(index);
+    setExpanded(null);
+    e.dataTransfer.effectAllowed = "move";
+    // Required for Firefox to start drag:
+    e.dataTransfer.setData("text/plain", String(index));
+  };
+
+  const handleDragOver = (e: DragEvent<HTMLTableRowElement>, index: number) => {
+    if (dragIndex === null) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    if (dropIndex !== index) setDropIndex(index);
+  };
+
+  const handleDrop = () => {
+    if (dragIndex !== null && dropIndex !== null && onReorder) {
+      onReorder(dragIndex, dropIndex);
+    }
+    setDragIndex(null);
+    setDropIndex(null);
+  };
+
+  const handleDragEnd = () => {
+    setDragIndex(null);
+    setDropIndex(null);
+  };
+
+  const colCount = draggable ? 7 : 6;
 
   return (
     <Card className="overflow-hidden">
@@ -31,6 +69,7 @@ export default function PokemonTable({
         <table className="w-full text-sm">
           <thead className="bg-[var(--color-surface-hi)] text-[var(--color-muted)] text-xs uppercase tracking-wide">
             <tr>
+              {draggable && <th className="w-8" aria-label="Reorder" />}
               <th className="text-left px-2 sm:px-3 py-2 w-10">#</th>
               <th className="text-left px-2 sm:px-3 py-2">Species</th>
               <th className="text-left px-2 sm:px-3 py-2 hidden md:table-cell">Types</th>
@@ -40,18 +79,35 @@ export default function PokemonTable({
             </tr>
           </thead>
           <tbody>
-            {rows.map((r) => {
+            {rows.map((r, i) => {
               const isOpen = expanded === r.species;
               const starred = isWishlisted(r.species);
+              const isDragging = dragIndex === i;
+              const isDropTarget = dropIndex === i && dragIndex !== null && dragIndex !== i;
               return (
                 <Fragment key={r.species}>
                   <tr
+                    draggable={draggable}
+                    onDragStart={draggable ? (e) => handleDragStart(e, i) : undefined}
+                    onDragOver={draggable ? (e) => handleDragOver(e, i) : undefined}
+                    onDrop={draggable ? handleDrop : undefined}
+                    onDragEnd={draggable ? handleDragEnd : undefined}
                     onClick={() => setExpanded(isOpen ? null : r.species)}
                     aria-expanded={isOpen}
                     className={`border-t border-[var(--color-border)] cursor-pointer hover:bg-[var(--color-surface-hi)]/50 ${
                       isOpen ? "bg-[var(--color-surface-hi)]/50" : ""
+                    } ${isDragging ? "opacity-40" : ""} ${
+                      isDropTarget ? "outline outline-2 outline-[var(--color-accent)]" : ""
                     }`}
                   >
+                    {draggable && (
+                      <td
+                        className="px-1 py-2 text-center text-[var(--color-muted)] cursor-grab active:cursor-grabbing select-none"
+                        aria-label="Drag to reorder"
+                      >
+                        ⋮⋮
+                      </td>
+                    )}
                     <td className="px-2 sm:px-3 py-2 text-[var(--color-muted)] text-xs tabular-nums">
                       <span className="inline-flex items-center gap-1">
                         <span
@@ -74,7 +130,7 @@ export default function PokemonTable({
                             e.stopPropagation();
                             toggleWishlist(r.species);
                           }}
-                          className={`text-base leading-none px-1 -mx-1 min-h-8 min-w-8 flex items-center justify-center rounded hover:bg-[var(--color-surface-hi)] ${
+                          className={`text-xl leading-none -m-1 min-h-11 min-w-11 flex items-center justify-center rounded hover:bg-[var(--color-surface-hi)] ${
                             starred
                               ? "text-[var(--color-accent)]"
                               : "text-[var(--color-muted)] hover:text-[var(--color-fg)]"
@@ -114,7 +170,7 @@ export default function PokemonTable({
                   </tr>
                   {isOpen && (
                     <tr className="border-t border-[var(--color-border)] bg-[var(--color-surface-hi)]/30">
-                      <td colSpan={6} className="px-3 sm:px-5 py-4">
+                      <td colSpan={colCount} className="px-3 sm:px-5 py-4">
                         <SpeciesCatchInfo species={r.species} />
                       </td>
                     </tr>
@@ -124,7 +180,7 @@ export default function PokemonTable({
             })}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={6} className="px-3 py-6 text-center text-[var(--color-muted)] text-sm">
+                <td colSpan={colCount} className="px-3 py-6 text-center text-[var(--color-muted)] text-sm">
                   {emptyMessage}
                 </td>
               </tr>

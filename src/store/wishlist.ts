@@ -7,18 +7,19 @@ function read(): string[] {
     const raw = localStorage.getItem(KEY);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed.filter((s): s is string => typeof s === "string") : [];
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((s): s is string => typeof s === "string");
   } catch {
     return [];
   }
 }
 
-let state: ReadonlySet<string> = new Set(read());
+let state: readonly string[] = read();
 const listeners = new Set<() => void>();
 
 function persist() {
   try {
-    localStorage.setItem(KEY, JSON.stringify([...state]));
+    localStorage.setItem(KEY, JSON.stringify(state));
   } catch {
     /* storage full or private mode — ignore */
   }
@@ -34,18 +35,43 @@ function subscribe(fn: () => void): () => void {
 }
 
 export function isWishlisted(species: string): boolean {
-  return state.has(species);
+  return state.includes(species);
 }
 
 export function toggleWishlist(species: string): void {
-  const next = new Set(state);
-  if (next.has(species)) next.delete(species);
-  else next.add(species);
+  state = state.includes(species)
+    ? state.filter((s) => s !== species)
+    : [...state, species];
+  persist();
+  emit();
+}
+
+export function reorderWishlist(fromIndex: number, toIndex: number): void {
+  if (fromIndex === toIndex) return;
+  if (fromIndex < 0 || fromIndex >= state.length) return;
+  if (toIndex < 0 || toIndex >= state.length) return;
+  const next = state.slice();
+  const [moved] = next.splice(fromIndex, 1);
+  next.splice(toIndex, 0, moved);
   state = next;
   persist();
   emit();
 }
 
-export function useWishlist(): ReadonlySet<string> {
+export function replaceWishlist(species: readonly string[]): void {
+  const seen = new Set<string>();
+  const next: string[] = [];
+  for (const s of species) {
+    if (typeof s === "string" && !seen.has(s)) {
+      seen.add(s);
+      next.push(s);
+    }
+  }
+  state = next;
+  persist();
+  emit();
+}
+
+export function useWishlist(): readonly string[] {
   return useSyncExternalStore(subscribe, () => state, () => state);
 }
