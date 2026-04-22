@@ -27,10 +27,11 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - name: Refresh meta data from Pikalytics + PokeAPI
+      - name: Refresh meta data from Pikalytics + PokeAPI + pokemondb.net
         run: npm run data:refresh
         env:
           FORCE_COLOR: "1"
+        timeout-minutes: 30
       - name: Check for data changes
         id: diff
         run: |

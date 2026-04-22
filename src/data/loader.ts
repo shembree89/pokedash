@@ -1,4 +1,10 @@
-import type { MetaSets, MetaTeams, MetaUsage, Pokedex } from "./types";
+import type {
+  LocationsFile,
+  MetaSets,
+  MetaTeams,
+  MetaUsage,
+  Pokedex,
+} from "./types";
 
 const base = import.meta.env.BASE_URL;
 
@@ -9,11 +15,20 @@ async function fetchJson<T>(path: string): Promise<T> {
   return (await res.json()) as T;
 }
 
+async function fetchJsonOptional<T>(path: string): Promise<T | null> {
+  const url = `${base}data/${path}`;
+  const res = await fetch(url);
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
+  return (await res.json()) as T;
+}
+
 export interface DataBundle {
   pokedex: Pokedex;
   usage: MetaUsage;
   sets: MetaSets;
   teams: MetaTeams;
+  locations: LocationsFile | null;
 }
 
 let cache: Promise<DataBundle> | null = null;
@@ -25,7 +40,14 @@ export function loadData(): Promise<DataBundle> {
       fetchJson<MetaUsage>("meta-usage.json"),
       fetchJson<MetaSets>("meta-sets.json"),
       fetchJson<MetaTeams>("meta-teams.json"),
-    ]).then(([pokedex, usage, sets, teams]) => ({ pokedex, usage, sets, teams }));
+      fetchJsonOptional<LocationsFile>("locations.json"),
+    ]).then(([pokedex, usage, sets, teams, locations]) => ({
+      pokedex,
+      usage,
+      sets,
+      teams,
+      locations,
+    }));
   }
   return cache;
 }

@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { useData } from "../data/useData";
 import { useDex } from "../data/useDex";
 import { useOwned } from "../store/collection";
 import { speciesKey } from "../lib/species";
 import TypeBadge from "../components/TypeBadge";
 import { Card, CardBody, CardHeader } from "../components/Card";
+import SpeciesCatchInfo from "../components/SpeciesCatchInfo";
 
 type OwnFilter = "all" | "owned" | "unowned";
 type SortKey = "rank" | "name" | "usage";
@@ -16,6 +17,7 @@ export default function TopPokemon() {
   const [ownFilter, setOwnFilter] = useState<OwnFilter>("all");
   const [sortKey, setSortKey] = useState<SortKey>("rank");
   const [query, setQuery] = useState("");
+  const [expanded, setExpanded] = useState<string | null>(null);
 
   const ownedKeys = useMemo(
     () => new Set(owned.map((o) => speciesKey(o.species))),
@@ -159,43 +161,67 @@ export default function TopPokemon() {
               </tr>
             </thead>
             <tbody>
-              {rows.map((r) => (
-                <tr
-                  key={r.species}
-                  className="border-t border-[var(--color-border)] hover:bg-[var(--color-surface-hi)]/50"
-                >
-                  <td className="px-2 sm:px-3 py-2 text-[var(--color-muted)] text-xs tabular-nums">
-                    {r.rank}
-                  </td>
-                  <td className="px-2 sm:px-3 py-2">
-                    <div className="font-medium">{r.species}</div>
-                    <div className="flex gap-1 mt-1 md:hidden">
-                      {r.types.map((t) => <TypeBadge key={t} type={t} />)}
-                    </div>
-                    <div className="text-[11px] text-[var(--color-muted)] mt-0.5 lg:hidden">
-                      {r.ability ? `${r.ability} · ${r.item}` : ""}
-                    </div>
-                  </td>
-                  <td className="px-2 sm:px-3 py-2 hidden md:table-cell">
-                    <div className="flex gap-1">
-                      {r.types.map((t) => <TypeBadge key={t} type={t} />)}
-                    </div>
-                  </td>
-                  <td className="px-2 sm:px-3 py-2 text-right tabular-nums text-xs sm:text-sm">
-                    {(r.usage * 100).toFixed(0)}%
-                  </td>
-                  <td className="px-2 sm:px-3 py-2 text-xs text-[var(--color-muted)] hidden lg:table-cell">
-                    {r.ability ? `${r.ability} · ${r.item}` : "—"}
-                  </td>
-                  <td className="px-2 sm:px-3 py-2">
-                    {r.owned ? (
-                      <span className="text-[var(--color-accent)] text-xs">✓</span>
-                    ) : (
-                      <span className="text-[var(--color-muted)] text-xs">—</span>
+              {rows.map((r) => {
+                const isOpen = expanded === r.species;
+                return (
+                  <Fragment key={r.species}>
+                    <tr
+                      onClick={() => setExpanded(isOpen ? null : r.species)}
+                      aria-expanded={isOpen}
+                      className={`border-t border-[var(--color-border)] cursor-pointer hover:bg-[var(--color-surface-hi)]/50 ${
+                        isOpen ? "bg-[var(--color-surface-hi)]/50" : ""
+                      }`}
+                    >
+                      <td className="px-2 sm:px-3 py-2 text-[var(--color-muted)] text-xs tabular-nums">
+                        <span className="inline-flex items-center gap-1">
+                          <span
+                            className={`inline-block text-[var(--color-muted)] transition-transform ${
+                              isOpen ? "rotate-90" : ""
+                            }`}
+                          >
+                            ›
+                          </span>
+                          {r.rank}
+                        </span>
+                      </td>
+                      <td className="px-2 sm:px-3 py-2">
+                        <div className="font-medium">{r.species}</div>
+                        <div className="flex gap-1 mt-1 md:hidden">
+                          {r.types.map((t) => <TypeBadge key={t} type={t} />)}
+                        </div>
+                        <div className="text-[11px] text-[var(--color-muted)] mt-0.5 lg:hidden">
+                          {r.ability ? `${r.ability} · ${r.item}` : ""}
+                        </div>
+                      </td>
+                      <td className="px-2 sm:px-3 py-2 hidden md:table-cell">
+                        <div className="flex gap-1">
+                          {r.types.map((t) => <TypeBadge key={t} type={t} />)}
+                        </div>
+                      </td>
+                      <td className="px-2 sm:px-3 py-2 text-right tabular-nums text-xs sm:text-sm">
+                        {(r.usage * 100).toFixed(0)}%
+                      </td>
+                      <td className="px-2 sm:px-3 py-2 text-xs text-[var(--color-muted)] hidden lg:table-cell">
+                        {r.ability ? `${r.ability} · ${r.item}` : "—"}
+                      </td>
+                      <td className="px-2 sm:px-3 py-2">
+                        {r.owned ? (
+                          <span className="text-[var(--color-accent)] text-xs">✓</span>
+                        ) : (
+                          <span className="text-[var(--color-muted)] text-xs">—</span>
+                        )}
+                      </td>
+                    </tr>
+                    {isOpen && (
+                      <tr className="border-t border-[var(--color-border)] bg-[var(--color-surface-hi)]/30">
+                        <td colSpan={6} className="px-3 sm:px-5 py-4">
+                          <SpeciesCatchInfo species={r.species} />
+                        </td>
+                      </tr>
                     )}
-                  </td>
-                </tr>
-              ))}
+                  </Fragment>
+                );
+              })}
               {rows.length === 0 && (
                 <tr>
                   <td colSpan={6} className="px-3 py-6 text-center text-[var(--color-muted)] text-sm">

@@ -9,10 +9,11 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "data:refresh": "tsx scripts/build-meta-json.ts && tsx scripts/enrich-pokedex.ts && tsx scripts/enrich-megas.ts",
+    "data:refresh": "tsx scripts/build-meta-json.ts && tsx scripts/enrich-pokedex.ts && tsx scripts/enrich-megas.ts && tsx scripts/enrich-locations.ts",
     "data:refresh:sample": "tsx scripts/build-meta-json.ts --top-20",
     "data:enrich-pokedex": "tsx scripts/enrich-pokedex.ts",
-    "data:enrich-megas": "tsx scripts/enrich-megas.ts"
+    "data:enrich-megas": "tsx scripts/enrich-megas.ts",
+    "data:enrich-locations": "tsx scripts/enrich-locations.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

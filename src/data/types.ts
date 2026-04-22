@@ -129,6 +129,27 @@ export interface MetaTeams {
   teams: MetaTeam[];
 }
 
+export interface LocationLink {
+  name: string;
+  path?: string;
+}
+
+export interface GameLocationGroup {
+  games: string[];
+  locations: LocationLink[];
+}
+
+export interface SpeciesLocations {
+  species: string;
+  groups: GameLocationGroup[];
+}
+
+export interface LocationsFile {
+  refreshedAt: string;
+  source: string;
+  species: Record<string, SpeciesLocations>;
+}
+
 export interface OwnedPokemon {
   id: string;
   species: string;

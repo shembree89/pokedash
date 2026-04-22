@@ -10,7 +10,10 @@ import {
 } from "./pikalytics.ts";
 
 const OUTPUT_DIR = "public/data";
-const TOP_N = 50;
+// Pikalytics' AI markdown index for Champions currently caps at 50 rows. We
+// over-request so that if they publish a longer list later we'll pick it up
+// without a code change. `parseIndexTable` just returns what's present.
+const TOP_N = 100;
 const REQUEST_DELAY_MS = 400;
 
 interface UsageEntry { rank: number; species: string; usage: number }

@@ -62,12 +62,14 @@ pokedash/
 │   ├── pikalytics.ts         # AI markdown fetch + parse
 │   ├── build-meta-json.ts    # orchestrator → public/data/*.json
 │   ├── enrich-pokedex.ts     # PokeAPI base-form enricher
-│   └── enrich-megas.ts       # PokeAPI mega enricher
+│   ├── enrich-megas.ts       # PokeAPI mega enricher
+│   └── enrich-locations.ts   # pokemondb.net → Gen 8+ catch locations
 ├── public/data/
 │   ├── pokedex-champions.json  # 55+ species, 24 megas
 │   ├── meta-usage.json         # top-50 by usage
 │   ├── meta-sets.json          # synthesized top sets + distributions
-│   └── meta-teams.json         # ~150 featured tournament teams
+│   ├── meta-teams.json         # ~150 featured tournament teams
+│   └── locations.json          # per-species Gen 8+ catch locations incl. pre-evos
 ├── src/
 │   ├── lib/
 │   │   ├── type-chart.ts     # 18×18 Gen 6+ chart
@@ -103,7 +105,9 @@ pokedash/
 
 ## Architecture
 
-**Data flow.** Weekly scraper reads Pikalytics markdown and PokeAPI, writes normalized JSON to `public/data/`. App loads those on startup via `useData()`. Any species not in the build-time pokedex triggers a runtime PokeAPI fetch through `useDex().ensure()`, cached in localStorage — so user collections aren't limited to the top-50.
+**Data flow.** Weekly scraper reads Pikalytics markdown, PokeAPI, and pokemondb.net; writes normalized JSON to `public/data/`. App loads those on startup via `useData()`. Any species not in the build-time pokedex triggers a runtime PokeAPI fetch through `useDex().ensure()`, cached in localStorage — so user collections aren't limited to the top-50.
+
+**Catch info.** `SpeciesCatchInfo` expands inline on the Top Pokemon table when a row is clicked. Evolution chain comes from PokeAPI at runtime (cached in localStorage via `useCatchInfo`); location data (Sword/Shield and newer only) comes from `public/data/locations.json` populated weekly by `enrich-locations.ts` scraping pokemondb.net. Locations cover the whole evolution chain so users can find pre-evolutions too.
 
 **Stats pipeline.** `resolveOwned(mon, dexEntry)` computes effective stats at level 50 using `calcAllStats(base, spSpread, nature)`. The same pipeline applies to meta opponents via `resolveMeta(entry, useMega)` which uses a default competitive spread — both sides symmetric so threat comparisons are apples-to-apples.
 
