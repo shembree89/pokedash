@@ -13,6 +13,7 @@ export interface PokemonTableRow {
   item: string;
   ability: string;
   owned: boolean;
+  teamOnly?: boolean;
 }
 
 interface Props {
@@ -117,7 +118,7 @@ export default function PokemonTable({
                         >
                           ›
                         </span>
-                        {r.rank}
+                        {r.teamOnly ? "—" : r.rank}
                       </span>
                     </td>
                     <td className="px-2 sm:px-3 py-2">
@@ -139,7 +140,17 @@ export default function PokemonTable({
                           {starred ? "★" : "☆"}
                         </button>
                         <div className="min-w-0">
-                          <div className="font-medium">{r.species}</div>
+                          <div className="flex items-center gap-1.5 flex-wrap">
+                            <div className="font-medium">{r.species}</div>
+                            {r.teamOnly && (
+                              <span
+                                className="px-1.5 py-0.5 text-[10px] uppercase tracking-wide rounded bg-[var(--color-surface-hi)] border border-[var(--color-border)] text-[var(--color-muted)]"
+                                title="Appears on featured teams but not in top-50 usage"
+                              >
+                                team-only
+                              </span>
+                            )}
+                          </div>
                           <div className="flex gap-1 mt-1 md:hidden">
                             {r.types.map((t) => <TypeBadge key={t} type={t} />)}
                           </div>
@@ -155,7 +166,11 @@ export default function PokemonTable({
                       </div>
                     </td>
                     <td className="px-2 sm:px-3 py-2 text-right tabular-nums text-xs sm:text-sm">
-                      {(r.usage * 100).toFixed(0)}%
+                      {r.teamOnly ? (
+                        <span className="text-[var(--color-muted)]">—</span>
+                      ) : (
+                        `${(r.usage * 100).toFixed(0)}%`
+                      )}
                     </td>
                     <td className="px-2 sm:px-3 py-2 text-xs text-[var(--color-muted)] hidden lg:table-cell">
                       {r.ability ? `${r.ability} · ${r.item}` : "—"}

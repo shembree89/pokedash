@@ -261,6 +261,157 @@
         }
       ]
     },
+    "Azumarill": {
+      "species": "Azumarill",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield",
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Marill/Azurill"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            }
+          ]
+        }
+      ]
+    },
+    "Azurill": {
+      "species": "Azurill",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Brawlers' Cave",
+              "path": "/location/galar-brawlers-cave"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Great Marsh",
+              "path": "/location/sinnoh-great-marsh"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/location/paldea-tagtree-thicket"
+            },
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "North Province (Area Two)",
+              "path": "/location/paldea-north-province-area-two"
+            },
+            {
+              "name": "North Province (Area Three)",
+              "path": "/location/paldea-north-province-area-three"
+            },
+            {
+              "name": "East Province (Area One)",
+              "path": "/location/paldea-east-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            },
+            {
+              "name": "South Paldean Sea",
+              "path": "/location/paldea-south-paldean-sea"
+            }
+          ]
+        }
+      ]
+    },
     "Basculegion": {
       "species": "Basculegion",
       "groups": [
@@ -452,6 +603,51 @@
         }
       ]
     },
+    "Bellsprout": {
+      "species": "Bellsprout",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route 229",
+              "path": "/location/sinnoh-route-229"
+            },
+            {
+              "name": "230",
+              "path": "/location/sinnoh-route-230"
+            },
+            {
+              "name": "Grassland Cave",
+              "path": "/location/sinnoh-grassland-cave"
+            },
+            {
+              "name": "Swampy Cave",
+              "path": "/location/sinnoh-swampy-cave"
+            },
+            {
+              "name": "Riverbank Cave",
+              "path": "/location/sinnoh-riverbank-cave"
+            },
+            {
+              "name": "Still-Water Cavern",
+              "path": "/location/sinnoh-still-water-cavern"
+            },
+            {
+              "name": "Sunlit Cavern",
+              "path": "/location/sinnoh-sunlit-cavern"
+            },
+            {
+              "name": "Bogsunk Cavern",
+              "path": "/location/sinnoh-bogsunk-cavern"
+            }
+          ]
+        }
+      ]
+    },
     "Bisharp": {
       "species": "Bisharp",
       "groups": [
@@ -480,6 +676,33 @@
             {
               "name": "The Great Crater of Paldea",
               "path": "/location/paldea-the-great-crater-of-paldea"
+            }
+          ]
+        }
+      ]
+    },
+    "Blastoise": {
+      "species": "Blastoise",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Trade/migrate from another game"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Squirtle/Wartortle"
             }
           ]
         }
@@ -544,6 +767,120 @@
             {
               "name": "Bogsunk Cavern",
               "path": "/location/sinnoh-bogsunk-cavern"
+            }
+          ]
+        }
+      ]
+    },
+    "Capsakid": {
+      "species": "Capsakid",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            }
+          ]
+        }
+      ]
+    },
+    "Charcadet": {
+      "species": "Charcadet",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/location/paldea-tagtree-thicket"
+            },
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "North Province (Area Two)",
+              "path": "/location/paldea-north-province-area-two"
+            },
+            {
+              "name": "North Province (Area Three)",
+              "path": "/location/paldea-north-province-area-three"
+            },
+            {
+              "name": "East Province (Area One)",
+              "path": "/location/paldea-east-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Three)",
+              "path": "/location/paldea-south-province-area-three"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            },
+            {
+              "name": "The Pokémon League",
+              "path": "/location/paldea-the-pokemon-league"
             }
           ]
         }
@@ -1508,6 +1845,67 @@
             {
               "name": "West Province (Area Three)",
               "path": "/location/paldea-west-province-area-three"
+            }
+          ]
+        }
+      ]
+    },
+    "Electrike": {
+      "species": "Electrike",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Route 4",
+              "path": "/location/galar-route-4"
+            },
+            {
+              "name": "Rolling Fields",
+              "path": "/location/galar-rolling-fields"
+            },
+            {
+              "name": "South Lake Miloch",
+              "path": "/location/galar-south-lake-miloch"
+            },
+            {
+              "name": "East Lake Axewell",
+              "path": "/location/galar-east-lake-axewell"
+            },
+            {
+              "name": "Dappled Grove",
+              "path": "/location/galar-dappled-grove"
+            },
+            {
+              "name": "Dusty Bowl",
+              "path": "/location/galar-dusty-bowl"
+            },
+            {
+              "name": "West Lake Axewell",
+              "path": "/location/galar-west-lake-axewell"
+            },
+            {
+              "name": "Giant's Seat",
+              "path": "/location/galar-giants-seat"
+            },
+            {
+              "name": "Watchtower Ruins",
+              "path": "/location/galar-watchtower-ruins"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Valley Windworks",
+              "path": "/location/sinnoh-valley-windworks"
             }
           ]
         }
@@ -3675,6 +4073,233 @@
         }
       ]
     },
+    "Hatenna": {
+      "species": "Hatenna",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Hammerlocke Hills",
+              "path": "/location/galar-hammerlocke-hills"
+            },
+            {
+              "name": "Motostoke Outskirts",
+              "path": "/location/galar-motostoke-outskirts"
+            },
+            {
+              "name": "Stony Wilderness",
+              "path": "/location/galar-stony-wilderness"
+            },
+            {
+              "name": "Slippery Slope",
+              "path": "/location/galar-slippery-slope"
+            },
+            {
+              "name": "Frostpoint Field",
+              "path": "/location/galar-frostpoint-field"
+            },
+            {
+              "name": "Giant's Bed",
+              "path": "/location/galar-giants-bed"
+            },
+            {
+              "name": "Old Cemetery",
+              "path": "/location/galar-old-cemetery"
+            },
+            {
+              "name": "Giant's Foot",
+              "path": "/location/galar-giants-foot"
+            },
+            {
+              "name": "Frigid Sea",
+              "path": "/location/galar-frigid-sea"
+            },
+            {
+              "name": "Three-Point Pass",
+              "path": "/location/galar-three-point-pass"
+            },
+            {
+              "name": "Ballimere Lake",
+              "path": "/location/galar-ballimere-lake"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/location/paldea-tagtree-thicket"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "North Province (Area Two)",
+              "path": "/location/paldea-north-province-area-two"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            }
+          ]
+        }
+      ]
+    },
+    "Hatterene": {
+      "species": "Hatterene",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Lake of Outrage",
+              "path": "/location/galar-lake-of-outrage"
+            }
+          ]
+        }
+      ]
+    },
+    "Hattrem": {
+      "species": "Hattrem",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Glimwood Tangle",
+              "path": "/location/galar-glimwood-tangle"
+            },
+            {
+              "name": "Dusty Bowl",
+              "path": "/location/galar-dusty-bowl"
+            },
+            {
+              "name": "Frostpoint Field",
+              "path": "/location/galar-frostpoint-field"
+            },
+            {
+              "name": "Giant's Bed",
+              "path": "/location/galar-giants-bed"
+            },
+            {
+              "name": "Old Cemetery",
+              "path": "/location/galar-old-cemetery"
+            },
+            {
+              "name": "Giant's Foot",
+              "path": "/location/galar-giants-foot"
+            },
+            {
+              "name": "Frigid Sea",
+              "path": "/location/galar-frigid-sea"
+            },
+            {
+              "name": "Three-Point Pass",
+              "path": "/location/galar-three-point-pass"
+            },
+            {
+              "name": "Ballimere Lake",
+              "path": "/location/galar-ballimere-lake"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/location/paldea-tagtree-thicket"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "North Province (Area Two)",
+              "path": "/location/paldea-north-province-area-two"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            }
+          ]
+        }
+      ]
+    },
     "Haunter": {
       "species": "Haunter",
       "groups": [
@@ -4110,6 +4735,75 @@
           "locations": [
             {
               "name": "Evolve Scyther"
+            }
+          ]
+        }
+      ]
+    },
+    "Klefki": {
+      "species": "Klefki",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Fields of Honor",
+              "path": "/location/galar-fields-of-honor"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "East Province (Area One)",
+              "path": "/location/paldea-east-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Three)",
+              "path": "/location/paldea-south-province-area-three"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            },
+            {
+              "name": "The Pokémon League",
+              "path": "/location/paldea-the-pokemon-league"
             }
           ]
         }
@@ -4922,6 +5616,173 @@
         }
       ]
     },
+    "Mamoswine": {
+      "species": "Mamoswine",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield",
+            "Brilliant Diamond",
+            "Shining Pearl",
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Swinub/Piloswine"
+            }
+          ]
+        }
+      ]
+    },
+    "Manectric": {
+      "species": "Manectric",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Axew's Eye",
+              "path": "/location/galar-axews-eye"
+            },
+            {
+              "name": "Giant's Cap",
+              "path": "/location/galar-giants-cap"
+            },
+            {
+              "name": "Giant's Seat",
+              "path": "/location/galar-giants-seat"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Electrike"
+            }
+          ]
+        }
+      ]
+    },
+    "Marill": {
+      "species": "Marill",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Azurill"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Great Marsh",
+              "path": "/location/sinnoh-great-marsh"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/location/paldea-tagtree-thicket"
+            },
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "North Province (Area Two)",
+              "path": "/location/paldea-north-province-area-two"
+            },
+            {
+              "name": "North Province (Area Three)",
+              "path": "/location/paldea-north-province-area-three"
+            },
+            {
+              "name": "East Province (Area One)",
+              "path": "/location/paldea-east-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            },
+            {
+              "name": "South Paldean Sea",
+              "path": "/location/paldea-south-paldean-sea"
+            }
+          ]
+        }
+      ]
+    },
     "Meganium": {
       "species": "Meganium",
       "groups": [
@@ -5017,6 +5878,31 @@
             {
               "name": "Firespit Island",
               "path": "/location/hisui-firespit-island"
+            }
+          ]
+        }
+      ]
+    },
+    "Orthworm": {
+      "species": "Orthworm",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "East Province (Area Three)",
+              "path": "/location/paldea-east-province-area-three"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
             }
           ]
         }
@@ -5304,6 +6190,65 @@
         }
       ]
     },
+    "Piloswine": {
+      "species": "Piloswine",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Dusty Bowl",
+              "path": "/location/galar-dusty-bowl"
+            },
+            {
+              "name": "Lake of Outrage",
+              "path": "/location/galar-lake-of-outrage"
+            },
+            {
+              "name": "Slippery Slope",
+              "path": "/location/galar-slippery-slope"
+            },
+            {
+              "name": "Roaring-Sea Caves",
+              "path": "/location/galar-roaring-sea-caves"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Swinub"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Avalanche Slopes",
+              "path": "/location/hisui-avalanche-slopes"
+            },
+            {
+              "name": "Avalugg's Legacy",
+              "path": "/location/hisui-avaluggs-legacy"
+            },
+            {
+              "name": "Bonechill Wastes",
+              "path": "/location/hisui-bonechill-wastes"
+            }
+          ]
+        }
+      ]
+    },
     "Politoed": {
       "species": "Politoed",
       "groups": [
@@ -5542,6 +6487,23 @@
             {
               "name": "South Province (Area Six)",
               "path": "/location/paldea-south-province-area-six"
+            }
+          ]
+        }
+      ]
+    },
+    "Quaxly": {
+      "species": "Quaxly",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Cabo Poco",
+              "path": "/location/paldea-cabo-poco"
             }
           ]
         }
@@ -6034,6 +6996,59 @@
         }
       ]
     },
+    "Scovillain": {
+      "species": "Scovillain",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "East Province (Area One)",
+              "path": "/location/paldea-east-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            }
+          ]
+        }
+      ]
+    },
     "Scyther": {
       "species": "Scyther",
       "groups": [
@@ -6126,6 +7141,221 @@
             {
               "name": "West Province (Area Three)",
               "path": "/location/paldea-west-province-area-three"
+            }
+          ]
+        }
+      ]
+    },
+    "Skarmory": {
+      "species": "Skarmory",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Challenge Road",
+              "path": "/location/galar-challenge-road"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route 227",
+              "path": "/location/sinnoh-route-227"
+            },
+            {
+              "name": "Stark Mountain",
+              "path": "/location/sinnoh-stark-mountain"
+            }
+          ]
+        }
+      ]
+    },
+    "Slowbro": {
+      "species": "Slowbro",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Slowpoke/Galarian Slowpoke"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond"
+          ],
+          "locations": [
+            {
+              "name": "Trade/migrate from another game"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Slowpoke/Galarian Slowpoke"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            }
+          ]
+        }
+      ]
+    },
+    "Slowking": {
+      "species": "Slowking",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Slowpoke/Galarian Slowpoke"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond"
+          ],
+          "locations": [
+            {
+              "name": "Trade/migrate from another game"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Slowpoke/Galarian Slowpoke"
+            }
+          ]
+        }
+      ]
+    },
+    "Slowpoke": {
+      "species": "Slowpoke",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Fields of Honor",
+              "path": "/location/galar-fields-of-honor"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond"
+          ],
+          "locations": [
+            {
+              "name": "Trade/migrate from another game"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route 205",
+              "path": "/location/sinnoh-route-205"
+            },
+            {
+              "name": "Spacious Cave",
+              "path": "/location/sinnoh-spacious-cave"
+            },
+            {
+              "name": "Grassland Cave",
+              "path": "/location/sinnoh-grassland-cave"
+            },
+            {
+              "name": "Fountainspring Cave",
+              "path": "/location/sinnoh-fountainspring-cave"
+            },
+            {
+              "name": "Dazzling Cave",
+              "path": "/location/sinnoh-dazzling-cave"
+            },
+            {
+              "name": "Riverbank Cave",
+              "path": "/location/sinnoh-riverbank-cave"
+            },
+            {
+              "name": "Still-Water Cavern",
+              "path": "/location/sinnoh-still-water-cavern"
+            },
+            {
+              "name": "Sunlit Cavern",
+              "path": "/location/sinnoh-sunlit-cavern"
+            },
+            {
+              "name": "Stargleam Cavern",
+              "path": "/location/sinnoh-stargleam-cavern"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "East Province (Area One)",
+              "path": "/location/paldea-east-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "West Province (Area Two)",
+              "path": "/location/paldea-west-province-area-two"
             }
           ]
         }
@@ -6422,6 +7652,59 @@
         }
       ]
     },
+    "Sprigatito": {
+      "species": "Sprigatito",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Cabo Poco",
+              "path": "/location/paldea-cabo-poco"
+            }
+          ]
+        }
+      ]
+    },
+    "Squirtle": {
+      "species": "Squirtle",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Trade/migrate from another game"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Fountainspring Cave",
+              "path": "/location/sinnoh-fountainspring-cave"
+            },
+            {
+              "name": "Riverbank Cave",
+              "path": "/location/sinnoh-riverbank-cave"
+            },
+            {
+              "name": "Still-Water Cavern",
+              "path": "/location/sinnoh-still-water-cavern"
+            }
+          ]
+        }
+      ]
+    },
     "Starmie": {
       "species": "Starmie",
       "groups": [
@@ -6492,6 +7775,120 @@
             {
               "name": "Glacial Cavern",
               "path": "/location/sinnoh-glacial-cavern"
+            }
+          ]
+        }
+      ]
+    },
+    "Swinub": {
+      "species": "Swinub",
+      "groups": [
+        {
+          "games": [
+            "Sword"
+          ],
+          "locations": [
+            {
+              "name": "Rolling Fields",
+              "path": "/location/galar-rolling-fields"
+            },
+            {
+              "name": "Giant's Mirror",
+              "path": "/location/galar-giants-mirror"
+            },
+            {
+              "name": "Giant's Seat",
+              "path": "/location/galar-giants-seat"
+            },
+            {
+              "name": "Hammerlocke Hills",
+              "path": "/location/galar-hammerlocke-hills"
+            },
+            {
+              "name": "Slippery Slope",
+              "path": "/location/galar-slippery-slope"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Rolling Fields",
+              "path": "/location/galar-rolling-fields"
+            },
+            {
+              "name": "Dusty Bowl",
+              "path": "/location/galar-dusty-bowl"
+            },
+            {
+              "name": "Giant's Mirror",
+              "path": "/location/galar-giants-mirror"
+            },
+            {
+              "name": "Giant's Seat",
+              "path": "/location/galar-giants-seat"
+            },
+            {
+              "name": "Hammerlocke Hills",
+              "path": "/location/galar-hammerlocke-hills"
+            },
+            {
+              "name": "Slippery Slope",
+              "path": "/location/galar-slippery-slope"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route 217",
+              "path": "/location/sinnoh-route-217"
+            },
+            {
+              "name": "Swampy Cave",
+              "path": "/location/sinnoh-swampy-cave"
+            },
+            {
+              "name": "Whiteout Cave",
+              "path": "/location/sinnoh-whiteout-cave"
+            },
+            {
+              "name": "Icy Cave",
+              "path": "/location/sinnoh-icy-cave"
+            },
+            {
+              "name": "Glacial Cavern",
+              "path": "/location/sinnoh-glacial-cavern"
+            },
+            {
+              "name": "Bogsunk Cavern",
+              "path": "/location/sinnoh-bogsunk-cavern"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Avalanche Slopes",
+              "path": "/location/hisui-avalanche-slopes"
+            },
+            {
+              "name": "Avalugg's Legacy",
+              "path": "/location/hisui-avaluggs-legacy"
+            },
+            {
+              "name": "Bonechill Wastes",
+              "path": "/location/hisui-bonechill-wastes"
             }
           ]
         }
@@ -6636,6 +8033,136 @@
           "locations": [
             {
               "name": "Trade/migrate from another game"
+            }
+          ]
+        }
+      ]
+    },
+    "Tinkatink": {
+      "species": "Tinkatink",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Three)",
+              "path": "/location/paldea-south-province-area-three"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
+            }
+          ]
+        }
+      ]
+    },
+    "Tinkatuff": {
+      "species": "Tinkatuff",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Asado Desert",
+              "path": "/location/paldea-asado-desert"
+            },
+            {
+              "name": "Casseroya Lake",
+              "path": "/location/paldea-casseroya-lake"
+            },
+            {
+              "name": "North Province (Area One)",
+              "path": "/location/paldea-north-province-area-one"
+            },
+            {
+              "name": "East Province (Area Two)",
+              "path": "/location/paldea-east-province-area-two"
+            },
+            {
+              "name": "South Province (Area One)",
+              "path": "/location/paldea-south-province-area-one"
+            },
+            {
+              "name": "South Province (Area Two)",
+              "path": "/location/paldea-south-province-area-two"
+            },
+            {
+              "name": "South Province (Area Three)",
+              "path": "/location/paldea-south-province-area-three"
+            },
+            {
+              "name": "South Province (Area Four)",
+              "path": "/location/paldea-south-province-area-four"
+            },
+            {
+              "name": "South Province (Area Five)",
+              "path": "/location/paldea-south-province-area-five"
+            },
+            {
+              "name": "South Province (Area Six)",
+              "path": "/location/paldea-south-province-area-six"
+            },
+            {
+              "name": "West Province (Area One)",
+              "path": "/location/paldea-west-province-area-one"
+            },
+            {
+              "name": "West Province (Area Three)",
+              "path": "/location/paldea-west-province-area-three"
+            },
+            {
+              "name": "Glaseado Mountain",
+              "path": "/location/paldea-glaseado-mountain"
             }
           ]
         }
@@ -6887,6 +8414,185 @@
         }
       ]
     },
+    "Vanillish": {
+      "species": "Vanillish",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Route 8",
+              "path": "/location/galar-route-8"
+            },
+            {
+              "name": "10",
+              "path": "/location/galar-route-10"
+            },
+            {
+              "name": "Axew's Eye",
+              "path": "/location/galar-axews-eye"
+            },
+            {
+              "name": "Dusty Bowl",
+              "path": "/location/galar-dusty-bowl"
+            },
+            {
+              "name": "Frostpoint Field",
+              "path": "/location/galar-frostpoint-field"
+            },
+            {
+              "name": "Giant's Bed",
+              "path": "/location/galar-giants-bed"
+            },
+            {
+              "name": "Old Cemetery",
+              "path": "/location/galar-old-cemetery"
+            },
+            {
+              "name": "Snowslide Slope",
+              "path": "/location/galar-snowslide-slope"
+            },
+            {
+              "name": "Giant's Foot",
+              "path": "/location/galar-giants-foot"
+            },
+            {
+              "name": "Roaring-Sea Caves",
+              "path": "/location/galar-roaring-sea-caves"
+            },
+            {
+              "name": "Frigid Sea",
+              "path": "/location/galar-frigid-sea"
+            },
+            {
+              "name": "Three-Point Pass",
+              "path": "/location/galar-three-point-pass"
+            },
+            {
+              "name": "Ballimere Lake",
+              "path": "/location/galar-ballimere-lake"
+            }
+          ]
+        }
+      ]
+    },
+    "Vanillite": {
+      "species": "Vanillite",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Rolling Fields",
+              "path": "/location/galar-rolling-fields"
+            },
+            {
+              "name": "South Lake Miloch",
+              "path": "/location/galar-south-lake-miloch"
+            },
+            {
+              "name": "East Lake Axewell",
+              "path": "/location/galar-east-lake-axewell"
+            },
+            {
+              "name": "Bridge Field",
+              "path": "/location/galar-bridge-field"
+            },
+            {
+              "name": "Dappled Grove",
+              "path": "/location/galar-dappled-grove"
+            },
+            {
+              "name": "West Lake Axewell",
+              "path": "/location/galar-west-lake-axewell"
+            },
+            {
+              "name": "Giant's Cap",
+              "path": "/location/galar-giants-cap"
+            },
+            {
+              "name": "Giant's Mirror",
+              "path": "/location/galar-giants-mirror"
+            },
+            {
+              "name": "Hammerlocke Hills",
+              "path": "/location/galar-hammerlocke-hills"
+            },
+            {
+              "name": "Lake of Outrage",
+              "path": "/location/galar-lake-of-outrage"
+            },
+            {
+              "name": "Motostoke Riverbank",
+              "path": "/location/galar-motostoke-riverbank"
+            },
+            {
+              "name": "North Lake Miloch",
+              "path": "/location/galar-north-lake-miloch"
+            },
+            {
+              "name": "Frostpoint Field",
+              "path": "/location/galar-frostpoint-field"
+            },
+            {
+              "name": "Giant's Bed",
+              "path": "/location/galar-giants-bed"
+            },
+            {
+              "name": "Old Cemetery",
+              "path": "/location/galar-old-cemetery"
+            },
+            {
+              "name": "Snowslide Slope",
+              "path": "/location/galar-snowslide-slope"
+            },
+            {
+              "name": "Giant's Foot",
+              "path": "/location/galar-giants-foot"
+            },
+            {
+              "name": "Frigid Sea",
+              "path": "/location/galar-frigid-sea"
+            },
+            {
+              "name": "Three-Point Pass",
+              "path": "/location/galar-three-point-pass"
+            },
+            {
+              "name": "Ballimere Lake",
+              "path": "/location/galar-ballimere-lake"
+            }
+          ]
+        }
+      ]
+    },
+    "Vanilluxe": {
+      "species": "Vanilluxe",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Route 10",
+              "path": "/location/galar-route-10"
+            },
+            {
+              "name": "Lake of Outrage",
+              "path": "/location/galar-lake-of-outrage"
+            }
+          ]
+        }
+      ]
+    },
     "Vaporeon": {
       "species": "Vaporeon",
       "groups": [
@@ -7036,6 +8742,22 @@
         }
       ]
     },
+    "Victreebel": {
+      "species": "Victreebel",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Bellsprout/Weepinbell"
+            }
+          ]
+        }
+      ]
+    },
     "Volcarona": {
       "species": "Volcarona",
       "groups": [
@@ -7175,6 +8897,33 @@
         }
       ]
     },
+    "Wartortle": {
+      "species": "Wartortle",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Trade/migrate from another game"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Evolve Squirtle"
+            }
+          ]
+        }
+      ]
+    },
     "Weavile": {
       "species": "Weavile",
       "groups": [
@@ -7215,6 +8964,55 @@
             {
               "name": "The Great Crater of Paldea",
               "path": "/location/paldea-the-great-crater-of-paldea"
+            }
+          ]
+        }
+      ]
+    },
+    "Weepinbell": {
+      "species": "Weepinbell",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route 224",
+              "path": "/location/sinnoh-route-224"
+            },
+            {
+              "name": "229",
+              "path": "/location/sinnoh-route-229"
+            },
+            {
+              "name": "230",
+              "path": "/location/sinnoh-route-230"
+            },
+            {
+              "name": "Grassland Cave",
+              "path": "/location/sinnoh-grassland-cave"
+            },
+            {
+              "name": "Swampy Cave",
+              "path": "/location/sinnoh-swampy-cave"
+            },
+            {
+              "name": "Riverbank Cave",
+              "path": "/location/sinnoh-riverbank-cave"
+            },
+            {
+              "name": "Still-Water Cavern",
+              "path": "/location/sinnoh-still-water-cavern"
+            },
+            {
+              "name": "Sunlit Cavern",
+              "path": "/location/sinnoh-sunlit-cavern"
+            },
+            {
+              "name": "Bogsunk Cavern",
+              "path": "/location/sinnoh-bogsunk-cavern"
             }
           ]
         }

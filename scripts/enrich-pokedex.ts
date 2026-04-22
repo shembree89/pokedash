@@ -61,6 +61,9 @@ async function main() {
   const usage = JSON.parse(
     await readFile("public/data/meta-usage.json", "utf8"),
   ) as { pokemon: { species: string }[] };
+  const teams = JSON.parse(
+    await readFile("public/data/meta-teams.json", "utf8"),
+  ) as { teams: { pokemon: { species: string }[] }[] };
   const dex = JSON.parse(
     await readFile("public/data/pokedex-champions.json", "utf8"),
   ) as {
@@ -69,9 +72,25 @@ async function main() {
     pokemon: Record<string, Record<string, unknown>>;
   };
 
-  const needed = usage.pokemon
-    .map((p) => p.species)
-    .filter((s) => !dex.pokemon[s]);
+  // Canonicalize species names case-insensitively so variant spellings
+  // like "Kommo-o" vs "Kommo-O" don't both end up in the pokedex.
+  const canonKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "");
+
+  const seen = new Map<string, string>();
+  for (const s of usage.pokemon.map((p) => p.species)) {
+    seen.set(canonKey(s), s);
+  }
+  for (const s of Object.keys(dex.pokemon)) {
+    if (!seen.has(canonKey(s))) seen.set(canonKey(s), s);
+  }
+  for (const t of teams.teams) {
+    for (const m of t.pokemon) {
+      if (!seen.has(canonKey(m.species))) seen.set(canonKey(m.species), m.species);
+    }
+  }
+
+  const needed = [...seen.values()]
+    .filter((s) => !dex.pokemon[s] && !Object.keys(dex.pokemon).some((k) => canonKey(k) === canonKey(s)));
 
   if (needed.length === 0) {
     console.log("[enrich] nothing missing");

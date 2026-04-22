@@ -22,9 +22,31 @@ export default function TopPokemon() {
     [owned],
   );
 
+  const teamOnlySpecies = useMemo(() => {
+    if (status.state !== "ready") return [] as string[];
+    const usageKeys = new Set(
+      status.data.usage.pokemon.map((u) => speciesKey(u.species)),
+    );
+    const canonical = new Map<string, string>();
+    for (const team of status.data.teams.teams) {
+      for (const m of team.pokemon) {
+        const key = speciesKey(m.species);
+        if (usageKeys.has(key)) continue;
+        if (!canonical.has(key)) canonical.set(key, m.species);
+      }
+    }
+    return [...canonical.values()].sort();
+  }, [status]);
+
   const speciesList = useMemo(
-    () => (status.state === "ready" ? status.data.usage.pokemon.map((u) => u.species) : []),
-    [status],
+    () =>
+      status.state === "ready"
+        ? [
+            ...status.data.usage.pokemon.map((u) => u.species),
+            ...teamOnlySpecies,
+          ]
+        : [],
+    [status, teamOnlySpecies],
   );
 
   useEffect(() => {
@@ -36,20 +58,35 @@ export default function TopPokemon() {
 
   const { usage, sets } = status.data;
 
-  const rows: PokemonTableRow[] = usage.pokemon
-    .map((u) => {
-      const entry = lookup(u.species);
-      const set = sets.sets[u.species]?.[0];
-      return {
-        rank: u.rank,
-        species: u.species,
-        usage: u.usage,
-        types: entry?.types ?? [],
-        item: set?.item ?? "",
-        ability: set?.ability ?? "",
-        owned: ownedKeys.has(speciesKey(u.species)),
-      };
-    })
+  const usageRows: PokemonTableRow[] = usage.pokemon.map((u) => {
+    const entry = lookup(u.species);
+    const set = sets.sets[u.species]?.[0];
+    return {
+      rank: u.rank,
+      species: u.species,
+      usage: u.usage,
+      types: entry?.types ?? [],
+      item: set?.item ?? "",
+      ability: set?.ability ?? "",
+      owned: ownedKeys.has(speciesKey(u.species)),
+    };
+  });
+
+  const teamOnlyRows: PokemonTableRow[] = teamOnlySpecies.map((species) => {
+    const entry = lookup(species);
+    return {
+      rank: Number.MAX_SAFE_INTEGER,
+      species,
+      usage: 0,
+      types: entry?.types ?? [],
+      item: "",
+      ability: "",
+      owned: ownedKeys.has(speciesKey(species)),
+      teamOnly: true,
+    };
+  });
+
+  const rows: PokemonTableRow[] = [...usageRows, ...teamOnlyRows]
     .filter((r) => {
       if (ownFilter === "owned" && !r.owned) return false;
       if (ownFilter === "unowned" && r.owned) return false;
