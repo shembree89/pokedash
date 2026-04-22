@@ -5,6 +5,7 @@ import { useOwned } from "../store/collection";
 import { speciesKey } from "../lib/species";
 import { Card, CardBody, CardHeader } from "../components/Card";
 import TypeBadge from "../components/TypeBadge";
+import TeamMemberDetail from "../components/TeamMemberDetail";
 
 type BuildFilter = "all" | "full" | "close";
 
@@ -13,6 +14,7 @@ export default function TopTeams() {
   const owned = useOwned();
   const { lookup, ensureMany } = useDex();
   const [filter, setFilter] = useState<BuildFilter>("all");
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const ownedKeys = useMemo(
     () => new Set(owned.map((o) => speciesKey(o.species))),
@@ -73,12 +75,30 @@ export default function TopTeams() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {scored.map(({ team, ownedCount, missing }) => {
           const pct = team.pokemon.length === 0 ? 0 : ownedCount / team.pokemon.length;
+          const isOpen = expandedId === team.id;
           return (
-            <Card key={team.id}>
+            <Card
+              key={team.id}
+              className={isOpen ? "md:col-span-2" : undefined}
+            >
               <CardHeader>
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <div className="text-sm font-semibold">{team.name ?? team.id}</div>
+                <button
+                  type="button"
+                  onClick={() => setExpandedId(isOpen ? null : team.id)}
+                  aria-expanded={isOpen}
+                  className="w-full text-left flex items-start justify-between gap-3"
+                >
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-semibold flex items-center gap-2">
+                      <span
+                        className={`inline-block text-[var(--color-muted)] transition-transform ${
+                          isOpen ? "rotate-90" : ""
+                        }`}
+                      >
+                        ›
+                      </span>
+                      {team.name ?? team.id}
+                    </div>
                     <div className="text-xs text-[var(--color-muted)]">
                       {[team.placement, team.tournament, team.player, team.date]
                         .filter(Boolean)
@@ -93,7 +113,7 @@ export default function TopTeams() {
                       buildable
                     </div>
                   </div>
-                </div>
+                </button>
                 <div className="mt-2 h-1.5 bg-[var(--color-surface-hi)] rounded-full overflow-hidden">
                   <div
                     className="h-full bg-[var(--color-accent)] transition-all"
@@ -101,40 +121,53 @@ export default function TopTeams() {
                   />
                 </div>
               </CardHeader>
-              <CardBody className="flex flex-col gap-1.5">
-                {team.pokemon.map((p, i) => {
-                  const entry = lookup(p.species);
-                  const ownedThis = ownedKeys.has(speciesKey(p.species));
-                  return (
-                    <div
-                      key={i}
-                      className={`flex flex-wrap items-center gap-x-2 gap-y-1 text-sm ${
-                        ownedThis ? "" : "opacity-60"
-                      }`}
-                    >
-                      <span className="w-4 text-center">
-                        {ownedThis ? (
-                          <span className="text-[var(--color-accent)]">✓</span>
-                        ) : (
-                          <span className="text-[var(--color-muted)]">·</span>
-                        )}
-                      </span>
-                      <span className="font-medium">{p.species}</span>
-                      <div className="flex gap-1">
-                        {entry?.types.map((t) => <TypeBadge key={t} type={t} />)}
+              {!isOpen ? (
+                <CardBody className="flex flex-col gap-1.5">
+                  {team.pokemon.map((p, i) => {
+                    const entry = lookup(p.species);
+                    const ownedThis = ownedKeys.has(speciesKey(p.species));
+                    return (
+                      <div
+                        key={i}
+                        className={`flex flex-wrap items-center gap-x-2 gap-y-1 text-sm ${
+                          ownedThis ? "" : "opacity-60"
+                        }`}
+                      >
+                        <span className="w-4 text-center">
+                          {ownedThis ? (
+                            <span className="text-[var(--color-accent)]">✓</span>
+                          ) : (
+                            <span className="text-[var(--color-muted)]">·</span>
+                          )}
+                        </span>
+                        <span className="font-medium">{p.species}</span>
+                        <div className="flex gap-1">
+                          {entry?.types.map((t) => <TypeBadge key={t} type={t} />)}
+                        </div>
+                        <span className="text-xs text-[var(--color-muted)] ml-auto basis-full sm:basis-auto">
+                          {[p.item, p.mega ? "(mega)" : ""].filter(Boolean).join(" ")}
+                        </span>
                       </div>
-                      <span className="text-xs text-[var(--color-muted)] ml-auto basis-full sm:basis-auto">
-                        {[p.item, p.mega ? "(mega)" : ""].filter(Boolean).join(" ")}
-                      </span>
+                    );
+                  })}
+                  {missing.length > 0 && (
+                    <div className="mt-2 pt-2 border-t border-[var(--color-border)] text-xs text-[var(--color-muted)]">
+                      Missing: {missing.map((m) => m.species).join(", ")}
                     </div>
-                  );
-                })}
-                {missing.length > 0 && (
-                  <div className="mt-2 pt-2 border-t border-[var(--color-border)] text-xs text-[var(--color-muted)]">
-                    Missing: {missing.map((m) => m.species).join(", ")}
-                  </div>
-                )}
-              </CardBody>
+                  )}
+                </CardBody>
+              ) : (
+                <CardBody className="flex flex-col">
+                  {team.pokemon.map((p, i) => (
+                    <TeamMemberDetail key={i} member={p} />
+                  ))}
+                  {missing.length > 0 && (
+                    <div className="mt-3 pt-3 border-t border-[var(--color-border)] text-xs text-[var(--color-muted)]">
+                      Missing from your collection: {missing.map((m) => m.species).join(", ")}
+                    </div>
+                  )}
+                </CardBody>
+              )}
             </Card>
           );
         })}
