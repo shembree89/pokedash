@@ -1,8 +1,9 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { EvoNode } from "../lib/pokeapi-catch";
 import type { SpeciesLocations } from "../data/types";
 import { useCatchInfo } from "../data/useCatchInfo";
 import { useData } from "../data/useData";
+import AddPokemonWizard from "./AddPokemonWizard";
 
 function EvoBranch({ node, depth }: { node: EvoNode; depth: number }) {
   return (
@@ -79,6 +80,7 @@ function LocationsForSpecies({
 export default function SpeciesCatchInfo({ species }: { species: string }) {
   const catchStatus = useCatchInfo(species);
   const dataStatus = useData();
+  const [wizardOpen, setWizardOpen] = useState(false);
 
   const chainSpecies = useMemo(() => {
     if (catchStatus.state !== "ready") return [species];
@@ -111,6 +113,26 @@ export default function SpeciesCatchInfo({ species }: { species: string }) {
 
   return (
     <div className="flex flex-col gap-4">
+      <div>
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            setWizardOpen(true);
+          }}
+          className="px-3 min-h-9 rounded text-xs bg-[var(--color-accent)] text-[var(--color-accent-ink)] font-medium hover:opacity-90"
+        >
+          + Add {species} to collection
+        </button>
+      </div>
+
+      {wizardOpen && (
+        <AddPokemonWizard
+          initialSpecies={species}
+          onClose={() => setWizardOpen(false)}
+        />
+      )}
+
       <div className="flex flex-col gap-1.5">
         <div className="text-[11px] uppercase tracking-wide text-[var(--color-muted)]">
           Evolution
