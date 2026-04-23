@@ -1,4 +1,7 @@
+<!-- project-template: 48 -->
 # CLAUDE.md
+
+## About
 
 Personal dashboard for **VGC Pokemon Champions · Regulation M-A**. Static
 site hosted on GitHub Pages, data refreshed weekly from Pikalytics and
@@ -23,7 +26,19 @@ React 19 · TypeScript 5 · Vite 7 · Tailwind CSS 4 · React Router 7 (HashRout
 | Lead analysis | Open | Which 2 of the 4 to send out first. Relevant to match assistant |
 | Scraper: capture all 6 team sets | Open | Pikalytics per-mon pages only record the featured mon's set, so other 5 team slots often show "no set data" in the team detail view. Would need team-specific page scraping |
 | Niche DLC catch locations | Open | pokemondb.net doesn't enumerate gift/event-only mons (e.g. Litten via Isle of Armor Master Dojo). Deferred: manual `locations-overrides.json` to layer on top of the scrape |
-| Location parser: bare route numbers | Open | pokemondb renders "Routes 1, 2, 3" as separate `<a>` tags where only the first has "Route" prefix. Parser captures "Route 1", then "2", "3" as plain names |
+| Location parser: bare route numbers | Done | Fixed in `enrich-locations.ts` — `cleanLocationName()` derives names from the href slug when anchor text is digits-only. Healed 78 bad entries in existing `locations.json` |
+| Legends: Z-A location coverage | Open | pokemondb.net shows "Location data not yet available" for every Z-A species. `src/data/game-progression.ts` has best-guess "Wild Zone N" entries from walkthrough research; will need re-verification once pokemondb publishes actual Z-A naming. Until then the wishlist "By game" sort on Z-A shows every mon as "Not available in this game" — honest but empty |
+
+**Next Step:** Start Obj 3 — Match Assistant. See [Record 002](docs/records/002-match-assistant-design.md) for the planned flow, state model, and iteration plan.
+
+Preparatory work (should land before or alongside Obj 3):
+1. Wire `@smogon/calc` with an SP→EV adapter — unlocks real damage numbers inside matchup cells (currently heuristic)
+2. Add a move database (type + category + base power) — needed for the calc and for displaying opponent's plausible moves with useful metadata
+
+### Future
+
+| Todo | Priority | Problem | Solution |
+|------|----------|---------|----------|
 
 ## Recent Decisions
 
@@ -43,6 +58,9 @@ React 19 · TypeScript 5 · Vite 7 · Tailwind CSS 4 · React Router 7 (HashRout
 | `PokemonTable` shared across Top Mons + Wishlist | Star toggle, click-to-expand catch info, and optional drag all live in one place. Caller passes rows + optional `onReorder`; table owns its own expansion state |
 | Team-only species appended client-side | Computed at render time via `teamSpecies − usageSpecies` (deduped by `speciesKey`). No separate JSON — team-only rows show "team-only" pill, rank/usage as "—" |
 | PWA via `vite-plugin-pwa` | Precaches build + data JSONs (~900KB), runtime `StaleWhileRevalidate` cache for pokeapi.co. `autoUpdate` registration so new deploys swap in silently. Makes the app installable + offline-capable on Fold/mobile |
+| Role-inferred SP spread + nature for meta team members | All public Champions data sources (Pikalytics AI markdown, vrpastes backend, Limitless) publish open-teamsheet only — no EVs/nature. Full team data lives in-game via 10-char Replica Codes (undocumented). `src/lib/role.ts` classifies each member by item + moves + base stats into ~9 canonical roles and returns a spread. UI labels these "inferred" so users know it's a guess |
+| Daily source watcher (`scripts/watch-sources.ts` + GH Actions) | Verified 2026-04-22: Smogon curated infrastructure (Sample Teams, Teams of the Week, Viability Rankings, Role Compendium) still on Reg I, not M-A yet. Strategy Dex has no Champions coverage. First trusted full-EV source will likely be "VGC Reg M-A Sample Teams" thread once created. Watcher probes VGC subforum thread list, Reg M-A metagame discussion, Strategy Dex daily; opens an issue only on curated-signal HIT. Community pastes in the metagame discussion (currently 7) are surfaced as `info` only and deliberately not ingested — user waiting for non-community content |
+| Wishlist game-progression sort | User picks a game on Wishlist; species sort by earliest catchable location in that game. `src/data/game-progression.ts` hardcodes ~85 locations/game × 5 games (Sw/Sh, BDSP, SV, Legends Arceus, Legends Z-A) from walkthrough research. Location names match pokemondb.net verbatim so they join `locations.json` without special-casing. Species available via trade/evolve-only fall back to `UNLISTED_LOCATION_STAGE=9999` (shown after known-location species, before truly-unavailable). Each row shows its earliest location as a hint |
 
 ## Development
 
@@ -139,13 +157,7 @@ pokedash/
 
 **PWA.** `vite-plugin-pwa` emits a Workbox service worker and a `/pokedash/`-scoped manifest. Build-time precache covers the JS/CSS bundle + `public/data/*.json` + icons. Runtime `StaleWhileRevalidate` cache targets `pokeapi.co/api/v2` so runtime-only lookups (unknown species, evolution chains) survive offline. `registerType: "autoUpdate"` swaps in new deploys without user action.
 
-## Next Step
-
-**Start Obj 3 — Match Assistant.** See [Record 002](docs/records/002-match-assistant-design.md) for the planned flow, state model, and iteration plan. Open questions captured there.
-
-Preparatory work (should land before or alongside Obj 3):
-1. Wire `@smogon/calc` with an SP→EV adapter — unlocks real damage numbers inside matchup cells (currently heuristic)
-2. Add a move database (type + category + base power) — needed for the calc and for displaying opponent's plausible moves with useful metadata
+## Project Instructions
 
 <!-- PROJECT INSTRUCTIONS START -->
 <!-- PROJECT INSTRUCTIONS END -->
