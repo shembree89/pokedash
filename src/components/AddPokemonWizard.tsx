@@ -9,6 +9,7 @@ import TypeBadge from "./TypeBadge";
 interface Props {
   onClose: () => void;
   initialSpecies?: string;
+  initialDraft?: MonFormDraft;
 }
 
 function emptyDraft(): MonFormDraft {
@@ -22,10 +23,10 @@ function emptyDraft(): MonFormDraft {
   };
 }
 
-export default function AddPokemonWizard({ onClose, initialSpecies }: Props) {
+export default function AddPokemonWizard({ onClose, initialSpecies, initialDraft }: Props) {
   const [species, setSpecies] = useState<string>(initialSpecies ?? "");
   const [typed, setTyped] = useState<string>("");
-  const [draft, setDraft] = useState<MonFormDraft>(emptyDraft());
+  const [draft, setDraft] = useState<MonFormDraft>(() => initialDraft ?? emptyDraft());
   const inputRef = useRef<HTMLInputElement>(null);
   const { lookup, ensure } = useDex();
   const auto = useAutocomplete();
@@ -33,8 +34,10 @@ export default function AddPokemonWizard({ onClose, initialSpecies }: Props) {
   useEffect(() => {
     if (initialSpecies) {
       ensure(initialSpecies);
-      const entry = lookup(initialSpecies);
-      setDraft((d) => ({ ...d, ability: entry?.abilities[0] ?? d.ability }));
+      if (!initialDraft) {
+        const entry = lookup(initialSpecies);
+        setDraft((d) => ({ ...d, ability: entry?.abilities[0] ?? d.ability }));
+      }
     }
     // Intentionally only on mount to prefill once.
     // eslint-disable-next-line react-hooks/exhaustive-deps

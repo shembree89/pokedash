@@ -4,6 +4,7 @@ import type { SpeciesLocations } from "../data/types";
 import { useCatchInfo } from "../data/useCatchInfo";
 import { useData } from "../data/useData";
 import AddPokemonWizard from "./AddPokemonWizard";
+import type { MonFormDraft } from "./MonFormFields";
 
 function EvoBranch({ node, depth }: { node: EvoNode; depth: number }) {
   return (
@@ -77,7 +78,13 @@ function LocationsForSpecies({
   );
 }
 
-export default function SpeciesCatchInfo({ species }: { species: string }) {
+export default function SpeciesCatchInfo({
+  species,
+  prefill,
+}: {
+  species: string;
+  prefill?: MonFormDraft;
+}) {
   const catchStatus = useCatchInfo(species);
   const dataStatus = useData();
   const [wizardOpen, setWizardOpen] = useState(false);
@@ -129,6 +136,7 @@ export default function SpeciesCatchInfo({ species }: { species: string }) {
       {wizardOpen && (
         <AddPokemonWizard
           initialSpecies={species}
+          initialDraft={prefill}
           onClose={() => setWizardOpen(false)}
         />
       )}

@@ -158,9 +158,12 @@ export default function TopTeams() {
                 </CardBody>
               ) : (
                 <CardBody className="flex flex-col">
-                  {team.pokemon.map((p, i) => (
-                    <TeamMemberDetail key={i} member={p} />
-                  ))}
+                  {(() => {
+                    const teamMoves = team.pokemon.flatMap((p) => p.moves ?? []);
+                    return team.pokemon.map((p, i) => (
+                      <TeamMemberDetail key={i} member={p} teamMoves={teamMoves} />
+                    ));
+                  })()}
                   {missing.length > 0 && (
                     <div className="mt-3 pt-3 border-t border-[var(--color-border)] text-xs text-[var(--color-muted)]">
                       Missing from your collection: {missing.map((m) => m.species).join(", ")}
