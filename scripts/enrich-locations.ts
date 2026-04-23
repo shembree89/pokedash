@@ -125,6 +125,20 @@ async function fetchCached(url: string, cachePath: string): Promise<string | nul
   return body;
 }
 
+// pokemondb renders "Routes 1, 2, 3" as three separate <a> tags where only
+// the first has the "Route" prefix — later anchors have bare numbers like
+// "2", "3" as text but full slugs like "/location/sinnoh-route-2" in href.
+// Derive a usable name from the href when the anchor text is digits only.
+export function cleanLocationName(rawText: string, href: string): string {
+  const text = rawText.trim();
+  if (/[A-Za-z]/.test(text)) return text;
+  const slug = href.replace(/^\/location\//, "").replace(/\/$/, "");
+  if (!slug) return text;
+  const parts = slug.split("-");
+  const rest = parts.length > 1 ? parts.slice(1) : parts;
+  return rest.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join(" ");
+}
+
 function parseLocations(html: string): GameLocationGroup[] {
   const $ = cheerio.load(html);
   const heading = $("h2").filter((_, el) => /^\s*Where to find/i.test($(el).text())).first();
@@ -155,7 +169,8 @@ function parseLocations(html: string): GameLocationGroup[] {
     const locations: Location[] = [];
     td.find("a[href^='/location/']").each((__, a) => {
       const href = $(a).attr("href") ?? "";
-      const name = $(a).text().trim();
+      const rawName = $(a).text().trim();
+      const name = cleanLocationName(rawName, href);
       if (name) locations.push({ name, path: href });
     });
     if (locations.length === 0 && cellText) {
