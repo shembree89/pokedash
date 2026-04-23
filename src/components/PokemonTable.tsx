@@ -14,6 +14,7 @@ export interface PokemonTableRow {
   ability: string;
   owned: boolean;
   teamOnly?: boolean;
+  hint?: string;
 }
 
 interface Props {
@@ -157,6 +158,11 @@ export default function PokemonTable({
                           <div className="text-[11px] text-[var(--color-muted)] mt-0.5 lg:hidden">
                             {r.ability ? `${r.ability} · ${r.item}` : ""}
                           </div>
+                          {r.hint && (
+                            <div className="text-[11px] text-[var(--color-muted)] mt-0.5">
+                              {r.hint}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </td>

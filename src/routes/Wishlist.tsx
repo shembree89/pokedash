@@ -10,9 +10,14 @@ import {
 import { speciesKey } from "../lib/species";
 import { Card, CardBody } from "../components/Card";
 import PokemonTable, { type PokemonTableRow } from "../components/PokemonTable";
+import {
+  GAMES,
+  progressionDetailForSpecies,
+  type Game,
+} from "../data/game-progression";
 
 type OwnFilter = "all" | "owned" | "unowned";
-type SortKey = "order" | "rank" | "name" | "usage";
+type SortKey = "order" | "rank" | "name" | "usage" | "progression";
 
 export default function Wishlist() {
   const status = useData();
@@ -21,6 +26,7 @@ export default function Wishlist() {
   const { lookup, ensureMany } = useDex();
   const [ownFilter, setOwnFilter] = useState<OwnFilter>("all");
   const [sortKey, setSortKey] = useState<SortKey>("order");
+  const [game, setGame] = useState<Game | "">("");
   const [query, setQuery] = useState("");
   const [importText, setImportText] = useState("");
   const [importError, setImportError] = useState<string | null>(null);
@@ -70,14 +76,23 @@ export default function Wishlist() {
   if (status.state === "loading") return <div className="text-[var(--color-muted)]">Loading…</div>;
   if (status.state === "error") return <div className="text-red-400">{status.error.message}</div>;
 
-  const { usage, sets } = status.data;
+  const { usage, sets, locations } = status.data;
   const usageByName = new Map(usage.pokemon.map((u) => [u.species, u]));
 
-  const rows: PokemonTableRow[] = wishlistArr
-    .map((species, i): PokemonTableRow & { wishlistIndex: number } => {
+  type Row = PokemonTableRow & { wishlistIndex: number; stage: number };
+  const rows: Row[] = wishlistArr
+    .map((species, i): Row => {
       const entry = lookup(species);
       const set = sets.sets[species]?.[0];
       const usageEntry = usageByName.get(species);
+      const detail = game
+        ? progressionDetailForSpecies(species, game, locations)
+        : null;
+      const hint = detail
+        ? detail.availableInGame
+          ? `${detail.earliestLocation ?? "?"}`
+          : "Not available in this game"
+        : undefined;
       return {
         rank: usageEntry?.rank ?? 999,
         species,
@@ -87,6 +102,8 @@ export default function Wishlist() {
         ability: set?.ability ?? "",
         owned: ownedKeys.has(speciesKey(species)),
         wishlistIndex: i,
+        stage: detail?.stage ?? Infinity,
+        hint,
       };
     })
     .filter((r) => {
@@ -96,6 +113,10 @@ export default function Wishlist() {
       return true;
     })
     .sort((a, b) => {
+      if (sortKey === "progression" && game) {
+        if (a.stage !== b.stage) return a.stage - b.stage;
+        return a.species.localeCompare(b.species);
+      }
       if (sortKey === "order") return a.wishlistIndex - b.wishlistIndex;
       if (sortKey === "rank") return a.rank - b.rank;
       if (sortKey === "usage") return b.usage - a.usage;
@@ -205,20 +226,49 @@ export default function Wishlist() {
             </div>
             <div className="sm:ml-auto flex items-center gap-1 text-xs flex-wrap">
               <span className="text-[var(--color-muted)] mr-1">Sort</span>
-              {(["order", "rank", "name", "usage"] as SortKey[]).map((k) => (
-                <button
-                  key={k}
-                  onClick={() => setSortKey(k)}
-                  className={`px-3 min-h-10 rounded capitalize flex items-center ${
-                    sortKey === k
-                      ? "bg-[var(--color-surface-hi)] text-[var(--color-fg)]"
-                      : "text-[var(--color-muted)] hover:text-[var(--color-fg)]"
-                  }`}
-                >
-                  {k === "order" ? "My order" : k}
-                </button>
-              ))}
+              {(["order", "rank", "name", "usage", "progression"] as SortKey[]).map((k) => {
+                const disabled = k === "progression" && !game;
+                return (
+                  <button
+                    key={k}
+                    onClick={() => !disabled && setSortKey(k)}
+                    disabled={disabled}
+                    title={disabled ? "Choose a game first" : undefined}
+                    className={`px-3 min-h-10 rounded capitalize flex items-center ${
+                      sortKey === k
+                        ? "bg-[var(--color-surface-hi)] text-[var(--color-fg)]"
+                        : "text-[var(--color-muted)] hover:text-[var(--color-fg)]"
+                    } ${disabled ? "opacity-40 cursor-not-allowed" : ""}`}
+                  >
+                    {k === "order" ? "My order" : k === "progression" ? "By game" : k}
+                  </button>
+                );
+              })}
             </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            <span className="text-[var(--color-muted)]">Playing</span>
+            <select
+              value={game}
+              onChange={(e) => {
+                const next = e.target.value as Game | "";
+                setGame(next);
+                if (next && sortKey !== "progression") setSortKey("progression");
+                if (!next && sortKey === "progression") setSortKey("order");
+              }}
+              className="px-2 min-h-9 rounded bg-[var(--color-surface)] border border-[var(--color-border)] focus:outline-none focus:border-[var(--color-accent)]"
+            >
+              <option value="">—</option>
+              {GAMES.map((g) => (
+                <option key={g.id} value={g.id}>{g.label}</option>
+              ))}
+            </select>
+            {game && (
+              <span className="text-[var(--color-muted)]">
+                orders wishlist by playthrough progression · species not in this game sink to bottom
+              </span>
+            )}
           </div>
 
           {!canReorder && sortKey === "order" && (
