@@ -13,7 +13,8 @@
     "data:refresh:sample": "tsx scripts/build-meta-json.ts --top-20",
     "data:enrich-pokedex": "tsx scripts/enrich-pokedex.ts",
     "data:enrich-megas": "tsx scripts/enrich-megas.ts",
-    "data:enrich-locations": "tsx scripts/enrich-locations.ts"
+    "data:enrich-locations": "tsx scripts/enrich-locations.ts",
+    "watch:sources": "tsx scripts/watch-sources.ts"
   },
   "dependencies": {
     "react": "^19.1.0",

@@ -1,0 +1,62 @@
+name: Watch data sources
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: watch-sources
+  cancel-in-progress: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Probe trusted-team data sources
+        id: probe
+        run: |
+          npm run --silent watch:sources | tee watcher-report.txt
+          if grep -q '^HIT:' watcher-report.txt; then
+            echo "hit=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "hit=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Open issue when a source has new content
+        if: steps.probe.outputs.hit == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          TITLE="Source watcher: trusted Reg M-A content detected ($DATE)"
+          BODY=$(cat <<EOF
+          The daily source watcher found at least one HIT — a trusted data source may now have Reg M-A content with full EVs/nature. Investigate and consider wiring it in.
+
+          \`\`\`
+          $(cat watcher-report.txt)
+          \`\`\`
+
+          Runbook:
+          - If Smogon Sample Teams / Teams of the Week thread appeared, it publishes pokepast.es links. Our pokepaste parser already handles the Showdown format — pipeline is the fetch + parse + merge into meta-teams.json.
+          - If pokepast.es links appeared in the metagame discussion, those are mid-season community posts; quality varies by poster.
+          - If Strategy Dex gained Champions coverage, per-mon EV archetypes are now available.
+
+          See CLAUDE.md "Recent Decisions" and scripts/watch-sources.ts for context.
+          EOF
+          )
+          EXISTING=$(gh issue list --search "Source watcher in:title state:open" --json number,title --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY" --label "data-watcher"
+          fi
