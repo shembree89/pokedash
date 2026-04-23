@@ -7,7 +7,7 @@ import { Card, CardBody, CardHeader } from "../components/Card";
 import TypeBadge from "../components/TypeBadge";
 import TeamMemberDetail from "../components/TeamMemberDetail";
 
-type BuildFilter = "all" | "full" | "close";
+type BuildFilter = "all" | "full" | "close" | "nearly";
 
 export default function TopTeams() {
   const status = useData();
@@ -44,8 +44,10 @@ export default function TopTeams() {
       return { team: t, ownedCount, missing };
     })
     .filter((x) => {
-      if (filter === "full") return x.ownedCount === x.team.pokemon.length;
-      if (filter === "close") return x.team.pokemon.length - x.ownedCount <= 1;
+      const missing = x.team.pokemon.length - x.ownedCount;
+      if (filter === "full") return missing === 0;
+      if (filter === "close") return missing <= 1;
+      if (filter === "nearly") return missing <= 2;
       return true;
     })
     .sort((a, b) => b.ownedCount - a.ownedCount);
@@ -55,6 +57,7 @@ export default function TopTeams() {
       <div className="flex flex-wrap gap-1">
         {([
           { key: "all", label: "All teams" },
+          { key: "nearly", label: "≤2 missing" },
           { key: "close", label: "≤1 missing" },
           { key: "full", label: "Can build now" },
         ] as { key: BuildFilter; label: string }[]).map((o) => (
