@@ -4,6 +4,7 @@ import TopPokemon from "./routes/TopPokemon";
 import TopTeams from "./routes/TopTeams";
 import TeamBuilder from "./routes/TeamBuilder";
 import Wishlist from "./routes/Wishlist";
+import Match from "./routes/Match";
 import DataFooter from "./components/DataFooter";
 
 const tabs = [
@@ -12,6 +13,7 @@ const tabs = [
   { to: "/wishlist", label: "Wishlist" },
   { to: "/top-teams", label: "Top Teams" },
   { to: "/team-builder", label: "Builder" },
+  { to: "/match", label: "Match" },
 ];
 
 export default function App() {
@@ -52,6 +54,7 @@ export default function App() {
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/top-teams" element={<TopTeams />} />
           <Route path="/team-builder" element={<TeamBuilder />} />
+          <Route path="/match" element={<Match />} />
         </Routes>
       </main>
       <DataFooter />

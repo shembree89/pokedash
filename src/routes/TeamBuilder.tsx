@@ -17,6 +17,7 @@ import Button from "../components/Button";
 import TypeBadge from "../components/TypeBadge";
 import SlotEditor from "../components/SlotEditor";
 import AnalysisPanels from "../components/AnalysisPanels";
+import StressTest from "../components/StressTest";
 import { teamToPokepaste } from "../lib/pokepaste";
 
 function violationLabel(v: TeamViolation): string {
@@ -204,6 +205,20 @@ export default function TeamBuilder() {
 
       {active && filledMons.length > 0 && (
         <AnalysisPanels team={resolved} />
+      )}
+
+      {active && filledMons.length === TEAM_SIZE && (
+        <StressTest
+          team={resolved}
+          teamOwnedMoves={
+            new Map(
+              filledMons.map((m) => [
+                m.species,
+                (m.moves ?? []).filter(Boolean),
+              ]),
+            )
+          }
+        />
       )}
 
       {editingSlot !== null && slotMons[editingSlot] && (

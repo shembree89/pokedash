@@ -3,6 +3,7 @@ import type {
   MetaSets,
   MetaTeams,
   MetaUsage,
+  MovesFile,
   Pokedex,
 } from "./types";
 
@@ -29,6 +30,7 @@ export interface DataBundle {
   sets: MetaSets;
   teams: MetaTeams;
   locations: LocationsFile | null;
+  moves: MovesFile | null;
 }
 
 let cache: Promise<DataBundle> | null = null;
@@ -41,12 +43,14 @@ export function loadData(): Promise<DataBundle> {
       fetchJson<MetaSets>("meta-sets.json"),
       fetchJson<MetaTeams>("meta-teams.json"),
       fetchJsonOptional<LocationsFile>("locations.json"),
-    ]).then(([pokedex, usage, sets, teams, locations]) => ({
+      fetchJsonOptional<MovesFile>("moves.json"),
+    ]).then(([pokedex, usage, sets, teams, locations, moves]) => ({
       pokedex,
       usage,
       sets,
       teams,
       locations,
+      moves,
     }));
   }
   return cache;

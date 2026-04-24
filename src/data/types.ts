@@ -150,6 +150,28 @@ export interface LocationsFile {
   species: Record<string, SpeciesLocations>;
 }
 
+export type MoveCategory = "Physical" | "Special" | "Status";
+
+export interface MoveMeta {
+  name: string;
+  type: PokemonType;
+  category: MoveCategory;
+  basePower: number;
+  accuracy: number | true;
+  priority: number;
+  target: string;
+  shortDesc: string;
+  flags: string[];
+  pp?: number;
+}
+
+export interface MovesFile {
+  source: string;
+  refreshedAt: string;
+  count: number;
+  moves: MoveMeta[];
+}
+
 export interface OwnedPokemon {
   id: string;
   species: string;
