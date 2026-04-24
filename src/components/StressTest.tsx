@@ -42,24 +42,31 @@ export default function StressTest({ team, teamOwnedMoves }: Props) {
 
   const [matrix, setMatrix] = useState<MatchupPair[][] | null>(null);
   const [computing, setComputing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const movesCount = moves.byName.size;
 
   useEffect(() => {
     let cancelled = false;
-    if (
-      !selected ||
-      team.length !== 6 ||
-      oppEffective.length < 4 ||
-      moves.byName.size === 0
-    ) {
+    const canCompute =
+      !!selected && team.length === 6 && oppEffective.length >= 4 && movesCount > 0;
+    if (!canCompute) {
       setMatrix(null);
+      setComputing(false);
       return;
     }
     setComputing(true);
+    setError(null);
     buildMatchupMatrix(team, oppEffective, teamOwnedMoves, moves.byName, {
       field: { gameType: "Doubles" },
     })
       .then((m) => {
         if (!cancelled) setMatrix(m);
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          console.error("[stress-test] matrix build failed", err);
+          setError(err instanceof Error ? err.message : String(err));
+        }
       })
       .finally(() => {
         if (!cancelled) setComputing(false);
@@ -67,7 +74,7 @@ export default function StressTest({ team, teamOwnedMoves }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [selected, team, oppEffective, teamOwnedMoves, moves.byName]);
+  }, [selected, team, oppEffective, teamOwnedMoves, moves.byName, movesCount]);
 
   const quartets: QuartetScore[] = useMemo(() => {
     if (!matrix || team.length !== 6 || oppEffective.length < 4) return [];
@@ -103,6 +110,11 @@ export default function StressTest({ team, teamOwnedMoves }: Props) {
         </div>
       </CardHeader>
       <CardBody className="flex flex-col gap-3">
+        {error && (
+          <div className="text-sm text-red-300 bg-red-900/30 border border-red-800/50 rounded p-2">
+            Stress test failed: {error}
+          </div>
+        )}
         <select
           value={teamId}
           onChange={(e) => setTeamId(e.target.value)}

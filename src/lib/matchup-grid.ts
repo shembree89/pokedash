@@ -122,14 +122,11 @@ export async function buildMatchupMatrix(
   movesByName: Map<string, MoveMeta>,
   opts: MatchupOptions = {},
 ): Promise<MatchupPair[][]> {
-  const out: MatchupPair[][] = [];
-  for (const a of attackers) {
-    const row: MatchupPair[] = [];
-    for (const d of defenders) {
+  const rows = await Promise.all(
+    attackers.map((a) => {
       const moves = attackerMoves.get(a.species) ?? [];
-      row.push(await buildMatchupPair(a, d, moves, movesByName, opts));
-    }
-    out.push(row);
-  }
-  return out;
+      return Promise.all(defenders.map((d) => buildMatchupPair(a, d, moves, movesByName, opts)));
+    }),
+  );
+  return rows;
 }

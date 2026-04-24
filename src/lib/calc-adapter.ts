@@ -89,64 +89,70 @@ function loadCalc(): Promise<CalcModule> {
 }
 
 export async function calcDamage(input: CalcInput): Promise<CalcResult | null> {
-  const { Generations, Pokemon, Move, Field, calculate, toID } = await loadCalc();
-  const gen = Generations.get(9);
-
-  const atkSpecies = toCalcSpecies(input.attacker.species);
-  const defSpecies = toCalcSpecies(input.defender.species);
-  if (!gen.species.get(toID(atkSpecies))) return null;
-  if (!gen.species.get(toID(defSpecies))) return null;
-
-  const atk = new Pokemon(gen, atkSpecies, {
-    level: 50,
-    nature: nature(input.attacker),
-    evs: toEvs(input.attacker.spSpread),
-    item: input.attackerItem,
-    ability: input.attackerAbility ?? input.attacker.ability,
-    boosts: input.attackerBoosts,
-  });
-  const def = new Pokemon(gen, defSpecies, {
-    level: 50,
-    nature: nature(input.defender),
-    evs: toEvs(input.defender.spSpread),
-    item: input.defenderItem,
-    ability: input.defenderAbility ?? input.defender.ability,
-    boosts: input.defenderBoosts,
-  });
-
-  const move = new Move(gen, input.move);
-  const f = input.field ?? {};
-  const field = new Field({
-    gameType: f.gameType ?? "Doubles",
-    weather: f.weather ?? undefined,
-    terrain: f.terrain ?? undefined,
-    isGravity: f.isGravity,
-    attackerSide: f.attackerSide,
-    defenderSide: f.defenderSide,
-  });
-
-  let result;
   try {
-    result = calculate(gen, atk, def, move, field);
-  } catch {
+    const { Generations, Pokemon, Move, Field, calculate, toID } = await loadCalc();
+    const gen = Generations.get(9);
+
+    const atkSpecies = toCalcSpecies(input.attacker.species);
+    const defSpecies = toCalcSpecies(input.defender.species);
+    if (!gen.species.get(toID(atkSpecies))) return null;
+    if (!gen.species.get(toID(defSpecies))) return null;
+
+    const atk = new Pokemon(gen, atkSpecies, {
+      level: 50,
+      nature: nature(input.attacker),
+      evs: toEvs(input.attacker.spSpread),
+      item: input.attackerItem,
+      ability: input.attackerAbility ?? input.attacker.ability,
+      boosts: input.attackerBoosts,
+    });
+    const def = new Pokemon(gen, defSpecies, {
+      level: 50,
+      nature: nature(input.defender),
+      evs: toEvs(input.defender.spSpread),
+      item: input.defenderItem,
+      ability: input.defenderAbility ?? input.defender.ability,
+      boosts: input.defenderBoosts,
+    });
+
+    const move = new Move(gen, input.move);
+    const f = input.field ?? {};
+    const field = new Field({
+      gameType: f.gameType ?? "Doubles",
+      weather: f.weather ?? undefined,
+      terrain: f.terrain ?? undefined,
+      isGravity: f.isGravity,
+      attackerSide: f.attackerSide,
+      defenderSide: f.defenderSide,
+    });
+
+    const result = calculate(gen, atk, def, move, field);
+
+    const range = result.range();
+    const damageArr = Array.isArray(result.damage) ? (result.damage as number[]) : [Number(result.damage)];
+    const defHP = def.maxHP();
+    const ko = result.kochance();
+    return {
+      desc: result.desc(),
+      damage: damageArr,
+      damageMin: range[0],
+      damageMax: range[1],
+      defenderHP: defHP,
+      pctMin: Math.round((range[0] / defHP) * 1000) / 10,
+      pctMax: Math.round((range[1] / defHP) * 1000) / 10,
+      koChanceText: ko.text ?? "",
+      koChance: ko.chance ?? 0,
+    };
+  } catch (err) {
+    if (typeof console !== "undefined") {
+      console.warn("[calc] failed:", input.attacker.species, "→", input.defender.species, input.move, err);
+    }
     return null;
   }
+}
 
-  const range = result.range();
-  const damageArr = Array.isArray(result.damage) ? (result.damage as number[]) : [Number(result.damage)];
-  const defHP = def.maxHP();
-  const ko = result.kochance();
-  return {
-    desc: result.desc(),
-    damage: damageArr,
-    damageMin: range[0],
-    damageMax: range[1],
-    defenderHP: defHP,
-    pctMin: Math.round((range[0] / defHP) * 1000) / 10,
-    pctMax: Math.round((range[1] / defHP) * 1000) / 10,
-    koChanceText: ko.text ?? "",
-    koChance: ko.chance ?? 0,
-  };
+export function prewarmCalc(): Promise<void> {
+  return loadCalc().then(() => undefined);
 }
 
 export function ownedToEffective(

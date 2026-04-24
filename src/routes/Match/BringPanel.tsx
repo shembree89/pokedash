@@ -64,18 +64,25 @@ export default function BringPanel() {
 
   const [matrix, setMatrix] = useState<MatchupPair[][] | null>(null);
   const [computing, setComputing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const dataReady = data.state === "ready";
+  const movesCount = movesByName.size;
 
   useEffect(() => {
     let cancelled = false;
-    if (
-      data.state !== "ready" ||
-      myEffective.length !== 6 ||
-      oppEffective.length !== 6 ||
-      movesByName.size === 0
-    ) {
+    const canCompute =
+      dataReady &&
+      myEffective.length === 6 &&
+      oppEffective.length === 6 &&
+      movesCount > 0;
+    if (!canCompute) {
+      setComputing(false);
+      setMatrix(null);
       return;
     }
     setComputing(true);
+    setError(null);
     const field = {
       gameType: "Doubles" as const,
       isTrickRoom: match.field.trickRoom,
@@ -86,13 +93,27 @@ export default function BringPanel() {
       .then((result) => {
         if (!cancelled) setMatrix(result);
       })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          console.error("[bring] matrix build failed", err);
+          setError(err instanceof Error ? err.message : String(err));
+        }
+      })
       .finally(() => {
         if (!cancelled) setComputing(false);
       });
     return () => {
       cancelled = true;
     };
-  }, [data.state, myEffective, oppEffective, attackerMoves, movesByName, match.field]);
+  }, [
+    dataReady,
+    myEffective,
+    oppEffective,
+    attackerMoves,
+    movesByName,
+    movesCount,
+    match.field,
+  ]);
 
   const quartets: QuartetScore[] = useMemo(() => {
     if (!matrix) return [];
@@ -135,7 +156,17 @@ export default function BringPanel() {
         </div>
       </CardHeader>
       <CardBody className="flex flex-col gap-3">
-        {!matrix && !computing && (
+        {error && (
+          <div className="text-sm text-red-300 bg-red-900/30 border border-red-800/50 rounded p-2">
+            Matchup calc failed: {error}
+          </div>
+        )}
+        {!matrix && !computing && !error && movesCount === 0 && (
+          <div className="text-sm text-[var(--color-muted)]">
+            Loading move data…
+          </div>
+        )}
+        {!matrix && !computing && !error && movesCount > 0 && (
           <div className="text-sm text-[var(--color-muted)]">Preparing matchup matrix…</div>
         )}
         {quartets.map((q, rank) => {

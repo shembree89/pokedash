@@ -110,6 +110,7 @@ export default function ActivePanel() {
 
   const [pairs, setPairs] = useState<(PairData | null)[][] | null>(null);
   const [computing, setComputing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const fieldOpts = useMemo(
     () => ({
@@ -123,56 +124,77 @@ export default function ActivePanel() {
     [match.field],
   );
 
+  const dataReady = data.state === "ready";
+  const movesCount = moves.byName.size;
+
   useEffect(() => {
     let cancelled = false;
-    if (
-      data.state !== "ready" ||
-      myEffective.length === 0 ||
-      oppEffective.length === 0 ||
-      moves.byName.size === 0
-    ) {
+    const canCompute =
+      dataReady &&
+      myEffective.length > 0 &&
+      oppEffective.length > 0 &&
+      movesCount > 0;
+    if (!canCompute) {
+      setComputing(false);
       return;
     }
     setComputing(true);
+    setError(null);
     (async () => {
-      const rows: (PairData | null)[][] = [];
-      for (let i = 0; i < myEffective.length; i++) {
-        const row: (PairData | null)[] = [];
-        for (let j = 0; j < oppEffective.length; j++) {
-          const me = myEffective[i]!;
-          const opp = oppEffective[j]!;
-          const myMoves = myMons[i]?.moves ?? [];
-          const oppMoves = oppLikelyMoves.get(opp.species) ?? [];
-          const fromMe = await bestMoveAgainst(me, opp, myMoves, moves.byName, { field: fieldOpts });
-          const fromOpp = await bestMoveAgainst(opp, me, oppMoves, moves.byName, {
-            field: {
-              ...fieldOpts,
-              attackerSide: fieldOpts.defenderSide,
-              defenderSide: fieldOpts.attackerSide,
-            },
-          });
-          row.push({
-            my: me,
-            opp,
-            fromMe,
-            fromOpp,
-            speedRelation: speedRel(me, opp, fieldOpts.isTrickRoom ?? false),
-            effMe: effectivenessOf(me, opp).mult,
-            effOpp: effectivenessOf(opp, me).mult,
-          });
+      try {
+        const rows = await Promise.all(
+          myEffective.map((me, i) => {
+            const myMoves = myMons[i]?.moves ?? [];
+            return Promise.all(
+              oppEffective.map(async (opp) => {
+                const oppMoves = oppLikelyMoves.get(opp.species) ?? [];
+                const [fromMe, fromOpp] = await Promise.all([
+                  bestMoveAgainst(me, opp, myMoves, moves.byName, { field: fieldOpts }),
+                  bestMoveAgainst(opp, me, oppMoves, moves.byName, {
+                    field: {
+                      ...fieldOpts,
+                      attackerSide: fieldOpts.defenderSide,
+                      defenderSide: fieldOpts.attackerSide,
+                    },
+                  }),
+                ]);
+                const pair: PairData = {
+                  my: me,
+                  opp,
+                  fromMe,
+                  fromOpp,
+                  speedRelation: speedRel(me, opp, fieldOpts.isTrickRoom ?? false),
+                  effMe: effectivenessOf(me, opp).mult,
+                  effOpp: effectivenessOf(opp, me).mult,
+                };
+                return pair;
+              }),
+            );
+          }),
+        );
+        if (!cancelled) setPairs(rows);
+      } catch (err) {
+        if (!cancelled) {
+          console.error("[active] pairs build failed", err);
+          setError(err instanceof Error ? err.message : String(err));
         }
-        rows.push(row);
-        if (cancelled) return;
-      }
-      if (!cancelled) {
-        setPairs(rows);
-        setComputing(false);
+      } finally {
+        if (!cancelled) setComputing(false);
       }
     })();
     return () => {
       cancelled = true;
     };
-  }, [data, myEffective, oppEffective, moves.byName, myMons, oppLikelyMoves, fieldOpts]);
+  }, [
+    dataReady,
+    myEffective,
+    oppEffective,
+    moves.byName,
+    movesCount,
+    myMons,
+    oppLikelyMoves,
+    fieldOpts,
+  ]);
 
   const my0 = match.mySlotsOnField[0];
   const my1 = match.mySlotsOnField[1];
@@ -277,6 +299,11 @@ export default function ActivePanel() {
           </div>
         </CardHeader>
         <CardBody className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {error && (
+            <div className="col-span-full text-sm text-red-300 bg-red-900/30 border border-red-800/50 rounded p-2">
+              Matchup calc failed: {error}
+            </div>
+          )}
           {cells.map(({ key, pair }) => (
             <MatchupCell key={key} label={key} pair={pair} />
           ))}
