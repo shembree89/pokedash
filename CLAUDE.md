@@ -26,8 +26,8 @@ React 19 · TypeScript 5 · Vite 7 · Tailwind CSS 4 · React Router 7 (HashRout
 | Lead analysis | Open | Which 2 of the 4 to send out first. Relevant to match assistant |
 | Scraper: capture all 6 team sets | Open | Pikalytics per-mon pages only record the featured mon's set, so other 5 team slots often show "no set data" in the team detail view. Would need team-specific page scraping |
 | Niche DLC catch locations | Open | pokemondb.net doesn't enumerate gift/event-only mons (e.g. Litten via Isle of Armor Master Dojo). Deferred: manual `locations-overrides.json` to layer on top of the scrape |
-| Location parser: bare route numbers | Done | Fixed in `enrich-locations.ts` — `cleanLocationName()` derives names from the href slug when anchor text is digits-only. Healed 78 bad entries in existing `locations.json` |
 | Legends: Z-A location coverage | Open | pokemondb.net shows "Location data not yet available" for every Z-A species. `src/data/game-progression.ts` has best-guess "Wild Zone N" entries from walkthrough research; will need re-verification once pokemondb publishes actual Z-A naming. Until then the wishlist "By game" sort on Z-A shows every mon as "Not available in this game" — honest but empty |
+| Trusted full-EV team source | Waiting | No public source publishes EVs/nature for Reg M-A today (tournament reporting is open-teamsheet by policy). Daily watcher (`scripts/watch-sources.ts`) probes Smogon Sample Teams / Strategy Dex / subforum threads — fires a GH issue when curated content appears |
 
 **Next Step:** Start Obj 3 — Match Assistant. See [Record 002](docs/records/002-match-assistant-design.md) for the planned flow, state model, and iteration plan.
 
@@ -74,10 +74,13 @@ npm run data:refresh        # Pikalytics + PokeAPI + pokemondb.net → public/da
 npm run data:refresh:sample # top-20 only, faster for iteration
 npm run data:enrich-megas       # just refresh mega forms
 npm run data:enrich-locations   # just re-scrape pokemondb.net locations
+
+npm run watch:sources    # one-off probe of trusted Reg M-A data sources
 ```
 
 Deployment is automatic on push to `main` via `.github/workflows/deploy.yml`.
 Data refreshes weekly via `.github/workflows/refresh-data.yml` (Sunday 12:00 UTC) + manual dispatch.
+Source watcher runs daily via `.github/workflows/watch-sources.yml` (12:00 UTC) and opens a GH issue when a curated Reg M-A source goes live.
 
 ## Files
 
@@ -85,13 +88,15 @@ Data refreshes weekly via `.github/workflows/refresh-data.yml` (Sunday 12:00 UTC
 pokedash/
 ├── .github/workflows/
 │   ├── deploy.yml            # build → Pages
-│   └── refresh-data.yml      # weekly data refresh cron
+│   ├── refresh-data.yml      # weekly data refresh cron
+│   └── watch-sources.yml     # daily probe for trusted Reg M-A sources
 ├── scripts/
 │   ├── pikalytics.ts         # AI markdown fetch + parse
 │   ├── build-meta-json.ts    # orchestrator → public/data/*.json
 │   ├── enrich-pokedex.ts     # PokeAPI base-form enricher
 │   ├── enrich-megas.ts       # PokeAPI mega enricher
-│   └── enrich-locations.ts   # pokemondb.net → Gen 8+ catch locations
+│   ├── enrich-locations.ts   # pokemondb.net → Gen 8+ catch locations
+│   └── watch-sources.ts      # probes Smogon/etc for curated Reg M-A content
 ├── public/
 │   ├── data/
 │   │   ├── pokedex-champions.json  # ~77 species (top-50 usage ∪ team species ∪ chains), 24 megas
@@ -109,6 +114,7 @@ pokedash/
 │   │   ├── team-rules.ts     # Reg M-A validators
 │   │   ├── pokepaste.ts      # Showdown text parser/serializer
 │   │   ├── species.ts        # speciesKey / sameSpecies helpers
+│   │   ├── role.ts           # role classifier → canonical SP spread + nature
 │   │   ├── pokeapi-lookup.ts # client-side PokeAPI fetch + normalize (dex entries)
 │   │   └── pokeapi-catch.ts  # PokeAPI evolution chain fetcher
 │   ├── data/
@@ -117,7 +123,8 @@ pokedash/
 │   │   ├── useData.ts
 │   │   ├── useDex.ts          # unified pokedex lookup (build-time + runtime)
 │   │   ├── useCatchInfo.ts    # lazy PokeAPI evolution chain w/ localStorage cache
-│   │   └── autocomplete.ts    # derive species/items/moves lists
+│   │   ├── autocomplete.ts    # derive species/items/moves lists
+│   │   └── game-progression.ts # hardcoded playthrough order per game (wishlist sort)
 │   ├── store/
 │   │   ├── collection.ts       # localStorage: owned mons + saved teams
 │   │   ├── species-cache.ts    # localStorage: runtime-fetched pokedex entries
@@ -148,6 +155,12 @@ pokedash/
 **Catch info.** `SpeciesCatchInfo` expands inline on Top Mons, Wishlist, and Top Teams member detail. Evolution chain comes from PokeAPI at runtime (cached in localStorage via `useCatchInfo`); location data (Sword/Shield and newer only) comes from `public/data/locations.json` populated weekly by `enrich-locations.ts` scraping pokemondb.net. Locations cover the whole evolution chain so users can find pre-evolutions too. See [Record 003](docs/records/003-catch-info-pipeline.md) for data-source decisions, scraper structure, and regional-form fallbacks.
 
 **Stats pipeline.** `resolveOwned(mon, dexEntry)` computes effective stats at level 50 using `calcAllStats(base, spSpread, nature)`. The same pipeline applies to meta opponents via `resolveMeta(entry, useMega)` which uses a default competitive spread — both sides symmetric so threat comparisons are apples-to-apples.
+
+**Role inference.** `src/lib/role.ts` classifies a meta team member into one of 9 canonical roles (fast-physical, fast-special, slow-physical, slow-special, assault-vest, phys-wall, spec-wall, bulky-support, tailwind-support) using item + move list + base stats + optional team-moves hint (Trick Room detection). Each role maps to a canonical 66-SP spread + nature. `TeamMemberDetail` displays the calculated stats as "inferred · <Role>" when no real SP data is present, and `AddPokemonWizard` uses the inferred spread as its prefill so the user can add the team member to their collection with one click. `resolveMeta` in `threat.ts` still uses the simpler `defaultCompetitiveSpread` for the broader threat model — extension is plumbing-only.
+
+**Source watcher.** `scripts/watch-sources.ts` probes Smogon's VGC subforum, the Reg M-A metagame discussion thread, and the Strategy Dex daily via GH Actions. Fires a GitHub issue only on curated-content HIT; community pastes are surfaced as `info`-level and don't trigger the issue. Designed to go silent until the trusted-EV Reg M-A era begins.
+
+**Wishlist progression.** `src/data/game-progression.ts` hardcodes ~85 locations/game across Sw/Sh, BDSP, SV, Legends Arceus, Legends Z-A. Location names match pokemondb.net verbatim so they join `locations.json` without special-casing. Wishlist's "By game" sort picks the earliest stage across each wishlisted species' locations in the selected game; species unavailable in that game sink to the bottom. Each row shows its earliest catch location as a hint.
 
 **User data.** `collection.ts` and `species-cache.ts` are `useSyncExternalStore` stores backed by localStorage. Teams reference owned pokemon by id; removing a mon prunes it from saved teams automatically.
 
