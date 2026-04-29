@@ -148,9 +148,15 @@ export default function AddPokemonWizard({ onClose, initialSpecies, initialDraft
                 <li>
                   <button
                     onClick={() => pickSpecies(typed.trim())}
-                    className="w-full text-left px-3 py-2 rounded bg-[var(--color-surface-hi)]/50 hover:bg-[var(--color-surface-hi)] text-sm border border-dashed border-[var(--color-border)]"
+                    className="w-full text-left px-3 py-2 rounded bg-[var(--color-surface-hi)] hover:border-[var(--color-accent)] text-sm border border-[var(--color-border)] flex items-center gap-2 min-h-11"
                   >
-                    Use "{typed.trim()}" — I'll fetch data on save
+                    <span className="text-[var(--color-accent)] font-semibold">+</span>
+                    <span className="flex-1">
+                      Use <strong>{typed.trim()}</strong>
+                    </span>
+                    <span className="text-[10px] text-[var(--color-muted)] uppercase tracking-wide">
+                      fetched on save
+                    </span>
                   </button>
                 </li>
               )}

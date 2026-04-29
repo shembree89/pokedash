@@ -2,7 +2,8 @@ name: Refresh meta data
 
 on:
   schedule:
-    - cron: "0 12 * * 0"
+    # Daily at 19:00 UTC = 3pm Eastern (EDT). Drifts to 2pm during EST.
+    - cron: "0 19 * * *"
   workflow_dispatch:
     inputs:
       top_n:

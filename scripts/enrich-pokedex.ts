@@ -1,5 +1,6 @@
 // Enrich public/data/pokedex-champions.json with base-form entries from
-// PokeAPI for any species listed in meta-usage.json that are missing.
+// PokeAPI. Seeds from PokeAPI's `champions` pokedex (the in-game Reg M-A
+// legal list) plus anything in meta-usage and meta-teams.
 // Preserves existing entries (including hand-curated mega forms).
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -7,6 +8,53 @@ import { sleep, USER_AGENT } from "./pikalytics.ts";
 
 const POKEAPI = "https://pokeapi.co/api/v2";
 const REQUEST_DELAY_MS = 200;
+const CHAMPIONS_POKEDEX_SLUG = "champions";
+
+interface PokedexResponse {
+  pokemon_entries: { pokemon_species: { name: string } }[];
+}
+
+async function fetchChampionsList(): Promise<string[]> {
+  const res = await fetch(`${POKEAPI}/pokedex/${CHAMPIONS_POKEDEX_SLUG}`, {
+    headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+  });
+  if (!res.ok) {
+    console.warn(`[enrich] champions pokedex fetch failed (${res.status}); falling back to usage-only seed`);
+    return [];
+  }
+  const data = (await res.json()) as PokedexResponse;
+  return data.pokemon_entries.map((e) => e.pokemon_species.name);
+}
+
+// Slugs that have a non-default English display name. Add as needed.
+const SLUG_TO_DISPLAY: Record<string, string> = {
+  "mr-mime": "Mr. Mime",
+  "mime-jr": "Mime Jr.",
+  "mr-rime": "Mr. Rime",
+  "type-null": "Type: Null",
+  farfetchd: "Farfetch'd",
+  sirfetchd: "Sirfetch'd",
+  "ho-oh": "Ho-Oh",
+  "porygon-z": "Porygon-Z",
+  "jangmo-o": "Jangmo-o",
+  "hakamo-o": "Hakamo-o",
+  "kommo-o": "Kommo-o",
+  "nidoran-f": "Nidoran-F",
+  "nidoran-m": "Nidoran-M",
+  "tapu-koko": "Tapu Koko",
+  "tapu-lele": "Tapu Lele",
+  "tapu-bulu": "Tapu Bulu",
+  "tapu-fini": "Tapu Fini",
+};
+
+function displayFromSlug(slug: string): string {
+  if (SLUG_TO_DISPLAY[slug]) return SLUG_TO_DISPLAY[slug];
+  // Default: title-case each hyphen-separated part, join with spaces.
+  return slug
+    .split("-")
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+    .join(" ");
+}
 
 type Stat = "hp" | "atk" | "def" | "spa" | "spd" | "spe";
 
@@ -24,6 +72,27 @@ const POKEAPI_NAME_OVERRIDE: Record<string, string> = {
   Maushold: "maushold-family-of-three",
   Aegislash: "aegislash-shield",
   Palafin: "palafin-zero",
+  Mimikyu: "mimikyu-disguised",
+  Gourgeist: "gourgeist-average",
+  Meowstic: "meowstic-male",
+  Lycanroc: "lycanroc-midday",
+  Morpeko: "morpeko-full-belly",
+  Toxtricity: "toxtricity-amped",
+  Indeedee: "indeedee-male",
+  Oricorio: "oricorio-baile",
+  Wishiwashi: "wishiwashi-solo",
+  Eiscue: "eiscue-ice",
+  Mimejr: "mime-jr", // safety
+  Pumpkaboo: "pumpkaboo-average",
+  Minior: "minior-red-meteor",
+  Tatsugiri: "tatsugiri-curly",
+  // Pikalytics/team-data form names that map to specific PokeAPI slugs:
+  "Tauros-Paldea-Aqua": "tauros-paldea-aqua-breed",
+  "Tauros-Paldea-Blaze": "tauros-paldea-blaze-breed",
+  "Tauros-Paldea-Combat": "tauros-paldea-combat-breed",
+  "Maushold-Four": "maushold-family-of-four",
+  // Sinistcha-Masterpiece is gameplay-only — fall back to base entry.
+  "Sinistcha-Masterpiece": "sinistcha",
 };
 
 function pokeapiName(species: string): string {
@@ -76,21 +145,44 @@ async function main() {
   // like "Kommo-o" vs "Kommo-O" don't both end up in the pokedex.
   const canonKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "");
 
-  const seen = new Map<string, string>();
+  console.log(`[enrich] fetching legal species list from /pokedex/${CHAMPIONS_POKEDEX_SLUG}…`);
+  const legalSlugs = await fetchChampionsList();
+  console.log(`[enrich] ${legalSlugs.length} legal species in Champions pokedex`);
+
+  // Map every species we want in the pokedex to (display, slug). Higher
+  // priority sources (Pikalytics, existing dex, teams) win on display
+  // name; the champions list only adds species the others didn't cover.
+  type Wanted = { display: string; slug?: string };
+  const wanted = new Map<string, Wanted>();
+
   for (const s of usage.pokemon.map((p) => p.species)) {
-    seen.set(canonKey(s), s);
+    wanted.set(canonKey(s), { display: s });
   }
   for (const s of Object.keys(dex.pokemon)) {
-    if (!seen.has(canonKey(s))) seen.set(canonKey(s), s);
+    if (!wanted.has(canonKey(s))) wanted.set(canonKey(s), { display: s });
   }
   for (const t of teams.teams) {
     for (const m of t.pokemon) {
-      if (!seen.has(canonKey(m.species))) seen.set(canonKey(m.species), m.species);
+      if (!wanted.has(canonKey(m.species))) {
+        wanted.set(canonKey(m.species), { display: m.species });
+      }
+    }
+  }
+  for (const slug of legalSlugs) {
+    const display = displayFromSlug(slug);
+    const k = canonKey(display);
+    if (!wanted.has(k)) {
+      wanted.set(k, { display, slug });
+    } else {
+      // Existing entry from a higher-priority source — record the slug
+      // so we use it for PokeAPI lookups instead of guessing.
+      const existing = wanted.get(k)!;
+      if (!existing.slug) existing.slug = slug;
     }
   }
 
-  const needed = [...seen.values()]
-    .filter((s) => !dex.pokemon[s] && !Object.keys(dex.pokemon).some((k) => canonKey(k) === canonKey(s)));
+  const needed = [...wanted.values()]
+    .filter((w) => !dex.pokemon[w.display] && !Object.keys(dex.pokemon).some((k) => canonKey(k) === canonKey(w.display)));
 
   if (needed.length === 0) {
     console.log("[enrich] nothing missing");
@@ -98,8 +190,11 @@ async function main() {
   }
 
   console.log(`[enrich] fetching ${needed.length} missing species from PokeAPI…`);
-  for (const [i, species] of needed.entries()) {
-    const api = pokeapiName(species);
+  for (const [i, w] of needed.entries()) {
+    const species = w.display;
+    // Form-specific overrides win over the bare slug from /pokedex/champions
+    // (e.g. Mimikyu base 404s — needs mimikyu-disguised).
+    const api = POKEAPI_NAME_OVERRIDE[species] ?? w.slug ?? species.toLowerCase();
     process.stdout.write(`\r[enrich] ${i + 1}/${needed.length} ${species}         `);
     try {
       const data = await fetchApi(api);
