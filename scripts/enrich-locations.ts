@@ -1,81 +1,71 @@
+// Enrich public/data/locations.json by scraping Bulbapedia for catch
+// locations across Gen 8+ games (SwSh + DLC, BDSP, Legends Arceus, SV
+// + DLC, Legends Z-A). Bulbapedia is currently the only source with
+// reliable Z-A and DLC coverage.
+//
+// For each species in pokedex-champions.json we walk its evolution
+// chain (via PokeAPI) so users see pre-evolution catch points too.
+
 import { existsSync } from "node:fs";
 import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import * as cheerio from "cheerio";
 import { sleep, USER_AGENT } from "./pikalytics.ts";
 
-const POKEMONDB_BASE = "https://pokemondb.net";
 const POKEAPI = "https://pokeapi.co/api/v2";
-const POKEMONDB_DELAY_MS = 2500;
+const BULBAPEDIA_BASE = "https://bulbapedia.bulbagarden.net/wiki";
 const POKEAPI_DELAY_MS = 200;
-const CACHE_DIR = ".cache/pokemondb";
+const BULBAPEDIA_DELAY_MS = 3000;
+const CACHE_DIR = ".cache/bulbapedia";
 const CACHE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
-const ALLOWED_GAMES = new Set([
-  "sword",
-  "shield",
-  "brilliant-diamond",
-  "shining-pearl",
-  "legends-arceus",
-  "scarlet",
-  "violet",
-  "legends-z-a",
-]);
-
-const GAME_DISPLAY: Record<string, string> = {
-  sword: "Sword",
-  shield: "Shield",
-  "brilliant-diamond": "Brilliant Diamond",
-  "shining-pearl": "Shining Pearl",
-  "legends-arceus": "Legends: Arceus",
-  scarlet: "Scarlet",
-  violet: "Violet",
-  "legends-z-a": "Legends: Z-A",
-};
-
-const GAME_ORDER = [
-  "sword",
-  "shield",
-  "brilliant-diamond",
-  "shining-pearl",
-  "legends-arceus",
-  "scarlet",
-  "violet",
-  "legends-z-a",
+// Game name → canonical display label. Order also defines display order.
+const GAME_PATTERNS: { regex: RegExp; canonical: string }[] = [
+  { regex: /^Sword$/i, canonical: "Sword" },
+  { regex: /^Shield$/i, canonical: "Shield" },
+  { regex: /^Expansion Pass$/i, canonical: "Expansion Pass" },
+  { regex: /^The Isle of Armor$/i, canonical: "The Isle of Armor" },
+  { regex: /^The Crown Tundra$/i, canonical: "The Crown Tundra" },
+  { regex: /^Brilliant Diamond$/i, canonical: "Brilliant Diamond" },
+  { regex: /^Shining Pearl$/i, canonical: "Shining Pearl" },
+  { regex: /^Legends:\s*Arceus$/i, canonical: "Legends: Arceus" },
+  { regex: /^Scarlet$/i, canonical: "Scarlet" },
+  { regex: /^Violet$/i, canonical: "Violet" },
+  { regex: /^The Hidden Treasure of Area Zero$/i, canonical: "Hidden Treasure of Area Zero" },
+  { regex: /^The Teal Mask$/i, canonical: "The Teal Mask" },
+  { regex: /^The Indigo Disk$/i, canonical: "The Indigo Disk" },
+  { regex: /^Legends:\s*Z-A$/i, canonical: "Legends: Z-A" },
 ];
 
-// Meta species with regional/unique forms that pokemondb serves from the base
-// slug. Keys are how species appear in meta-usage; values are the pokemondb
-// URL slug.
-const SLUG_OVERRIDE: Record<string, string> = {
-  "Ninetales-Alola": "ninetales",
-  "Arcanine-Hisui": "arcanine",
-  "Typhlosion-Hisui": "typhlosion",
-  "Rotom-Wash": "rotom",
-  "Rotom-Heat": "rotom",
-  "Floette-Eternal": "floette",
-  "Basculegion": "basculegion",
-  "Aegislash": "aegislash",
-  "Palafin": "palafin",
-  "Maushold": "maushold",
-};
+const GAME_ORDER = GAME_PATTERNS.map((p) => p.canonical);
 
-// Some meta forms have no pokemon-species entry of their own (regional forms,
-// unique formes). Map to the base species so the chain walk finds an
-// evolution tree.
-const POKEAPI_SPECIES_OVERRIDE: Record<string, string> = {
-  "Ninetales-Alola": "ninetales",
-  "Arcanine-Hisui": "arcanine",
-  "Typhlosion-Hisui": "typhlosion",
-  "Rotom-Wash": "rotom",
-  "Rotom-Heat": "rotom",
-  "Floette-Eternal": "floette",
-  "Indeedee-F": "indeedee",
-  Basculegion: "basculegion",
-  Maushold: "maushold",
-  Aegislash: "aegislash",
-  Palafin: "palafin",
-};
+// Wiki paths that are NOT locations: items, mechanics, navigation aids.
+const DENY = /^\/wiki\/(?:Pok%C3%A9mon_|List_of_|Tera_Raid|Trade$|Generation_|Old_Amber|Hard_Stone|Soft_Sand|Mossy_Rock|Icy_Rock|Magnetic_Field|Sun_Stone|Moon_Stone|Fire_Stone|Water_Stone|Thunder_Stone|Leaf_Stone|Ice_Stone|Dawn_Stone|Dusk_Stone|Shiny_Stone|Tera_Orb|Mega_Stone|Friendship|Pickup|Outbreak|Mass_Outbreak|HOME|Pok%C3%A9mon_HOME|Evolution$|Evolve|Breeding|Egg$|Pok%C3%A9mon_egg|Pal_Park|Mystery_Gift|Walking|DexNav|Wild_Area_News)/i;
+
+// Species pages end in _(Pokémon) — those aren't locations.
+const SPECIES_PAGE = /_\(Pok%C3%A9mon\)$/;
+
+function isDeniedHref(href: string): boolean {
+  return DENY.test(href) || SPECIES_PAGE.test(href);
+}
+
+function matchGame(text: string): string | null {
+  const t = text.replace(/\s+/g, " ").trim();
+  for (const p of GAME_PATTERNS) {
+    if (p.regex.test(t)) return p.canonical;
+  }
+  return null;
+}
+
+function pathToDisplayName(href: string): string {
+  const slug = decodeURIComponent(href.replace(/^\/wiki\//, ""));
+  return slug.replace(/_/g, " ").trim();
+}
+
+// Bulbapedia uses Title_Case_With_Underscores in URLs.
+function toBulbapediaPath(display: string): string {
+  return `${display.replace(/\s+/g, "_")}_(Pok%C3%A9mon)`;
+}
 
 export interface Location {
   name: string;
@@ -98,13 +88,84 @@ interface LocationsFile {
   species: Record<string, SpeciesLocations>;
 }
 
-function toPokemondbSlug(species: string): string {
-  if (SLUG_OVERRIDE[species]) return SLUG_OVERRIDE[species];
-  return species.toLowerCase().replace(/[^a-z0-9-]+/g, "-");
+type CheerioRoot = cheerio.CheerioAPI;
+type CheerioElement = ReturnType<CheerioRoot>;
+
+function pickLocation($: CheerioRoot, $cell: CheerioElement): Location | null {
+  // Prefer bolded link (Bulbapedia's primary-location convention).
+  const $bold = $cell.find("b > a[href^='/wiki/']").first();
+  if ($bold.length) {
+    const href = $bold.attr("href") ?? "";
+    if (href && !isDeniedHref(href)) {
+      return { name: pathToDisplayName(href), path: href };
+    }
+  }
+  // Fallback: first non-denylisted wiki link in the cell.
+  let pick: Location | null = null;
+  $cell.find("a[href^='/wiki/']").each((_, a) => {
+    if (pick) return;
+    const $a = $(a);
+    const href = $a.attr("href") ?? "";
+    if (!href || isDeniedHref(href)) return;
+    pick = { name: pathToDisplayName(href), path: href };
+  });
+  return pick;
 }
 
-function toPokeapiSpecies(species: string): string {
-  return POKEAPI_SPECIES_OVERRIDE[species] ?? species.toLowerCase();
+export function parseBulbapediaLocations(html: string): GameLocationGroup[] {
+  const $ = cheerio.load(html);
+  const startSpan = $("#Game_locations").parent()[0];
+  const endSpan = $("#In_side_games").parent()[0];
+  if (!startSpan) return [];
+
+  const all = $("body").find("*").toArray();
+  const startIdx = all.indexOf(startSpan);
+  const endIdx = endSpan ? all.indexOf(endSpan) : all.length;
+  const section = all.slice(startIdx, endIdx);
+
+  const seenRows = new Set<unknown>();
+  const groups: GameLocationGroup[] = [];
+
+  for (const el of section) {
+    if ((el as { tagName?: string }).tagName !== "th") continue;
+    const $th = $(el);
+    if (!matchGame($th.text())) continue;
+    const tr = $th.parent("tr")[0];
+    if (!tr || seenRows.has(tr)) continue;
+    seenRows.add(tr);
+    const $tr = $(tr);
+    const games: string[] = [];
+    $tr.children("th").each((_, th) => {
+      const g = matchGame($(th).text());
+      if (g && !games.includes(g)) games.push(g);
+    });
+    if (games.length === 0) continue;
+    const $td = $tr.children("td").first();
+    if (!$td.length) continue;
+
+    const seenPath = new Set<string>();
+    const locations: Location[] = [];
+    const $innerTrs = $td.find("table tr");
+    const innerCells = $innerTrs.length > 0 ? $innerTrs.toArray() : [tr];
+    for (const innerTr of innerCells) {
+      const $innerTd = $(innerTr).children("td").first();
+      const $cell = $innerTd.length ? $innerTd : $(innerTr);
+      const pick = pickLocation($, $cell);
+      if (!pick) continue;
+      const k = pick.path ?? pick.name;
+      if (seenPath.has(k)) continue;
+      seenPath.add(k);
+      locations.push(pick);
+    }
+    if (locations.length === 0) continue;
+    groups.push({ games, locations });
+  }
+
+  // Sort each group's games into canonical order.
+  for (const g of groups) {
+    g.games.sort((a, b) => GAME_ORDER.indexOf(a) - GAME_ORDER.indexOf(b));
+  }
+  return groups;
 }
 
 async function fetchCached(url: string, cachePath: string): Promise<string | null> {
@@ -125,88 +186,42 @@ async function fetchCached(url: string, cachePath: string): Promise<string | nul
   return body;
 }
 
-// pokemondb renders "Routes 1, 2, 3" as three separate <a> tags where only
-// the first has the "Route" prefix — later anchors have bare numbers like
-// "2", "3" as text but full slugs like "/location/sinnoh-route-2" in href.
-// Derive a usable name from the href when the anchor text is digits only.
-export function cleanLocationName(rawText: string, href: string): string {
-  const text = rawText.trim();
-  if (/[A-Za-z]/.test(text)) return text;
-  const slug = href.replace(/^\/location\//, "").replace(/\/$/, "");
-  if (!slug) return text;
-  const parts = slug.split("-");
-  const rest = parts.length > 1 ? parts.slice(1) : parts;
-  return rest.map((p) => p.charAt(0).toUpperCase() + p.slice(1)).join(" ");
-}
-
-function parseLocations(html: string): GameLocationGroup[] {
-  const $ = cheerio.load(html);
-  const heading = $("h2").filter((_, el) => /^\s*Where to find/i.test($(el).text())).first();
-  if (!heading.length) return [];
-  const table = heading.nextAll("div.resp-scroll").first().find("table.vitals-table").first()
-    .add(heading.nextAll("table.vitals-table").first())
-    .first();
-  if (!table.length) return [];
-
-  const groups: GameLocationGroup[] = [];
-  table.find("tbody > tr").each((_, tr) => {
-    const row = $(tr);
-    const slugs: string[] = [];
-    row.find("th span.igame").each((__, span) => {
-      const cls = $(span).attr("class") ?? "";
-      const m = cls.match(/igame\s+([a-z0-9-]+)/);
-      if (m) slugs.push(m[1]);
-    });
-    const keptSlugs = slugs.filter((s) => ALLOWED_GAMES.has(s));
-    if (keptSlugs.length === 0) return;
-
-    const td = row.find("td").first();
-    const cellText = td.text().trim();
-    if (/Not available in this game|Unobtainable|Location data not yet available/i.test(cellText)) {
-      return;
-    }
-
-    const locations: Location[] = [];
-    td.find("a[href^='/location/']").each((__, a) => {
-      const href = $(a).attr("href") ?? "";
-      const rawName = $(a).text().trim();
-      const name = cleanLocationName(rawName, href);
-      if (name) locations.push({ name, path: href });
-    });
-    if (locations.length === 0 && cellText) {
-      locations.push({ name: cellText });
-    }
-    if (locations.length === 0) return;
-
-    const games = keptSlugs
-      .slice()
-      .sort((a, b) => GAME_ORDER.indexOf(a) - GAME_ORDER.indexOf(b))
-      .map((s) => GAME_DISPLAY[s]);
-    groups.push({ games, locations });
-  });
-  return groups;
-}
-
-async function fetchSpeciesLocations(species: string): Promise<SpeciesLocations | null> {
-  const slug = toPokemondbSlug(species);
-  const url = `${POKEMONDB_BASE}/pokedex/${slug}`;
-  const html = await fetchCached(url, join(CACHE_DIR, `${slug}.html`));
-  if (!html) return null;
-  return { species, groups: parseLocations(html) };
+async function fetchBulbapedia(species: string): Promise<string | null> {
+  const path = toBulbapediaPath(species);
+  const url = `${BULBAPEDIA_BASE}/${path}`;
+  // Cache filename: replace percent-encoded bytes for filesystem-safe naming.
+  const cacheName = path.replace(/%[0-9A-Fa-f]{2}/g, "_").replace(/[()]/g, "");
+  return fetchCached(url, join(CACHE_DIR, `${cacheName}.html`));
 }
 
 interface SpeciesApi {
   name: string;
   evolution_chain: { url: string } | null;
 }
-
 interface EvolutionChainApi {
   chain: EvolutionLinkApi;
 }
-
 interface EvolutionLinkApi {
   species: { name: string };
   evolves_to: EvolutionLinkApi[];
+}
+
+const POKEAPI_SPECIES_OVERRIDE: Record<string, string> = {
+  "Ninetales-Alola": "ninetales",
+  "Arcanine-Hisui": "arcanine",
+  "Typhlosion-Hisui": "typhlosion",
+  "Rotom-Wash": "rotom",
+  "Rotom-Heat": "rotom",
+  "Floette-Eternal": "floette",
+  "Indeedee-F": "indeedee",
+  Basculegion: "basculegion",
+  Maushold: "maushold",
+  Aegislash: "aegislash",
+  Palafin: "palafin",
+};
+
+function toPokeapiSpecies(species: string): string {
+  return POKEAPI_SPECIES_OVERRIDE[species] ?? species.toLowerCase();
 }
 
 async function fetchJson<T>(url: string): Promise<T | null> {
@@ -257,9 +272,6 @@ async function main() {
   console.log(
     `[locations] resolving evolution chains for ${metaSpecies.length} meta species…`,
   );
-  // Chain members come back as PokeAPI lowercase slugs. The UI looks up
-  // locations by the same prettify() transform of those slugs — key everything
-  // by prettified slug so the lookup matches without special-casing.
   const chainSlugs = new Set<string>();
   for (const [i, s] of metaSpecies.entries()) {
     process.stdout.write(
@@ -276,7 +288,7 @@ async function main() {
   process.stdout.write("\n");
 
   console.log(
-    `[locations] fetching pokemondb for ${chainSlugs.size} unique species (${POKEMONDB_DELAY_MS}ms delay)…`,
+    `[locations] fetching Bulbapedia for ${chainSlugs.size} unique species (${BULBAPEDIA_DELAY_MS}ms delay)…`,
   );
   const result: Record<string, SpeciesLocations> = {};
   const slugList = [...chainSlugs].sort();
@@ -286,9 +298,14 @@ async function main() {
       `\r[locations] ${i + 1}/${slugList.length} ${display}          `,
     );
     try {
-      const info = await fetchSpeciesLocations(display);
-      if (info && info.groups.length > 0) {
-        result[display] = info;
+      const html = await fetchBulbapedia(display);
+      if (!html) {
+        if (prev.species[display]) result[display] = prev.species[display];
+        continue;
+      }
+      const groups = parseBulbapediaLocations(html);
+      if (groups.length > 0) {
+        result[display] = { species: display, groups };
       } else if (prev.species[display]) {
         result[display] = prev.species[display];
       }
@@ -296,13 +313,13 @@ async function main() {
       console.warn(`\n[locations] ${display}: ${(e as Error).message}`);
       if (prev.species[display]) result[display] = prev.species[display];
     }
-    await sleep(POKEMONDB_DELAY_MS);
+    await sleep(BULBAPEDIA_DELAY_MS);
   }
   process.stdout.write("\n");
 
   const file: LocationsFile = {
     refreshedAt: new Date().toISOString().slice(0, 10),
-    source: "pokemondb.net/pokedex (Gen 8+ games only)",
+    source: "bulbapedia.bulbagarden.net (Gen 8+ catch locations)",
     species: result,
   };
   await writeFile(outPath, JSON.stringify(file, null, 2) + "\n", "utf8");
@@ -311,7 +328,19 @@ async function main() {
   );
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+const isMain = (() => {
+  try {
+    const argv1 = process.argv[1];
+    if (!argv1) return false;
+    return argv1.endsWith("enrich-locations.ts");
+  } catch {
+    return false;
+  }
+})();
+
+if (isMain) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
