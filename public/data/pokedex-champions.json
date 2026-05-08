@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-07",
+  "refreshedAt": "2026-05-08",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -4908,6 +4908,62 @@
         "Friend Guard",
         "Cheek Pouch",
         "Technician"
+      ]
+    },
+    "Rotom-Mow": {
+      "name": "Rotom-Mow",
+      "types": [
+        "Electric",
+        "Grass"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      },
+      "abilities": [
+        "Levitate"
+      ]
+    },
+    "Lopunny": {
+      "name": "Lopunny",
+      "types": [
+        "Normal"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 76,
+        "def": 84,
+        "spa": 54,
+        "spd": 96,
+        "spe": 105
+      },
+      "abilities": [
+        "Cute Charm",
+        "Klutz",
+        "Limber"
+      ],
+      "megas": [
+        {
+          "name": "Mega Lopunny",
+          "types": [
+            "Normal",
+            "Fighting"
+          ],
+          "baseStats": {
+            "hp": 65,
+            "atk": 136,
+            "def": 94,
+            "spa": 54,
+            "spd": 96,
+            "spe": 135
+          },
+          "ability": "Scrappy",
+          "requiredItem": "Lopunnyite"
+        }
       ]
     }
   }

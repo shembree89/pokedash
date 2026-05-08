@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-07",
+  "refreshedAt": "2026-05-08",
   "source": "bulbapedia.bulbagarden.net (Gen 8+ catch locations)",
   "species": {
     "Abomasnow": {
@@ -1507,6 +1507,56 @@
             {
               "name": "Coastal Biome",
               "path": "/wiki/Coastal_Biome"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Vert District",
+              "path": "/wiki/Vert_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Buneary": {
+      "species": "Buneary",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Fields of Honor",
+              "path": "/wiki/Fields_of_Honor"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Eterna Forest",
+              "path": "/wiki/Eterna_Forest"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Obsidian Fieldlands",
+              "path": "/wiki/Obsidian_Fieldlands"
             }
           ]
         },
@@ -7244,6 +7294,44 @@
             {
               "name": "Bleu District",
               "path": "/wiki/Bleu_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Lopunny": {
+      "species": "Lopunny",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Fields of Honor",
+              "path": "/wiki/Fields_of_Honor"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Obsidian Fieldlands",
+              "path": "/wiki/Obsidian_Fieldlands"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Magenta District",
+              "path": "/wiki/Magenta_District"
             }
           ]
         }
