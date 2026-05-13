@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-11",
+  "refreshedAt": "2026-05-13",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -4964,6 +4964,45 @@
           "ability": "Scrappy",
           "requiredItem": "Lopunnyite"
         }
+      ]
+    },
+    "Slowking-Galar": {
+      "name": "Slowking-Galar",
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "atk": 65,
+        "def": 80,
+        "spa": 110,
+        "spd": 110,
+        "spe": 30
+      },
+      "abilities": [
+        "Curious Medicine",
+        "Own Tempo",
+        "Regenerator"
+      ]
+    },
+    "Samurott-Hisui": {
+      "name": "Samurott-Hisui",
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "atk": 108,
+        "def": 80,
+        "spa": 100,
+        "spd": 65,
+        "spe": 85
+      },
+      "abilities": [
+        "Torrent",
+        "Sharpness"
       ]
     }
   }
