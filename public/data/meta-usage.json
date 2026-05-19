@@ -1,259 +1,259 @@
 {
   "format": "VGC",
   "regulation": "Reg M-A",
-  "refreshedAt": "2026-05-17",
+  "refreshedAt": "2026-05-19",
   "source": "pikalytics.com/ai/pokedex/championstournaments (data date 2026-04)",
   "sampleSize": 0,
   "pokemon": [
     {
       "rank": 1,
       "species": "Basculegion",
-      "usage": 0.4167
+      "usage": 0.4451
     },
     {
       "rank": 2,
-      "species": "Sneasler",
-      "usage": 0.3963
+      "species": "Garchomp",
+      "usage": 0.3971
     },
     {
       "rank": 3,
-      "species": "Garchomp",
-      "usage": 0.3733
+      "species": "Kingambit",
+      "usage": 0.3689
     },
     {
       "rank": 4,
-      "species": "Kingambit",
-      "usage": 0.3639
+      "species": "Sneasler",
+      "usage": 0.354
     },
     {
       "rank": 5,
-      "species": "Aerodactyl",
-      "usage": 0.2696
+      "species": "Charizard",
+      "usage": 0.2952
     },
     {
       "rank": 6,
-      "species": "Charizard",
-      "usage": 0.2594
+      "species": "Aerodactyl",
+      "usage": 0.2584
     },
     {
       "rank": 7,
       "species": "Incineroar",
-      "usage": 0.2585
+      "usage": 0.2542
     },
     {
       "rank": 8,
       "species": "Sinistcha",
-      "usage": 0.1998
+      "usage": 0.1818
     },
     {
       "rank": 9,
       "species": "Archaludon",
-      "usage": 0.1684
+      "usage": 0.1689
     },
     {
       "rank": 10,
       "species": "Floette-Eternal",
-      "usage": 0.1675
+      "usage": 0.1557
     },
     {
       "rank": 11,
-      "species": "Pelipper",
-      "usage": 0.1454
+      "species": "Sylveon",
+      "usage": 0.1474
     },
     {
       "rank": 12,
-      "species": "Farigiraf",
-      "usage": 0.1429
+      "species": "Pelipper",
+      "usage": 0.1474
     },
     {
       "rank": 13,
-      "species": "Sylveon",
-      "usage": 0.1276
+      "species": "Whimsicott",
+      "usage": 0.1453
     },
     {
       "rank": 14,
-      "species": "Rotom-Wash",
-      "usage": 0.1199
+      "species": "Farigiraf",
+      "usage": 0.1453
     },
     {
       "rank": 15,
-      "species": "Tyranitar",
-      "usage": 0.108
+      "species": "Rotom-Wash",
+      "usage": 0.1147
     },
     {
       "rank": 16,
-      "species": "Scizor",
-      "usage": 0.1071
+      "species": "Dragonite",
+      "usage": 0.1023
     },
     {
       "rank": 17,
-      "species": "Venusaur",
-      "usage": 0.1071
+      "species": "Scizor",
+      "usage": 0.0957
     },
     {
       "rank": 18,
-      "species": "Dragonite",
-      "usage": 0.1046
+      "species": "Venusaur",
+      "usage": 0.0928
     },
     {
       "rank": 19,
-      "species": "Whimsicott",
-      "usage": 0.1046
+      "species": "Tyranitar",
+      "usage": 0.0928
     },
     {
       "rank": 20,
       "species": "Sableye",
-      "usage": 0.0969
+      "usage": 0.0878
     },
     {
       "rank": 21,
-      "species": "Scovillain",
-      "usage": 0.0867
+      "species": "Glimmora",
+      "usage": 0.0878
     },
     {
       "rank": 22,
-      "species": "Milotic",
-      "usage": 0.0842
+      "species": "Aegislash",
+      "usage": 0.0861
     },
     {
       "rank": 23,
-      "species": "Aegislash",
-      "usage": 0.0833
+      "species": "Milotic",
+      "usage": 0.0787
     },
     {
       "rank": 24,
-      "species": "Kommo-o",
-      "usage": 0.0748
+      "species": "Scovillain",
+      "usage": 0.0733
     },
     {
       "rank": 25,
-      "species": "Gengar",
-      "usage": 0.0714
+      "species": "Froslass",
+      "usage": 0.0692
     },
     {
       "rank": 26,
       "species": "Torkoal",
-      "usage": 0.068
+      "usage": 0.0683
     },
     {
       "rank": 27,
-      "species": "Froslass",
-      "usage": 0.0655
+      "species": "Gengar",
+      "usage": 0.0683
     },
     {
       "rank": 28,
-      "species": "Corviknight",
-      "usage": 0.0646
+      "species": "Kommo-o",
+      "usage": 0.0667
     },
     {
       "rank": 29,
       "species": "Kangaskhan",
-      "usage": 0.0553
+      "usage": 0.0613
     },
     {
       "rank": 30,
-      "species": "Excadrill",
-      "usage": 0.0553
+      "species": "Ninetales-Alola",
+      "usage": 0.0588
     },
     {
       "rank": 31,
-      "species": "Talonflame",
-      "usage": 0.0527
+      "species": "Corviknight",
+      "usage": 0.0571
     },
     {
       "rank": 32,
-      "species": "Maushold",
-      "usage": 0.0459
+      "species": "Talonflame",
+      "usage": 0.0542
     },
     {
       "rank": 33,
-      "species": "Primarina",
-      "usage": 0.0459
+      "species": "Excadrill",
+      "usage": 0.0505
     },
     {
       "rank": 34,
-      "species": "Politoed",
-      "usage": 0.0451
+      "species": "Maushold",
+      "usage": 0.0455
     },
     {
       "rank": 35,
-      "species": "Delphox",
-      "usage": 0.0442
+      "species": "Hydreigon",
+      "usage": 0.0418
     },
     {
       "rank": 36,
-      "species": "Ninetales-Alola",
-      "usage": 0.0442
+      "species": "Politoed",
+      "usage": 0.0414
     },
     {
       "rank": 37,
-      "species": "Meganium",
-      "usage": 0.0434
+      "species": "Primarina",
+      "usage": 0.0381
     },
     {
       "rank": 38,
-      "species": "Glimmora",
-      "usage": 0.0408
+      "species": "Delphox",
+      "usage": 0.0377
     },
     {
       "rank": 39,
-      "species": "Hydreigon",
-      "usage": 0.0408
+      "species": "Meganium",
+      "usage": 0.0377
     },
     {
       "rank": 40,
       "species": "Gardevoir",
-      "usage": 0.0383
+      "usage": 0.0369
     },
     {
       "rank": 41,
       "species": "Blastoise",
-      "usage": 0.0281
+      "usage": 0.0298
     },
     {
       "rank": 42,
-      "species": "Rotom-Heat",
-      "usage": 0.0255
+      "species": "Tsareena",
+      "usage": 0.0248
     },
     {
       "rank": 43,
-      "species": "Tinkaton",
-      "usage": 0.0247
+      "species": "Palafin",
+      "usage": 0.0236
     },
     {
       "rank": 44,
-      "species": "Palafin",
-      "usage": 0.0238
+      "species": "Volcarona",
+      "usage": 0.0224
     },
     {
       "rank": 45,
-      "species": "Clefable",
-      "usage": 0.023
+      "species": "Tinkaton",
+      "usage": 0.0211
     },
     {
       "rank": 46,
-      "species": "Tsareena",
-      "usage": 0.0213
+      "species": "Rotom-Heat",
+      "usage": 0.0203
     },
     {
       "rank": 47,
-      "species": "Meowscarada",
-      "usage": 0.0213
+      "species": "Mimikyu",
+      "usage": 0.0195
     },
     {
       "rank": 48,
-      "species": "Mimikyu",
-      "usage": 0.0196
+      "species": "Weavile",
+      "usage": 0.0195
     },
     {
       "rank": 49,
-      "species": "Volcarona",
-      "usage": 0.0196
+      "species": "Hatterene",
+      "usage": 0.019
     },
     {
       "rank": 50,
-      "species": "Hatterene",
-      "usage": 0.0187
+      "species": "Meowscarada",
+      "usage": 0.0174
     }
   ]
 }
