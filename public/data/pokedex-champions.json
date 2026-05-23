@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-22",
+  "refreshedAt": "2026-05-23",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -5538,6 +5538,24 @@
       },
       "abilities": [
         "Adaptability"
+      ]
+    },
+    "Crabominable-Mega": {
+      "name": "Crabominable-Mega",
+      "types": [
+        "Fighting",
+        "Ice"
+      ],
+      "baseStats": {
+        "hp": 97,
+        "atk": 157,
+        "def": 122,
+        "spa": 62,
+        "spd": 107,
+        "spe": 33
+      },
+      "abilities": [
+        "Iron Fist"
       ]
     }
   }
