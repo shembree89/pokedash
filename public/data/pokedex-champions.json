@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-23",
+  "refreshedAt": "2026-05-25",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -5556,6 +5556,24 @@
       },
       "abilities": [
         "Iron Fist"
+      ]
+    },
+    "Ampharos-Mega": {
+      "name": "Ampharos-Mega",
+      "types": [
+        "Electric",
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "atk": 95,
+        "def": 105,
+        "spa": 165,
+        "spd": 110,
+        "spe": 45
+      },
+      "abilities": [
+        "Mold Breaker"
       ]
     }
   }
