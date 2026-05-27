@@ -1,7 +1,7 @@
 {
   "format": "VGC",
   "regulation": "Reg M-A",
-  "refreshedAt": "2026-05-25",
+  "refreshedAt": "2026-05-27",
   "source": "pikalytics.com/ai/pokedex/championstournaments (data date 2026-04)",
   "teams": [
     {
@@ -672,7 +672,15 @@
           ]
         },
         {
-          "species": "Vivillon"
+          "species": "Vivillon",
+          "ability": "Compound Eyes",
+          "item": "Focus Sash",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Sleep Powder",
+            "Rage Powder"
+          ]
         },
         {
           "species": "Garchomp",
@@ -759,6 +767,80 @@
             "Kowtow Cleave",
             "Sucker Punch",
             "Iron Head",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NTcgNjI6OmxpbWl0",
+      "player": "57 62",
+      "tournament": "limitless-6a0de44013f957d6d4b4be7b",
+      "placement": "Record 10-1",
+      "pokemon": [
+        {
+          "species": "Floette-Eternal",
+          "ability": "Flower Veil",
+          "item": "Floettite",
+          "moves": [
+            "Light of Ruin",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "item": "Roseli Berry",
+          "moves": [
+            "Poison Jab",
+            "Earthquake",
+            "Rock Tomb",
+            "Dragon Tail"
+          ]
+        },
+        {
+          "species": "Vivillon",
+          "ability": "Compound Eyes",
+          "item": "Focus Sash",
+          "moves": [
+            "Sleep Powder",
+            "Rage Powder",
+            "Hurricane",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Talonflame",
+          "ability": "Gale Wings",
+          "item": "no item",
+          "moves": [
+            "Tailwind",
+            "Acrobatics",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sneasler",
+          "ability": "Unburden",
+          "item": "White Herb",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Kingambit",
+          "ability": "Defiant",
+          "item": "Black Glasses",
+          "moves": [
+            "Iron Head",
+            "Kowtow Cleave",
+            "Sucker Punch",
             "Protect"
           ]
         }
@@ -897,6 +979,64 @@
       ]
     },
     {
+      "id": "WmFjaHZnYzI6Omxp",
+      "player": "Zachvgc2",
+      "tournament": "limitless-69f8a712e23aab068aada7f0",
+      "placement": "Record 5-0",
+      "pokemon": [
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "item": "Focus Sash",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Whimsicott",
+          "ability": "Prankster",
+          "item": "Fairy Feather",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "item": "Sitrus Berry",
+          "moves": [
+            "Protect",
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Kingambit",
+          "ability": "Defiant",
+          "item": "Chople Berry",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick"
+          ]
+        },
+        {
+          "species": "Basculegion"
+        }
+      ]
+    },
+    {
       "id": "RmFpeWV4OjpsaW1p",
       "player": "Faiyex",
       "tournament": "limitless-6a01525f13f957d6d4b458ae",
@@ -963,114 +1103,6 @@
       ]
     },
     {
-      "id": "RHV4bGVtb246Omxp",
-      "player": "Duxlemon",
-      "tournament": "limitless-69feb07edfbdf089cbbd5716",
-      "placement": "Record 9-1",
-      "pokemon": [
-        {
-          "species": "Aerodactyl-Mega"
-        },
-        {
-          "species": "Garchomp",
-          "ability": "Rough Skin",
-          "item": "Sitrus Berry",
-          "moves": [
-            "Earthquake",
-            "Dragon Claw",
-            "Rock Tomb",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Charizard-Mega-Y"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Sylveon",
-          "ability": "Pixilate",
-          "item": "Fairy Feather",
-          "moves": [
-            "Hyper Voice",
-            "Hyper Beam",
-            "Quick Attack",
-            "Detect"
-          ]
-        },
-        {
-          "species": "Kingambit",
-          "ability": "Defiant",
-          "item": "Chople Berry",
-          "moves": [
-            "Kowtow Cleave",
-            "Sucker Punch",
-            "Protect",
-            "Iron Head"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "VHVyYm9NYXR0Ojps",
-      "player": "TurboMatt",
-      "tournament": "limitless-69ef144c8c6a7308858689f3",
-      "placement": "Record 10-1",
-      "pokemon": [
-        {
-          "species": "Talonflame",
-          "ability": "Gale Wings",
-          "item": "Sharp Beak",
-          "moves": [
-            "Dual Wingbeat",
-            "Flare Blitz",
-            "Tailwind",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Garchomp",
-          "ability": "Rough Skin",
-          "item": "Choice Scarf",
-          "moves": [
-            "Earthquake",
-            "Dragon Claw",
-            "Stomping Tantrum",
-            "Rock Slide"
-          ]
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Aegislash",
-          "ability": "Stance Change",
-          "item": "Colbur Berry",
-          "moves": [
-            "Poltergeist",
-            "Sacred Sword",
-            "Shadow Sneak",
-            "King's Shield"
-          ]
-        },
-        {
-          "species": "Floette-Eternal",
-          "ability": "Flower Veil",
-          "item": "Floettite",
-          "moves": [
-            "Moonblast",
-            "Dazzling Gleam",
-            "Light of Ruin",
-            "Protect"
-          ]
-        }
-      ]
-    },
-    {
       "id": "TjhfZGF3Z2c6Omxp",
       "player": "N8_dawgg",
       "tournament": "limitless-6a1203df0f6c1f089985f8ad",
@@ -1129,56 +1161,6 @@
       ]
     },
     {
-      "id": "bWFtYWltY2hhc2lu",
-      "player": "mamaimchasinaghostt",
-      "tournament": "limitless-69f854924f71d664893ec43b",
-      "placement": "Record 9-1",
-      "pokemon": [
-        {
-          "species": "Scovillain-Mega"
-        },
-        {
-          "species": "Aerodactyl-Mega"
-        },
-        {
-          "species": "Sneasler",
-          "ability": "Unburden",
-          "item": "White Herb",
-          "moves": [
-            "Fake Out",
-            "Close Combat",
-            "Dire Claw",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Kingambit",
-          "ability": "Defiant",
-          "item": "Chople Berry",
-          "moves": [
-            "Kowtow Cleave",
-            "Sucker Punch",
-            "Iron Head",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Kommo-o",
-          "ability": "Soundproof",
-          "item": "Leftovers",
-          "moves": [
-            "Clangorous Soul",
-            "Clanging Scales",
-            "Aura Sphere",
-            "Protect"
-          ]
-        }
-      ]
-    },
-    {
       "id": "QmFkYXNzRnJvc2xh",
       "player": "BadassFroslass",
       "tournament": "limitless-69cd6904d478313a15a39215",
@@ -1224,6 +1206,48 @@
             "Protect",
             "Bug Bite",
             "Swords Dance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bWFtYWltY2hhc2lu",
+      "player": "mamaimchasinaghostt",
+      "tournament": "limitless-69f854924f71d664893ec43b",
+      "placement": "Record 9-1",
+      "pokemon": [
+        {
+          "species": "Scovillain-Mega"
+        },
+        {
+          "species": "Aerodactyl-Mega"
+        },
+        {
+          "species": "Sneasler",
+          "ability": "Unburden",
+          "item": "White Herb",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Kommo-o",
+          "ability": "Soundproof",
+          "item": "Leftovers",
+          "moves": [
+            "Clangorous Soul",
+            "Clanging Scales",
+            "Aura Sphere",
+            "Protect"
           ]
         }
       ]
@@ -1275,48 +1299,6 @@
         },
         {
           "species": "Garchomp"
-        }
-      ]
-    },
-    {
-      "id": "Sm9zZXBoR2FtYml0",
-      "player": "JosephGambit",
-      "tournament": "limitless-69eb099278b359b789d6aa3c",
-      "placement": "Record 4-0",
-      "pokemon": [
-        {
-          "species": "Froslass-Mega"
-        },
-        {
-          "species": "Sneasler",
-          "ability": "Unburden",
-          "item": "White Herb",
-          "moves": [
-            "Close Combat",
-            "Dire Claw",
-            "Fake Out",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Arcanine-Hisui"
-        },
-        {
-          "species": "Whimsicott",
-          "ability": "Prankster",
-          "item": "Fairy Feather",
-          "moves": [
-            "Moonblast",
-            "Tailwind",
-            "Encore",
-            "Protect"
-          ]
         }
       ]
     },
@@ -1401,48 +1383,6 @@
         },
         {
           "species": "Sneasler"
-        }
-      ]
-    },
-    {
-      "id": "aXNtYWFlbGg6Omxp",
-      "player": "ismaaelh",
-      "tournament": "limitless-69ee41249d90c111990b8c2f",
-      "placement": "Record 9-1",
-      "pokemon": [
-        {
-          "species": "Charizard-Mega-Y"
-        },
-        {
-          "species": "Whimsicott"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Milotic",
-          "ability": "Competitive",
-          "item": "Leftovers",
-          "moves": [
-            "Scald",
-            "Ice Beam",
-            "Recover",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Aerodactyl",
-          "ability": "Unnerve",
-          "item": "Focus Sash",
-          "moves": [
-            "Rock Slide",
-            "Wide Guard",
-            "Dual Wingbeat",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Venusaur-Mega"
         }
       ]
     },
@@ -1589,40 +1529,6 @@
       ]
     },
     {
-      "id": "RGF2aSBHdWltYXJh",
-      "player": "Davi Guimaraes",
-      "tournament": "limitless-69ec2fa8519a1682506d66fa",
-      "placement": "Record 8-1",
-      "pokemon": [
-        {
-          "species": "Charizard-Mega-Y"
-        },
-        {
-          "species": "Floette-Eternal"
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Aerodactyl",
-          "ability": "Unnerve",
-          "item": "Focus Sash",
-          "moves": [
-            "Rock Slide",
-            "Wide Guard",
-            "Tailwind",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Kingambit"
-        }
-      ]
-    },
-    {
       "id": "TWFydlZHQzo6bGlt",
       "player": "MarvVGC",
       "tournament": "limitless-69f741c44f71d664893eb5bf",
@@ -1673,6 +1579,40 @@
       ]
     },
     {
+      "id": "RGF2aSBHdWltYXJh",
+      "player": "Davi Guimaraes",
+      "tournament": "limitless-69ec2fa8519a1682506d66fa",
+      "placement": "Record 8-1",
+      "pokemon": [
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
+          "species": "Floette-Eternal"
+        },
+        {
+          "species": "Garchomp"
+        },
+        {
+          "species": "Aerodactyl",
+          "ability": "Unnerve",
+          "item": "Focus Sash",
+          "moves": [
+            "Rock Slide",
+            "Wide Guard",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Kingambit"
+        }
+      ]
+    },
+    {
       "id": "VGVycm9uZVZHQzo6",
       "player": "TerroneVGC",
       "tournament": "limitless-69f7b2bae23aab068aad9fdf",
@@ -1703,6 +1643,106 @@
         },
         {
           "species": "Basculegion"
+        }
+      ]
+    },
+    {
+      "id": "TGFrZW50YTo6bGlt",
+      "player": "Lakenta",
+      "tournament": "limitless-6a0c9ebedfbdf089cbbdd662",
+      "placement": "Record 7-2",
+      "pokemon": [
+        {
+          "species": "Floette-Eternal"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
+          "species": "Garchomp"
+        },
+        {
+          "species": "Aerodactyl",
+          "ability": "Unnerve",
+          "item": "Focus Sash",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sneasler"
+        }
+      ]
+    },
+    {
+      "id": "VHVyYm9NYXR0Ojps",
+      "player": "TurboMatt",
+      "tournament": "limitless-69f0e7f6e23aab068aad44a1",
+      "placement": "Record 11-1",
+      "pokemon": [
+        {
+          "species": "Gengar-Mega"
+        },
+        {
+          "species": "Sinistcha",
+          "ability": "Hospitality",
+          "item": "Colbur Berry",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Archaludon",
+          "ability": "Stamina",
+          "item": "Leftovers",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "item": "Passho Berry",
+          "moves": [
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sableye",
+          "ability": "Prankster",
+          "item": "Roseli Berry",
+          "moves": [
+            "Rain Dance",
+            "Light Screen",
+            "Will-O-Wisp",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Politoed",
+          "ability": "Drizzle",
+          "item": "Sitrus Berry",
+          "moves": [
+            "Weather Ball",
+            "Perish Song",
+            "Encore",
+            "Protect"
+          ]
         }
       ]
     },
@@ -1757,60 +1797,52 @@
       ]
     },
     {
-      "id": "YW50eXR1bmE6Omxp",
-      "player": "antytuna",
-      "tournament": "limitless-69ef9dd4e23aab068aad3843",
-      "placement": "Record 8-0",
+      "id": "QWFydWJpOjpsaW1p",
+      "player": "Aarubi",
+      "tournament": "limitless-6a145c930f6c1f0899860ae9",
+      "placement": "Record 7-1",
       "pokemon": [
         {
-          "species": "Audino"
+          "species": "Snorlax"
         },
         {
-          "species": "Archaludon",
-          "ability": "Stamina",
-          "item": "Leftovers",
-          "moves": [
-            "Electro Shot",
-            "Dragon Pulse",
-            "Protect",
-            "Flash Cannon"
-          ]
-        },
-        {
-          "species": "Pelipper",
+          "species": "Politoed",
           "ability": "Drizzle",
-          "item": "Focus Sash",
+          "item": "Sitrus Berry",
           "moves": [
-            "Hurricane",
-            "Tailwind",
-            "Wide Guard",
+            "Weather Ball",
+            "Encore",
+            "Perish Song",
             "Protect"
           ]
         },
         {
-          "species": "Scizor-Mega"
-        },
-        {
           "species": "Incineroar",
           "ability": "Intimidate",
-          "item": "Sitrus Berry",
+          "item": "Passho Berry",
           "moves": [
-            "Parting Shot",
             "Fake Out",
-            "Throat Chop",
-            "Flare Blitz"
+            "Parting Shot",
+            "Protect",
+            "Throat Chop"
           ]
         },
         {
           "species": "Sinistcha",
           "ability": "Hospitality",
-          "item": "Colbur Berry",
+          "item": "Kasib Berry",
           "moves": [
             "Matcha Gotcha",
-            "Life Dew",
-            "Protect",
-            "Rage Powder"
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
           ]
+        },
+        {
+          "species": "Gengar-Mega"
+        },
+        {
+          "species": "Hawlucha-Mega"
         }
       ]
     },
@@ -1868,6 +1900,56 @@
             "Thunderbolt",
             "Helping Hand",
             "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "YW50eXR1bmE6Omxp",
+      "player": "antytuna",
+      "tournament": "limitless-69ef9dd4e23aab068aad3843",
+      "placement": "Record 8-0",
+      "pokemon": [
+        {
+          "species": "Audino"
+        },
+        {
+          "species": "Archaludon",
+          "ability": "Stamina",
+          "item": "Leftovers",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Pelipper",
+          "ability": "Drizzle",
+          "item": "Focus Sash",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Scizor-Mega"
+        },
+        {
+          "species": "Incineroar"
+        },
+        {
+          "species": "Sinistcha",
+          "ability": "Hospitality",
+          "item": "Colbur Berry",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Protect",
+            "Rage Powder"
           ]
         }
       ]
@@ -2057,116 +2139,6 @@
       ]
     },
     {
-      "id": "Q2FyOjpsaW1pdGxl",
-      "player": "Car",
-      "tournament": "limitless-6a0a5875dfbdf089cbbdc661",
-      "placement": "Record 3-0",
-      "pokemon": [
-        {
-          "species": "Pelipper"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Archaludon"
-        },
-        {
-          "species": "Incineroar"
-        },
-        {
-          "species": "Dragonite-Mega"
-        },
-        {
-          "species": "Sinistcha",
-          "ability": "Hospitality",
-          "item": "Sitrus Berry",
-          "moves": [
-            "Matcha Gotcha",
-            "Trick Room",
-            "Strength Sap",
-            "Rage Powder"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "RGlnaW9WR0M6Omxp",
-      "player": "DigioVGC",
-      "tournament": "limitless-69e3bebe48d465883f717271",
-      "placement": "Record 9-1",
-      "pokemon": [
-        {
-          "species": "Floette-Eternal",
-          "ability": "Flower Veil",
-          "item": "Floettite",
-          "moves": [
-            "Light of Ruin",
-            "Moonblast",
-            "Dazzling Gleam",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Whimsicott",
-          "ability": "Prankster",
-          "item": "Focus Sash",
-          "moves": [
-            "Moonblast",
-            "Encore",
-            "Tailwind",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Sneasler"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Delphox-Mega"
-        }
-      ]
-    },
-    {
-      "id": "UXVlZXJDcm9jb2Rp",
-      "player": "QueerCrocodile",
-      "tournament": "limitless-6a0095c513f957d6d4b44daf",
-      "placement": "Record 7-1",
-      "pokemon": [
-        {
-          "species": "Floette-Eternal",
-          "ability": "Flower Veil",
-          "item": "Floettite",
-          "moves": [
-            "Moonblast",
-            "Dazzling Gleam",
-            "Calm Mind",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Whimsicott"
-        },
-        {
-          "species": "Arcanine-Hisui"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Archaludon"
-        }
-      ]
-    },
-    {
       "id": "RWdvRGVhdGg6Omxp",
       "player": "EgoDeath",
       "tournament": "limitless-69f40b1c4f71d664893e880c",
@@ -2247,6 +2219,48 @@
             "Dragon Pulse",
             "Protect"
           ]
+        }
+      ]
+    },
+    {
+      "id": "RGlnaW9WR0M6Omxp",
+      "player": "DigioVGC",
+      "tournament": "limitless-69e3bebe48d465883f717271",
+      "placement": "Record 9-1",
+      "pokemon": [
+        {
+          "species": "Floette-Eternal",
+          "ability": "Flower Veil",
+          "item": "Floettite",
+          "moves": [
+            "Light of Ruin",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Whimsicott",
+          "ability": "Prankster",
+          "item": "Focus Sash",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sneasler"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Delphox-Mega"
         }
       ]
     },
@@ -2721,21 +2735,50 @@
       ]
     },
     {
-      "id": "Tm9haCBTbWl0aDo6",
-      "player": "Noah Smith",
-      "tournament": "limitless-6a0e575013f957d6d4b4c336",
-      "placement": "Record 7-1",
+      "id": "Sm9zZXBoR2FtYml0",
+      "player": "JosephGambit",
+      "tournament": "limitless-69eb099278b359b789d6aa3c",
+      "placement": "Record 4-0",
       "pokemon": [
+        {
+          "species": "Froslass-Mega"
+        },
+        {
+          "species": "Sneasler"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Arcanine-Hisui"
+        },
         {
           "species": "Whimsicott",
           "ability": "Prankster",
           "item": "Fairy Feather",
           "moves": [
-            "Tailwind",
             "Moonblast",
+            "Tailwind",
             "Encore",
             "Protect"
           ]
+        }
+      ]
+    },
+    {
+      "id": "RHV4bGVtb246Omxp",
+      "player": "Duxlemon",
+      "tournament": "limitless-69feb07edfbdf089cbbd5716",
+      "placement": "Record 9-1",
+      "pokemon": [
+        {
+          "species": "Aerodactyl-Mega"
+        },
+        {
+          "species": "Garchomp"
         },
         {
           "species": "Charizard-Mega-Y"
@@ -2744,21 +2787,86 @@
           "species": "Basculegion"
         },
         {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Glimmora",
-          "ability": "Toxic Debris",
-          "item": "Focus Sash",
+          "species": "Sylveon",
+          "ability": "Pixilate",
+          "item": "Fairy Feather",
           "moves": [
-            "Power Gem",
-            "Sludge Bomb",
-            "Earth Power",
-            "Spiky Shield"
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
           ]
         },
         {
+          "species": "Kingambit"
+        }
+      ]
+    },
+    {
+      "id": "QnJlbnQgU2FudGlh",
+      "player": "Brent Santiago",
+      "tournament": "limitless-69f746824f71d664893eb5d3",
+      "placement": "Record 7-1",
+      "pokemon": [
+        {
+          "species": "Whimsicott"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
           "species": "Garchomp"
+        },
+        {
+          "species": "Dragonite-Mega"
+        },
+        {
+          "species": "Sylveon",
+          "ability": "Pixilate",
+          "item": "Fairy Feather",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Moonblast",
+            "Detect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VGlueG9MaWJyZTo6",
+      "player": "TinxoLibre",
+      "tournament": "limitless-6a096c17dfbdf089cbbdbfef",
+      "placement": "Record 8-2",
+      "pokemon": [
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Glimmora-Mega"
+        },
+        {
+          "species": "Whimsicott"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Sylveon",
+          "ability": "Pixilate",
+          "item": "Fairy Feather",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Hyper Beam",
+            "Protect"
+          ]
         }
       ]
     },
@@ -2971,74 +3079,6 @@
       ]
     },
     {
-      "id": "QnJlbnQgU2FudGlh",
-      "player": "Brent Santiago",
-      "tournament": "limitless-69f746824f71d664893eb5d3",
-      "placement": "Record 7-1",
-      "pokemon": [
-        {
-          "species": "Whimsicott"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Charizard-Mega-Y"
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Dragonite-Mega"
-        },
-        {
-          "species": "Sylveon",
-          "ability": "Pixilate",
-          "item": "Fairy Feather",
-          "moves": [
-            "Hyper Voice",
-            "Quick Attack",
-            "Moonblast",
-            "Detect"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "VGlueG9MaWJyZTo6",
-      "player": "TinxoLibre",
-      "tournament": "limitless-6a096c17dfbdf089cbbdbfef",
-      "placement": "Record 8-2",
-      "pokemon": [
-        {
-          "species": "Charizard-Mega-Y"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Glimmora-Mega"
-        },
-        {
-          "species": "Whimsicott"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Sylveon",
-          "ability": "Pixilate",
-          "item": "Fairy Feather",
-          "moves": [
-            "Hyper Voice",
-            "Moonblast",
-            "Hyper Beam",
-            "Protect"
-          ]
-        }
-      ]
-    },
-    {
       "id": "bWVycnlwYXN0YTo6",
       "player": "merrypasta",
       "tournament": "limitless-6a02c3b713f957d6d4b4673c",
@@ -3070,15 +3110,7 @@
           ]
         },
         {
-          "species": "Meowscarada",
-          "ability": "Overgrow",
-          "item": "Focus Sash",
-          "moves": [
-            "Flower Trick",
-            "Knock Off",
-            "Protect",
-            "Sucker Punch"
-          ]
+          "species": "Meowscarada"
         },
         {
           "species": "Dragonite",
@@ -3383,82 +3415,6 @@
       ]
     },
     {
-      "id": "TWlraV9UaGVfSGF4",
-      "player": "Miki_The_Haxed",
-      "tournament": "limitless-69d502bf0e548b5c2fbe582f",
-      "placement": "Record 3-0",
-      "pokemon": [
-        {
-          "species": "Froslass-Mega"
-        },
-        {
-          "species": "Sneasler"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Basculegion"
-        },
-        {
-          "species": "Milotic"
-        },
-        {
-          "species": "Dragonite",
-          "ability": "Multiscale",
-          "item": "Dragon Fang",
-          "moves": [
-            "Dragon Claw",
-            "Low Kick",
-            "Tailwind",
-            "Extreme Speed"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "aW50ZXJmbHV4ZXI6",
-      "player": "interfluxer",
-      "tournament": "limitless-69f576ffe23aab068aad804f",
-      "placement": "Record 7-2",
-      "pokemon": [
-        {
-          "species": "Lopunny-Mega"
-        },
-        {
-          "species": "Dragapult"
-        },
-        {
-          "species": "Tyranitar",
-          "ability": "Sand Stream",
-          "item": "Passho Berry",
-          "moves": [
-            "Rock Slide",
-            "Knock Off",
-            "Heavy Slam",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Rotom-Mow"
-        },
-        {
-          "species": "Arcanine-Hisui"
-        },
-        {
-          "species": "Volcarona",
-          "ability": "Flame Body",
-          "item": "Sitrus Berry",
-          "moves": [
-            "Rage Powder",
-            "Heat Wave",
-            "Quiver Dance",
-            "Protect"
-          ]
-        }
-      ]
-    },
-    {
       "id": "QWxseTo6bGltaXRs",
       "player": "Ally",
       "tournament": "limitless-69f8a6ef4f71d664893ec55c",
@@ -3530,6 +3486,48 @@
             "Hypnosis",
             "Coil",
             "Recover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aW50ZXJmbHV4ZXI6",
+      "player": "interfluxer",
+      "tournament": "limitless-69f576ffe23aab068aad804f",
+      "placement": "Record 7-2",
+      "pokemon": [
+        {
+          "species": "Lopunny-Mega"
+        },
+        {
+          "species": "Dragapult"
+        },
+        {
+          "species": "Tyranitar",
+          "ability": "Sand Stream",
+          "item": "Passho Berry",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Heavy Slam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Rotom-Mow"
+        },
+        {
+          "species": "Arcanine-Hisui"
+        },
+        {
+          "species": "Volcarona",
+          "ability": "Flame Body",
+          "item": "Sitrus Berry",
+          "moves": [
+            "Rage Powder",
+            "Heat Wave",
+            "Quiver Dance",
+            "Protect"
           ]
         }
       ]
@@ -3645,6 +3643,48 @@
       ]
     },
     {
+      "id": "UmFmYWVsIEFndWly",
+      "player": "Rafael Aguirre",
+      "tournament": "limitless-69fb71e34f71d664893ee6b5",
+      "placement": "Record 3-1",
+      "pokemon": [
+        {
+          "species": "Tyranitar-Mega"
+        },
+        {
+          "species": "Excadrill",
+          "ability": "Sand Rush",
+          "item": "Focus Sash",
+          "moves": [
+            "Iron Head",
+            "Rock Slide",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Milotic",
+          "ability": "Competitive",
+          "item": "Leftovers",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Protect",
+            "Dragon Tail"
+          ]
+        },
+        {
+          "species": "Sneasler"
+        },
+        {
+          "species": "Incineroar"
+        },
+        {
+          "species": "Sinistcha"
+        }
+      ]
+    },
+    {
       "id": "RXZlcmV0dDk4Ojps",
       "player": "Everett98",
       "tournament": "limitless-69f8714be23aab068aada743",
@@ -3695,196 +3735,36 @@
       ]
     },
     {
-      "id": "cmlja2luY2g6Omxp",
-      "player": "rickinch",
-      "tournament": "limitless-69f8c0864f71d664893ec6d0",
-      "placement": "Record 4-0",
-      "pokemon": [
-        {
-          "species": "Aegislash",
-          "ability": "Stance Change",
-          "item": "Colbur Berry",
-          "moves": [
-            "Poltergeist",
-            "Shadow Sneak",
-            "Sacred Sword",
-            "King's Shield"
-          ]
-        },
-        {
-          "species": "Rotom-Wash"
-        },
-        {
-          "species": "Gengar-Mega"
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Ninetales-Alola",
-          "ability": "Snow Warning",
-          "item": "Focus Sash",
-          "moves": [
-            "Blizzard",
-            "Freeze-Dry",
-            "Encore",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Incineroar"
-        }
-      ]
-    },
-    {
-      "id": "ZWV2ZWVpeW5uOjps",
-      "player": "eeveeiynn",
-      "tournament": "limitless-69f81d1be23aab068aada5f0",
-      "placement": "Record 5-1",
-      "pokemon": [
-        {
-          "species": "Charizard-Mega-Y"
-        },
-        {
-          "species": "Meowscarada",
-          "ability": "Protean",
-          "item": "Choice Scarf",
-          "moves": [
-            "U-turn",
-            "Flower Trick",
-            "Throat Chop",
-            "Triple Axel"
-          ]
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Aerodactyl"
-        },
-        {
-          "species": "Aegislash",
-          "ability": "Stance Change",
-          "item": "Spell Tag",
-          "moves": [
-            "King's Shield",
-            "Flash Cannon",
-            "Shadow Ball",
-            "Wide Guard"
-          ]
-        },
-        {
-          "species": "Gallade-Mega"
-        }
-      ]
-    },
-    {
-      "id": "U211Z2p1Zzo6bGlt",
-      "player": "Smugjug",
-      "tournament": "limitless-69f0a16b4f71d664893e6470",
+      "id": "Tm9haCBTbWl0aDo6",
+      "player": "Noah Smith",
+      "tournament": "limitless-6a0e575013f957d6d4b4c336",
       "placement": "Record 7-1",
       "pokemon": [
         {
-          "species": "Floette-Eternal"
+          "species": "Whimsicott"
         },
         {
-          "species": "Aegislash",
-          "ability": "Stance Change",
-          "item": "Spell Tag",
-          "moves": [
-            "Close Combat",
-            "Poltergeist",
-            "Shadow Sneak",
-            "King's Shield"
-          ]
-        },
-        {
-          "species": "Kingambit"
+          "species": "Charizard-Mega-Y"
         },
         {
           "species": "Basculegion"
         },
         {
-          "species": "Delphox-Mega"
-        },
-        {
-          "species": "Sneasler"
-        }
-      ]
-    },
-    {
-      "id": "U2x5QWJieTo6bGlt",
-      "player": "SlyAbby",
-      "tournament": "limitless-69f21d93e23aab068aad52b6",
-      "placement": "Record 7-2",
-      "pokemon": [
-        {
-          "species": "Lopunny-Mega"
-        },
-        {
-          "species": "Sylveon"
-        },
-        {
-          "species": "Aegislash",
-          "ability": "Stance Change",
-          "item": "Spell Tag",
-          "moves": [
-            "Poltergeist",
-            "Shadow Sneak",
-            "Sacred Sword",
-            "King's Shield"
-          ]
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Rotom-Wash"
-        },
-        {
-          "species": "Aerodactyl-Mega"
-        }
-      ]
-    },
-    {
-      "id": "W0ROUl0gSXNhYWMg",
-      "player": "[DNR] Isaac Moreira",
-      "tournament": "limitless-69dd6d2e48d465883f712e47",
-      "placement": "Record 10-2",
-      "pokemon": [
-        {
-          "species": "Delphox-Mega"
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Vivillon"
-        },
-        {
-          "species": "Aegislash",
-          "ability": "Stance Change",
-          "item": "Spell Tag",
-          "moves": [
-            "King's Shield",
-            "Poltergeist",
-            "Sacred Sword",
-            "Shadow Sneak"
-          ]
-        },
-        {
-          "species": "Maushold",
-          "ability": "Friend Guard",
-          "item": "Chople Berry",
-          "moves": [
-            "Protect",
-            "Follow Me",
-            "Taunt",
-            "Super Fang"
-          ]
-        },
-        {
           "species": "Kingambit"
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "item": "Focus Sash",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "species": "Garchomp"
         }
       ]
     },
@@ -3953,6 +3833,40 @@
         },
         {
           "species": "Garchomp"
+        }
+      ]
+    },
+    {
+      "id": "bWloaXI6OmxpbWl0",
+      "player": "mihir",
+      "tournament": "limitless-69f8a712e23aab068aada7f0",
+      "placement": "Record 5-0",
+      "pokemon": [
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
+          "species": "Whimsicott"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Garchomp"
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "item": "Focus Sash",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power",
+            "Spiky Shield"
+          ]
         }
       ]
     },
@@ -4059,78 +3973,146 @@
       ]
     },
     {
-      "id": "RGhvbndvbGZWR0M6",
-      "player": "DhonwolfVGC",
-      "tournament": "limitless-69fc8b98e23aab068aadd207",
-      "placement": "Record 6-2",
+      "id": "cmlja2luY2g6Omxp",
+      "player": "rickinch",
+      "tournament": "limitless-69f8c0864f71d664893ec6d0",
+      "placement": "Record 4-0",
       "pokemon": [
         {
-          "species": "Gardevoir-Mega"
+          "species": "Aegislash",
+          "ability": "Stance Change",
+          "item": "Colbur Berry",
+          "moves": [
+            "Poltergeist",
+            "Shadow Sneak",
+            "Sacred Sword",
+            "King's Shield"
+          ]
         },
         {
           "species": "Rotom-Wash"
         },
         {
-          "species": "Glimmora",
-          "ability": "Toxic Debris",
-          "item": "Focus Sash",
-          "moves": [
-            "Sludge Bomb",
-            "Spiky Shield",
-            "Power Gem",
-            "Earth Power"
-          ]
-        },
-        {
-          "species": "Scizor-Mega"
+          "species": "Gengar-Mega"
         },
         {
           "species": "Garchomp"
         },
         {
-          "species": "Talonflame",
-          "ability": "Gale Wings",
-          "item": "no item",
+          "species": "Ninetales-Alola",
+          "ability": "Snow Warning",
+          "item": "Focus Sash",
           "moves": [
-            "Acrobatics",
-            "Flare Blitz",
-            "Protect",
-            "Tailwind"
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
           ]
+        },
+        {
+          "species": "Incineroar"
         }
       ]
     },
     {
-      "id": "QWx2YXJvMzYwOjps",
-      "player": "Alvaro360",
-      "tournament": "limitless-69e3bf4f78b359b789d65f52",
-      "placement": "Record 9-1",
+      "id": "R2llbEJha2tlcjo6",
+      "player": "GielBakker",
+      "tournament": "limitless-6a0e4ceddfbdf089cbbde2e1",
+      "placement": "Record 8-2",
       "pokemon": [
         {
-          "species": "Charizard-Mega-X"
+          "species": "Garchomp-Mega"
         },
         {
-          "species": "Basculegion"
+          "species": "Farigiraf"
         },
         {
-          "species": "Sinistcha"
-        },
-        {
-          "species": "Glimmora",
-          "ability": "Toxic Debris",
-          "item": "Focus Sash",
+          "species": "Aegislash",
+          "ability": "Stance Change",
+          "item": "Leftovers",
           "moves": [
-            "Power Gem",
-            "Sludge Bomb",
-            "Spiky Shield",
-            "Earth Power"
+            "Flash Cannon",
+            "Shadow Ball",
+            "Substitute",
+            "King's Shield"
           ]
         },
         {
           "species": "Incineroar"
         },
         {
+          "species": "Aerodactyl"
+        },
+        {
           "species": "Floette-Eternal"
+        }
+      ]
+    },
+    {
+      "id": "ZWV2ZWVpeW5uOjps",
+      "player": "eeveeiynn",
+      "tournament": "limitless-69f81d1be23aab068aada5f0",
+      "placement": "Record 5-1",
+      "pokemon": [
+        {
+          "species": "Charizard-Mega-Y"
+        },
+        {
+          "species": "Meowscarada"
+        },
+        {
+          "species": "Garchomp"
+        },
+        {
+          "species": "Aerodactyl"
+        },
+        {
+          "species": "Aegislash",
+          "ability": "Stance Change",
+          "item": "Spell Tag",
+          "moves": [
+            "King's Shield",
+            "Flash Cannon",
+            "Shadow Ball",
+            "Wide Guard"
+          ]
+        },
+        {
+          "species": "Gallade-Mega"
+        }
+      ]
+    },
+    {
+      "id": "U211Z2p1Zzo6bGlt",
+      "player": "Smugjug",
+      "tournament": "limitless-69f0a16b4f71d664893e6470",
+      "placement": "Record 7-1",
+      "pokemon": [
+        {
+          "species": "Floette-Eternal"
+        },
+        {
+          "species": "Aegislash",
+          "ability": "Stance Change",
+          "item": "Spell Tag",
+          "moves": [
+            "Close Combat",
+            "Poltergeist",
+            "Shadow Sneak",
+            "King's Shield"
+          ]
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Delphox-Mega"
+        },
+        {
+          "species": "Sneasler"
         }
       ]
     },
@@ -4381,6 +4363,40 @@
       ]
     },
     {
+      "id": "R291aWxsb3U6Omxp",
+      "player": "Gouillou",
+      "tournament": "limitless-6a0e4ceddfbdf089cbbde2e1",
+      "placement": "Record 7-3",
+      "pokemon": [
+        {
+          "species": "Aerodactyl-Mega"
+        },
+        {
+          "species": "Sylveon"
+        },
+        {
+          "species": "Incineroar"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Kommo-o",
+          "ability": "Soundproof",
+          "item": "Leftovers",
+          "moves": [
+            "Clanging Scales",
+            "Aura Sphere",
+            "Protect",
+            "Clangorous Soul"
+          ]
+        },
+        {
+          "species": "Venusaur-Mega"
+        }
+      ]
+    },
+    {
       "id": "TnV0Y2h1cDo6bGlt",
       "player": "Nutchup",
       "tournament": "limitless-69e3bf4f78b359b789d65f52",
@@ -4559,36 +4575,36 @@
       ]
     },
     {
-      "id": "UmluemFya286Omxp",
-      "player": "Rinzarko",
-      "tournament": "limitless-69d502bf0e548b5c2fbe582f",
-      "placement": "Record 3-0",
+      "id": "RGhvbndvbGZWR0M6",
+      "player": "DhonwolfVGC",
+      "tournament": "limitless-69fc8b98e23aab068aadd207",
+      "placement": "Record 6-2",
       "pokemon": [
+        {
+          "species": "Gardevoir-Mega"
+        },
         {
           "species": "Rotom-Wash"
         },
         {
-          "species": "Venusaur-Mega"
+          "species": "Glimmora"
+        },
+        {
+          "species": "Scizor-Mega"
+        },
+        {
+          "species": "Garchomp"
         },
         {
           "species": "Talonflame",
           "ability": "Gale Wings",
-          "item": "Focus Sash",
+          "item": "no item",
           "moves": [
+            "Acrobatics",
             "Flare Blitz",
-            "Brave Bird",
             "Protect",
             "Tailwind"
           ]
-        },
-        {
-          "species": "Sneasler"
-        },
-        {
-          "species": "Tyranitar-Mega"
-        },
-        {
-          "species": "Basculegion"
         }
       ]
     },
@@ -4616,15 +4632,7 @@
           "species": "Garchomp"
         },
         {
-          "species": "Meowscarada",
-          "ability": "Protean",
-          "item": "Choice Scarf",
-          "moves": [
-            "Knock Off",
-            "Flower Trick",
-            "U-turn",
-            "Triple Axel"
-          ]
+          "species": "Meowscarada"
         },
         {
           "species": "Rotom-Wash"
@@ -4673,64 +4681,6 @@
         },
         {
           "species": "Scovillain-Mega"
-        }
-      ]
-    },
-    {
-      "id": "ZGl2YWRkb29kbGVz",
-      "player": "divaddoodles",
-      "tournament": "limitless-69efe8cf4f71d664893e5f55",
-      "placement": "Record 4-0",
-      "pokemon": [
-        {
-          "species": "Tyranitar-Mega"
-        },
-        {
-          "species": "Excadrill",
-          "ability": "Sand Rush",
-          "item": "Focus Sash",
-          "moves": [
-            "Earthquake",
-            "Iron Head",
-            "Protect",
-            "Rock Slide"
-          ]
-        },
-        {
-          "species": "Corviknight",
-          "ability": "Mirror Armor",
-          "item": "Leftovers",
-          "moves": [
-            "Tailwind",
-            "Roost",
-            "Brave Bird",
-            "Bulk Up"
-          ]
-        },
-        {
-          "species": "Mimikyu",
-          "ability": "Disguise",
-          "item": "White Herb",
-          "moves": [
-            "Play Rough",
-            "Shadow Sneak",
-            "Shadow Claw",
-            "Protect"
-          ]
-        },
-        {
-          "species": "Rotom-Wash"
-        },
-        {
-          "species": "Hydreigon",
-          "ability": "Levitate",
-          "item": "Choice Scarf",
-          "moves": [
-            "Dark Pulse",
-            "Draco Meteor",
-            "Heat Wave",
-            "Snarl"
-          ]
         }
       ]
     },
@@ -5063,10 +5013,10 @@
       ]
     },
     {
-      "id": "UmFmYWVsIEFndWly",
-      "player": "Rafael Aguirre",
-      "tournament": "limitless-69fb71e34f71d664893ee6b5",
-      "placement": "Record 3-1",
+      "id": "a2Vuemlubjo6bGlt",
+      "player": "kenzinn",
+      "tournament": "limitless-6a145c930f6c1f0899860ae9",
+      "placement": "Record 6-2",
       "pokemon": [
         {
           "species": "Tyranitar-Mega"
@@ -5076,23 +5026,31 @@
           "ability": "Sand Rush",
           "item": "Focus Sash",
           "moves": [
+            "Earthquake",
+            "Protect",
             "Iron Head",
-            "Rock Slide",
-            "High Horsepower",
-            "Protect"
+            "Rock Slide"
           ]
         },
         {
-          "species": "Milotic"
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "item": "Choice Scarf",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Snarl",
+            "Heat Wave"
+          ]
         },
         {
-          "species": "Sneasler"
+          "species": "Talonflame"
         },
         {
-          "species": "Incineroar"
+          "species": "Sylveon"
         },
         {
-          "species": "Sinistcha"
+          "species": "Tauros"
         }
       ]
     },
@@ -5176,7 +5134,15 @@
           "species": "Archaludon"
         },
         {
-          "species": "Vivillon"
+          "species": "Vivillon",
+          "ability": "Compound Eyes",
+          "item": "Focus Sash",
+          "moves": [
+            "Hurricane",
+            "Sleep Powder",
+            "Rage Powder",
+            "Protect"
+          ]
         }
       ]
     },
@@ -5385,55 +5351,13 @@
       ]
     },
     {
-      "id": "dG9mc2t5OjpsaW1p",
-      "player": "tofsky",
-      "tournament": "limitless-69ec2fa8519a1682506d66fa",
-      "placement": "Record 7-1",
-      "pokemon": [
-        {
-          "species": "Dragonite-Mega"
-        },
-        {
-          "species": "Garchomp"
-        },
-        {
-          "species": "Sneasler"
-        },
-        {
-          "species": "Orthworm"
-        },
-        {
-          "species": "Kingambit"
-        },
-        {
-          "species": "Rotom-Heat",
-          "ability": "Levitate",
-          "item": "Choice Scarf",
-          "moves": [
-            "Overheat",
-            "Thunderbolt",
-            "Electroweb",
-            "Volt Switch"
-          ]
-        }
-      ]
-    },
-    {
       "id": "TG9yZF9KYXk6Omxp",
       "player": "Lord_Jay",
       "tournament": "limitless-6a08f793dfbdf089cbbdbbf4",
       "placement": "Record 5-1",
       "pokemon": [
         {
-          "species": "Meowscarada",
-          "ability": "Protean",
-          "item": "Choice Scarf",
-          "moves": [
-            "Flower Trick",
-            "Knock Off",
-            "Low Kick",
-            "Triple Axel"
-          ]
+          "species": "Meowscarada"
         },
         {
           "species": "Tinkaton",
@@ -5519,6 +5443,40 @@
       ]
     },
     {
+      "id": "UXVlZXJDcm9jb2Rp",
+      "player": "QueerCrocodile",
+      "tournament": "limitless-69c84b7236f5b5c303dc0601",
+      "placement": "Record 10-1",
+      "pokemon": [
+        {
+          "species": "Floette-Eternal"
+        },
+        {
+          "species": "Whimsicott"
+        },
+        {
+          "species": "Garchomp"
+        },
+        {
+          "species": "Basculegion"
+        },
+        {
+          "species": "Kingambit"
+        },
+        {
+          "species": "Volcarona",
+          "ability": "Flame Body",
+          "item": "Sitrus Berry",
+          "moves": [
+            "Heat Wave",
+            "Rage Powder",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
       "id": "Wmlub2dyaW5lXzg5",
       "player": "Zinogrine_89",
       "tournament": "limitless-69fd8dec2b59cd9b66b26bb3",
@@ -5557,6 +5515,40 @@
         },
         {
           "species": "Archaludon"
+        }
+      ]
+    },
+    {
+      "id": "TXJQb2tFbmpveTo6",
+      "player": "MrPokEnjoy",
+      "tournament": "limitless-6a02769213f957d6d4b46428",
+      "placement": "Record 8-2",
+      "pokemon": [
+        {
+          "species": "Kangaskhan-Mega"
+        },
+        {
+          "species": "Vivillon",
+          "ability": "Friend Guard",
+          "item": "Focus Sash",
+          "moves": [
+            "Pollen Puff",
+            "Rage Powder",
+            "Sleep Powder",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Sylveon"
+        },
+        {
+          "species": "Sneasler"
+        },
+        {
+          "species": "Ceruledge"
+        },
+        {
+          "species": "Basculegion"
         }
       ]
     },

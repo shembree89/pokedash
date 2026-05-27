@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-25",
+  "refreshedAt": "2026-05-27",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -5574,6 +5574,24 @@
       },
       "abilities": [
         "Mold Breaker"
+      ]
+    },
+    "Garchomp-Mega": {
+      "name": "Garchomp-Mega",
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "baseStats": {
+        "hp": 108,
+        "atk": 170,
+        "def": 115,
+        "spa": 120,
+        "spd": 95,
+        "spe": 92
+      },
+      "abilities": [
+        "Sand Force"
       ]
     }
   }
