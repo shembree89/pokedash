@@ -1,174 +1,174 @@
 {
   "format": "VGC",
   "regulation": "Reg M-A",
-  "refreshedAt": "2026-05-31",
-  "source": "pikalytics.com/ai/pokedex/championstournaments (data date 2026-04)",
+  "refreshedAt": "2026-06-03",
+  "source": "pikalytics.com/ai/pokedex/championstournaments (data date 2026-05)",
   "sampleSize": 0,
   "pokemon": [
     {
       "rank": 1,
       "species": "Basculegion",
-      "usage": 0.465
+      "usage": 0.4691
     },
     {
       "rank": 2,
       "species": "Garchomp",
-      "usage": 0.3949
+      "usage": 0.4022
     },
     {
       "rank": 3,
       "species": "Kingambit",
-      "usage": 0.3739
+      "usage": 0.3884
     },
     {
       "rank": 4,
       "species": "Sneasler",
-      "usage": 0.3228
+      "usage": 0.3209
     },
     {
       "rank": 5,
       "species": "Charizard-Mega-Y",
-      "usage": 0.2622
+      "usage": 0.2701
     },
     {
       "rank": 6,
       "species": "Incineroar",
-      "usage": 0.2472
+      "usage": 0.2527
     },
     {
       "rank": 7,
       "species": "Sinistcha",
-      "usage": 0.1908
+      "usage": 0.188
     },
     {
       "rank": 8,
       "species": "Whimsicott",
-      "usage": 0.1664
+      "usage": 0.1833
     },
     {
       "rank": 9,
-      "species": "Archaludon",
-      "usage": 0.1637
+      "species": "Floette-Eternal-Mega",
+      "usage": 0.1675
     },
     {
       "rank": 10,
-      "species": "Floette-Eternal-Mega",
-      "usage": 0.1591
+      "species": "Archaludon",
+      "usage": 0.1567
     },
     {
       "rank": 11,
-      "species": "Farigiraf",
-      "usage": 0.1509
+      "species": "Sylveon",
+      "usage": 0.1508
     },
     {
       "rank": 12,
-      "species": "Sylveon",
-      "usage": 0.1459
+      "species": "Farigiraf",
+      "usage": 0.1503
     },
     {
       "rank": 13,
       "species": "Pelipper",
-      "usage": 0.1422
+      "usage": 0.1344
     },
     {
       "rank": 14,
       "species": "Aerodactyl-Mega",
-      "usage": 0.1208
+      "usage": 0.1252
     },
     {
       "rank": 15,
-      "species": "Aerodactyl",
-      "usage": 0.114
+      "species": "Glimmora",
+      "usage": 0.1183
     },
     {
       "rank": 16,
       "species": "Rotom-Wash",
-      "usage": 0.1123
+      "usage": 0.1134
     },
     {
       "rank": 17,
-      "species": "Glimmora",
-      "usage": 0.1113
+      "species": "Aerodactyl",
+      "usage": 0.1053
     },
     {
       "rank": 18,
       "species": "Dragonite",
-      "usage": 0.098
+      "usage": 0.0989
     },
     {
       "rank": 19,
       "species": "Aegislash",
-      "usage": 0.0785
+      "usage": 0.0749
     },
     {
       "rank": 20,
       "species": "Sableye",
-      "usage": 0.0758
+      "usage": 0.0708
     },
     {
       "rank": 21,
-      "species": "Scizor-Mega",
-      "usage": 0.0721
+      "species": "Tyranitar-Mega",
+      "usage": 0.0706
     },
     {
       "rank": 22,
-      "species": "Tyranitar-Mega",
-      "usage": 0.0684
+      "species": "Froslass",
+      "usage": 0.0703
     },
     {
       "rank": 23,
-      "species": "Froslass",
-      "usage": 0.0684
+      "species": "Talonflame",
+      "usage": 0.0672
     },
     {
       "rank": 24,
-      "species": "Torkoal",
-      "usage": 0.0663
+      "species": "Scizor-Mega",
+      "usage": 0.0667
     },
     {
       "rank": 25,
-      "species": "Milotic",
-      "usage": 0.0654
+      "species": "Venusaur-Mega",
+      "usage": 0.0662
     },
     {
       "rank": 26,
       "species": "Gengar-Mega",
-      "usage": 0.0641
-    },
-    {
-      "rank": 27,
-      "species": "Venusaur-Mega",
-      "usage": 0.0629
-    },
-    {
-      "rank": 28,
-      "species": "Kommo-o",
       "usage": 0.0626
     },
     {
+      "rank": 27,
+      "species": "Kommo-o",
+      "usage": 0.0619
+    },
+    {
+      "rank": 28,
+      "species": "Torkoal",
+      "usage": 0.0618
+    },
+    {
       "rank": 29,
-      "species": "Talonflame",
-      "usage": 0.0616
+      "species": "Milotic",
+      "usage": 0.0608
     },
     {
       "rank": 30,
       "species": "Scovillain",
-      "usage": 0.0598
+      "usage": 0.0582
     },
     {
       "rank": 31,
       "species": "Ninetales-Alola",
-      "usage": 0.0561
+      "usage": 0.0569
     },
     {
       "rank": 32,
       "species": "Maushold",
-      "usage": 0.0519
+      "usage": 0.0555
     },
     {
       "rank": 33,
       "species": "Corviknight",
-      "usage": 0.0511
+      "usage": 0.0534
     },
     {
       "rank": 34,
@@ -178,82 +178,82 @@
     {
       "rank": 35,
       "species": "Excadrill",
-      "usage": 0.0451
+      "usage": 0.0459
     },
     {
       "rank": 36,
       "species": "Kangaskhan-Mega",
-      "usage": 0.0434
+      "usage": 0.0441
     },
     {
       "rank": 37,
       "species": "Politoed",
-      "usage": 0.0421
+      "usage": 0.0412
     },
     {
       "rank": 38,
       "species": "Hydreigon",
-      "usage": 0.0412
+      "usage": 0.0408
     },
     {
       "rank": 39,
       "species": "Gardevoir-Mega",
-      "usage": 0.0391
+      "usage": 0.0401
     },
     {
       "rank": 40,
       "species": "Blastoise-Mega",
-      "usage": 0.0372
+      "usage": 0.0374
     },
     {
       "rank": 41,
-      "species": "Meganium",
-      "usage": 0.0336
+      "species": "Vivillon",
+      "usage": 0.0331
     },
     {
       "rank": 42,
-      "species": "Primarina",
-      "usage": 0.0307
+      "species": "Meganium",
+      "usage": 0.031
     },
     {
       "rank": 43,
-      "species": "Venusaur",
-      "usage": 0.0299
+      "species": "Primarina",
+      "usage": 0.0294
     },
     {
       "rank": 44,
-      "species": "Vivillon",
-      "usage": 0.029
+      "species": "Venusaur",
+      "usage": 0.0288
     },
     {
       "rank": 45,
       "species": "Charizard-Mega-X",
-      "usage": 0.0285
+      "usage": 0.0281
     },
     {
       "rank": 46,
       "species": "Tsareena",
-      "usage": 0.0284
+      "usage": 0.0264
     },
     {
       "rank": 47,
-      "species": "Lopunny-Mega",
-      "usage": 0.0214
+      "species": "Kleavor",
+      "usage": 0.0216
     },
     {
       "rank": 48,
-      "species": "Tinkaton",
-      "usage": 0.02
+      "species": "Lopunny-Mega",
+      "usage": 0.0203
     },
     {
       "rank": 49,
-      "species": "Volcarona",
-      "usage": 0.02
+      "species": "Tinkaton",
+      "usage": 0.0199
     },
     {
       "rank": 50,
       "species": "Rotom-Heat",
-      "usage": 0.0194
+      "usage": 0.0189
     }
   ]
 }

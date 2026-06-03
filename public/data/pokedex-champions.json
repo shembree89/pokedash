@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-05-31",
+  "refreshedAt": "2026-06-03",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -5589,6 +5589,24 @@
         "spa": 120,
         "spd": 95,
         "spe": 92
+      },
+      "abilities": [
+        "Sand Force"
+      ]
+    },
+    "Steelix-Mega": {
+      "name": "Steelix-Mega",
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "atk": 125,
+        "def": 230,
+        "spa": 55,
+        "spd": 95,
+        "spe": 30
       },
       "abilities": [
         "Sand Force"
