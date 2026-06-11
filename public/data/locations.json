@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-10",
+  "refreshedAt": "2026-06-11",
   "source": "bulbapedia.bulbagarden.net (Gen 8+ catch locations)",
   "species": {
     "Abomasnow": {
@@ -1664,45 +1664,6 @@
             {
               "name": "South Province (Area Two)",
               "path": "/wiki/South_Province_(Area_Two)"
-            }
-          ]
-        }
-      ]
-    },
-    "Carvanha": {
-      "species": "Carvanha",
-      "groups": [
-        {
-          "games": [
-            "Expansion Pass"
-          ],
-          "locations": [
-            {
-              "name": "Training Lowlands",
-              "path": "/wiki/Training_Lowlands"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Brilliant Diamond",
-            "Shining Pearl"
-          ],
-          "locations": [
-            {
-              "name": "Great Marsh",
-              "path": "/wiki/Great_Marsh"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Bleu District",
-              "path": "/wiki/Bleu_District"
             }
           ]
         }
@@ -3574,46 +3535,6 @@
         }
       ]
     },
-    "Electrike": {
-      "species": "Electrike",
-      "groups": [
-        {
-          "games": [
-            "Sword",
-            "Shield"
-          ],
-          "locations": [
-            {
-              "name": "Galar Route 4",
-              "path": "/wiki/Galar_Route_4"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Brilliant Diamond",
-            "Shining Pearl"
-          ],
-          "locations": [
-            {
-              "name": "Valley Windworks",
-              "path": "/wiki/Valley_Windworks"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Bleu District",
-              "path": "/wiki/Bleu_District"
-            }
-          ]
-        }
-      ]
-    },
     "Emolga": {
       "species": "Emolga",
       "groups": [
@@ -5125,62 +5046,6 @@
         }
       ]
     },
-    "Glimmet": {
-      "species": "Glimmet",
-      "groups": [
-        {
-          "games": [
-            "Scarlet",
-            "Violet"
-          ],
-          "locations": [
-            {
-              "name": "Alfornada Cavern",
-              "path": "/wiki/Alfornada_Cavern"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Hidden Treasure of Area Zero"
-          ],
-          "locations": [
-            {
-              "name": "Oni Mountain",
-              "path": "/wiki/Oni_Mountain"
-            }
-          ]
-        }
-      ]
-    },
-    "Glimmora": {
-      "species": "Glimmora",
-      "groups": [
-        {
-          "games": [
-            "Scarlet",
-            "Violet"
-          ],
-          "locations": [
-            {
-              "name": "Area Zero",
-              "path": "/wiki/Area_Zero"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Hidden Treasure of Area Zero"
-          ],
-          "locations": [
-            {
-              "name": "Oni Mountain",
-              "path": "/wiki/Oni_Mountain"
-            }
-          ]
-        }
-      ]
-    },
     "Gliscor": {
       "species": "Gliscor",
       "groups": [
@@ -6102,132 +5967,6 @@
             {
               "name": "Rouge District",
               "path": "/wiki/Rouge_District"
-            }
-          ]
-        }
-      ]
-    },
-    "Hippopotas": {
-      "species": "Hippopotas",
-      "groups": [
-        {
-          "games": [
-            "Sword",
-            "Shield"
-          ],
-          "locations": [
-            {
-              "name": "Galar Route 6",
-              "path": "/wiki/Galar_Route_6"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Brilliant Diamond",
-            "Shining Pearl"
-          ],
-          "locations": [
-            {
-              "name": "Maniac Tunnel",
-              "path": "/wiki/Maniac_Tunnel"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Arceus"
-          ],
-          "locations": [
-            {
-              "name": "Crimson Mirelands",
-              "path": "/wiki/Crimson_Mirelands"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Scarlet",
-            "Violet"
-          ],
-          "locations": [
-            {
-              "name": "Asado Desert",
-              "path": "/wiki/Asado_Desert"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Magenta District",
-              "path": "/wiki/Magenta_District"
-            }
-          ]
-        }
-      ]
-    },
-    "Hippowdon": {
-      "species": "Hippowdon",
-      "groups": [
-        {
-          "games": [
-            "Sword",
-            "Shield"
-          ],
-          "locations": [
-            {
-              "name": "Galar Route 8",
-              "path": "/wiki/Galar_Route_8"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Brilliant Diamond",
-            "Shining Pearl"
-          ],
-          "locations": [
-            {
-              "name": "Sinnoh Route 228",
-              "path": "/wiki/Sinnoh_Route_228"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Arceus"
-          ],
-          "locations": [
-            {
-              "name": "Crimson Mirelands",
-              "path": "/wiki/Crimson_Mirelands"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Scarlet",
-            "Violet"
-          ],
-          "locations": [
-            {
-              "name": "Asado Desert",
-              "path": "/wiki/Asado_Desert"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Centrico Plaza",
-              "path": "/wiki/Centrico_Plaza"
             }
           ]
         }
@@ -7846,45 +7585,6 @@
         }
       ]
     },
-    "Manectric": {
-      "species": "Manectric",
-      "groups": [
-        {
-          "games": [
-            "Sword",
-            "Shield"
-          ],
-          "locations": [
-            {
-              "name": "Axew's Eye",
-              "path": "/wiki/Axew%27s_Eye"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Expansion Pass"
-          ],
-          "locations": [
-            {
-              "name": "Max Lair",
-              "path": "/wiki/Max_Lair"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Magenta District",
-              "path": "/wiki/Magenta_District"
-            }
-          ]
-        }
-      ]
-    },
     "Mareanie": {
       "species": "Mareanie",
       "groups": [
@@ -8268,34 +7968,6 @@
             {
               "name": "Obsidian Fieldlands",
               "path": "/wiki/Obsidian_Fieldlands"
-            }
-          ]
-        }
-      ]
-    },
-    "Morpeko": {
-      "species": "Morpeko",
-      "groups": [
-        {
-          "games": [
-            "Sword",
-            "Shield"
-          ],
-          "locations": [
-            {
-              "name": "Route",
-              "path": "/wiki/Route"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Expansion Pass"
-          ],
-          "locations": [
-            {
-              "name": "Challenge Beach",
-              "path": "/wiki/Challenge_Beach"
             }
           ]
         }
@@ -10554,80 +10226,6 @@
         }
       ]
     },
-    "Rotom": {
-      "species": "Rotom",
-      "groups": [
-        {
-          "games": [
-            "Sword",
-            "Shield"
-          ],
-          "locations": [
-            {
-              "name": "Lake of Outrage",
-              "path": "/wiki/Lake_of_Outrage"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Expansion Pass"
-          ],
-          "locations": [
-            {
-              "name": "Workout Sea",
-              "path": "/wiki/Workout_Sea"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Brilliant Diamond",
-            "Shining Pearl"
-          ],
-          "locations": [
-            {
-              "name": "Old Chateau",
-              "path": "/wiki/Old_Chateau"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Arceus"
-          ],
-          "locations": [
-            {
-              "name": "Coronet Highlands",
-              "path": "/wiki/Coronet_Highlands"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Scarlet",
-            "Violet"
-          ],
-          "locations": [
-            {
-              "name": "East Province (Area Two)",
-              "path": "/wiki/East_Province_(Area_Two)"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Hidden Treasure of Area Zero"
-          ],
-          "locations": [
-            {
-              "name": "Savanna Biome",
-              "path": "/wiki/Savanna_Biome"
-            }
-          ]
-        }
-      ]
-    },
     "Rowlet": {
       "species": "Rowlet",
       "groups": [
@@ -11112,45 +10710,6 @@
             {
               "name": "Rouge District",
               "path": "/wiki/Rouge_District"
-            }
-          ]
-        }
-      ]
-    },
-    "Sharpedo": {
-      "species": "Sharpedo",
-      "groups": [
-        {
-          "games": [
-            "Expansion Pass"
-          ],
-          "locations": [
-            {
-              "name": "Workout Sea",
-              "path": "/wiki/Workout_Sea"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Brilliant Diamond",
-            "Shining Pearl"
-          ],
-          "locations": [
-            {
-              "name": "Route",
-              "path": "/wiki/Route"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Bleu District",
-              "path": "/wiki/Bleu_District"
             }
           ]
         }
@@ -12851,33 +12410,6 @@
             {
               "name": "Savanna Biome",
               "path": "/wiki/Savanna_Biome"
-            }
-          ]
-        }
-      ]
-    },
-    "Tepig": {
-      "species": "Tepig",
-      "groups": [
-        {
-          "games": [
-            "Hidden Treasure of Area Zero"
-          ],
-          "locations": [
-            {
-              "name": "Canyon Biome",
-              "path": "/wiki/Canyon_Biome"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Z-A"
-          ],
-          "locations": [
-            {
-              "name": "Vert District",
-              "path": "/wiki/Vert_District"
             }
           ]
         }
