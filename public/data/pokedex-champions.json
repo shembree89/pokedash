@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-15",
+  "refreshedAt": "2026-06-16",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -5610,6 +5610,26 @@
       },
       "abilities": [
         "Sand Force"
+      ]
+    },
+    "Goodra-Hisui": {
+      "name": "Goodra-Hisui",
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 100,
+        "def": 100,
+        "spa": 110,
+        "spd": 150,
+        "spe": 60
+      },
+      "abilities": [
+        "Sap Sipper",
+        "Shell Armor",
+        "Gooey"
       ]
     }
   }
