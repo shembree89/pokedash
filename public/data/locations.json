@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-16",
+  "refreshedAt": "2026-06-20",
   "source": "bulbapedia.bulbagarden.net (Gen 8+ catch locations)",
   "species": {
     "Abomasnow": {
@@ -464,6 +464,22 @@
             {
               "name": "Bleu District",
               "path": "/wiki/Bleu_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Annihilape": {
+      "species": "Annihilape",
+      "groups": [
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Kitakami Wilds",
+              "path": "/wiki/Kitakami_Wilds"
             }
           ]
         }
@@ -1210,6 +1226,45 @@
         }
       ]
     },
+    "Bellossom": {
+      "species": "Bellossom",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Giant's Mirror",
+              "path": "/wiki/Giant%27s_Mirror"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Max Lair",
+              "path": "/wiki/Max_Lair"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Coastal Biome",
+              "path": "/wiki/Coastal_Biome"
+            }
+          ]
+        }
+      ]
+    },
     "Bellsprout": {
       "species": "Bellsprout",
       "groups": [
@@ -1372,6 +1427,22 @@
             {
               "name": "Workout Sea/Dens",
               "path": "/wiki/Workout_Sea/Dens"
+            }
+          ]
+        }
+      ]
+    },
+    "Blaziken": {
+      "species": "Blaziken",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Max Lair",
+              "path": "/wiki/Max_Lair"
             }
           ]
         }
@@ -2361,6 +2432,22 @@
     },
     "Cofagrigus": {
       "species": "Cofagrigus",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Max Lair",
+              "path": "/wiki/Max_Lair"
+            }
+          ]
+        }
+      ]
+    },
+    "Combusken": {
+      "species": "Combusken",
       "groups": [
         {
           "games": [
@@ -4923,6 +5010,23 @@
         }
       ]
     },
+    "Gimmighoul": {
+      "species": "Gimmighoul",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Province (Area One)",
+              "path": "/wiki/South_Province_(Area_One)"
+            }
+          ]
+        }
+      ]
+    },
     "Girafarig": {
       "species": "Girafarig",
       "groups": [
@@ -5197,6 +5301,57 @@
         }
       ]
     },
+    "Gloom": {
+      "species": "Gloom",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Axew's Eye",
+              "path": "/wiki/Axew%27s_Eye"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Max Lair",
+              "path": "/wiki/Max_Lair"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route",
+              "path": "/wiki/Route"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Coastal Biome",
+              "path": "/wiki/Coastal_Biome"
+            }
+          ]
+        }
+      ]
+    },
     "Golett": {
       "species": "Golett",
       "groups": [
@@ -5431,6 +5586,45 @@
             {
               "name": "Jaune District",
               "path": "/wiki/Jaune_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Grimmsnarl": {
+      "species": "Grimmsnarl",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Gigantamax#Gigantamax Factor",
+              "path": "/wiki/Gigantamax#Gigantamax_Factor"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Gigantamax#Gigantamax Factor",
+              "path": "/wiki/Gigantamax#Gigantamax_Factor"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Timeless Woods",
+              "path": "/wiki/Timeless_Woods"
             }
           ]
         }
@@ -6372,6 +6566,57 @@
             {
               "name": "Bridge Field/Dens",
               "path": "/wiki/Bridge_Field/Dens"
+            }
+          ]
+        }
+      ]
+    },
+    "Impidimp": {
+      "species": "Impidimp",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Stow-on-Side",
+              "path": "/wiki/Stow-on-Side"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Slippery Slope",
+              "path": "/wiki/Slippery_Slope"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/wiki/Tagtree_Thicket"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Kitakami Wilds",
+              "path": "/wiki/Kitakami_Wilds"
             }
           ]
         }
@@ -7885,6 +8130,46 @@
         }
       ]
     },
+    "Mankey": {
+      "species": "Mankey",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route",
+              "path": "/wiki/Route"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Province (Area One)",
+              "path": "/wiki/South_Province_(Area_One)"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Kitakami Road",
+              "path": "/wiki/Kitakami_Road"
+            }
+          ]
+        }
+      ]
+    },
     "Mareanie": {
       "species": "Mareanie",
       "groups": [
@@ -8268,6 +8553,57 @@
             {
               "name": "Obsidian Fieldlands",
               "path": "/wiki/Obsidian_Fieldlands"
+            }
+          ]
+        }
+      ]
+    },
+    "Morgrem": {
+      "species": "Morgrem",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Glimwood Tangle",
+              "path": "/wiki/Glimwood_Tangle"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Giant's Bed",
+              "path": "/wiki/Giant%27s_Bed"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "Tagtree Thicket",
+              "path": "/wiki/Tagtree_Thicket"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Kitakami Wilds",
+              "path": "/wiki/Kitakami_Wilds"
             }
           ]
         }
@@ -8679,6 +9015,46 @@
         }
       ]
     },
+    "Oddish": {
+      "species": "Oddish",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Dappled Grove",
+              "path": "/wiki/Dappled_Grove"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route",
+              "path": "/wiki/Route"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Coastal Biome",
+              "path": "/wiki/Coastal_Biome"
+            }
+          ]
+        }
+      ]
+    },
     "Onix": {
       "species": "Onix",
       "groups": [
@@ -8830,6 +9206,44 @@
             {
               "name": "Polar Biome",
               "path": "/wiki/Polar_Biome"
+            }
+          ]
+        }
+      ]
+    },
+    "Overqwil": {
+      "species": "Overqwil",
+      "groups": [
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Crimson Mirelands",
+              "path": "/wiki/Crimson_Mirelands"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Hisuian Form",
+              "path": "/wiki/Hisuian_Form"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "File:None.png",
+              "path": "/wiki/File:None.png"
             }
           ]
         }
@@ -9745,6 +10159,46 @@
         }
       ]
     },
+    "Primeape": {
+      "species": "Primeape",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route",
+              "path": "/wiki/Route"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Province (Area Four)",
+              "path": "/wiki/South_Province_(Area_Four)"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Kitakami Wilds",
+              "path": "/wiki/Kitakami_Wilds"
+            }
+          ]
+        }
+      ]
+    },
     "Prinplup": {
       "species": "Prinplup",
       "groups": [
@@ -9906,6 +10360,80 @@
             {
               "name": "Crimson Mirelands",
               "path": "/wiki/Crimson_Mirelands"
+            }
+          ]
+        }
+      ]
+    },
+    "Qwilfish": {
+      "species": "Qwilfish",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Dusty Bowl",
+              "path": "/wiki/Dusty_Bowl"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Max Lair",
+              "path": "/wiki/Max_Lair"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Iron Island",
+              "path": "/wiki/Iron_Island"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Obsidian Fieldlands",
+              "path": "/wiki/Obsidian_Fieldlands"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Paldean Sea",
+              "path": "/wiki/South_Paldean_Sea"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Polar Biome",
+              "path": "/wiki/Polar_Biome"
             }
           ]
         }
@@ -11040,6 +11568,82 @@
             {
               "name": "South Province (Area Six)",
               "path": "/wiki/South_Province_(Area_Six)"
+            }
+          ]
+        }
+      ]
+    },
+    "Scrafty": {
+      "species": "Scrafty",
+      "groups": [
+        {
+          "games": [
+            "Sword"
+          ],
+          "locations": [
+            {
+              "name": "Rolling Fields/Dens",
+              "path": "/wiki/Rolling_Fields/Dens"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Canyon Biome",
+              "path": "/wiki/Canyon_Biome"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Rouge District",
+              "path": "/wiki/Rouge_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Scraggy": {
+      "species": "Scraggy",
+      "groups": [
+        {
+          "games": [
+            "Sword"
+          ],
+          "locations": [
+            {
+              "name": "Galar Mine No. 2",
+              "path": "/wiki/Galar_Mine_No._2"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Canyon Biome",
+              "path": "/wiki/Canyon_Biome"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Bleu District",
+              "path": "/wiki/Bleu_District"
             }
           ]
         }
@@ -12292,6 +12896,147 @@
         }
       ]
     },
+    "Staraptor": {
+      "species": "Staraptor",
+      "groups": [
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Obsidian Fieldlands",
+              "path": "/wiki/Obsidian_Fieldlands"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Province (Area Three)",
+              "path": "/wiki/South_Province_(Area_Three)"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Fellhorn Gorge",
+              "path": "/wiki/Fellhorn_Gorge"
+            }
+          ]
+        }
+      ]
+    },
+    "Staravia": {
+      "species": "Staravia",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route",
+              "path": "/wiki/Route"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Obsidian Fieldlands",
+              "path": "/wiki/Obsidian_Fieldlands"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Province (Area Two)",
+              "path": "/wiki/South_Province_(Area_Two)"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Mossfell Confluence",
+              "path": "/wiki/Mossfell_Confluence"
+            }
+          ]
+        }
+      ]
+    },
+    "Starly": {
+      "species": "Starly",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Route",
+              "path": "/wiki/Route"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Arceus"
+          ],
+          "locations": [
+            {
+              "name": "Obsidian Fieldlands",
+              "path": "/wiki/Obsidian_Fieldlands"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "South Province (Area One)",
+              "path": "/wiki/South_Province_(Area_One)"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Kitakami Road",
+              "path": "/wiki/Kitakami_Road"
+            }
+          ]
+        }
+      ]
+    },
     "Starmie": {
       "species": "Starmie",
       "groups": [
@@ -12967,6 +13712,34 @@
             {
               "name": "South Province (Area Six)",
               "path": "/wiki/South_Province_(Area_Six)"
+            }
+          ]
+        }
+      ]
+    },
+    "Torchic": {
+      "species": "Torchic",
+      "groups": [
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Grand Underground",
+              "path": "/wiki/Grand_Underground"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Polar Biome",
+              "path": "/wiki/Polar_Biome"
             }
           ]
         }
@@ -13760,6 +14533,45 @@
             {
               "name": "Centrico Plaza",
               "path": "/wiki/Centrico_Plaza"
+            }
+          ]
+        }
+      ]
+    },
+    "Vileplume": {
+      "species": "Vileplume",
+      "groups": [
+        {
+          "games": [
+            "Sword",
+            "Shield"
+          ],
+          "locations": [
+            {
+              "name": "Dappled Grove",
+              "path": "/wiki/Dappled_Grove"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Max Lair",
+              "path": "/wiki/Max_Lair"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Coastal Biome",
+              "path": "/wiki/Coastal_Biome"
             }
           ]
         }

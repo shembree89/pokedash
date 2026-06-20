@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-16",
+  "refreshedAt": "2026-06-20",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -2223,7 +2223,7 @@
             "spd": 95,
             "spe": 110
           },
-          "ability": "",
+          "ability": "Electric Surge",
           "requiredItem": "Raichuite X"
         },
         {
@@ -2239,7 +2239,7 @@
             "spd": 80,
             "spe": 130
           },
-          "ability": "",
+          "ability": "No Guard",
           "requiredItem": "Raichuite Y"
         }
       ]
@@ -5630,6 +5630,529 @@
         "Sap Sipper",
         "Shell Armor",
         "Gooey"
+      ]
+    },
+    "Staraptor-Mega": {
+      "name": "Staraptor-Mega",
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "atk": 140,
+        "def": 100,
+        "spa": 60,
+        "spd": 90,
+        "spe": 110
+      },
+      "abilities": []
+    },
+    "Grimmsnarl": {
+      "name": "Grimmsnarl",
+      "types": [
+        "Dark",
+        "Fairy"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "atk": 120,
+        "def": 65,
+        "spa": 95,
+        "spd": 75,
+        "spe": 60
+      },
+      "abilities": [
+        "Prankster",
+        "Frisk",
+        "Pickpocket"
+      ]
+    },
+    "Metagross-Mega": {
+      "name": "Metagross-Mega",
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 145,
+        "def": 150,
+        "spa": 105,
+        "spd": 110,
+        "spe": 110
+      },
+      "abilities": [
+        "Tough Claws"
+      ]
+    },
+    "Gholdengo": {
+      "name": "Gholdengo",
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "baseStats": {
+        "hp": 87,
+        "atk": 60,
+        "def": 95,
+        "spa": 133,
+        "spd": 91,
+        "spe": 84
+      },
+      "abilities": [
+        "Good As Gold"
+      ]
+    },
+    "Swampert-Mega": {
+      "name": "Swampert-Mega",
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "baseStats": {
+        "hp": 100,
+        "atk": 150,
+        "def": 110,
+        "spa": 95,
+        "spd": 110,
+        "spe": 70
+      },
+      "abilities": [
+        "Swift Swim"
+      ]
+    },
+    "Raichu-Mega-Y": {
+      "name": "Raichu-Mega-Y",
+      "types": [
+        "Electric"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "atk": 100,
+        "def": 55,
+        "spa": 160,
+        "spd": 80,
+        "spe": 130
+      },
+      "abilities": [
+        "No Guard"
+      ]
+    },
+    "Annihilape": {
+      "name": "Annihilape",
+      "types": [
+        "Fighting",
+        "Ghost"
+      ],
+      "baseStats": {
+        "hp": 110,
+        "atk": 115,
+        "def": 80,
+        "spa": 50,
+        "spd": 90,
+        "spe": 90
+      },
+      "abilities": [
+        "Vital Spirit",
+        "Inner Focus",
+        "Defiant"
+      ]
+    },
+    "Mawile-Mega": {
+      "name": "Mawile-Mega",
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "atk": 105,
+        "def": 125,
+        "spa": 55,
+        "spd": 95,
+        "spe": 50
+      },
+      "abilities": [
+        "Huge Power"
+      ]
+    },
+    "Raichu-Mega-X": {
+      "name": "Raichu-Mega-X",
+      "types": [
+        "Electric"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "atk": 135,
+        "def": 95,
+        "spa": 90,
+        "spd": 95,
+        "spe": 110
+      },
+      "abilities": [
+        "Electric Surge"
+      ]
+    },
+    "Eelektross-Mega": {
+      "name": "Eelektross-Mega",
+      "types": [
+        "Electric"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "atk": 145,
+        "def": 80,
+        "spa": 135,
+        "spd": 90,
+        "spe": 80
+      },
+      "abilities": []
+    },
+    "Sceptile-Mega": {
+      "name": "Sceptile-Mega",
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 110,
+        "def": 75,
+        "spa": 145,
+        "spd": 85,
+        "spe": 145
+      },
+      "abilities": [
+        "Lightning Rod"
+      ]
+    },
+    "Dragalge-Mega": {
+      "name": "Dragalge-Mega",
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 85,
+        "def": 105,
+        "spa": 132,
+        "spd": 163,
+        "spe": 44
+      },
+      "abilities": []
+    },
+    "Vileplume": {
+      "name": "Vileplume",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "atk": 80,
+        "def": 85,
+        "spa": 110,
+        "spd": 90,
+        "spe": 50
+      },
+      "abilities": [
+        "Chlorophyll",
+        "Effect Spore"
+      ]
+    },
+    "Malamar-Mega": {
+      "name": "Malamar-Mega",
+      "types": [
+        "Dark",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 86,
+        "atk": 102,
+        "def": 88,
+        "spa": 98,
+        "spd": 120,
+        "spe": 88
+      },
+      "abilities": []
+    },
+    "Scrafty-Mega": {
+      "name": "Scrafty-Mega",
+      "types": [
+        "Dark",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 130,
+        "def": 135,
+        "spa": 55,
+        "spd": 135,
+        "spe": 68
+      },
+      "abilities": []
+    },
+    "Pyroar-Mega": {
+      "name": "Pyroar-Mega",
+      "types": [
+        "Fire",
+        "Normal"
+      ],
+      "baseStats": {
+        "hp": 86,
+        "atk": 88,
+        "def": 92,
+        "spa": 129,
+        "spd": 86,
+        "spe": 126
+      },
+      "abilities": []
+    },
+    "Victreebel-Mega": {
+      "name": "Victreebel-Mega",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 125,
+        "def": 85,
+        "spa": 135,
+        "spd": 95,
+        "spe": 70
+      },
+      "abilities": [
+        "Innards Out"
+      ]
+    },
+    "Overqwil": {
+      "name": "Overqwil",
+      "types": [
+        "Dark",
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "atk": 115,
+        "def": 95,
+        "spa": 65,
+        "spd": 65,
+        "spe": 85
+      },
+      "abilities": [
+        "Poison Point",
+        "Swift Swim",
+        "Intimidate"
+      ]
+    },
+    "Blaziken": {
+      "name": "Blaziken",
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 120,
+        "def": 70,
+        "spa": 110,
+        "spd": 70,
+        "spe": 80
+      },
+      "abilities": [
+        "Blaze",
+        "Speed Boost"
+      ],
+      "megas": [
+        {
+          "name": "Mega Blaziken",
+          "types": [
+            "Fire",
+            "Fighting"
+          ],
+          "baseStats": {
+            "hp": 80,
+            "atk": 160,
+            "def": 80,
+            "spa": 130,
+            "spd": 80,
+            "spe": 100
+          },
+          "ability": "Speed Boost",
+          "requiredItem": "Blazikenite"
+        }
+      ]
+    },
+    "Slowbro-Galar": {
+      "name": "Slowbro-Galar",
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "atk": 100,
+        "def": 95,
+        "spa": 100,
+        "spd": 70,
+        "spe": 30
+      },
+      "abilities": [
+        "Quick Draw",
+        "Own Tempo",
+        "Regenerator"
+      ]
+    },
+    "Rotom-Frost": {
+      "name": "Rotom-Frost",
+      "types": [
+        "Electric",
+        "Ice"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      },
+      "abilities": [
+        "Levitate"
+      ]
+    },
+    "Staraptor": {
+      "name": "Staraptor",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "atk": 120,
+        "def": 70,
+        "spa": 50,
+        "spd": 60,
+        "spe": 100
+      },
+      "abilities": [
+        "Intimidate",
+        "Reckless"
+      ],
+      "megas": [
+        {
+          "name": "Mega Staraptor",
+          "types": [
+            "Fighting",
+            "Flying"
+          ],
+          "baseStats": {
+            "hp": 85,
+            "atk": 140,
+            "def": 100,
+            "spa": 60,
+            "spd": 90,
+            "spe": 110
+          },
+          "ability": "",
+          "requiredItem": "Staraptorite"
+        }
+      ]
+    },
+    "Chesnaught-Mega": {
+      "name": "Chesnaught-Mega",
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 88,
+        "atk": 137,
+        "def": 172,
+        "spa": 74,
+        "spd": 115,
+        "spe": 44
+      },
+      "abilities": [
+        "Bulletproof"
+      ]
+    },
+    "Blaziken-Mega": {
+      "name": "Blaziken-Mega",
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 160,
+        "def": 80,
+        "spa": 130,
+        "spd": 80,
+        "spe": 100
+      },
+      "abilities": [
+        "Speed Boost"
+      ]
+    },
+    "Chimecho-Mega": {
+      "name": "Chimecho-Mega",
+      "types": [
+        "Psychic",
+        "Steel"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "atk": 50,
+        "def": 110,
+        "spa": 135,
+        "spd": 120,
+        "spe": 65
+      },
+      "abilities": [
+        "Levitate"
+      ]
+    },
+    "Scrafty": {
+      "name": "Scrafty",
+      "types": [
+        "Dark",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 90,
+        "def": 115,
+        "spa": 45,
+        "spd": 115,
+        "spe": 58
+      },
+      "abilities": [
+        "Shed Skin",
+        "Moxie",
+        "Intimidate"
+      ],
+      "megas": [
+        {
+          "name": "Mega Scrafty",
+          "types": [
+            "Dark",
+            "Fighting"
+          ],
+          "baseStats": {
+            "hp": 65,
+            "atk": 130,
+            "def": 135,
+            "spa": 55,
+            "spd": 135,
+            "spe": 68
+          },
+          "ability": "",
+          "requiredItem": "Scraftyite"
+        }
       ]
     }
   }
