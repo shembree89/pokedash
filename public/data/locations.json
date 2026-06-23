@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-22",
+  "refreshedAt": "2026-06-23",
   "source": "bulbapedia.bulbagarden.net (Gen 8+ catch locations)",
   "species": {
     "Abomasnow": {
@@ -1204,6 +1204,56 @@
             {
               "name": "Vert District",
               "path": "/wiki/Vert_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Beldum": {
+      "species": "Beldum",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Snowslide Slope",
+              "path": "/wiki/Snowslide_Slope"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Brilliant Diamond",
+            "Shining Pearl"
+          ],
+          "locations": [
+            {
+              "name": "Sinnoh Route 228",
+              "path": "/wiki/Sinnoh_Route_228"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Canyon Biome",
+              "path": "/wiki/Canyon_Biome"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Magenta District",
+              "path": "/wiki/Magenta_District"
             }
           ]
         }
@@ -5591,6 +5641,23 @@
         }
       ]
     },
+    "Greavard": {
+      "species": "Greavard",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "West Province (Area Three)",
+              "path": "/wiki/West_Province_(Area_Three)"
+            }
+          ]
+        }
+      ]
+    },
     "Grimmsnarl": {
       "species": "Grimmsnarl",
       "groups": [
@@ -6550,6 +6617,23 @@
             {
               "name": "Magenta District",
               "path": "/wiki/Magenta_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Houndstone": {
+      "species": "Houndstone",
+      "groups": [
+        {
+          "games": [
+            "Scarlet",
+            "Violet"
+          ],
+          "locations": [
+            {
+              "name": "North Province (Area One)",
+              "path": "/wiki/North_Province_(Area_One)"
             }
           ]
         }
@@ -8419,6 +8503,71 @@
             {
               "name": "Coastal Biome",
               "path": "/wiki/Coastal_Biome"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Magenta District",
+              "path": "/wiki/Magenta_District"
+            }
+          ]
+        }
+      ]
+    },
+    "Metagross": {
+      "species": "Metagross",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Snowslide Slope",
+              "path": "/wiki/Snowslide_Slope"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Legends: Z-A"
+          ],
+          "locations": [
+            {
+              "name": "Centrico Plaza",
+              "path": "/wiki/Centrico_Plaza"
+            }
+          ]
+        }
+      ]
+    },
+    "Metang": {
+      "species": "Metang",
+      "groups": [
+        {
+          "games": [
+            "Expansion Pass"
+          ],
+          "locations": [
+            {
+              "name": "Snowslide Slope",
+              "path": "/wiki/Snowslide_Slope"
+            }
+          ]
+        },
+        {
+          "games": [
+            "Hidden Treasure of Area Zero"
+          ],
+          "locations": [
+            {
+              "name": "Canyon Biome",
+              "path": "/wiki/Canyon_Biome"
             }
           ]
         },

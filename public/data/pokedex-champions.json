@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-22",
+  "refreshedAt": "2026-06-23",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -6153,6 +6153,81 @@
           "ability": "",
           "requiredItem": "Scraftyite"
         }
+      ]
+    },
+    "Metagross": {
+      "name": "Metagross",
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 135,
+        "def": 130,
+        "spa": 95,
+        "spd": 90,
+        "spe": 70
+      },
+      "abilities": [
+        "Clear Body",
+        "Light Metal"
+      ],
+      "megas": [
+        {
+          "name": "Mega Metagross",
+          "types": [
+            "Steel",
+            "Psychic"
+          ],
+          "baseStats": {
+            "hp": 80,
+            "atk": 145,
+            "def": 150,
+            "spa": 105,
+            "spd": 110,
+            "spe": 110
+          },
+          "ability": "Tough Claws",
+          "requiredItem": "Metagrossite"
+        }
+      ]
+    },
+    "Decidueye-Hisui": {
+      "name": "Decidueye-Hisui",
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 88,
+        "atk": 112,
+        "def": 80,
+        "spa": 95,
+        "spd": 95,
+        "spe": 60
+      },
+      "abilities": [
+        "Overgrow",
+        "Scrappy"
+      ]
+    },
+    "Houndstone": {
+      "name": "Houndstone",
+      "types": [
+        "Ghost"
+      ],
+      "baseStats": {
+        "hp": 72,
+        "atk": 101,
+        "def": 100,
+        "spa": 50,
+        "spd": 97,
+        "spe": 68
+      },
+      "abilities": [
+        "Sand Rush",
+        "Fluffy"
       ]
     }
   }
