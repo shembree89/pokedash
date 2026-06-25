@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-06-23",
+  "refreshedAt": "2026-06-25",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -6057,7 +6057,7 @@
             "spd": 90,
             "spe": 110
           },
-          "ability": "",
+          "ability": "Contrary",
           "requiredItem": "Staraptorite"
         }
       ]
@@ -6150,7 +6150,7 @@
             "spd": 135,
             "spe": 68
           },
-          "ability": "",
+          "ability": "Intimidate",
           "requiredItem": "Scraftyite"
         }
       ]
@@ -6228,6 +6228,386 @@
       "abilities": [
         "Sand Rush",
         "Fluffy"
+      ]
+    },
+    "Qwilfish": {
+      "name": "Qwilfish",
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 95,
+        "def": 85,
+        "spa": 55,
+        "spd": 55,
+        "spe": 85
+      },
+      "abilities": [
+        "Poison Point",
+        "Swift Swim",
+        "Intimidate"
+      ]
+    },
+    "Sceptile": {
+      "name": "Sceptile",
+      "types": [
+        "Grass"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 85,
+        "def": 65,
+        "spa": 105,
+        "spd": 85,
+        "spe": 120
+      },
+      "abilities": [
+        "Overgrow",
+        "Unburden"
+      ],
+      "megas": [
+        {
+          "name": "Mega Sceptile",
+          "types": [
+            "Grass",
+            "Dragon"
+          ],
+          "baseStats": {
+            "hp": 70,
+            "atk": 110,
+            "def": 75,
+            "spa": 145,
+            "spd": 85,
+            "spe": 145
+          },
+          "ability": "Lightning Rod",
+          "requiredItem": "Sceptileite"
+        }
+      ]
+    },
+    "Swampert": {
+      "name": "Swampert",
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "baseStats": {
+        "hp": 100,
+        "atk": 110,
+        "def": 90,
+        "spa": 85,
+        "spd": 90,
+        "spe": 60
+      },
+      "abilities": [
+        "Torrent",
+        "Damp"
+      ],
+      "megas": [
+        {
+          "name": "Mega Swampert",
+          "types": [
+            "Water",
+            "Ground"
+          ],
+          "baseStats": {
+            "hp": 100,
+            "atk": 150,
+            "def": 110,
+            "spa": 95,
+            "spd": 110,
+            "spe": 70
+          },
+          "ability": "Swift Swim",
+          "requiredItem": "Swampertite"
+        }
+      ]
+    },
+    "Mawile": {
+      "name": "Mawile",
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "atk": 85,
+        "def": 85,
+        "spa": 55,
+        "spd": 55,
+        "spe": 50
+      },
+      "abilities": [
+        "Hyper Cutter",
+        "Intimidate",
+        "Sheer Force"
+      ],
+      "megas": [
+        {
+          "name": "Mega Mawile",
+          "types": [
+            "Steel",
+            "Fairy"
+          ],
+          "baseStats": {
+            "hp": 50,
+            "atk": 105,
+            "def": 125,
+            "spa": 55,
+            "spd": 95,
+            "spe": 50
+          },
+          "ability": "Huge Power",
+          "requiredItem": "Mawileite"
+        }
+      ]
+    },
+    "Musharna": {
+      "name": "Musharna",
+      "types": [
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 116,
+        "atk": 55,
+        "def": 85,
+        "spa": 107,
+        "spd": 95,
+        "spe": 29
+      },
+      "abilities": [
+        "Forewarn",
+        "Synchronize",
+        "Telepathy"
+      ]
+    },
+    "Scolipede": {
+      "name": "Scolipede",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "atk": 100,
+        "def": 89,
+        "spa": 55,
+        "spd": 69,
+        "spe": 112
+      },
+      "abilities": [
+        "Poison Point",
+        "Swarm",
+        "Speed Boost"
+      ],
+      "megas": [
+        {
+          "name": "Mega Scolipede",
+          "types": [
+            "Bug",
+            "Poison"
+          ],
+          "baseStats": {
+            "hp": 60,
+            "atk": 140,
+            "def": 149,
+            "spa": 75,
+            "spd": 99,
+            "spe": 62
+          },
+          "ability": "Shell Armor",
+          "requiredItem": "Scolipedeite"
+        }
+      ]
+    },
+    "Eelektross": {
+      "name": "Eelektross",
+      "types": [
+        "Electric"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "atk": 115,
+        "def": 80,
+        "spa": 105,
+        "spd": 80,
+        "spe": 50
+      },
+      "abilities": [
+        "Levitate"
+      ],
+      "megas": [
+        {
+          "name": "Mega Eelektross",
+          "types": [
+            "Electric"
+          ],
+          "baseStats": {
+            "hp": 85,
+            "atk": 145,
+            "def": 80,
+            "spa": 135,
+            "spd": 90,
+            "spe": 80
+          },
+          "ability": "Eelevate",
+          "requiredItem": "Eelektrossite"
+        }
+      ]
+    },
+    "Malamar": {
+      "name": "Malamar",
+      "types": [
+        "Dark",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 86,
+        "atk": 92,
+        "def": 88,
+        "spa": 68,
+        "spd": 75,
+        "spe": 73
+      },
+      "abilities": [
+        "Contrary",
+        "Suction Cups",
+        "Infiltrator"
+      ],
+      "megas": [
+        {
+          "name": "Mega Malamar",
+          "types": [
+            "Dark",
+            "Psychic"
+          ],
+          "baseStats": {
+            "hp": 86,
+            "atk": 102,
+            "def": 88,
+            "spa": 98,
+            "spd": 120,
+            "spe": 88
+          },
+          "ability": "Contrary",
+          "requiredItem": "Malamarite"
+        }
+      ]
+    },
+    "Barbaracle": {
+      "name": "Barbaracle",
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "baseStats": {
+        "hp": 72,
+        "atk": 105,
+        "def": 115,
+        "spa": 54,
+        "spd": 86,
+        "spe": 68
+      },
+      "abilities": [
+        "Tough Claws",
+        "Sniper",
+        "Pickpocket"
+      ],
+      "megas": [
+        {
+          "name": "Mega Barbaracle",
+          "types": [
+            "Rock",
+            "Fighting"
+          ],
+          "baseStats": {
+            "hp": 72,
+            "atk": 140,
+            "def": 130,
+            "spa": 64,
+            "spd": 106,
+            "spe": 88
+          },
+          "ability": "Tough Claws",
+          "requiredItem": "Barbaracleite"
+        }
+      ]
+    },
+    "Dragalge": {
+      "name": "Dragalge",
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 75,
+        "def": 90,
+        "spa": 97,
+        "spd": 123,
+        "spe": 44
+      },
+      "abilities": [
+        "Poison Point",
+        "Poison Touch",
+        "Adaptability"
+      ],
+      "megas": [
+        {
+          "name": "Mega Dragalge",
+          "types": [
+            "Poison",
+            "Dragon"
+          ],
+          "baseStats": {
+            "hp": 65,
+            "atk": 85,
+            "def": 105,
+            "spa": 132,
+            "spd": 163,
+            "spe": 44
+          },
+          "ability": "Regenerator",
+          "requiredItem": "Dragalgeite"
+        }
+      ]
+    },
+    "Falinks": {
+      "name": "Falinks",
+      "types": [
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 100,
+        "def": 100,
+        "spa": 70,
+        "spd": 60,
+        "spe": 75
+      },
+      "abilities": [
+        "Battle Armor",
+        "Defiant"
+      ],
+      "megas": [
+        {
+          "name": "Mega Falinks",
+          "types": [
+            "Fighting"
+          ],
+          "baseStats": {
+            "hp": 65,
+            "atk": 135,
+            "def": 135,
+            "spa": 70,
+            "spd": 65,
+            "spe": 100
+          },
+          "ability": "Defiant",
+          "requiredItem": "Falinksite"
+        }
       ]
     }
   }
