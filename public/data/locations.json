@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-01",
+  "refreshedAt": "2026-07-03",
   "source": "bulbapedia.bulbagarden.net (Gen 8+ catch locations)",
   "species": {
     "Abomasnow": {
@@ -1072,17 +1072,6 @@
             {
               "name": "Cobalt Coastlands",
               "path": "/wiki/Cobalt_Coastlands"
-            }
-          ]
-        },
-        {
-          "games": [
-            "Legends: Arceus"
-          ],
-          "locations": [
-            {
-              "name": "File:None.png",
-              "path": "/wiki/File:None.png"
             }
           ]
         }
