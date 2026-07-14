@@ -1,13 +1,13 @@
 {
   "format": "VGC",
   "regulation": "Reg M-A",
-  "refreshedAt": "2026-07-03",
+  "refreshedAt": "2026-07-14",
   "source": "pikalytics.com/ai/pokedex/championstournaments (data date 2026-05)",
   "sets": {
     "Garchomp": [
       {
         "name": "Most common",
-        "usage": 0.939,
+        "usage": 0.9487,
         "ability": "Rough Skin",
         "item": "Life Orb",
         "moves": [
@@ -21,7 +21,7 @@
     "Sinistcha": [
       {
         "name": "Most common",
-        "usage": 0.9781,
+        "usage": 0.9827,
         "ability": "Hospitality",
         "item": "Kasib Berry",
         "moves": [
@@ -35,7 +35,7 @@
     "Basculegion": [
       {
         "name": "Most common",
-        "usage": 0.8898,
+        "usage": 0.9026,
         "ability": "Adaptability",
         "item": "Choice Scarf",
         "moves": [
@@ -49,7 +49,7 @@
     "Incineroar": [
       {
         "name": "Most common",
-        "usage": 0.9641,
+        "usage": 0.9712,
         "ability": "Intimidate",
         "item": "Sitrus Berry",
         "moves": [
@@ -60,24 +60,10 @@
         ]
       }
     ],
-    "Whimsicott": [
-      {
-        "name": "Most common",
-        "usage": 0.9689,
-        "ability": "Prankster",
-        "item": "Focus Sash",
-        "moves": [
-          "Tailwind",
-          "Moonblast",
-          "Protect",
-          "Encore"
-        ]
-      }
-    ],
     "Kingambit": [
       {
         "name": "Most common",
-        "usage": 0.9424,
+        "usage": 0.951,
         "ability": "Defiant",
         "item": "Black Glasses",
         "moves": [
@@ -88,10 +74,24 @@
         ]
       }
     ],
+    "Whimsicott": [
+      {
+        "name": "Most common",
+        "usage": 0.9743,
+        "ability": "Prankster",
+        "item": "Focus Sash",
+        "moves": [
+          "Tailwind",
+          "Moonblast",
+          "Encore",
+          "Protect"
+        ]
+      }
+    ],
     "Charizard-Mega-Y": [
       {
         "name": "Most common",
-        "usage": 0.7629,
+        "usage": 0.7727,
         "ability": "Blaze",
         "item": "Charizardite Y",
         "moves": [
@@ -102,24 +102,10 @@
         ]
       }
     ],
-    "Pelipper": [
-      {
-        "name": "Most common",
-        "usage": 0.9618,
-        "ability": "Drizzle",
-        "item": "Sitrus Berry",
-        "moves": [
-          "Hurricane",
-          "Weather Ball",
-          "Tailwind",
-          "Wide Guard"
-        ]
-      }
-    ],
     "Sneasler": [
       {
         "name": "Most common",
-        "usage": 0.7771,
+        "usage": 0.7248,
         "ability": "Unburden",
         "item": "White Herb",
         "moves": [
@@ -130,24 +116,10 @@
         ]
       }
     ],
-    "Floette-Eternal-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.9564,
-        "ability": "Flower Veil",
-        "item": "Floettite",
-        "moves": [
-          "Protect",
-          "Dazzling Gleam",
-          "Moonblast",
-          "Calm Mind"
-        ]
-      }
-    ],
     "Farigiraf": [
       {
         "name": "Most common",
-        "usage": 0.9749,
+        "usage": 0.9809,
         "ability": "Armor Tail",
         "item": "Sitrus Berry",
         "moves": [
@@ -158,10 +130,38 @@
         ]
       }
     ],
+    "Pelipper": [
+      {
+        "name": "Most common",
+        "usage": 0.967,
+        "ability": "Drizzle",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Hurricane",
+          "Weather Ball",
+          "Tailwind",
+          "Wide Guard"
+        ]
+      }
+    ],
+    "Floette-Eternal-Mega": [
+      {
+        "name": "Most common",
+        "usage": 0.9609,
+        "ability": "Flower Veil",
+        "item": "Floettite",
+        "moves": [
+          "Protect",
+          "Dazzling Gleam",
+          "Moonblast",
+          "Calm Mind"
+        ]
+      }
+    ],
     "Archaludon": [
       {
         "name": "Most common",
-        "usage": 0.9373,
+        "usage": 0.9466,
         "ability": "Stamina",
         "item": "Leftovers",
         "moves": [
@@ -172,38 +172,10 @@
         ]
       }
     ],
-    "Grimmsnarl": [
-      {
-        "name": "Most common",
-        "usage": 0.9778,
-        "ability": "Prankster",
-        "item": "Light Clay",
-        "moves": [
-          "Reflect",
-          "Light Screen",
-          "Parting Shot",
-          "Spirit Break"
-        ]
-      }
-    ],
-    "Swampert-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.5824,
-        "ability": "Torrent",
-        "item": "Swampertite",
-        "moves": [
-          "Protect",
-          "Wave Crash",
-          "Ice Punch",
-          "Earthquake"
-        ]
-      }
-    ],
     "Sylveon": [
       {
         "name": "Most common",
-        "usage": 0.9413,
+        "usage": 0.9571,
         "ability": "Pixilate",
         "item": "Fairy Feather",
         "moves": [
@@ -214,38 +186,52 @@
         ]
       }
     ],
+    "Grimmsnarl": [
+      {
+        "name": "Most common",
+        "usage": 0.9821,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "moves": [
+          "Reflect",
+          "Parting Shot",
+          "Light Screen",
+          "Spirit Break"
+        ]
+      }
+    ],
+    "Swampert-Mega": [
+      {
+        "name": "Most common",
+        "usage": 0.5874,
+        "ability": "Torrent",
+        "item": "Swampertite",
+        "moves": [
+          "Protect",
+          "Wave Crash",
+          "Ice Punch",
+          "Earthquake"
+        ]
+      }
+    ],
     "Metagross-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9494,
+        "usage": 0.9514,
         "ability": "Clear Body",
         "item": "Metagrossite",
         "moves": [
           "Protect",
           "Psychic Fangs",
           "Iron Head",
-          "Stomping Tantrum"
-        ]
-      }
-    ],
-    "Staraptor-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.9682,
-        "ability": "Intimidate",
-        "item": "Staraptite",
-        "moves": [
-          "Close Combat",
-          "Protect",
-          "Brave Bird",
-          "Roost"
+          "Bullet Punch"
         ]
       }
     ],
     "Gholdengo": [
       {
         "name": "Most common",
-        "usage": 0.9836,
+        "usage": 0.9856,
         "ability": "Good as Gold",
         "item": "Life Orb",
         "moves": [
@@ -256,38 +242,24 @@
         ]
       }
     ],
-    "Raichu-Mega-Y": [
+    "Staraptor-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9143,
-        "ability": "Lightning Rod",
-        "item": "Raichunite Y",
+        "usage": 0.9667,
+        "ability": "Intimidate",
+        "item": "Staraptite",
         "moves": [
-          "Zap Cannon",
-          "Focus Blast",
+          "Close Combat",
           "Protect",
-          "Fake Out"
-        ]
-      }
-    ],
-    "Mawile-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.5,
-        "ability": "Hyper Cutter",
-        "item": "Mawilite",
-        "moves": [
-          "Play Rough",
-          "Protect",
-          "Sucker Punch",
-          "Iron Head"
+          "Brave Bird",
+          "Roost"
         ]
       }
     ],
     "Aerodactyl-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9164,
+        "usage": 0.911,
         "ability": "Unnerve",
         "item": "Aerodactylite",
         "moves": [
@@ -298,10 +270,24 @@
         ]
       }
     ],
+    "Raichu-Mega-Y": [
+      {
+        "name": "Most common",
+        "usage": 0.9068,
+        "ability": "Lightning Rod",
+        "item": "Raichunite Y",
+        "moves": [
+          "Zap Cannon",
+          "Focus Blast",
+          "Protect",
+          "Fake Out"
+        ]
+      }
+    ],
     "Torkoal": [
       {
         "name": "Most common",
-        "usage": 0.9635,
+        "usage": 0.9727,
         "ability": "Drought",
         "item": "Charcoal",
         "moves": [
@@ -312,10 +298,24 @@
         ]
       }
     ],
+    "Mawile-Mega": [
+      {
+        "name": "Most common",
+        "usage": 0.5209,
+        "ability": "Hyper Cutter",
+        "item": "Mawilite",
+        "moves": [
+          "Play Rough",
+          "Protect",
+          "Sucker Punch",
+          "Iron Head"
+        ]
+      }
+    ],
     "Delphox-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9304,
+        "usage": 0.9292,
         "ability": "Blaze",
         "item": "Delphoxite",
         "moves": [
@@ -326,38 +326,10 @@
         ]
       }
     ],
-    "Sableye": [
-      {
-        "name": "Most common",
-        "usage": 0.9575,
-        "ability": "Prankster",
-        "item": "Light Clay",
-        "moves": [
-          "Rain Dance",
-          "Light Screen",
-          "Reflect",
-          "Will-O-Wisp"
-        ]
-      }
-    ],
-    "Maushold": [
-      {
-        "name": "Most common",
-        "usage": 0.7545,
-        "ability": "Friend Guard",
-        "item": "Focus Sash",
-        "moves": [
-          "Follow Me",
-          "Protect",
-          "Super Fang",
-          "Population Bomb"
-        ]
-      }
-    ],
     "Hydreigon": [
       {
         "name": "Most common",
-        "usage": 0.9861,
+        "usage": 0.9906,
         "ability": "Levitate",
         "item": "Choice Scarf",
         "moves": [
@@ -368,10 +340,38 @@
         ]
       }
     ],
+    "Sableye": [
+      {
+        "name": "Most common",
+        "usage": 0.9633,
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "moves": [
+          "Light Screen",
+          "Rain Dance",
+          "Reflect",
+          "Will-O-Wisp"
+        ]
+      }
+    ],
+    "Maushold": [
+      {
+        "name": "Most common",
+        "usage": 0.7791,
+        "ability": "Friend Guard",
+        "item": "Focus Sash",
+        "moves": [
+          "Follow Me",
+          "Protect",
+          "Super Fang",
+          "Population Bomb"
+        ]
+      }
+    ],
     "Aerodactyl": [
       {
         "name": "Most common",
-        "usage": 0.8078,
+        "usage": 0.8395,
         "ability": "Unnerve",
         "item": "Focus Sash",
         "moves": [
@@ -385,7 +385,7 @@
     "Froslass-Mega": [
       {
         "name": "Most common",
-        "usage": 0.7228,
+        "usage": 0.7406,
         "ability": "Cursed Body",
         "item": "Froslassite",
         "moves": [
@@ -396,24 +396,10 @@
         ]
       }
     ],
-    "Rotom-Wash": [
-      {
-        "name": "Most common",
-        "usage": 0.9687,
-        "ability": "Levitate",
-        "item": "Sitrus Berry",
-        "moves": [
-          "Hydro Pump",
-          "Will-O-Wisp",
-          "Thunderbolt",
-          "Protect"
-        ]
-      }
-    ],
     "Ninetales-Alola": [
       {
         "name": "Most common",
-        "usage": 0.9524,
+        "usage": 0.9651,
         "ability": "Snow Warning",
         "item": "Never-Melt Ice",
         "moves": [
@@ -424,52 +410,52 @@
         ]
       }
     ],
+    "Rotom-Wash": [
+      {
+        "name": "Most common",
+        "usage": 0.9777,
+        "ability": "Levitate",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Hydro Pump",
+          "Will-O-Wisp",
+          "Thunderbolt",
+          "Protect"
+        ]
+      }
+    ],
     "Milotic": [
       {
         "name": "Most common",
-        "usage": 0.9713,
+        "usage": 0.9723,
         "ability": "Competitive",
         "item": "Leftovers",
         "moves": [
           "Protect",
-          "Scald",
           "Muddy Water",
-          "Coil"
+          "Coil",
+          "Hypnosis"
         ]
       }
     ],
-    "Pyroar-Mega": [
+    "Venusaur-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9393,
-        "ability": "Unnerve",
-        "item": "Pyroarite",
+        "usage": 0.882,
+        "ability": "Chlorophyll",
+        "item": "Venusaurite",
         "moves": [
-          "Heat Wave",
+          "Sludge Bomb",
+          "Earth Power",
           "Protect",
-          "Overheat",
-          "Solar Beam"
-        ]
-      }
-    ],
-    "Talonflame": [
-      {
-        "name": "Most common",
-        "usage": 0.9515,
-        "ability": "Gale Wings",
-        "item": "Sharp Beak",
-        "moves": [
-          "Tailwind",
-          "Protect",
-          "Flare Blitz",
-          "Brave Bird"
+          "Giga Drain"
         ]
       }
     ],
     "Venusaur": [
       {
         "name": "Most common",
-        "usage": 0.9126,
+        "usage": 0.9282,
         "ability": "Chlorophyll",
         "item": "Focus Sash",
         "moves": [
@@ -480,38 +466,10 @@
         ]
       }
     ],
-    "Annihilape": [
-      {
-        "name": "Most common",
-        "usage": 0.9654,
-        "ability": "Defiant",
-        "item": "Leftovers",
-        "moves": [
-          "Rage Fist",
-          "Protect",
-          "Drain Punch",
-          "Bulk Up"
-        ]
-      }
-    ],
-    "Venusaur-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.902,
-        "ability": "Chlorophyll",
-        "item": "Venusaurite",
-        "moves": [
-          "Sludge Bomb",
-          "Earth Power",
-          "Giga Drain",
-          "Protect"
-        ]
-      }
-    ],
     "Tyranitar-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9917,
+        "usage": 0.9947,
         "ability": "Sand Stream",
         "item": "Tyranitarite",
         "moves": [
@@ -522,38 +480,80 @@
         ]
       }
     ],
-    "Dragonite-Mega": [
+    "Pyroar-Mega": [
       {
         "name": "Most common",
-        "usage": 0.6744,
-        "ability": "Multiscale",
-        "item": "Dragoninite",
+        "usage": 0.9162,
+        "ability": "Unnerve",
+        "item": "Pyroarite",
         "moves": [
           "Protect",
-          "Dragon Pulse",
-          "Hurricane",
-          "Draco Meteor"
+          "Heat Wave",
+          "Overheat",
+          "Solar Beam"
+        ]
+      }
+    ],
+    "Talonflame": [
+      {
+        "name": "Most common",
+        "usage": 0.9563,
+        "ability": "Gale Wings",
+        "item": "Sharp Beak",
+        "moves": [
+          "Tailwind",
+          "Protect",
+          "Flare Blitz",
+          "Brave Bird"
+        ]
+      }
+    ],
+    "Annihilape": [
+      {
+        "name": "Most common",
+        "usage": 0.9625,
+        "ability": "Defiant",
+        "item": "Leftovers",
+        "moves": [
+          "Rage Fist",
+          "Protect",
+          "Drain Punch",
+          "Bulk Up"
         ]
       }
     ],
     "Blaziken-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9804,
+        "usage": 0.9821,
         "ability": "Speed Boost",
         "item": "Blazikenite",
         "moves": [
-          "Close Combat",
           "Flare Blitz",
+          "Close Combat",
           "Rock Slide",
           "Protect"
+        ]
+      }
+    ],
+    "Gengar-Mega": [
+      {
+        "name": "Most common",
+        "usage": 0.9183,
+        "ability": "Cursed Body",
+        "item": "Gengarite",
+        "moves": [
+          "Protect",
+          "Shadow Ball",
+          "Perish Song",
+          "Disable"
         ]
       }
     ],
     "Scrafty-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9745,
+        "usage": 0.9706,
         "ability": "Intimidate",
         "item": "Scraftinite",
         "moves": [
@@ -564,38 +564,10 @@
         ]
       }
     ],
-    "Gengar-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.9157,
-        "ability": "Cursed Body",
-        "item": "Gengarite",
-        "moves": [
-          "Shadow Ball",
-          "Protect",
-          "Perish Song",
-          "Disable"
-        ]
-      }
-    ],
-    "Scovillain-Mega": [
-      {
-        "name": "Most common",
-        "usage": 0.84,
-        "ability": "Moody",
-        "item": "Scovillainite",
-        "moves": [
-          "Rage Powder",
-          "Protect",
-          "Overheat",
-          "Giga Drain"
-        ]
-      }
-    ],
     "Ceruledge": [
       {
         "name": "Most common",
-        "usage": 0.9639,
+        "usage": 0.9648,
         "ability": "Flash Fire",
         "item": "Colbur Berry",
         "moves": [
@@ -606,52 +578,94 @@
         ]
       }
     ],
-    "Rotom-Heat": [
+    "Scovillain-Mega": [
       {
         "name": "Most common",
-        "usage": 0.9937,
-        "ability": "Levitate",
-        "item": "Choice Scarf",
+        "usage": 0.8195,
+        "ability": "Moody",
+        "item": "Scovillainite",
         "moves": [
+          "Rage Powder",
+          "Protect",
           "Overheat",
-          "Volt Switch",
-          "Thunderbolt",
-          "Discharge"
+          "Giga Drain"
         ]
       }
     ],
-    "Eelektross-Mega": [
+    "Dragonite-Mega": [
       {
         "name": "Most common",
-        "usage": 0.943,
-        "ability": "Levitate",
-        "item": "Eelektrossite",
+        "usage": 0.6715,
+        "ability": "Multiscale",
+        "item": "Dragoninite",
         "moves": [
           "Protect",
-          "Thunderbolt",
-          "Giga Drain",
-          "Flamethrower"
+          "Dragon Pulse",
+          "Hurricane",
+          "Draco Meteor"
         ]
       }
     ],
-    "Sceptile-Mega": [
+    "Blastoise-Mega": [
       {
         "name": "Most common",
-        "usage": 0.8507,
-        "ability": "Overgrow",
-        "item": "Sceptilite",
+        "usage": 0.7471,
+        "ability": "Rain Dish",
+        "item": "Blastoisinite",
         "moves": [
-          "Dragon Pulse",
-          "Earth Power",
-          "Detect",
-          "Protect"
+          "Water Spout",
+          "Dark Pulse",
+          "Protect",
+          "Shell Smash"
+        ]
+      }
+    ],
+    "Toxapex": [
+      {
+        "name": "Most common",
+        "usage": 0.9274,
+        "ability": "Regenerator",
+        "item": "Leftovers",
+        "moves": [
+          "Infestation",
+          "Toxic",
+          "Baneful Bunker",
+          "Wide Guard"
+        ]
+      }
+    ],
+    "Politoed": [
+      {
+        "name": "Most common",
+        "usage": 0.9868,
+        "ability": "Drizzle",
+        "item": "Sitrus Berry",
+        "moves": [
+          "Protect",
+          "Weather Ball",
+          "Perish Song",
+          "Encore"
+        ]
+      }
+    ],
+    "Excadrill": [
+      {
+        "name": "Most common",
+        "usage": 0.9519,
+        "ability": "Sand Rush",
+        "item": "Focus Sash",
+        "moves": [
+          "Iron Head",
+          "Protect",
+          "Rock Slide",
+          "Earthquake"
         ]
       }
     ],
     "Corviknight": [
       {
         "name": "Most common",
-        "usage": 0.9658,
+        "usage": 0.9512,
         "ability": "Mirror Armor",
         "item": "Leftovers",
         "moves": [
@@ -662,38 +676,24 @@
         ]
       }
     ],
-    "Raichu-Mega-X": [
+    "Eelektross-Mega": [
       {
         "name": "Most common",
-        "usage": 0.8828,
-        "ability": "Lightning Rod",
-        "item": "Raichunite X",
+        "usage": 0.9505,
+        "ability": "Levitate",
+        "item": "Eelektrossite",
         "moves": [
-          "Fake Out",
-          "Volt Tackle",
           "Protect",
-          "Volt Switch"
-        ]
-      }
-    ],
-    "Staraptor": [
-      {
-        "name": "Most common",
-        "usage": 0.7574,
-        "ability": "Intimidate",
-        "item": "Choice Scarf",
-        "moves": [
-          "Brave Bird",
-          "Final Gambit",
-          "U-turn",
-          "Close Combat"
+          "Thunderbolt",
+          "Giga Drain",
+          "Flamethrower"
         ]
       }
     ],
     "Vileplume": [
       {
         "name": "Most common",
-        "usage": 0.9632,
+        "usage": 0.9751,
         "ability": "Chlorophyll",
         "item": "Focus Sash",
         "moves": [
@@ -708,39 +708,43 @@
   "distributions": {
     "Garchomp": {
       "species": "Garchomp",
-      "usage": 0.3913,
+      "usage": 0.3844,
       "moves": [
         {
           "name": "Dragon Claw",
-          "usage": 0.9187
+          "usage": 0.9263
         },
         {
           "name": "Protect",
-          "usage": 0.8256
+          "usage": 0.834
         },
         {
           "name": "Rock Slide",
-          "usage": 0.7907
+          "usage": 0.7889
         },
         {
           "name": "Earthquake",
-          "usage": 0.7649
+          "usage": 0.7857
         },
         {
           "name": "Stomping Tantrum",
-          "usage": 0.3425
+          "usage": 0.3346
         },
         {
           "name": "Poison Jab",
-          "usage": 0.106
+          "usage": 0.1068
         },
         {
           "name": "Rock Tomb",
-          "usage": 0.0736
+          "usage": 0.0707
         },
         {
           "name": "Scale Shot",
-          "usage": 0.0119
+          "usage": 0.0115
+        },
+        {
+          "name": "Iron Head",
+          "usage": 0.011
         },
         {
           "name": "Swords Dance",
@@ -750,621 +754,621 @@
       "items": [
         {
           "name": "Life Orb",
-          "usage": 0.6652
+          "usage": 0.6761
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.0945
-        },
-        {
-          "name": "Choice Scarf",
-          "usage": 0.0746
+          "usage": 0.0978
         },
         {
           "name": "Roseli Berry",
-          "usage": 0.0652
+          "usage": 0.0687
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.0682
         },
         {
           "name": "Nothing",
-          "usage": 0.0345
+          "usage": 0.0254
         },
         {
           "name": "Soft Sand",
-          "usage": 0.0133
+          "usage": 0.0112
         }
       ],
       "abilities": [
         {
           "name": "Rough Skin",
-          "usage": 0.939
+          "usage": 0.9487
         },
         {
           "name": "Sand Veil",
-          "usage": 0.0265
+          "usage": 0.0254
         }
       ],
       "teammates": [
         {
-          "species": "Whimsicott",
-          "usage": 0.4768
+          "species": "Charizard-Mega-Y",
+          "usage": 0.5086
         },
         {
-          "species": "Charizard-Mega-Y",
-          "usage": 0.458
+          "species": "Whimsicott",
+          "usage": 0.4596
         },
         {
           "species": "Basculegion",
-          "usage": 0.4182
+          "usage": 0.403
         },
         {
           "species": "Kingambit",
-          "usage": 0.3645
+          "usage": 0.3978
         },
         {
           "species": "Incineroar",
-          "usage": 0.262
+          "usage": 0.2601
         },
         {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.225
+          "species": "Sylveon",
+          "usage": 0.2437
         }
       ]
     },
     "Sinistcha": {
       "species": "Sinistcha",
-      "usage": 0.3366,
+      "usage": 0.3212,
       "moves": [
         {
           "name": "Matcha Gotcha",
-          "usage": 0.9668
+          "usage": 0.9702
         },
         {
           "name": "Rage Powder",
-          "usage": 0.9631
+          "usage": 0.9666
         },
         {
           "name": "Trick Room",
-          "usage": 0.6245
+          "usage": 0.6378
         },
         {
           "name": "Protect",
-          "usage": 0.6083
+          "usage": 0.6193
         },
         {
           "name": "Life Dew",
-          "usage": 0.4826
+          "usage": 0.4802
         },
         {
           "name": "Shadow Ball",
-          "usage": 0.1192
+          "usage": 0.1153
         },
         {
           "name": "Strength Sap",
-          "usage": 0.1148
+          "usage": 0.109
         },
         {
           "name": "Imprison",
-          "usage": 0.0239
+          "usage": 0.0203
         }
       ],
       "items": [
         {
           "name": "Kasib Berry",
-          "usage": 0.354
+          "usage": 0.3456
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.2498
+          "usage": 0.2419
         },
         {
           "name": "Coba Berry",
-          "usage": 0.1415
+          "usage": 0.1352
         },
         {
           "name": "Leftovers",
-          "usage": 0.0669
+          "usage": 0.0703
         },
         {
           "name": "Colbur Berry",
-          "usage": 0.0657
+          "usage": 0.0697
         },
         {
           "name": "Occa Berry",
-          "usage": 0.0442
+          "usage": 0.0626
         },
         {
           "name": "Focus Sash",
-          "usage": 0.0231
+          "usage": 0.025
         },
         {
           "name": "Nothing",
-          "usage": 0.0195
+          "usage": 0.0146
         },
         {
           "name": "Big Root",
-          "usage": 0.0114
+          "usage": 0.011
         }
       ],
       "abilities": [
         {
           "name": "Hospitality",
-          "usage": 0.9781
+          "usage": 0.9827
         }
       ],
       "teammates": [
         {
           "species": "Incineroar",
-          "usage": 0.4116
+          "usage": 0.4442
         },
         {
           "species": "Pelipper",
-          "usage": 0.341
-        },
-        {
-          "species": "Grimmsnarl",
-          "usage": 0.3127
+          "usage": 0.3158
         },
         {
           "species": "Archaludon",
-          "usage": 0.3102
+          "usage": 0.2964
+        },
+        {
+          "species": "Grimmsnarl",
+          "usage": 0.2818
         },
         {
           "species": "Swampert-Mega",
-          "usage": 0.3025
+          "usage": 0.2797
         },
         {
           "species": "Sneasler",
-          "usage": 0.2287
+          "usage": 0.2642
         }
       ]
     },
     "Basculegion": {
       "species": "Basculegion",
-      "usage": 0.3343,
+      "usage": 0.3163,
       "moves": [
         {
           "name": "Last Respects",
-          "usage": 0.9563
+          "usage": 0.9568
         },
         {
           "name": "Aqua Jet",
-          "usage": 0.9261
+          "usage": 0.9329
         },
         {
           "name": "Wave Crash",
-          "usage": 0.8448
+          "usage": 0.8521
         },
         {
           "name": "Protect",
-          "usage": 0.6243
+          "usage": 0.6337
         },
         {
           "name": "Flip Turn",
-          "usage": 0.3626
+          "usage": 0.3533
         },
         {
           "name": "Liquidation",
-          "usage": 0.1111
+          "usage": 0.1107
         },
         {
           "name": "Psychic Fangs",
-          "usage": 0.018
+          "usage": 0.0212
         }
       ],
       "items": [
         {
           "name": "Choice Scarf",
-          "usage": 0.363
+          "usage": 0.3554
         },
         {
           "name": "Mystic Water",
-          "usage": 0.2491
+          "usage": 0.2574
         },
         {
           "name": "Life Orb",
-          "usage": 0.167
+          "usage": 0.1742
         },
         {
           "name": "Focus Sash",
-          "usage": 0.1135
+          "usage": 0.1134
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.0551
+          "usage": 0.0554
         },
         {
           "name": "Nothing",
-          "usage": 0.0355
+          "usage": 0.0266
         }
       ],
       "abilities": [
         {
           "name": "Adaptability",
-          "usage": 0.8898
+          "usage": 0.9026
         },
         {
           "name": "Swift Swim",
-          "usage": 0.069
+          "usage": 0.0638
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.4896
+          "usage": 0.4897
         },
         {
           "species": "Whimsicott",
-          "usage": 0.4651
+          "usage": 0.4716
         },
         {
           "species": "Kingambit",
-          "usage": 0.3667
+          "usage": 0.3902
         },
         {
           "species": "Charizard-Mega-Y",
-          "usage": 0.3124
+          "usage": 0.3361
         },
         {
           "species": "Floette-Eternal-Mega",
-          "usage": 0.2699
+          "usage": 0.2783
         },
         {
           "species": "Incineroar",
-          "usage": 0.2119
+          "usage": 0.2036
         }
       ]
     },
     "Incineroar": {
       "species": "Incineroar",
-      "usage": 0.3003,
+      "usage": 0.309,
       "moves": [
         {
           "name": "Fake Out",
-          "usage": 0.9659
+          "usage": 0.9737
         },
         {
           "name": "Parting Shot",
-          "usage": 0.9332
+          "usage": 0.9325
         },
         {
           "name": "Flare Blitz",
-          "usage": 0.9
+          "usage": 0.8994
         },
         {
           "name": "Throat Chop",
-          "usage": 0.5246
+          "usage": 0.5011
         },
         {
           "name": "Darkest Lariat",
-          "usage": 0.2941
+          "usage": 0.3072
         },
         {
           "name": "Protect",
-          "usage": 0.1146
+          "usage": 0.1217
         },
         {
           "name": "Helping Hand",
-          "usage": 0.0446
-        },
-        {
-          "name": "Will-O-Wisp",
-          "usage": 0.0441
+          "usage": 0.0616
         },
         {
           "name": "Close Combat",
-          "usage": 0.0364
+          "usage": 0.0412
+        },
+        {
+          "name": "Will-O-Wisp",
+          "usage": 0.0362
         },
         {
           "name": "Taunt",
-          "usage": 0.0277
+          "usage": 0.0285
         }
       ],
       "items": [
         {
           "name": "Sitrus Berry",
-          "usage": 0.5896
+          "usage": 0.6129
         },
         {
           "name": "Passho Berry",
-          "usage": 0.1441
+          "usage": 0.1428
         },
         {
           "name": "Chople Berry",
-          "usage": 0.1009
+          "usage": 0.0864
         },
         {
           "name": "Charcoal",
-          "usage": 0.0396
+          "usage": 0.0347
         },
         {
           "name": "Leftovers",
-          "usage": 0.0305
+          "usage": 0.0279
         },
         {
           "name": "Shuca Berry",
-          "usage": 0.0286
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0232
+          "usage": 0.0269
         },
         {
           "name": "White Herb",
-          "usage": 0.0168
+          "usage": 0.0217
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0158
         }
       ],
       "abilities": [
         {
           "name": "Intimidate",
-          "usage": 0.9641
+          "usage": 0.9712
         },
         {
           "name": "Blaze",
-          "usage": 0.0132
+          "usage": 0.013
         }
       ],
       "teammates": [
         {
           "species": "Sinistcha",
-          "usage": 0.4614
+          "usage": 0.4618
         },
         {
           "species": "Garchomp",
-          "usage": 0.3414
-        },
-        {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.2532
+          "usage": 0.3236
         },
         {
           "species": "Sneasler",
-          "usage": 0.2477
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.2359
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.2309
-        }
-      ]
-    },
-    "Whimsicott": {
-      "species": "Whimsicott",
-      "usage": 0.2767,
-      "moves": [
-        {
-          "name": "Tailwind",
-          "usage": 0.9625
-        },
-        {
-          "name": "Moonblast",
-          "usage": 0.924
-        },
-        {
-          "name": "Protect",
-          "usage": 0.6902
-        },
-        {
-          "name": "Encore",
-          "usage": 0.6714
-        },
-        {
-          "name": "Sunny Day",
-          "usage": 0.1559
-        },
-        {
-          "name": "Charm",
-          "usage": 0.1302
-        },
-        {
-          "name": "Fake Tears",
-          "usage": 0.0883
-        },
-        {
-          "name": "Tickle",
-          "usage": 0.0715
-        },
-        {
-          "name": "Energy Ball",
-          "usage": 0.0385
-        },
-        {
-          "name": "Taunt",
-          "usage": 0.0345
-        }
-      ],
-      "items": [
-        {
-          "name": "Focus Sash",
-          "usage": 0.8298
-        },
-        {
-          "name": "Fairy Feather",
-          "usage": 0.0558
-        },
-        {
-          "name": "Mental Herb",
-          "usage": 0.0311
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0296
-        },
-        {
-          "name": "Coba Berry",
-          "usage": 0.0158
-        },
-        {
-          "name": "Occa Berry",
-          "usage": 0.0118
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Prankster",
-          "usage": 0.9689
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Garchomp",
-          "usage": 0.6744
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.5619
-        },
-        {
-          "species": "Charizard-Mega-Y",
-          "usage": 0.4124
-        },
-        {
-          "species": "Kingambit",
-          "usage": 0.3276
+          "usage": 0.2676
         },
         {
           "species": "Floette-Eternal-Mega",
-          "usage": 0.2861
+          "usage": 0.2505
         },
         {
-          "species": "Incineroar",
-          "usage": 0.2506
+          "species": "Basculegion",
+          "usage": 0.2084
+        },
+        {
+          "species": "Whimsicott",
+          "usage": 0.2004
         }
       ]
     },
     "Kingambit": {
       "species": "Kingambit",
-      "usage": 0.2604,
+      "usage": 0.2812,
       "moves": [
         {
           "name": "Sucker Punch",
-          "usage": 0.9523
+          "usage": 0.9667
         },
         {
           "name": "Kowtow Cleave",
-          "usage": 0.9345
+          "usage": 0.9456
         },
         {
           "name": "Protect",
-          "usage": 0.7453
+          "usage": 0.7237
         },
         {
           "name": "Iron Head",
-          "usage": 0.6787
+          "usage": 0.6887
         },
         {
           "name": "Low Kick",
-          "usage": 0.3402
+          "usage": 0.346
         },
         {
           "name": "Swords Dance",
-          "usage": 0.2023
+          "usage": 0.2174
         },
         {
           "name": "Brick Break",
-          "usage": 0.0142
+          "usage": 0.0129
         }
       ],
       "items": [
         {
           "name": "Black Glasses",
-          "usage": 0.4088
+          "usage": 0.4206
         },
         {
           "name": "Chople Berry",
-          "usage": 0.2841
+          "usage": 0.2562
         },
         {
           "name": "Focus Sash",
-          "usage": 0.1253
+          "usage": 0.1467
         },
         {
           "name": "Life Orb",
-          "usage": 0.0718
+          "usage": 0.081
         },
         {
           "name": "Occa Berry",
-          "usage": 0.0466
+          "usage": 0.0439
         },
         {
           "name": "Nothing",
-          "usage": 0.0356
+          "usage": 0.0238
         }
       ],
       "abilities": [
         {
           "name": "Defiant",
-          "usage": 0.9424
+          "usage": 0.951
         },
         {
           "name": "Supreme Overlord",
-          "usage": 0.0199
+          "usage": 0.0228
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.5477
+          "usage": 0.5437
         },
         {
           "species": "Basculegion",
-          "usage": 0.4707
+          "usage": 0.4389
         },
         {
           "species": "Charizard-Mega-Y",
-          "usage": 0.3873
+          "usage": 0.4035
         },
         {
           "species": "Whimsicott",
-          "usage": 0.348
-        },
-        {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.2904
+          "usage": 0.3195
         },
         {
           "species": "Sylveon",
-          "usage": 0.2621
+          "usage": 0.2872
+        },
+        {
+          "species": "Floette-Eternal-Mega",
+          "usage": 0.2831
+        }
+      ]
+    },
+    "Whimsicott": {
+      "species": "Whimsicott",
+      "usage": 0.2606,
+      "moves": [
+        {
+          "name": "Tailwind",
+          "usage": 0.9688
+        },
+        {
+          "name": "Moonblast",
+          "usage": 0.9262
+        },
+        {
+          "name": "Encore",
+          "usage": 0.7092
+        },
+        {
+          "name": "Protect",
+          "usage": 0.6968
+        },
+        {
+          "name": "Sunny Day",
+          "usage": 0.1479
+        },
+        {
+          "name": "Charm",
+          "usage": 0.1076
+        },
+        {
+          "name": "Fake Tears",
+          "usage": 0.0811
+        },
+        {
+          "name": "Tickle",
+          "usage": 0.0639
+        },
+        {
+          "name": "Energy Ball",
+          "usage": 0.043
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.0382
+        }
+      ],
+      "items": [
+        {
+          "name": "Focus Sash",
+          "usage": 0.8388
+        },
+        {
+          "name": "Fairy Feather",
+          "usage": 0.0521
+        },
+        {
+          "name": "Mental Herb",
+          "usage": 0.0316
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0224
+        },
+        {
+          "name": "Coba Berry",
+          "usage": 0.0154
+        },
+        {
+          "name": "Occa Berry",
+          "usage": 0.0103
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Prankster",
+          "usage": 0.9743
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Garchomp",
+          "usage": 0.6777
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.5723
+        },
+        {
+          "species": "Charizard-Mega-Y",
+          "usage": 0.4471
+        },
+        {
+          "species": "Kingambit",
+          "usage": 0.3447
+        },
+        {
+          "species": "Floette-Eternal-Mega",
+          "usage": 0.2937
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.2375
         }
       ]
     },
     "Charizard-Mega-Y": {
       "species": "Charizard-Mega-Y",
-      "usage": 0.2095,
+      "usage": 0.2286,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.9935
+          "usage": 0.9946
         },
         {
           "name": "Heat Wave",
-          "usage": 0.9831
+          "usage": 0.9841
         },
         {
           "name": "Solar Beam",
-          "usage": 0.9779
+          "usage": 0.9774
         },
         {
           "name": "Weather Ball",
-          "usage": 0.9186
+          "usage": 0.9121
         },
         {
           "name": "Air Slash",
-          "usage": 0.0365
+          "usage": 0.0335
         },
         {
           "name": "Ancient Power",
-          "usage": 0.0156
-        },
-        {
-          "name": "Dragon Pulse",
-          "usage": 0.0137
+          "usage": 0.018
         },
         {
           "name": "Overheat",
-          "usage": 0.0137
+          "usage": 0.0138
+        },
+        {
+          "name": "Dragon Pulse",
+          "usage": 0.013
         }
       ],
       "items": [
@@ -1376,279 +1380,387 @@
       "abilities": [
         {
           "name": "Blaze",
-          "usage": 0.7629
+          "usage": 0.7727
         },
         {
           "name": "Solar Power",
-          "usage": 0.1772
+          "usage": 0.1754
         },
         {
           "name": "Drought",
-          "usage": 0.0599
+          "usage": 0.0515
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.8554
+          "usage": 0.8552
         },
         {
           "species": "Whimsicott",
-          "usage": 0.5446
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.4984
+          "usage": 0.5098
         },
         {
           "species": "Kingambit",
-          "usage": 0.4814
-        },
-        {
-          "species": "Sylveon",
-          "usage": 0.3036
-        },
-        {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.2658
-        }
-      ]
-    },
-    "Pelipper": {
-      "species": "Pelipper",
-      "usage": 0.2037,
-      "moves": [
-        {
-          "name": "Hurricane",
-          "usage": 0.9645
-        },
-        {
-          "name": "Weather Ball",
-          "usage": 0.9095
-        },
-        {
-          "name": "Tailwind",
-          "usage": 0.8827
-        },
-        {
-          "name": "Wide Guard",
-          "usage": 0.5395
-        },
-        {
-          "name": "Protect",
-          "usage": 0.4531
-        },
-        {
-          "name": "Helping Hand",
-          "usage": 0.0422
-        },
-        {
-          "name": "Muddy Water",
-          "usage": 0.0308
-        },
-        {
-          "name": "Rain Dance",
-          "usage": 0.0235
-        },
-        {
-          "name": "Ice Beam",
-          "usage": 0.0181
-        },
-        {
-          "name": "U-turn",
-          "usage": 0.0134
-        }
-      ],
-      "items": [
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.3948
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.3887
-        },
-        {
-          "name": "Damp Rock",
-          "usage": 0.0731
-        },
-        {
-          "name": "Life Orb",
-          "usage": 0.0603
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0261
-        },
-        {
-          "name": "Choice Scarf",
-          "usage": 0.0181
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Drizzle",
-          "usage": 0.9618
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Archaludon",
-          "usage": 0.7916
-        },
-        {
-          "species": "Swampert-Mega",
-          "usage": 0.75
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.5637
-        },
-        {
-          "species": "Grimmsnarl",
-          "usage": 0.3485
+          "usage": 0.4964
         },
         {
           "species": "Basculegion",
-          "usage": 0.258
+          "usage": 0.4651
         },
         {
-          "species": "Metagross-Mega",
-          "usage": 0.2554
+          "species": "Sylveon",
+          "usage": 0.3437
+        },
+        {
+          "species": "Farigiraf",
+          "usage": 0.2558
         }
       ]
     },
     "Sneasler": {
       "species": "Sneasler",
-      "usage": 0.2027,
+      "usage": 0.2069,
       "moves": [
         {
           "name": "Close Combat",
-          "usage": 0.9643
+          "usage": 0.9736
         },
         {
           "name": "Fake Out",
-          "usage": 0.9293
+          "usage": 0.9403
         },
         {
           "name": "Dire Claw",
-          "usage": 0.8606
+          "usage": 0.839
         },
         {
           "name": "Protect",
-          "usage": 0.6512
+          "usage": 0.6263
         },
         {
           "name": "Coaching",
-          "usage": 0.2323
-        },
-        {
-          "name": "Gunk Shot",
-          "usage": 0.0593
+          "usage": 0.2058
         },
         {
           "name": "Quick Guard",
-          "usage": 0.0498
+          "usage": 0.1013
         },
         {
           "name": "Poison Jab",
-          "usage": 0.0431
+          "usage": 0.0782
+        },
+        {
+          "name": "Gunk Shot",
+          "usage": 0.0523
+        },
+        {
+          "name": "Rock Slide",
+          "usage": 0.0236
         },
         {
           "name": "Throat Chop",
-          "usage": 0.0216
-        },
-        {
-          "name": "U-turn",
-          "usage": 0.0175
+          "usage": 0.0204
         }
       ],
       "items": [
         {
           "name": "White Herb",
-          "usage": 0.6397
+          "usage": 0.5907
         },
         {
           "name": "Focus Sash",
-          "usage": 0.2923
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0283
+          "usage": 0.3418
         },
         {
           "name": "Life Orb",
-          "usage": 0.0135
+          "usage": 0.0217
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0194
+        },
+        {
+          "name": "Mental Herb",
+          "usage": 0.012
         }
       ],
       "abilities": [
         {
           "name": "Unburden",
-          "usage": 0.7771
+          "usage": 0.7248
         },
         {
           "name": "Poison Touch",
-          "usage": 0.1771
+          "usage": 0.2387
         },
         {
           "name": "Pressure",
-          "usage": 0.0195
+          "usage": 0.0176
         }
       ],
       "teammates": [
         {
           "species": "Sinistcha",
-          "usage": 0.3798
+          "usage": 0.4103
         },
         {
           "species": "Incineroar",
-          "usage": 0.367
+          "usage": 0.3996
         },
         {
           "species": "Kingambit",
-          "usage": 0.334
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.2808
+          "usage": 0.3691
         },
         {
           "species": "Basculegion",
-          "usage": 0.2808
+          "usage": 0.2664
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.2572
         },
         {
           "species": "Floette-Eternal-Mega",
-          "usage": 0.2222
+          "usage": 0.2327
+        }
+      ]
+    },
+    "Farigiraf": {
+      "species": "Farigiraf",
+      "usage": 0.1952,
+      "moves": [
+        {
+          "name": "Trick Room",
+          "usage": 0.9657
+        },
+        {
+          "name": "Psychic",
+          "usage": 0.5779
+        },
+        {
+          "name": "Helping Hand",
+          "usage": 0.5304
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.5206
+        },
+        {
+          "name": "Protect",
+          "usage": 0.4539
+        },
+        {
+          "name": "Twin Beam",
+          "usage": 0.3113
+        },
+        {
+          "name": "Hyper Voice",
+          "usage": 0.1613
+        },
+        {
+          "name": "Roar",
+          "usage": 0.1024
+        },
+        {
+          "name": "Imprison",
+          "usage": 0.0564
+        },
+        {
+          "name": "Grass Knot",
+          "usage": 0.0456
+        }
+      ],
+      "items": [
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.6809
+        },
+        {
+          "name": "Colbur Berry",
+          "usage": 0.2245
+        },
+        {
+          "name": "Mental Herb",
+          "usage": 0.024
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.0157
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0132
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.0123
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Armor Tail",
+          "usage": 0.9809
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Sylveon",
+          "usage": 0.3623
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.3387
+        },
+        {
+          "species": "Torkoal",
+          "usage": 0.3191
+        },
+        {
+          "species": "Kingambit",
+          "usage": 0.3044
+        },
+        {
+          "species": "Charizard-Mega-Y",
+          "usage": 0.2995
+        },
+        {
+          "species": "Mawile-Mega",
+          "usage": 0.2598
+        }
+      ]
+    },
+    "Pelipper": {
+      "species": "Pelipper",
+      "usage": 0.1857,
+      "moves": [
+        {
+          "name": "Hurricane",
+          "usage": 0.967
+        },
+        {
+          "name": "Weather Ball",
+          "usage": 0.9062
+        },
+        {
+          "name": "Tailwind",
+          "usage": 0.8918
+        },
+        {
+          "name": "Wide Guard",
+          "usage": 0.5492
+        },
+        {
+          "name": "Protect",
+          "usage": 0.4359
+        },
+        {
+          "name": "Helping Hand",
+          "usage": 0.0412
+        },
+        {
+          "name": "Muddy Water",
+          "usage": 0.0345
+        },
+        {
+          "name": "Rain Dance",
+          "usage": 0.0237
+        },
+        {
+          "name": "U-turn",
+          "usage": 0.0175
+        },
+        {
+          "name": "Ice Beam",
+          "usage": 0.017
+        }
+      ],
+      "items": [
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.3998
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.3869
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.067
+        },
+        {
+          "name": "Damp Rock",
+          "usage": 0.067
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0206
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.016
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Drizzle",
+          "usage": 0.967
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Archaludon",
+          "usage": 0.8058
+        },
+        {
+          "species": "Swampert-Mega",
+          "usage": 0.7543
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.5461
+        },
+        {
+          "species": "Grimmsnarl",
+          "usage": 0.3668
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.2571
+        },
+        {
+          "species": "Metagross-Mega",
+          "usage": 0.2545
         }
       ]
     },
     "Floette-Eternal-Mega": {
       "species": "Floette-Eternal-Mega",
-      "usage": 0.1817,
+      "usage": 0.1785,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.9978
+          "usage": 0.9963
         },
         {
           "name": "Dazzling Gleam",
-          "usage": 0.9594
+          "usage": 0.9517
         },
         {
           "name": "Moonblast",
-          "usage": 0.7806
+          "usage": 0.7668
         },
         {
           "name": "Calm Mind",
-          "usage": 0.5026
+          "usage": 0.4997
         },
         {
           "name": "Light of Ruin",
-          "usage": 0.4869
+          "usage": 0.4928
         },
         {
           "name": "Draining Kiss",
-          "usage": 0.2502
+          "usage": 0.2595
         }
       ],
       "items": [
@@ -1660,379 +1772,379 @@
       "abilities": [
         {
           "name": "Flower Veil",
-          "usage": 0.9564
+          "usage": 0.9609
         },
         {
           "name": "Fairy Aura",
-          "usage": 0.0376
+          "usage": 0.0338
         }
       ],
       "teammates": [
         {
           "species": "Basculegion",
-          "usage": 0.4966
+          "usage": 0.4933
         },
         {
           "species": "Garchomp",
-          "usage": 0.4846
+          "usage": 0.4761
         },
         {
-          "species": "Whimsicott",
-          "usage": 0.4358
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.4237
+          "species": "Kingambit",
+          "usage": 0.4461
         },
         {
           "species": "Incineroar",
-          "usage": 0.4185
+          "usage": 0.4338
         },
         {
-          "species": "Kingambit",
-          "usage": 0.4162
-        }
-      ]
-    },
-    "Farigiraf": {
-      "species": "Farigiraf",
-      "usage": 0.1798,
-      "moves": [
-        {
-          "name": "Trick Room",
-          "usage": 0.9651
+          "species": "Whimsicott",
+          "usage": 0.429
         },
         {
-          "name": "Psychic",
-          "usage": 0.5809
-        },
-        {
-          "name": "Helping Hand",
-          "usage": 0.5368
-        },
-        {
-          "name": "Thunderbolt",
-          "usage": 0.4723
-        },
-        {
-          "name": "Protect",
-          "usage": 0.4571
-        },
-        {
-          "name": "Twin Beam",
-          "usage": 0.3106
-        },
-        {
-          "name": "Hyper Voice",
-          "usage": 0.18
-        },
-        {
-          "name": "Roar",
-          "usage": 0.1101
-        },
-        {
-          "name": "Imprison",
-          "usage": 0.063
-        },
-        {
-          "name": "Grass Knot",
-          "usage": 0.0486
-        }
-      ],
-      "items": [
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.6864
-        },
-        {
-          "name": "Colbur Berry",
-          "usage": 0.2088
-        },
-        {
-          "name": "Mental Herb",
-          "usage": 0.0251
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0197
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0182
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Armor Tail",
-          "usage": 0.9749
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Torkoal",
-          "usage": 0.328
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.3037
-        },
-        {
-          "species": "Sylveon",
-          "usage": 0.3014
-        },
-        {
-          "species": "Mawile-Mega",
-          "usage": 0.2969
-        },
-        {
-          "species": "Kingambit",
-          "usage": 0.2566
-        },
-        {
-          "species": "Charizard-Mega-Y",
-          "usage": 0.2529
+          "species": "Sinistcha",
+          "usage": 0.4236
         }
       ]
     },
     "Archaludon": {
       "species": "Archaludon",
-      "usage": 0.1784,
+      "usage": 0.1702,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.9694
+          "usage": 0.9657
         },
         {
           "name": "Electro Shot",
-          "usage": 0.9602
+          "usage": 0.9652
         },
         {
           "name": "Flash Cannon",
-          "usage": 0.9143
+          "usage": 0.9196
         },
         {
           "name": "Dragon Pulse",
-          "usage": 0.8156
+          "usage": 0.8145
         },
         {
           "name": "Draco Meteor",
-          "usage": 0.124
+          "usage": 0.127
         },
         {
           "name": "Aura Sphere",
-          "usage": 0.0842
+          "usage": 0.0911
         },
         {
           "name": "Snarl",
-          "usage": 0.0161
+          "usage": 0.0163
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.0112
         }
       ],
       "items": [
         {
           "name": "Leftovers",
-          "usage": 0.8784
+          "usage": 0.8881
         },
         {
           "name": "Chople Berry",
-          "usage": 0.0306
+          "usage": 0.0281
         },
         {
           "name": "Nothing",
-          "usage": 0.0275
+          "usage": 0.0208
         },
         {
           "name": "Life Orb",
-          "usage": 0.0138
-        },
-        {
-          "name": "Choice Scarf",
-          "usage": 0.0122
+          "usage": 0.0141
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.0115
+          "usage": 0.0118
         }
       ],
       "abilities": [
         {
           "name": "Stamina",
-          "usage": 0.9373
+          "usage": 0.9466
         },
         {
           "name": "Sturdy",
-          "usage": 0.0199
+          "usage": 0.018
         },
         {
           "name": "Stalwart",
-          "usage": 0.0153
+          "usage": 0.0146
         }
       ],
       "teammates": [
         {
           "species": "Pelipper",
-          "usage": 0.9036
+          "usage": 0.8792
         },
         {
           "species": "Swampert-Mega",
-          "usage": 0.7605
+          "usage": 0.7566
         },
         {
           "species": "Sinistcha",
-          "usage": 0.5853
+          "usage": 0.5593
         },
         {
           "species": "Grimmsnarl",
-          "usage": 0.368
+          "usage": 0.3732
         },
         {
           "species": "Basculegion",
-          "usage": 0.264
+          "usage": 0.258
         },
         {
           "species": "Sableye",
-          "usage": 0.2594
+          "usage": 0.2445
+        }
+      ]
+    },
+    "Sylveon": {
+      "species": "Sylveon",
+      "usage": 0.1694,
+      "moves": [
+        {
+          "name": "Hyper Voice",
+          "usage": 0.9633
+        },
+        {
+          "name": "Quick Attack",
+          "usage": 0.8006
+        },
+        {
+          "name": "Hyper Beam",
+          "usage": 0.7672
+        },
+        {
+          "name": "Detect",
+          "usage": 0.5158
+        },
+        {
+          "name": "Protect",
+          "usage": 0.4717
+        },
+        {
+          "name": "Moonblast",
+          "usage": 0.1028
+        },
+        {
+          "name": "Yawn",
+          "usage": 0.1017
+        },
+        {
+          "name": "Calm Mind",
+          "usage": 0.0576
+        },
+        {
+          "name": "Shadow Ball",
+          "usage": 0.0283
+        },
+        {
+          "name": "Mystical Fire",
+          "usage": 0.0158
+        }
+      ],
+      "items": [
+        {
+          "name": "Fairy Feather",
+          "usage": 0.8622
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.065
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0271
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.0147
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Pixilate",
+          "usage": 0.9571
+        },
+        {
+          "name": "Cute Charm",
+          "usage": 0.0141
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Garchomp",
+          "usage": 0.5531
+        },
+        {
+          "species": "Kingambit",
+          "usage": 0.4768
+        },
+        {
+          "species": "Charizard-Mega-Y",
+          "usage": 0.4638
+        },
+        {
+          "species": "Farigiraf",
+          "usage": 0.4175
+        },
+        {
+          "species": "Aerodactyl-Mega",
+          "usage": 0.3424
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.2757
         }
       ]
     },
     "Grimmsnarl": {
       "species": "Grimmsnarl",
-      "usage": 0.1719,
+      "usage": 0.1605,
       "moves": [
         {
           "name": "Reflect",
-          "usage": 0.8936
-        },
-        {
-          "name": "Light Screen",
-          "usage": 0.8753
+          "usage": 0.9034
         },
         {
           "name": "Parting Shot",
-          "usage": 0.8618
+          "usage": 0.8784
+        },
+        {
+          "name": "Light Screen",
+          "usage": 0.8569
         },
         {
           "name": "Spirit Break",
-          "usage": 0.5584
+          "usage": 0.5343
         },
         {
           "name": "Foul Play",
-          "usage": 0.3114
+          "usage": 0.3417
         },
         {
           "name": "Fake Out",
-          "usage": 0.1843
+          "usage": 0.2039
         },
         {
           "name": "Scary Face",
-          "usage": 0.1009
+          "usage": 0.0847
         },
         {
           "name": "Protect",
-          "usage": 0.0326
+          "usage": 0.0292
         },
         {
           "name": "Sucker Punch",
-          "usage": 0.0302
+          "usage": 0.0286
         },
         {
           "name": "Fake Tears",
-          "usage": 0.0238
+          "usage": 0.0215
         }
       ],
       "items": [
         {
           "name": "Light Clay",
-          "usage": 0.8586
+          "usage": 0.8414
         },
         {
           "name": "Roseli Berry",
-          "usage": 0.0731
+          "usage": 0.0936
         },
         {
           "name": "Nothing",
-          "usage": 0.0206
+          "usage": 0.0161
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.0111
+          "usage": 0.0119
         }
       ],
       "abilities": [
         {
           "name": "Prankster",
-          "usage": 0.9778
+          "usage": 0.9821
         }
       ],
       "teammates": [
         {
           "species": "Sinistcha",
-          "usage": 0.6124
+          "usage": 0.5641
         },
         {
           "species": "Pelipper",
-          "usage": 0.413
+          "usage": 0.4246
         },
         {
           "species": "Archaludon",
-          "usage": 0.3821
+          "usage": 0.3959
         },
         {
           "species": "Swampert-Mega",
-          "usage": 0.3709
+          "usage": 0.3751
         },
         {
           "species": "Metagross-Mega",
-          "usage": 0.2836
+          "usage": 0.2952
         },
         {
-          "species": "Staraptor-Mega",
-          "usage": 0.2812
+          "species": "Garchomp",
+          "usage": 0.2493
         }
       ]
     },
     "Swampert-Mega": {
       "species": "Swampert-Mega",
-      "usage": 0.1641,
+      "usage": 0.1517,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.9867
+          "usage": 0.9836
         },
         {
           "name": "Wave Crash",
-          "usage": 0.9609
+          "usage": 0.9539
         },
         {
           "name": "Ice Punch",
-          "usage": 0.7646
+          "usage": 0.7842
         },
         {
           "name": "Earthquake",
-          "usage": 0.6248
+          "usage": 0.6486
         },
         {
           "name": "High Horsepower",
-          "usage": 0.3802
+          "usage": 0.3571
         },
         {
           "name": "Flip Turn",
-          "usage": 0.0682
+          "usage": 0.0618
         },
         {
           "name": "Rock Slide",
-          "usage": 0.0316
-        },
-        {
-          "name": "Knock Off",
-          "usage": 0.0316
+          "usage": 0.0353
         },
         {
           "name": "Liquidation",
-          "usage": 0.03
+          "usage": 0.0334
+        },
+        {
+          "name": "Knock Off",
+          "usage": 0.0259
         },
         {
           "name": "Stomping Tantrum",
-          "usage": 0.0283
+          "usage": 0.0252
         }
       ],
       "items": [
@@ -2044,191 +2156,87 @@
       "abilities": [
         {
           "name": "Torrent",
-          "usage": 0.5824
+          "usage": 0.5874
         },
         {
           "name": "Damp",
-          "usage": 0.3711
+          "usage": 0.3697
         },
         {
           "name": "Swift Swim",
-          "usage": 0.0441
+          "usage": 0.0404
         }
       ],
       "teammates": [
         {
           "species": "Pelipper",
-          "usage": 0.931
+          "usage": 0.9237
         },
         {
           "species": "Archaludon",
-          "usage": 0.827
+          "usage": 0.8492
         },
         {
           "species": "Sinistcha",
-          "usage": 0.6206
+          "usage": 0.5924
         },
         {
           "species": "Grimmsnarl",
-          "usage": 0.3885
+          "usage": 0.3969
         },
         {
           "species": "Metagross-Mega",
-          "usage": 0.2679
+          "usage": 0.2643
         },
         {
           "species": "Sableye",
-          "usage": 0.2596
-        }
-      ]
-    },
-    "Sylveon": {
-      "species": "Sylveon",
-      "usage": 0.1557,
-      "moves": [
-        {
-          "name": "Hyper Voice",
-          "usage": 0.9483
-        },
-        {
-          "name": "Quick Attack",
-          "usage": 0.7844
-        },
-        {
-          "name": "Hyper Beam",
-          "usage": 0.7467
-        },
-        {
-          "name": "Detect",
-          "usage": 0.4996
-        },
-        {
-          "name": "Protect",
-          "usage": 0.4838
-        },
-        {
-          "name": "Yawn",
-          "usage": 0.1078
-        },
-        {
-          "name": "Moonblast",
-          "usage": 0.092
-        },
-        {
-          "name": "Calm Mind",
-          "usage": 0.0578
-        },
-        {
-          "name": "Shadow Ball",
-          "usage": 0.0307
-        },
-        {
-          "name": "Baby-Doll Eyes",
-          "usage": 0.0219
-        }
-      ],
-      "items": [
-        {
-          "name": "Fairy Feather",
-          "usage": 0.8335
-        },
-        {
-          "name": "Life Orb",
-          "usage": 0.0684
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0412
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0202
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0105
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Pixilate",
-          "usage": 0.9413
-        },
-        {
-          "name": "Cute Charm",
-          "usage": 0.0167
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Garchomp",
-          "usage": 0.5285
-        },
-        {
-          "species": "Kingambit",
-          "usage": 0.4382
-        },
-        {
-          "species": "Charizard-Mega-Y",
-          "usage": 0.4084
-        },
-        {
-          "species": "Farigiraf",
-          "usage": 0.3479
-        },
-        {
-          "species": "Aerodactyl-Mega",
-          "usage": 0.3129
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.305
+          "usage": 0.2498
         }
       ]
     },
     "Metagross-Mega": {
       "species": "Metagross-Mega",
-      "usage": 0.1485,
+      "usage": 0.1359,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.9586
+          "usage": 0.9556
         },
         {
           "name": "Psychic Fangs",
-          "usage": 0.9044
+          "usage": 0.8845
         },
         {
           "name": "Iron Head",
-          "usage": 0.7647
-        },
-        {
-          "name": "Stomping Tantrum",
-          "usage": 0.2638
-        },
-        {
-          "name": "Body Press",
-          "usage": 0.2638
+          "usage": 0.7613
         },
         {
           "name": "Bullet Punch",
-          "usage": 0.2528
+          "usage": 0.2775
+        },
+        {
+          "name": "Body Press",
+          "usage": 0.2761
+        },
+        {
+          "name": "Stomping Tantrum",
+          "usage": 0.2394
         },
         {
           "name": "Ice Punch",
-          "usage": 0.1912
+          "usage": 0.1901
         },
         {
           "name": "Meteor Mash",
-          "usage": 0.1544
-        },
-        {
-          "name": "Rock Slide",
-          "usage": 0.0496
+          "usage": 0.1493
         },
         {
           "name": "Hammer Arm",
-          "usage": 0.0349
+          "usage": 0.0563
+        },
+        {
+          "name": "Rock Slide",
+          "usage": 0.043
         }
       ],
       "items": [
@@ -2240,79 +2248,195 @@
       "abilities": [
         {
           "name": "Clear Body",
-          "usage": 0.9494
+          "usage": 0.9514
         },
         {
           "name": "Tough Claws",
-          "usage": 0.0496
+          "usage": 0.0465
         }
       ],
       "teammates": [
         {
           "species": "Sinistcha",
-          "usage": 0.4347
+          "usage": 0.4141
         },
         {
           "species": "Garchomp",
-          "usage": 0.352
-        },
-        {
-          "species": "Pelipper",
-          "usage": 0.3502
+          "usage": 0.3648
         },
         {
           "species": "Grimmsnarl",
-          "usage": 0.3281
+          "usage": 0.3486
+        },
+        {
+          "species": "Pelipper",
+          "usage": 0.3479
         },
         {
           "species": "Swampert-Mega",
-          "usage": 0.296
+          "usage": 0.2951
         },
         {
           "species": "Archaludon",
-          "usage": 0.2849
+          "usage": 0.2894
+        }
+      ]
+    },
+    "Gholdengo": {
+      "species": "Gholdengo",
+      "usage": 0.1126,
+      "moves": [
+        {
+          "name": "Make It Rain",
+          "usage": 0.9796
+        },
+        {
+          "name": "Shadow Ball",
+          "usage": 0.9703
+        },
+        {
+          "name": "Protect",
+          "usage": 0.8641
+        },
+        {
+          "name": "Nasty Plot",
+          "usage": 0.7137
+        },
+        {
+          "name": "Power Gem",
+          "usage": 0.2107
+        },
+        {
+          "name": "Trick",
+          "usage": 0.0807
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.0416
+        },
+        {
+          "name": "Dazzling Gleam",
+          "usage": 0.0297
+        },
+        {
+          "name": "Flash Cannon",
+          "usage": 0.0161
+        }
+      ],
+      "items": [
+        {
+          "name": "Life Orb",
+          "usage": 0.5251
+        },
+        {
+          "name": "Metal Coat",
+          "usage": 0.1156
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.1096
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.062
+        },
+        {
+          "name": "Spell Tag",
+          "usage": 0.0416
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.0348
+        },
+        {
+          "name": "White Herb",
+          "usage": 0.0306
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.0297
+        },
+        {
+          "name": "Wise Glasses",
+          "usage": 0.0136
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0127
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Good as Gold",
+          "usage": 0.9856
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Garchomp",
+          "usage": 0.4936
+        },
+        {
+          "species": "Whimsicott",
+          "usage": 0.441
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.3237
+        },
+        {
+          "species": "Staraptor-Mega",
+          "usage": 0.2906
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.288
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.2685
         }
       ]
     },
     "Staraptor-Mega": {
       "species": "Staraptor-Mega",
-      "usage": 0.1286,
+      "usage": 0.1091,
       "moves": [
         {
           "name": "Close Combat",
-          "usage": 0.9989
+          "usage": 0.9991
         },
         {
           "name": "Protect",
-          "usage": 0.9703
+          "usage": 0.9623
         },
         {
           "name": "Brave Bird",
-          "usage": 0.897
+          "usage": 0.8974
         },
         {
           "name": "Roost",
-          "usage": 0.8174
-        },
-        {
-          "name": "Dual Wingbeat",
-          "usage": 0.1072
+          "usage": 0.8079
         },
         {
           "name": "Tailwind",
-          "usage": 0.0945
+          "usage": 0.1097
+        },
+        {
+          "name": "Dual Wingbeat",
+          "usage": 0.1079
         },
         {
           "name": "Blaze Kick",
-          "usage": 0.034
+          "usage": 0.0307
         },
         {
           "name": "U-turn",
-          "usage": 0.0234
+          "usage": 0.0228
         },
         {
           "name": "Final Gambit",
-          "usage": 0.0191
+          "usage": 0.0211
         }
       ],
       "items": [
@@ -2324,367 +2448,75 @@
       "abilities": [
         {
           "name": "Intimidate",
-          "usage": 0.9682
+          "usage": 0.9667
         },
         {
           "name": "Contrary",
-          "usage": 0.0159
+          "usage": 0.0184
         },
         {
           "name": "Reckless",
-          "usage": 0.0149
+          "usage": 0.014
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.5223
+          "usage": 0.5079
         },
         {
           "species": "Whimsicott",
-          "usage": 0.4905
+          "usage": 0.4728
         },
         {
           "species": "Sinistcha",
-          "usage": 0.4735
+          "usage": 0.4649
         },
         {
           "species": "Incineroar",
-          "usage": 0.3822
+          "usage": 0.3851
         },
         {
           "species": "Grimmsnarl",
-          "usage": 0.3758
+          "usage": 0.3544
         },
         {
           "species": "Gholdengo",
-          "usage": 0.31
-        }
-      ]
-    },
-    "Gholdengo": {
-      "species": "Gholdengo",
-      "usage": 0.1248,
-      "moves": [
-        {
-          "name": "Make It Rain",
-          "usage": 0.9748
-        },
-        {
-          "name": "Shadow Ball",
-          "usage": 0.9672
-        },
-        {
-          "name": "Protect",
-          "usage": 0.8578
-        },
-        {
-          "name": "Nasty Plot",
-          "usage": 0.6991
-        },
-        {
-          "name": "Power Gem",
-          "usage": 0.2144
-        },
-        {
-          "name": "Trick",
-          "usage": 0.0875
-        },
-        {
-          "name": "Thunderbolt",
-          "usage": 0.0394
-        },
-        {
-          "name": "Dazzling Gleam",
-          "usage": 0.0317
-        },
-        {
-          "name": "Flash Cannon",
-          "usage": 0.0197
-        },
-        {
-          "name": "Steel Beam",
-          "usage": 0.0109
-        }
-      ],
-      "items": [
-        {
-          "name": "Life Orb",
-          "usage": 0.5306
-        },
-        {
-          "name": "Metal Coat",
-          "usage": 0.1193
-        },
-        {
-          "name": "Choice Scarf",
-          "usage": 0.1182
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0569
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0372
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.0295
-        },
-        {
-          "name": "White Herb",
-          "usage": 0.0274
-        },
-        {
-          "name": "Spell Tag",
-          "usage": 0.023
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0164
-        },
-        {
-          "name": "Wise Glasses",
-          "usage": 0.0142
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Good as Gold",
-          "usage": 0.9836
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Garchomp",
-          "usage": 0.523
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.4595
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.3249
-        },
-        {
-          "species": "Staraptor-Mega",
-          "usage": 0.3195
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.2921
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.2878
-        }
-      ]
-    },
-    "Raichu-Mega-Y": {
-      "species": "Raichu-Mega-Y",
-      "usage": 0.0829,
-      "moves": [
-        {
-          "name": "Zap Cannon",
-          "usage": 0.9852
-        },
-        {
-          "name": "Focus Blast",
-          "usage": 0.9259
-        },
-        {
-          "name": "Protect",
-          "usage": 0.8583
-        },
-        {
-          "name": "Fake Out",
-          "usage": 0.687
-        },
-        {
-          "name": "Volt Switch",
-          "usage": 0.1598
-        },
-        {
-          "name": "Grass Knot",
-          "usage": 0.1186
-        },
-        {
-          "name": "Dazzling Gleam",
-          "usage": 0.0527
-        },
-        {
-          "name": "Encore",
-          "usage": 0.0379
-        },
-        {
-          "name": "Nasty Plot",
-          "usage": 0.028
-        },
-        {
-          "name": "Alluring Voice",
-          "usage": 0.0165
-        }
-      ],
-      "items": [
-        {
-          "name": "Raichunite Y",
-          "usage": 0.9951
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Lightning Rod",
-          "usage": 0.9143
-        },
-        {
-          "name": "No Guard",
-          "usage": 0.0428
-        },
-        {
-          "name": "Static",
-          "usage": 0.0428
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Whimsicott",
-          "usage": 0.4168
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.3839
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.3822
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.3443
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.313
-        },
-        {
-          "species": "Kingambit",
-          "usage": 0.2092
-        }
-      ]
-    },
-    "Mawile-Mega": {
-      "species": "Mawile-Mega",
-      "usage": 0.0803,
-      "moves": [
-        {
-          "name": "Play Rough",
-          "usage": 0.9864
-        },
-        {
-          "name": "Protect",
-          "usage": 0.949
-        },
-        {
-          "name": "Sucker Punch",
-          "usage": 0.9235
-        },
-        {
-          "name": "Iron Head",
-          "usage": 0.6684
-        },
-        {
-          "name": "Swords Dance",
-          "usage": 0.2279
-        },
-        {
-          "name": "Rock Slide",
-          "usage": 0.1174
-        },
-        {
-          "name": "Brick Break",
-          "usage": 0.0646
-        },
-        {
-          "name": "Knock Off",
-          "usage": 0.0323
-        }
-      ],
-      "items": [
-        {
-          "name": "Mawilite",
-          "usage": 1
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Hyper Cutter",
-          "usage": 0.5
-        },
-        {
-          "name": "Intimidate",
-          "usage": 0.4779
-        },
-        {
-          "name": "Huge Power",
-          "usage": 0.017
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Farigiraf",
-          "usage": 0.665
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.4048
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.3691
-        },
-        {
-          "species": "Torkoal",
-          "usage": 0.3061
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.2483
-        },
-        {
-          "species": "Pelipper",
-          "usage": 0.233
+          "usage": 0.3
         }
       ]
     },
     "Aerodactyl-Mega": {
       "species": "Aerodactyl-Mega",
-      "usage": 0.0734,
+      "usage": 0.0828,
       "moves": [
         {
           "name": "Rock Slide",
-          "usage": 0.9833
+          "usage": 0.9861
         },
         {
           "name": "Tailwind",
-          "usage": 0.9461
+          "usage": 0.9422
         },
         {
           "name": "Dual Wingbeat",
-          "usage": 0.9294
+          "usage": 0.9237
         },
         {
           "name": "Ice Fang",
-          "usage": 0.4665
+          "usage": 0.5422
         },
         {
           "name": "Protect",
-          "usage": 0.355
+          "usage": 0.3145
         },
         {
           "name": "Wide Guard",
-          "usage": 0.2658
+          "usage": 0.2347
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.0104
         }
       ],
       "items": [
@@ -2696,191 +2528,367 @@
       "abilities": [
         {
           "name": "Unnerve",
-          "usage": 0.9164
+          "usage": 0.911
         },
         {
           "name": "Tough Claws",
-          "usage": 0.0316
+          "usage": 0.0358
         },
         {
           "name": "Pressure",
-          "usage": 0.026
+          "usage": 0.0335
         },
         {
           "name": "Rock Head",
-          "usage": 0.0242
+          "usage": 0.0185
         }
       ],
       "teammates": [
         {
-          "species": "Sylveon",
-          "usage": 0.6636
+          "species": "Kingambit",
+          "usage": 0.7225
         },
         {
-          "species": "Kingambit",
-          "usage": 0.6617
+          "species": "Sylveon",
+          "usage": 0.7006
         },
         {
           "species": "Garchomp",
-          "usage": 0.6524
+          "usage": 0.6705
         },
         {
           "species": "Charizard-Mega-Y",
-          "usage": 0.4889
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.3755
+          "usage": 0.5434
         },
         {
           "species": "Farigiraf",
-          "usage": 0.3476
+          "usage": 0.4347
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.3214
+        }
+      ]
+    },
+    "Raichu-Mega-Y": {
+      "species": "Raichu-Mega-Y",
+      "usage": 0.079,
+      "moves": [
+        {
+          "name": "Zap Cannon",
+          "usage": 0.9831
+        },
+        {
+          "name": "Focus Blast",
+          "usage": 0.9383
+        },
+        {
+          "name": "Protect",
+          "usage": 0.8644
+        },
+        {
+          "name": "Fake Out",
+          "usage": 0.7022
+        },
+        {
+          "name": "Volt Switch",
+          "usage": 0.1368
+        },
+        {
+          "name": "Grass Knot",
+          "usage": 0.1344
+        },
+        {
+          "name": "Dazzling Gleam",
+          "usage": 0.0581
+        },
+        {
+          "name": "Encore",
+          "usage": 0.0327
+        },
+        {
+          "name": "Nasty Plot",
+          "usage": 0.023
+        },
+        {
+          "name": "Alluring Voice",
+          "usage": 0.0133
+        }
+      ],
+      "items": [
+        {
+          "name": "Raichunite Y",
+          "usage": 0.9964
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Lightning Rod",
+          "usage": 0.9068
+        },
+        {
+          "name": "No Guard",
+          "usage": 0.046
+        },
+        {
+          "name": "Static",
+          "usage": 0.0448
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Whimsicott",
+          "usage": 0.385
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.3584
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.3475
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.3438
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.3329
+        },
+        {
+          "species": "Gholdengo",
+          "usage": 0.1998
         }
       ]
     },
     "Torkoal": {
       "species": "Torkoal",
-      "usage": 0.0711,
+      "usage": 0.077,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.952
+          "usage": 0.954
         },
         {
           "name": "Eruption",
-          "usage": 0.8599
+          "usage": 0.846
         },
         {
           "name": "Weather Ball",
-          "usage": 0.6756
+          "usage": 0.6907
         },
         {
           "name": "Heat Wave",
-          "usage": 0.4184
+          "usage": 0.4323
         },
         {
           "name": "Helping Hand",
-          "usage": 0.2572
+          "usage": 0.2472
         },
         {
           "name": "Earth Power",
-          "usage": 0.2534
+          "usage": 0.2422
         },
         {
           "name": "Solar Beam",
-          "usage": 0.1958
+          "usage": 0.1888
         },
         {
           "name": "Yawn",
-          "usage": 0.1152
+          "usage": 0.1391
         },
         {
           "name": "Burning Jealousy",
-          "usage": 0.0633
+          "usage": 0.0857
         },
         {
           "name": "Overheat",
-          "usage": 0.0326
+          "usage": 0.0286
         }
       ],
       "items": [
         {
           "name": "Charcoal",
-          "usage": 0.7658
-        },
-        {
-          "name": "Heat Rock",
-          "usage": 0.0883
+          "usage": 0.7652
         },
         {
           "name": "Leftovers",
-          "usage": 0.0864
+          "usage": 0.118
+        },
+        {
+          "name": "Heat Rock",
+          "usage": 0.0671
         },
         {
           "name": "Nothing",
-          "usage": 0.0307
+          "usage": 0.0199
         },
         {
           "name": "Life Orb",
-          "usage": 0.0211
+          "usage": 0.0186
         }
       ],
       "abilities": [
         {
           "name": "Drought",
-          "usage": 0.9635
+          "usage": 0.9727
         }
       ],
       "teammates": [
         {
           "species": "Farigiraf",
-          "usage": 0.8292
+          "usage": 0.8087
         },
         {
           "species": "Mawile-Mega",
-          "usage": 0.3455
-        },
-        {
-          "species": "Vileplume",
-          "usage": 0.2534
+          "usage": 0.3081
         },
         {
           "species": "Sylveon",
-          "usage": 0.2438
+          "usage": 0.2745
+        },
+        {
+          "species": "Vileplume",
+          "usage": 0.2398
         },
         {
           "species": "Incineroar",
-          "usage": 0.238
+          "usage": 0.2348
         },
         {
-          "species": "Pyroar-Mega",
-          "usage": 0.2323
+          "species": "Kingambit",
+          "usage": 0.2335
+        }
+      ]
+    },
+    "Mawile-Mega": {
+      "species": "Mawile-Mega",
+      "usage": 0.0755,
+      "moves": [
+        {
+          "name": "Play Rough",
+          "usage": 0.9861
+        },
+        {
+          "name": "Protect",
+          "usage": 0.9354
+        },
+        {
+          "name": "Sucker Punch",
+          "usage": 0.9189
+        },
+        {
+          "name": "Iron Head",
+          "usage": 0.6527
+        },
+        {
+          "name": "Swords Dance",
+          "usage": 0.2497
+        },
+        {
+          "name": "Rock Slide",
+          "usage": 0.1331
+        },
+        {
+          "name": "Brick Break",
+          "usage": 0.0634
+        },
+        {
+          "name": "Knock Off",
+          "usage": 0.0254
+        }
+      ],
+      "items": [
+        {
+          "name": "Mawilite",
+          "usage": 1
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Hyper Cutter",
+          "usage": 0.5209
+        },
+        {
+          "name": "Intimidate",
+          "usage": 0.4575
+        },
+        {
+          "name": "Huge Power",
+          "usage": 0.0165
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Farigiraf",
+          "usage": 0.6717
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.4145
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.3498
+        },
+        {
+          "species": "Torkoal",
+          "usage": 0.3143
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.2345
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.2167
         }
       ]
     },
     "Delphox-Mega": {
       "species": "Delphox-Mega",
-      "usage": 0.0647,
+      "usage": 0.073,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.9937
+          "usage": 0.9908
         },
         {
           "name": "Heat Wave",
-          "usage": 0.9852
+          "usage": 0.9803
         },
         {
           "name": "Nasty Plot",
-          "usage": 0.7806
+          "usage": 0.7982
         },
         {
           "name": "Psyshock",
-          "usage": 0.5717
+          "usage": 0.5937
         },
         {
           "name": "Psychic",
-          "usage": 0.4177
+          "usage": 0.3932
         },
         {
           "name": "Substitute",
-          "usage": 0.0738
+          "usage": 0.0564
         },
         {
           "name": "Encore",
-          "usage": 0.0591
+          "usage": 0.0524
         },
         {
           "name": "Calm Mind",
-          "usage": 0.0338
+          "usage": 0.0301
         },
         {
           "name": "Dazzling Gleam",
-          "usage": 0.0211
+          "usage": 0.021
         },
         {
           "name": "Flamethrower",
-          "usage": 0.019
+          "usage": 0.0183
         }
       ],
       "items": [
@@ -2892,527 +2900,523 @@
       "abilities": [
         {
           "name": "Blaze",
-          "usage": 0.9304
+          "usage": 0.9292
         },
         {
           "name": "Levitate",
-          "usage": 0.057
+          "usage": 0.0472
         },
         {
           "name": "Magician",
-          "usage": 0.0127
+          "usage": 0.0236
         }
       ],
       "teammates": [
         {
           "species": "Sinistcha",
-          "usage": 0.6603
+          "usage": 0.6999
         },
         {
           "species": "Incineroar",
-          "usage": 0.5654
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.4008
+          "usage": 0.633
         },
         {
           "species": "Sneasler",
-          "usage": 0.3924
+          "usage": 0.502
         },
         {
           "species": "Kingambit",
-          "usage": 0.3565
-        },
-        {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.346
-        }
-      ]
-    },
-    "Sableye": {
-      "species": "Sableye",
-      "usage": 0.0643,
-      "moves": [
-        {
-          "name": "Rain Dance",
-          "usage": 0.7686
-        },
-        {
-          "name": "Light Screen",
-          "usage": 0.7558
-        },
-        {
-          "name": "Reflect",
-          "usage": 0.6348
-        },
-        {
-          "name": "Will-O-Wisp",
-          "usage": 0.4119
-        },
-        {
-          "name": "Encore",
-          "usage": 0.3779
-        },
-        {
-          "name": "Foul Play",
-          "usage": 0.2017
-        },
-        {
-          "name": "Quash",
-          "usage": 0.189
-        },
-        {
-          "name": "Fake Out",
-          "usage": 0.1486
-        },
-        {
-          "name": "Disable",
-          "usage": 0.1253
-        },
-        {
-          "name": "Protect",
-          "usage": 0.0573
-        }
-      ],
-      "items": [
-        {
-          "name": "Light Clay",
-          "usage": 0.4565
-        },
-        {
-          "name": "Roseli Berry",
-          "usage": 0.3885
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.0467
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0297
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0234
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.017
-        },
-        {
-          "name": "Mental Herb",
-          "usage": 0.0149
-        },
-        {
-          "name": "Damp Rock",
-          "usage": 0.0149
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Prankster",
-          "usage": 0.9575
-        },
-        {
-          "name": "Keen Eye",
-          "usage": 0.0106
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Archaludon",
-          "usage": 0.7197
-        },
-        {
-          "species": "Pelipper",
-          "usage": 0.7134
-        },
-        {
-          "species": "Swampert-Mega",
-          "usage": 0.6624
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.4565
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.2484
-        },
-        {
-          "species": "Metagross-Mega",
-          "usage": 0.189
-        }
-      ]
-    },
-    "Maushold": {
-      "species": "Maushold",
-      "usage": 0.0601,
-      "moves": [
-        {
-          "name": "Follow Me",
-          "usage": 0.9455
-        },
-        {
-          "name": "Protect",
-          "usage": 0.9318
-        },
-        {
-          "name": "Super Fang",
-          "usage": 0.5818
-        },
-        {
-          "name": "Population Bomb",
-          "usage": 0.325
-        },
-        {
-          "name": "Beat Up",
-          "usage": 0.2159
-        },
-        {
-          "name": "Feint",
-          "usage": 0.1682
-        },
-        {
-          "name": "Encore",
-          "usage": 0.1591
-        },
-        {
-          "name": "Taunt",
-          "usage": 0.15
-        },
-        {
-          "name": "Rain Dance",
-          "usage": 0.1273
-        },
-        {
-          "name": "Helping Hand",
-          "usage": 0.0932
-        }
-      ],
-      "items": [
-        {
-          "name": "Focus Sash",
-          "usage": 0.3682
-        },
-        {
-          "name": "Chople Berry",
-          "usage": 0.2727
-        },
-        {
-          "name": "Wide Lens",
-          "usage": 0.2682
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0523
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0114
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0114
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Friend Guard",
-          "usage": 0.7545
-        },
-        {
-          "name": "Technician",
-          "usage": 0.2295
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Incineroar",
-          "usage": 0.3318
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.3318
-        },
-        {
-          "species": "Delphox-Mega",
-          "usage": 0.2886
+          "usage": 0.4194
         },
         {
           "species": "Garchomp",
-          "usage": 0.2773
+          "usage": 0.3355
         },
         {
-          "species": "Annihilape",
-          "usage": 0.25
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.2136
+          "species": "Floette-Eternal-Mega",
+          "usage": 0.329
         }
       ]
     },
     "Hydreigon": {
       "species": "Hydreigon",
-      "usage": 0.059,
+      "usage": 0.0613,
       "moves": [
         {
           "name": "Draco Meteor",
-          "usage": 0.9444
+          "usage": 0.9485
         },
         {
           "name": "Dark Pulse",
-          "usage": 0.9259
+          "usage": 0.9392
         },
         {
           "name": "Snarl",
-          "usage": 0.7384
+          "usage": 0.7332
         },
         {
           "name": "Earth Power",
-          "usage": 0.5579
-        },
-        {
-          "name": "Protect",
-          "usage": 0.2245
+          "usage": 0.5257
         },
         {
           "name": "Heat Wave",
-          "usage": 0.2199
+          "usage": 0.2699
+        },
+        {
+          "name": "Protect",
+          "usage": 0.2137
         },
         {
           "name": "Flamethrower",
-          "usage": 0.1134
+          "usage": 0.0952
         },
         {
           "name": "Tailwind",
-          "usage": 0.0579
+          "usage": 0.0577
         },
         {
           "name": "U-turn",
-          "usage": 0.044
+          "usage": 0.053
         },
         {
           "name": "Dragon Pulse",
-          "usage": 0.0417
+          "usage": 0.0406
         }
       ],
       "items": [
         {
           "name": "Choice Scarf",
-          "usage": 0.7384
+          "usage": 0.7582
         },
         {
           "name": "Life Orb",
-          "usage": 0.1088
+          "usage": 0.1123
         },
         {
           "name": "Haban Berry",
-          "usage": 0.037
+          "usage": 0.0312
         },
         {
           "name": "Focus Sash",
-          "usage": 0.0301
+          "usage": 0.0265
         },
         {
           "name": "Roseli Berry",
-          "usage": 0.0162
+          "usage": 0.0156
         },
         {
           "name": "White Herb",
-          "usage": 0.0162
+          "usage": 0.0109
         },
         {
           "name": "Nothing",
-          "usage": 0.0162
+          "usage": 0.0109
         }
       ],
       "abilities": [
         {
           "name": "Levitate",
-          "usage": 0.9861
+          "usage": 0.9906
         }
       ],
       "teammates": [
         {
           "species": "Metagross-Mega",
-          "usage": 0.4769
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.3102
-        },
-        {
-          "species": "Sneasler",
-          "usage": 0.294
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.2407
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.2245
+          "usage": 0.4571
         },
         {
           "species": "Charizard-Mega-Y",
-          "usage": 0.2222
+          "usage": 0.2902
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.2824
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.2652
+        },
+        {
+          "species": "Sneasler",
+          "usage": 0.2527
+        },
+        {
+          "species": "Grimmsnarl",
+          "usage": 0.2371
         }
       ]
     },
-    "Aerodactyl": {
-      "species": "Aerodactyl",
-      "usage": 0.0526,
+    "Sableye": {
+      "species": "Sableye",
+      "usage": 0.0599,
       "moves": [
         {
-          "name": "Rock Slide",
-          "usage": 0.8831
+          "name": "Light Screen",
+          "usage": 0.7508
         },
         {
-          "name": "Tailwind",
-          "usage": 0.8675
+          "name": "Rain Dance",
+          "usage": 0.7364
         },
         {
-          "name": "Dual Wingbeat",
-          "usage": 0.7117
+          "name": "Reflect",
+          "usage": 0.6262
+        },
+        {
+          "name": "Will-O-Wisp",
+          "usage": 0.409
+        },
+        {
+          "name": "Encore",
+          "usage": 0.3722
+        },
+        {
+          "name": "Quash",
+          "usage": 0.1949
+        },
+        {
+          "name": "Foul Play",
+          "usage": 0.1837
+        },
+        {
+          "name": "Fake Out",
+          "usage": 0.1725
+        },
+        {
+          "name": "Disable",
+          "usage": 0.1406
         },
         {
           "name": "Protect",
-          "usage": 0.5948
+          "usage": 0.0639
+        }
+      ],
+      "items": [
+        {
+          "name": "Light Clay",
+          "usage": 0.4697
         },
         {
-          "name": "Wide Guard",
-          "usage": 0.4909
+          "name": "Roseli Berry",
+          "usage": 0.369
         },
         {
-          "name": "Ice Fang",
-          "usage": 0.0338
+          "name": "Focus Sash",
+          "usage": 0.0511
         },
         {
-          "name": "Sunny Day",
-          "usage": 0.0312
+          "name": "Sitrus Berry",
+          "usage": 0.0288
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.024
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.0176
+        },
+        {
+          "name": "Damp Rock",
+          "usage": 0.0144
+        },
+        {
+          "name": "Mental Herb",
+          "usage": 0.0112
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Prankster",
+          "usage": 0.9633
+        },
+        {
+          "name": "Keen Eye",
+          "usage": 0.0112
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Archaludon",
+          "usage": 0.6949
+        },
+        {
+          "species": "Pelipper",
+          "usage": 0.6853
+        },
+        {
+          "species": "Swampert-Mega",
+          "usage": 0.6326
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.4569
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.2524
+        },
+        {
+          "species": "Metagross-Mega",
+          "usage": 0.1773
+        }
+      ]
+    },
+    "Maushold": {
+      "species": "Maushold",
+      "usage": 0.0585,
+      "moves": [
+        {
+          "name": "Follow Me",
+          "usage": 0.9345
+        },
+        {
+          "name": "Protect",
+          "usage": 0.9296
+        },
+        {
+          "name": "Super Fang",
+          "usage": 0.5974
+        },
+        {
+          "name": "Population Bomb",
+          "usage": 0.3028
+        },
+        {
+          "name": "Feint",
+          "usage": 0.2275
+        },
+        {
+          "name": "Beat Up",
+          "usage": 0.2095
         },
         {
           "name": "Taunt",
-          "usage": 0.0156
+          "usage": 0.1489
         },
         {
-          "name": "Earthquake",
-          "usage": 0.0104
+          "name": "Encore",
+          "usage": 0.144
+        },
+        {
+          "name": "Rain Dance",
+          "usage": 0.1228
+        },
+        {
+          "name": "Helping Hand",
+          "usage": 0.0982
         }
       ],
       "items": [
         {
           "name": "Focus Sash",
-          "usage": 0.7948
+          "usage": 0.3437
         },
         {
-          "name": "Nothing",
-          "usage": 0.0961
+          "name": "Chople Berry",
+          "usage": 0.3061
         },
         {
           "name": "Wide Lens",
-          "usage": 0.0208
+          "usage": 0.2488
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.0182
+          "usage": 0.0622
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Friend Guard",
+          "usage": 0.7791
         },
         {
-          "name": "Lum Berry",
-          "usage": 0.0156
+          "name": "Technician",
+          "usage": 0.2079
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Incineroar",
+          "usage": 0.3666
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.3601
+        },
+        {
+          "species": "Delphox-Mega",
+          "usage": 0.3044
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.2521
+        },
+        {
+          "species": "Annihilape",
+          "usage": 0.2406
+        },
+        {
+          "species": "Whimsicott",
+          "usage": 0.1964
+        }
+      ]
+    },
+    "Aerodactyl": {
+      "species": "Aerodactyl",
+      "usage": 0.0519,
+      "moves": [
+        {
+          "name": "Rock Slide",
+          "usage": 0.9078
+        },
+        {
+          "name": "Tailwind",
+          "usage": 0.8985
+        },
+        {
+          "name": "Dual Wingbeat",
+          "usage": 0.6993
+        },
+        {
+          "name": "Protect",
+          "usage": 0.5923
+        },
+        {
+          "name": "Wide Guard",
+          "usage": 0.4908
+        },
+        {
+          "name": "Ice Fang",
+          "usage": 0.0498
+        },
+        {
+          "name": "Sunny Day",
+          "usage": 0.0332
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.0277
+        },
+        {
+          "name": "Sandstorm",
+          "usage": 0.0148
+        },
+        {
+          "name": "Earthquake",
+          "usage": 0.0111
+        }
+      ],
+      "items": [
+        {
+          "name": "Focus Sash",
+          "usage": 0.8155
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0701
+        },
+        {
+          "name": "Wide Lens",
+          "usage": 0.0221
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.0166
         },
         {
           "name": "King's Rock",
-          "usage": 0.0156
+          "usage": 0.0148
+        },
+        {
+          "name": "Lum Berry",
+          "usage": 0.0111
         }
       ],
       "abilities": [
         {
           "name": "Unnerve",
-          "usage": 0.8078
+          "usage": 0.8395
         },
         {
           "name": "Pressure",
-          "usage": 0.052
+          "usage": 0.0461
         },
         {
           "name": "Rock Head",
-          "usage": 0.0468
+          "usage": 0.0443
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.5636
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.3117
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.2987
+          "usage": 0.5369
         },
         {
           "species": "Sylveon",
-          "usage": 0.2987
+          "usage": 0.3284
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.3173
         },
         {
           "species": "Charizard-Mega-Y",
-          "usage": 0.2701
+          "usage": 0.2971
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.2694
         },
         {
           "species": "Metagross-Mega",
-          "usage": 0.2442
+          "usage": 0.2251
         }
       ]
     },
     "Froslass-Mega": {
       "species": "Froslass-Mega",
-      "usage": 0.0502,
+      "usage": 0.0509,
       "moves": [
         {
           "name": "Blizzard",
-          "usage": 1
+          "usage": 0.9962
         },
         {
           "name": "Protect",
-          "usage": 0.9783
+          "usage": 0.9774
         },
         {
           "name": "Shadow Ball",
-          "usage": 0.9348
+          "usage": 0.9211
         },
         {
           "name": "Aurora Veil",
-          "usage": 0.7853
-        },
-        {
-          "name": "Nasty Plot",
-          "usage": 0.038
+          "usage": 0.7951
         },
         {
           "name": "Rain Dance",
-          "usage": 0.0326
+          "usage": 0.0451
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.0376
         },
         {
           "name": "Taunt",
-          "usage": 0.0299
+          "usage": 0.0338
         },
         {
-          "name": "Weather Ball",
-          "usage": 0.0299
+          "name": "Nasty Plot",
+          "usage": 0.032
         },
         {
           "name": "Frost Breath",
-          "usage": 0.0245
+          "usage": 0.0207
         },
         {
-          "name": "Substitute",
-          "usage": 0.0245
+          "name": "Weather Ball",
+          "usage": 0.0207
         }
       ],
       "items": [
@@ -3424,839 +3428,395 @@
       "abilities": [
         {
           "name": "Cursed Body",
-          "usage": 0.7228
+          "usage": 0.7406
         },
         {
           "name": "Snow Cloak",
-          "usage": 0.2255
+          "usage": 0.2124
         },
         {
           "name": "Snow Warning",
-          "usage": 0.0516
+          "usage": 0.0451
         }
       ],
       "teammates": [
         {
           "species": "Sneasler",
-          "usage": 0.5516
+          "usage": 0.5545
         },
         {
           "species": "Kingambit",
-          "usage": 0.5353
+          "usage": 0.5414
         },
         {
           "species": "Garchomp",
-          "usage": 0.3723
+          "usage": 0.3891
         },
         {
           "species": "Basculegion",
-          "usage": 0.337
+          "usage": 0.3515
         },
         {
           "species": "Incineroar",
-          "usage": 0.2283
+          "usage": 0.2387
         },
         {
-          "species": "Whimsicott",
-          "usage": 0.2092
-        }
-      ]
-    },
-    "Rotom-Wash": {
-      "species": "Rotom-Wash",
-      "usage": 0.0479,
-      "moves": [
-        {
-          "name": "Hydro Pump",
-          "usage": 0.9202
-        },
-        {
-          "name": "Will-O-Wisp",
-          "usage": 0.7607
-        },
-        {
-          "name": "Thunderbolt",
-          "usage": 0.5869
-        },
-        {
-          "name": "Protect",
-          "usage": 0.5385
-        },
-        {
-          "name": "Volt Switch",
-          "usage": 0.4501
-        },
-        {
-          "name": "Electroweb",
-          "usage": 0.2023
-        },
-        {
-          "name": "Light Screen",
-          "usage": 0.1197
-        },
-        {
-          "name": "Discharge",
-          "usage": 0.1083
-        },
-        {
-          "name": "Trick",
-          "usage": 0.0826
-        },
-        {
-          "name": "Dark Pulse",
-          "usage": 0.0228
-        }
-      ],
-      "items": [
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.339
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.2935
-        },
-        {
-          "name": "Choice Scarf",
-          "usage": 0.2336
-        },
-        {
-          "name": "Magnet",
-          "usage": 0.0399
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0313
-        },
-        {
-          "name": "Wide Lens",
-          "usage": 0.0228
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Levitate",
-          "usage": 0.9687
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Garchomp",
-          "usage": 0.5214
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.3561
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.3276
-        },
-        {
-          "species": "Sneasler",
-          "usage": 0.2991
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.2393
-        },
-        {
-          "species": "Metagross-Mega",
-          "usage": 0.2051
+          "species": "Lycanroc",
+          "usage": 0.2068
         }
       ]
     },
     "Ninetales-Alola": {
       "species": "Ninetales-Alola",
-      "usage": 0.0459,
+      "usage": 0.0494,
       "moves": [
         {
           "name": "Blizzard",
-          "usage": 0.9226
+          "usage": 0.9322
         },
         {
           "name": "Protect",
-          "usage": 0.8095
+          "usage": 0.7985
         },
         {
           "name": "Freeze-Dry",
-          "usage": 0.6399
+          "usage": 0.6628
         },
         {
           "name": "Aurora Veil",
-          "usage": 0.506
+          "usage": 0.4981
         },
         {
           "name": "Encore",
-          "usage": 0.4018
+          "usage": 0.4167
         },
         {
           "name": "Moonblast",
-          "usage": 0.2768
+          "usage": 0.281
         },
         {
           "name": "Icy Wind",
-          "usage": 0.1429
+          "usage": 0.1279
         },
         {
           "name": "Disable",
-          "usage": 0.0893
+          "usage": 0.0853
         },
         {
           "name": "Dazzling Gleam",
-          "usage": 0.0536
+          "usage": 0.0446
         },
         {
           "name": "Psyshock",
-          "usage": 0.0327
+          "usage": 0.0407
         }
       ],
       "items": [
         {
           "name": "Never-Melt Ice",
-          "usage": 0.2827
+          "usage": 0.3004
         },
         {
           "name": "Light Clay",
-          "usage": 0.256
+          "usage": 0.2636
         },
         {
           "name": "Focus Sash",
-          "usage": 0.25
+          "usage": 0.2384
         },
         {
           "name": "Choice Scarf",
-          "usage": 0.0952
+          "usage": 0.0988
         },
         {
           "name": "Life Orb",
-          "usage": 0.0655
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0179
+          "usage": 0.0562
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.0119
+          "usage": 0.0136
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0116
         }
       ],
       "abilities": [
         {
           "name": "Snow Warning",
-          "usage": 0.9524
+          "usage": 0.9651
         },
         {
           "name": "Snow Cloak",
-          "usage": 0.0298
+          "usage": 0.0233
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Incineroar",
+          "usage": 0.374
+        },
+        {
+          "species": "Kingambit",
+          "usage": 0.3333
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.3256
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.283
+        },
+        {
+          "species": "Sneasler",
+          "usage": 0.2384
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.2267
+        }
+      ]
+    },
+    "Rotom-Wash": {
+      "species": "Rotom-Wash",
+      "usage": 0.0472,
+      "moves": [
+        {
+          "name": "Hydro Pump",
+          "usage": 0.9371
+        },
+        {
+          "name": "Will-O-Wisp",
+          "usage": 0.7018
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.6288
+        },
+        {
+          "name": "Protect",
+          "usage": 0.5335
+        },
+        {
+          "name": "Volt Switch",
+          "usage": 0.4828
+        },
+        {
+          "name": "Electroweb",
+          "usage": 0.217
+        },
+        {
+          "name": "Discharge",
+          "usage": 0.1035
+        },
+        {
+          "name": "Light Screen",
+          "usage": 0.1014
+        },
+        {
+          "name": "Trick",
+          "usage": 0.0933
+        },
+        {
+          "name": "Shadow Ball",
+          "usage": 0.0243
+        }
+      ],
+      "items": [
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.3225
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.2617
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.2536
+        },
+        {
+          "name": "Magnet",
+          "usage": 0.073
+        },
+        {
+          "name": "Wide Lens",
+          "usage": 0.0243
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0223
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Levitate",
+          "usage": 0.9777
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.3869
+          "usage": 0.4544
         },
         {
           "species": "Incineroar",
-          "usage": 0.375
+          "usage": 0.3428
         },
         {
-          "species": "Kingambit",
-          "usage": 0.3155
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.2917
+          "species": "Sinistcha",
+          "usage": 0.3063
         },
         {
           "species": "Sneasler",
-          "usage": 0.256
+          "usage": 0.2961
+        },
+        {
+          "species": "Whimsicott",
+          "usage": 0.217
         },
         {
           "species": "Metagross-Mega",
-          "usage": 0.2411
+          "usage": 0.1886
         }
       ]
     },
     "Milotic": {
       "species": "Milotic",
-      "usage": 0.0429,
+      "usage": 0.0449,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.7866
-        },
-        {
-          "name": "Scald",
-          "usage": 0.5159
+          "usage": 0.7804
         },
         {
           "name": "Muddy Water",
-          "usage": 0.4713
+          "usage": 0.5139
         },
         {
           "name": "Coil",
-          "usage": 0.4459
+          "usage": 0.4947
         },
         {
           "name": "Hypnosis",
-          "usage": 0.4395
+          "usage": 0.4819
+        },
+        {
+          "name": "Scald",
+          "usage": 0.4712
         },
         {
           "name": "Icy Wind",
-          "usage": 0.3153
+          "usage": 0.2964
         },
         {
           "name": "Recover",
-          "usage": 0.2994
-        },
-        {
-          "name": "Ice Beam",
-          "usage": 0.2452
+          "usage": 0.29
         },
         {
           "name": "Life Dew",
-          "usage": 0.242
+          "usage": 0.2303
         },
         {
-          "name": "Haze",
-          "usage": 0.0319
+          "name": "Ice Beam",
+          "usage": 0.2303
+        },
+        {
+          "name": "Blizzard",
+          "usage": 0.0277
         }
       ],
       "items": [
         {
           "name": "Leftovers",
-          "usage": 0.8057
+          "usage": 0.823
         },
         {
           "name": "Sitrus Berry",
-          "usage": 0.1242
+          "usage": 0.0981
         },
         {
           "name": "Mystic Water",
-          "usage": 0.0223
+          "usage": 0.0235
         },
         {
           "name": "Life Orb",
-          "usage": 0.0127
+          "usage": 0.0128
         },
         {
           "name": "Nothing",
-          "usage": 0.0127
+          "usage": 0.0107
         }
       ],
       "abilities": [
         {
           "name": "Competitive",
-          "usage": 0.9713
+          "usage": 0.9723
         },
         {
           "name": "Marvel Scale",
-          "usage": 0.0127
+          "usage": 0.0128
         }
       ],
       "teammates": [
         {
           "species": "Incineroar",
-          "usage": 0.5191
+          "usage": 0.5266
         },
         {
           "species": "Sinistcha",
-          "usage": 0.4777
+          "usage": 0.5011
         },
         {
           "species": "Raichu-Mega-Y",
-          "usage": 0.2548
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.2516
-        },
-        {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.2389
+          "usage": 0.2836
         },
         {
           "species": "Ceruledge",
-          "usage": 0.2389
-        }
-      ]
-    },
-    "Pyroar-Mega": {
-      "species": "Pyroar-Mega",
-      "usage": 0.0382,
-      "moves": [
-        {
-          "name": "Heat Wave",
-          "usage": 0.9893
-        },
-        {
-          "name": "Protect",
-          "usage": 0.9893
-        },
-        {
-          "name": "Overheat",
-          "usage": 0.8786
-        },
-        {
-          "name": "Solar Beam",
-          "usage": 0.6607
-        },
-        {
-          "name": "Flamethrower",
-          "usage": 0.1143
-        },
-        {
-          "name": "Yawn",
-          "usage": 0.1036
-        },
-        {
-          "name": "Hyper Voice",
-          "usage": 0.0893
-        },
-        {
-          "name": "Taunt",
-          "usage": 0.0321
-        },
-        {
-          "name": "Substitute",
-          "usage": 0.025
-        },
-        {
-          "name": "Fire Blast",
-          "usage": 0.0179
-        }
-      ],
-      "items": [
-        {
-          "name": "Pyroarite",
-          "usage": 1
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Unnerve",
-          "usage": 0.9393
-        },
-        {
-          "name": "Rivalry",
-          "usage": 0.0393
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Farigiraf",
-          "usage": 0.6964
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.5321
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.45
-        },
-        {
-          "species": "Torkoal",
-          "usage": 0.4321
-        },
-        {
-          "species": "Ninetales",
-          "usage": 0.3643
+          "usage": 0.2772
         },
         {
           "species": "Floette-Eternal-Mega",
-          "usage": 0.3607
-        }
-      ]
-    },
-    "Talonflame": {
-      "species": "Talonflame",
-      "usage": 0.0366,
-      "moves": [
-        {
-          "name": "Tailwind",
-          "usage": 0.959
-        },
-        {
-          "name": "Protect",
-          "usage": 0.791
-        },
-        {
-          "name": "Flare Blitz",
-          "usage": 0.6157
-        },
-        {
-          "name": "Brave Bird",
-          "usage": 0.4478
-        },
-        {
-          "name": "Dual Wingbeat",
-          "usage": 0.3881
-        },
-        {
-          "name": "Will-O-Wisp",
-          "usage": 0.1418
-        },
-        {
-          "name": "Acrobatics",
-          "usage": 0.1194
-        },
-        {
-          "name": "Quick Guard",
-          "usage": 0.097
-        },
-        {
-          "name": "Overheat",
-          "usage": 0.0933
-        },
-        {
-          "name": "Taunt",
-          "usage": 0.0485
-        }
-      ],
-      "items": [
-        {
-          "name": "Sharp Beak",
-          "usage": 0.4925
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.1679
-        },
-        {
-          "name": "Life Orb",
-          "usage": 0.1194
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.1157
-        },
-        {
-          "name": "Charcoal",
-          "usage": 0.0336
-        },
-        {
-          "name": "Wide Lens",
-          "usage": 0.0149
-        },
-        {
-          "name": "Mental Herb",
-          "usage": 0.0112
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Gale Wings",
-          "usage": 0.9515
-        },
-        {
-          "name": "Flame Body",
-          "usage": 0.0299
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Garchomp",
-          "usage": 0.556
-        },
-        {
-          "species": "Sneasler",
-          "usage": 0.2948
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.25
-        },
-        {
-          "species": "Kingambit",
-          "usage": 0.2351
-        },
-        {
-          "species": "Metagross-Mega",
-          "usage": 0.2127
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.1903
-        }
-      ]
-    },
-    "Venusaur": {
-      "species": "Venusaur",
-      "usage": 0.0359,
-      "moves": [
-        {
-          "name": "Sludge Bomb",
-          "usage": 0.9011
-        },
-        {
-          "name": "Protect",
-          "usage": 0.8479
-        },
-        {
-          "name": "Sleep Powder",
-          "usage": 0.6426
-        },
-        {
-          "name": "Earth Power",
-          "usage": 0.5399
-        },
-        {
-          "name": "Energy Ball",
-          "usage": 0.308
-        },
-        {
-          "name": "Giga Drain",
-          "usage": 0.2205
-        },
-        {
-          "name": "Leaf Storm",
-          "usage": 0.1749
-        },
-        {
-          "name": "Solar Beam",
-          "usage": 0.0646
-        },
-        {
-          "name": "Weather Ball",
-          "usage": 0.0342
-        },
-        {
-          "name": "Sunny Day",
-          "usage": 0.0114
-        }
-      ],
-      "items": [
-        {
-          "name": "Focus Sash",
-          "usage": 0.4639
-        },
-        {
-          "name": "Life Orb",
-          "usage": 0.2662
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0684
-        },
-        {
-          "name": "Wide Lens",
-          "usage": 0.0532
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0342
-        },
-        {
-          "name": "Occa Berry",
-          "usage": 0.0304
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0304
-        },
-        {
-          "name": "Big Root",
-          "usage": 0.0152
-        },
-        {
-          "name": "Bright Powder",
-          "usage": 0.0152
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Chlorophyll",
-          "usage": 0.9126
-        },
-        {
-          "name": "Overgrow",
-          "usage": 0.019
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Charizard-Mega-Y",
-          "usage": 0.5932
+          "usage": 0.2473
         },
         {
           "species": "Garchomp",
-          "usage": 0.5399
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.4297
-        },
-        {
-          "species": "Farigiraf",
-          "usage": 0.3916
-        },
-        {
-          "species": "Torkoal",
-          "usage": 0.3156
-        },
-        {
-          "species": "Pyroar-Mega",
-          "usage": 0.2319
-        }
-      ]
-    },
-    "Annihilape": {
-      "species": "Annihilape",
-      "usage": 0.0355,
-      "moves": [
-        {
-          "name": "Rage Fist",
-          "usage": 0.9
-        },
-        {
-          "name": "Protect",
-          "usage": 0.8308
-        },
-        {
-          "name": "Drain Punch",
-          "usage": 0.7769
-        },
-        {
-          "name": "Bulk Up",
-          "usage": 0.6231
-        },
-        {
-          "name": "Close Combat",
-          "usage": 0.2423
-        },
-        {
-          "name": "Coaching",
-          "usage": 0.1385
-        },
-        {
-          "name": "Shadow Claw",
-          "usage": 0.0808
-        },
-        {
-          "name": "Taunt",
-          "usage": 0.0654
-        },
-        {
-          "name": "U-turn",
-          "usage": 0.0539
-        },
-        {
-          "name": "Rock Slide",
-          "usage": 0.0462
-        }
-      ],
-      "items": [
-        {
-          "name": "Leftovers",
-          "usage": 0.3692
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.2308
-        },
-        {
-          "name": "Choice Scarf",
-          "usage": 0.1192
-        },
-        {
-          "name": "Roseli Berry",
-          "usage": 0.0462
-        },
-        {
-          "name": "Life Orb",
-          "usage": 0.0462
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.0462
-        },
-        {
-          "name": "Spell Tag",
-          "usage": 0.0385
-        },
-        {
-          "name": "Black Belt",
-          "usage": 0.0231
-        },
-        {
-          "name": "Expert Belt",
-          "usage": 0.0192
-        },
-        {
-          "name": "Lum Berry",
-          "usage": 0.0154
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Defiant",
-          "usage": 0.9654
-        },
-        {
-          "name": "Vital Spirit",
-          "usage": 0.0115
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Maushold",
-          "usage": 0.4231
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.3231
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.2654
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.2577
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.2308
-        },
-        {
-          "species": "Metagross-Mega",
-          "usage": 0.2154
+          "usage": 0.226
         }
       ]
     },
     "Venusaur-Mega": {
       "species": "Venusaur-Mega",
-      "usage": 0.0348,
+      "usage": 0.043,
       "moves": [
         {
           "name": "Sludge Bomb",
-          "usage": 0.9843
+          "usage": 0.9666
         },
         {
           "name": "Earth Power",
-          "usage": 0.9451
-        },
-        {
-          "name": "Giga Drain",
-          "usage": 0.9177
+          "usage": 0.9466
         },
         {
           "name": "Protect",
-          "usage": 0.8863
+          "usage": 0.9065
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.9042
         },
         {
           "name": "Sleep Powder",
-          "usage": 0.1333
+          "usage": 0.1403
         },
         {
           "name": "Leech Seed",
-          "usage": 0.0706
+          "usage": 0.0601
         },
         {
           "name": "Energy Ball",
-          "usage": 0.0392
+          "usage": 0.0423
         }
       ],
       "items": [
@@ -4268,87 +3828,199 @@
       "abilities": [
         {
           "name": "Chlorophyll",
-          "usage": 0.902
+          "usage": 0.882
         },
         {
           "name": "Overgrow",
-          "usage": 0.0784
+          "usage": 0.0802
         },
         {
           "name": "Thick Fat",
-          "usage": 0.0157
+          "usage": 0.0312
         }
       ],
       "teammates": [
         {
           "species": "Pelipper",
-          "usage": 0.5608
+          "usage": 0.5033
         },
         {
           "species": "Archaludon",
-          "usage": 0.549
+          "usage": 0.5033
         },
         {
           "species": "Swampert-Mega",
-          "usage": 0.4275
+          "usage": 0.392
         },
         {
           "species": "Basculegion",
-          "usage": 0.3608
-        },
-        {
-          "species": "Sableye",
-          "usage": 0.3059
+          "usage": 0.363
         },
         {
           "species": "Grimmsnarl",
-          "usage": 0.2902
+          "usage": 0.3163
+        },
+        {
+          "species": "Sableye",
+          "usage": 0.2227
+        }
+      ]
+    },
+    "Venusaur": {
+      "species": "Venusaur",
+      "usage": 0.04,
+      "moves": [
+        {
+          "name": "Sludge Bomb",
+          "usage": 0.9282
+        },
+        {
+          "name": "Protect",
+          "usage": 0.8397
+        },
+        {
+          "name": "Sleep Powder",
+          "usage": 0.6842
+        },
+        {
+          "name": "Earth Power",
+          "usage": 0.5239
+        },
+        {
+          "name": "Energy Ball",
+          "usage": 0.3062
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.2345
+        },
+        {
+          "name": "Leaf Storm",
+          "usage": 0.1938
+        },
+        {
+          "name": "Solar Beam",
+          "usage": 0.0813
+        },
+        {
+          "name": "Weather Ball",
+          "usage": 0.0287
+        }
+      ],
+      "items": [
+        {
+          "name": "Focus Sash",
+          "usage": 0.4785
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.2679
+        },
+        {
+          "name": "Wide Lens",
+          "usage": 0.0718
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0431
+        },
+        {
+          "name": "Occa Berry",
+          "usage": 0.0335
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.0263
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.0239
+        },
+        {
+          "name": "Bright Powder",
+          "usage": 0.012
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Chlorophyll",
+          "usage": 0.9282
+        },
+        {
+          "name": "Overgrow",
+          "usage": 0.0191
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Charizard-Mega-Y",
+          "usage": 0.6316
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.5526
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.4522
+        },
+        {
+          "species": "Farigiraf",
+          "usage": 0.4258
+        },
+        {
+          "species": "Torkoal",
+          "usage": 0.2943
+        },
+        {
+          "species": "Sylveon",
+          "usage": 0.2703
         }
       ]
     },
     "Tyranitar-Mega": {
       "species": "Tyranitar-Mega",
-      "usage": 0.033,
+      "usage": 0.0358,
       "moves": [
         {
           "name": "Rock Slide",
-          "usage": 0.9835
+          "usage": 0.9786
         },
         {
           "name": "Protect",
-          "usage": 0.9587
+          "usage": 0.9492
         },
         {
           "name": "Knock Off",
-          "usage": 0.9256
+          "usage": 0.9225
         },
         {
           "name": "Dragon Dance",
-          "usage": 0.3967
+          "usage": 0.3797
         },
         {
           "name": "Low Kick",
-          "usage": 0.3884
+          "usage": 0.3636
         },
         {
           "name": "Ice Punch",
-          "usage": 0.1281
+          "usage": 0.1551
         },
         {
           "name": "Crunch",
-          "usage": 0.0537
-        },
-        {
-          "name": "High Horsepower",
-          "usage": 0.0331
+          "usage": 0.0562
         },
         {
           "name": "Earthquake",
-          "usage": 0.0248
+          "usage": 0.0428
         },
         {
-          "name": "Snarl",
-          "usage": 0.0207
+          "name": "High Horsepower",
+          "usage": 0.0294
+        },
+        {
+          "name": "Brick Break",
+          "usage": 0.0134
         }
       ],
       "items": [
@@ -4360,167 +4032,415 @@
       "abilities": [
         {
           "name": "Sand Stream",
-          "usage": 0.9917
+          "usage": 0.9947
         }
       ],
       "teammates": [
         {
           "species": "Sinistcha",
-          "usage": 0.4917
+          "usage": 0.4679
         },
         {
           "species": "Excadrill",
-          "usage": 0.4008
+          "usage": 0.4305
         },
         {
           "species": "Corviknight",
-          "usage": 0.2934
+          "usage": 0.2647
         },
         {
           "species": "Sneasler",
-          "usage": 0.2727
+          "usage": 0.2487
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.2433
         },
         {
           "species": "Garchomp",
-          "usage": 0.2107
-        },
-        {
-          "species": "Rotom-Wash",
-          "usage": 0.2025
+          "usage": 0.1979
         }
       ]
     },
-    "Dragonite-Mega": {
-      "species": "Dragonite-Mega",
-      "usage": 0.0293,
+    "Pyroar-Mega": {
+      "species": "Pyroar-Mega",
+      "usage": 0.0354,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.7767
-        },
-        {
-          "name": "Dragon Pulse",
-          "usage": 0.5674
-        },
-        {
-          "name": "Hurricane",
-          "usage": 0.4837
-        },
-        {
-          "name": "Draco Meteor",
-          "usage": 0.3721
-        },
-        {
-          "name": "Tailwind",
-          "usage": 0.293
-        },
-        {
-          "name": "Extreme Speed",
-          "usage": 0.2279
-        },
-        {
-          "name": "Flamethrower",
-          "usage": 0.214
-        },
-        {
-          "name": "Thunderbolt",
-          "usage": 0.1907
+          "usage": 0.9919
         },
         {
           "name": "Heat Wave",
-          "usage": 0.1767
+          "usage": 0.9892
         },
         {
-          "name": "Thunder",
-          "usage": 0.1674
+          "name": "Overheat",
+          "usage": 0.8838
+        },
+        {
+          "name": "Solar Beam",
+          "usage": 0.6811
+        },
+        {
+          "name": "Flamethrower",
+          "usage": 0.1027
+        },
+        {
+          "name": "Yawn",
+          "usage": 0.1
+        },
+        {
+          "name": "Hyper Voice",
+          "usage": 0.073
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.0297
+        },
+        {
+          "name": "Scorching Sands",
+          "usage": 0.0216
+        },
+        {
+          "name": "Snarl",
+          "usage": 0.0189
         }
       ],
       "items": [
         {
-          "name": "Dragoninite",
+          "name": "Pyroarite",
           "usage": 1
         }
       ],
       "abilities": [
         {
-          "name": "Multiscale",
-          "usage": 0.6744
+          "name": "Unnerve",
+          "usage": 0.9162
         },
         {
-          "name": "Inner Focus",
-          "usage": 0.3256
+          "name": "Rivalry",
+          "usage": 0.0595
         }
       ],
       "teammates": [
         {
-          "species": "Pelipper",
-          "usage": 0.5302
+          "species": "Farigiraf",
+          "usage": 0.727
         },
         {
-          "species": "Archaludon",
-          "usage": 0.507
+          "species": "Whimsicott",
+          "usage": 0.5027
+        },
+        {
+          "species": "Torkoal",
+          "usage": 0.4514
         },
         {
           "species": "Basculegion",
-          "usage": 0.4372
+          "usage": 0.4216
+        },
+        {
+          "species": "Ninetales",
+          "usage": 0.373
+        },
+        {
+          "species": "Floette-Eternal-Mega",
+          "usage": 0.3487
+        }
+      ]
+    },
+    "Talonflame": {
+      "species": "Talonflame",
+      "usage": 0.035,
+      "moves": [
+        {
+          "name": "Tailwind",
+          "usage": 0.9645
+        },
+        {
+          "name": "Protect",
+          "usage": 0.7732
+        },
+        {
+          "name": "Flare Blitz",
+          "usage": 0.612
+        },
+        {
+          "name": "Brave Bird",
+          "usage": 0.4535
+        },
+        {
+          "name": "Dual Wingbeat",
+          "usage": 0.3962
+        },
+        {
+          "name": "Quick Guard",
+          "usage": 0.1284
+        },
+        {
+          "name": "Will-O-Wisp",
+          "usage": 0.1284
+        },
+        {
+          "name": "Acrobatics",
+          "usage": 0.1175
+        },
+        {
+          "name": "Overheat",
+          "usage": 0.0902
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.0628
+        }
+      ],
+      "items": [
+        {
+          "name": "Sharp Beak",
+          "usage": 0.5055
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.1612
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.1011
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0984
+        },
+        {
+          "name": "Charcoal",
+          "usage": 0.0492
+        },
+        {
+          "name": "Mental Herb",
+          "usage": 0.0164
+        },
+        {
+          "name": "Charti Berry",
+          "usage": 0.0109
+        },
+        {
+          "name": "White Herb",
+          "usage": 0.0109
+        },
+        {
+          "name": "Wide Lens",
+          "usage": 0.0109
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Gale Wings",
+          "usage": 0.9563
+        },
+        {
+          "name": "Flame Body",
+          "usage": 0.0301
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Garchomp",
+          "usage": 0.4918
         },
         {
           "species": "Sneasler",
-          "usage": 0.2977
+          "usage": 0.2814
+        },
+        {
+          "species": "Kingambit",
+          "usage": 0.2295
+        },
+        {
+          "species": "Basculegion",
+          "usage": 0.2213
+        },
+        {
+          "species": "Metagross-Mega",
+          "usage": 0.2049
+        },
+        {
+          "species": "Ninetales-Alola",
+          "usage": 0.1776
+        }
+      ]
+    },
+    "Annihilape": {
+      "species": "Annihilape",
+      "usage": 0.0332,
+      "moves": [
+        {
+          "name": "Rage Fist",
+          "usage": 0.9078
+        },
+        {
+          "name": "Protect",
+          "usage": 0.8473
+        },
+        {
+          "name": "Drain Punch",
+          "usage": 0.7608
+        },
+        {
+          "name": "Bulk Up",
+          "usage": 0.6138
+        },
+        {
+          "name": "Close Combat",
+          "usage": 0.2536
+        },
+        {
+          "name": "Coaching",
+          "usage": 0.121
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.098
+        },
+        {
+          "name": "Shadow Claw",
+          "usage": 0.0721
+        },
+        {
+          "name": "Ice Punch",
+          "usage": 0.0461
+        },
+        {
+          "name": "Rock Slide",
+          "usage": 0.0432
+        }
+      ],
+      "items": [
+        {
+          "name": "Leftovers",
+          "usage": 0.3977
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.2133
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.1066
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.0576
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.0461
+        },
+        {
+          "name": "Roseli Berry",
+          "usage": 0.0404
+        },
+        {
+          "name": "Spell Tag",
+          "usage": 0.0317
+        },
+        {
+          "name": "Black Belt",
+          "usage": 0.0231
+        },
+        {
+          "name": "Expert Belt",
+          "usage": 0.0202
+        },
+        {
+          "name": "Lum Berry",
+          "usage": 0.0144
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Defiant",
+          "usage": 0.9625
+        },
+        {
+          "name": "Vital Spirit",
+          "usage": 0.0144
+        },
+        {
+          "name": "Inner Focus",
+          "usage": 0.0115
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Maushold",
+          "usage": 0.4236
         },
         {
           "species": "Sinistcha",
-          "usage": 0.2512
+          "usage": 0.3084
         },
         {
-          "species": "Swampert-Mega",
-          "usage": 0.2419
+          "species": "Whimsicott",
+          "usage": 0.2565
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.2507
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.2277
+        },
+        {
+          "species": "Metagross-Mega",
+          "usage": 0.2133
         }
       ]
     },
     "Blaziken-Mega": {
       "species": "Blaziken-Mega",
-      "usage": 0.0278,
+      "usage": 0.0321,
       "moves": [
         {
-          "name": "Close Combat",
-          "usage": 0.951
+          "name": "Flare Blitz",
+          "usage": 0.9373
         },
         {
-          "name": "Flare Blitz",
-          "usage": 0.9412
+          "name": "Close Combat",
+          "usage": 0.9343
         },
         {
           "name": "Rock Slide",
-          "usage": 0.7647
+          "usage": 0.7881
         },
         {
           "name": "Protect",
-          "usage": 0.4951
+          "usage": 0.5194
         },
         {
           "name": "Detect",
-          "usage": 0.4853
+          "usage": 0.4687
         },
         {
           "name": "Coaching",
-          "usage": 0.0637
+          "usage": 0.0567
         },
         {
           "name": "Swords Dance",
-          "usage": 0.0441
-        },
-        {
-          "name": "Thunder Punch",
-          "usage": 0.0343
+          "usage": 0.0508
         },
         {
           "name": "Blaze Kick",
-          "usage": 0.0343
+          "usage": 0.0328
+        },
+        {
+          "name": "Thunder Punch",
+          "usage": 0.0328
         },
         {
           "name": "Rock Tomb",
-          "usage": 0.0245
+          "usage": 0.0269
         }
       ],
       "items": [
@@ -4532,171 +4452,83 @@
       "abilities": [
         {
           "name": "Speed Boost",
-          "usage": 0.9804
+          "usage": 0.9821
         },
         {
           "name": "Blaze",
-          "usage": 0.0147
+          "usage": 0.0119
         }
       ],
       "teammates": [
         {
           "species": "Kingambit",
-          "usage": 0.6667
+          "usage": 0.6746
         },
         {
           "species": "Basculegion",
-          "usage": 0.6618
+          "usage": 0.6418
         },
         {
           "species": "Sylveon",
-          "usage": 0.3235
-        },
-        {
-          "species": "Whimsicott",
-          "usage": 0.2892
+          "usage": 0.3552
         },
         {
           "species": "Aerodactyl-Mega",
-          "usage": 0.2598
+          "usage": 0.2746
         },
         {
-          "species": "Sinistcha",
-          "usage": 0.2549
-        }
-      ]
-    },
-    "Scrafty-Mega": {
-      "species": "Scrafty-Mega",
-      "usage": 0.0268,
-      "moves": [
-        {
-          "name": "Fake Out",
-          "usage": 0.9184
+          "species": "Whimsicott",
+          "usage": 0.2597
         },
         {
-          "name": "Knock Off",
-          "usage": 0.8725
-        },
-        {
-          "name": "Drain Punch",
-          "usage": 0.5969
-        },
-        {
-          "name": "Close Combat",
-          "usage": 0.4031
-        },
-        {
-          "name": "Protect",
-          "usage": 0.2551
-        },
-        {
-          "name": "Ice Punch",
-          "usage": 0.2449
-        },
-        {
-          "name": "Detect",
-          "usage": 0.1071
-        },
-        {
-          "name": "Rock Slide",
-          "usage": 0.0816
-        },
-        {
-          "name": "Throat Chop",
-          "usage": 0.0816
-        },
-        {
-          "name": "Iron Head",
-          "usage": 0.0663
-        }
-      ],
-      "items": [
-        {
-          "name": "Scraftinite",
-          "usage": 1
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Intimidate",
-          "usage": 0.9745
-        },
-        {
-          "name": "Shed Skin",
-          "usage": 0.0204
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Farigiraf",
-          "usage": 0.5153
-        },
-        {
-          "species": "Torkoal",
-          "usage": 0.4133
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.2449
-        },
-        {
-          "species": "Pyroar-Mega",
-          "usage": 0.2296
-        },
-        {
-          "species": "Mamoswine",
-          "usage": 0.1888
-        },
-        {
-          "species": "Venusaur",
-          "usage": 0.1837
+          "species": "Ninetales-Alola",
+          "usage": 0.2567
         }
       ]
     },
     "Gengar-Mega": {
       "species": "Gengar-Mega",
-      "usage": 0.0243,
+      "usage": 0.0293,
       "moves": [
         {
-          "name": "Shadow Ball",
-          "usage": 0.9775
+          "name": "Protect",
+          "usage": 0.9739
         },
         {
-          "name": "Protect",
-          "usage": 0.9663
+          "name": "Shadow Ball",
+          "usage": 0.9248
         },
         {
           "name": "Perish Song",
-          "usage": 0.764
+          "usage": 0.8137
         },
         {
           "name": "Disable",
-          "usage": 0.5618
+          "usage": 0.5719
         },
         {
           "name": "Sludge Bomb",
-          "usage": 0.4438
-        },
-        {
-          "name": "Sludge Wave",
-          "usage": 0.0562
-        },
-        {
-          "name": "Will-O-Wisp",
-          "usage": 0.0449
-        },
-        {
-          "name": "Icy Wind",
-          "usage": 0.0449
+          "usage": 0.4379
         },
         {
           "name": "Substitute",
-          "usage": 0.0393
+          "usage": 0.0458
+        },
+        {
+          "name": "Will-O-Wisp",
+          "usage": 0.0392
+        },
+        {
+          "name": "Icy Wind",
+          "usage": 0.036
+        },
+        {
+          "name": "Sludge Wave",
+          "usage": 0.036
         },
         {
           "name": "Destiny Bond",
-          "usage": 0.0337
+          "usage": 0.0294
         }
       ],
       "items": [
@@ -4708,83 +4540,283 @@
       "abilities": [
         {
           "name": "Cursed Body",
-          "usage": 0.9157
+          "usage": 0.9183
         },
         {
           "name": "Shadow Tag",
-          "usage": 0.0843
+          "usage": 0.0719
         }
       ],
       "teammates": [
         {
           "species": "Incineroar",
-          "usage": 0.809
+          "usage": 0.8105
         },
         {
           "species": "Politoed",
-          "usage": 0.3371
+          "usage": 0.3791
         },
         {
           "species": "Sinistcha",
-          "usage": 0.3258
+          "usage": 0.3301
         },
         {
           "species": "Ninetales-Alola",
-          "usage": 0.236
+          "usage": 0.2516
+        },
+        {
+          "species": "Archaludon",
+          "usage": 0.2516
         },
         {
           "species": "Kingambit",
-          "usage": 0.2135
+          "usage": 0.2288
+        }
+      ]
+    },
+    "Scrafty-Mega": {
+      "species": "Scrafty-Mega",
+      "usage": 0.0293,
+      "moves": [
+        {
+          "name": "Fake Out",
+          "usage": 0.9314
         },
         {
-          "species": "Sneasler",
-          "usage": 0.2079
+          "name": "Knock Off",
+          "usage": 0.8726
+        },
+        {
+          "name": "Drain Punch",
+          "usage": 0.6111
+        },
+        {
+          "name": "Close Combat",
+          "usage": 0.3791
+        },
+        {
+          "name": "Protect",
+          "usage": 0.2712
+        },
+        {
+          "name": "Ice Punch",
+          "usage": 0.2451
+        },
+        {
+          "name": "Detect",
+          "usage": 0.1078
+        },
+        {
+          "name": "Iron Head",
+          "usage": 0.1046
+        },
+        {
+          "name": "Throat Chop",
+          "usage": 0.0948
+        },
+        {
+          "name": "Rock Slide",
+          "usage": 0.085
+        }
+      ],
+      "items": [
+        {
+          "name": "Scraftinite",
+          "usage": 1
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Intimidate",
+          "usage": 0.9706
+        },
+        {
+          "name": "Shed Skin",
+          "usage": 0.0229
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Farigiraf",
+          "usage": 0.5654
+        },
+        {
+          "species": "Torkoal",
+          "usage": 0.4739
+        },
+        {
+          "species": "Sylveon",
+          "usage": 0.2353
+        },
+        {
+          "species": "Pyroar-Mega",
+          "usage": 0.2092
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.1928
+        },
+        {
+          "species": "Venusaur",
+          "usage": 0.1895
+        }
+      ]
+    },
+    "Ceruledge": {
+      "species": "Ceruledge",
+      "usage": 0.0272,
+      "moves": [
+        {
+          "name": "Bitter Blade",
+          "usage": 0.9859
+        },
+        {
+          "name": "Protect",
+          "usage": 0.9437
+        },
+        {
+          "name": "Shadow Sneak",
+          "usage": 0.9049
+        },
+        {
+          "name": "Bulk Up",
+          "usage": 0.7535
+        },
+        {
+          "name": "Swords Dance",
+          "usage": 0.1021
+        },
+        {
+          "name": "Poltergeist",
+          "usage": 0.0951
+        },
+        {
+          "name": "Close Combat",
+          "usage": 0.0528
+        },
+        {
+          "name": "Shadow Claw",
+          "usage": 0.0211
+        },
+        {
+          "name": "Phantom Force",
+          "usage": 0.0211
+        },
+        {
+          "name": "Solar Blade",
+          "usage": 0.0106
+        }
+      ],
+      "items": [
+        {
+          "name": "Colbur Berry",
+          "usage": 0.6972
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.0704
+        },
+        {
+          "name": "Charcoal",
+          "usage": 0.0563
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.0563
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.0422
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.0317
+        },
+        {
+          "name": "Kasib Berry",
+          "usage": 0.0106
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0106
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Flash Fire",
+          "usage": 0.9648
+        },
+        {
+          "name": "Weak Armor",
+          "usage": 0.0246
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Sinistcha",
+          "usage": 0.5599
+        },
+        {
+          "species": "Raichu-Mega-Y",
+          "usage": 0.4648
+        },
+        {
+          "species": "Milotic",
+          "usage": 0.4578
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.4542
+        },
+        {
+          "species": "Floette-Eternal-Mega",
+          "usage": 0.3451
+        },
+        {
+          "species": "Ninetales-Alola",
+          "usage": 0.2324
         }
       ]
     },
     "Scovillain-Mega": {
       "species": "Scovillain-Mega",
-      "usage": 0.0239,
+      "usage": 0.0265,
       "moves": [
         {
           "name": "Rage Powder",
-          "usage": 0.9943
+          "usage": 0.9819
         },
         {
           "name": "Protect",
-          "usage": 0.9543
+          "usage": 0.9567
         },
         {
           "name": "Overheat",
-          "usage": 0.8343
+          "usage": 0.8087
         },
         {
           "name": "Giga Drain",
-          "usage": 0.6743
+          "usage": 0.6931
         },
         {
           "name": "Leech Seed",
-          "usage": 0.3429
+          "usage": 0.3357
         },
         {
           "name": "Flamethrower",
-          "usage": 0.1029
-        },
-        {
-          "name": "Leaf Storm",
-          "usage": 0.0286
-        },
-        {
-          "name": "Spicy Extract",
-          "usage": 0.0229
+          "usage": 0.1155
         },
         {
           "name": "Energy Ball",
-          "usage": 0.0114
+          "usage": 0.0217
         },
         {
-          "name": "Helping Hand",
-          "usage": 0.0114
+          "name": "Leaf Storm",
+          "usage": 0.0217
+        },
+        {
+          "name": "Spicy Extract",
+          "usage": 0.0217
         }
       ],
       "items": [
@@ -4796,319 +4828,663 @@
       "abilities": [
         {
           "name": "Moody",
-          "usage": 0.84
+          "usage": 0.8195
         },
         {
           "name": "Chlorophyll",
-          "usage": 0.1086
+          "usage": 0.1372
         },
         {
           "name": "Insomnia",
-          "usage": 0.04
+          "usage": 0.0325
         },
         {
           "name": "Spicy Spray",
-          "usage": 0.0114
+          "usage": 0.0108
         }
       ],
       "teammates": [
         {
           "species": "Basculegion",
-          "usage": 0.5143
+          "usage": 0.5199
         },
         {
           "species": "Sneasler",
-          "usage": 0.5029
+          "usage": 0.4801
         },
         {
           "species": "Kingambit",
-          "usage": 0.4629
-        },
-        {
-          "species": "Froslass-Mega",
-          "usage": 0.36
+          "usage": 0.4477
         },
         {
           "species": "Lycanroc",
-          "usage": 0.3543
+          "usage": 0.361
         },
         {
-          "species": "Garchomp",
-          "usage": 0.16
+          "species": "Froslass-Mega",
+          "usage": 0.3502
+        },
+        {
+          "species": "Gholdengo",
+          "usage": 0.2166
         }
       ]
     },
-    "Ceruledge": {
-      "species": "Ceruledge",
-      "usage": 0.0227,
+    "Dragonite-Mega": {
+      "species": "Dragonite-Mega",
+      "usage": 0.0262,
       "moves": [
-        {
-          "name": "Bitter Blade",
-          "usage": 0.9759
-        },
         {
           "name": "Protect",
-          "usage": 0.9518
+          "usage": 0.7555
         },
         {
-          "name": "Shadow Sneak",
-          "usage": 0.9217
+          "name": "Dragon Pulse",
+          "usage": 0.5584
         },
         {
-          "name": "Bulk Up",
-          "usage": 0.7349
+          "name": "Hurricane",
+          "usage": 0.4526
         },
         {
-          "name": "Swords Dance",
-          "usage": 0.1024
+          "name": "Draco Meteor",
+          "usage": 0.3686
         },
         {
-          "name": "Poltergeist",
-          "usage": 0.0964
+          "name": "Tailwind",
+          "usage": 0.2993
         },
         {
-          "name": "Close Combat",
-          "usage": 0.0482
+          "name": "Flamethrower",
+          "usage": 0.2226
         },
         {
-          "name": "Phantom Force",
-          "usage": 0.0181
-        },
-        {
-          "name": "Solar Blade",
-          "usage": 0.0121
-        },
-        {
-          "name": "Shadow Claw",
-          "usage": 0.0121
-        }
-      ],
-      "items": [
-        {
-          "name": "Colbur Berry",
-          "usage": 0.6506
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0843
-        },
-        {
-          "name": "Life Orb",
-          "usage": 0.0783
-        },
-        {
-          "name": "Charcoal",
-          "usage": 0.0602
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0361
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.0361
-        },
-        {
-          "name": "Kasib Berry",
-          "usage": 0.0181
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0181
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Flash Fire",
-          "usage": 0.9639
-        },
-        {
-          "name": "Weak Armor",
-          "usage": 0.0181
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Sinistcha",
-          "usage": 0.5663
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.494
-        },
-        {
-          "species": "Raichu-Mega-Y",
-          "usage": 0.4759
-        },
-        {
-          "species": "Milotic",
-          "usage": 0.4518
-        },
-        {
-          "species": "Floette-Eternal-Mega",
-          "usage": 0.3795
-        },
-        {
-          "species": "Metagross-Mega",
-          "usage": 0.2289
-        }
-      ]
-    },
-    "Rotom-Heat": {
-      "species": "Rotom-Heat",
-      "usage": 0.0217,
-      "moves": [
-        {
-          "name": "Overheat",
-          "usage": 0.9811
-        },
-        {
-          "name": "Volt Switch",
-          "usage": 0.673
+          "name": "Extreme Speed",
+          "usage": 0.2117
         },
         {
           "name": "Thunderbolt",
-          "usage": 0.5975
+          "usage": 0.208
         },
         {
-          "name": "Discharge",
-          "usage": 0.5409
+          "name": "Heat Wave",
+          "usage": 0.1825
         },
         {
-          "name": "Electroweb",
-          "usage": 0.283
-        },
-        {
-          "name": "Will-O-Wisp",
-          "usage": 0.2642
-        },
-        {
-          "name": "Protect",
-          "usage": 0.2264
-        },
-        {
-          "name": "Trick",
-          "usage": 0.2076
-        },
-        {
-          "name": "Shadow Ball",
-          "usage": 0.0629
-        },
-        {
-          "name": "Light Screen",
-          "usage": 0.0629
+          "name": "Thunder",
+          "usage": 0.1679
         }
       ],
       "items": [
         {
-          "name": "Choice Scarf",
-          "usage": 0.6415
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.2076
-        },
-        {
-          "name": "Leftovers",
-          "usage": 0.0503
-        },
-        {
-          "name": "Light Clay",
-          "usage": 0.0377
-        },
-        {
-          "name": "White Herb",
-          "usage": 0.0126
-        },
-        {
-          "name": "Wise Glasses",
-          "usage": 0.0126
-        },
-        {
-          "name": "Magnet",
-          "usage": 0.0126
-        },
-        {
-          "name": "Bright Powder",
-          "usage": 0.0126
+          "name": "Dragoninite",
+          "usage": 1
         }
       ],
       "abilities": [
         {
-          "name": "Levitate",
-          "usage": 0.9937
+          "name": "Multiscale",
+          "usage": 0.6715
+        },
+        {
+          "name": "Inner Focus",
+          "usage": 0.3285
         }
       ],
       "teammates": [
         {
-          "species": "Garchomp",
-          "usage": 0.6163
+          "species": "Pelipper",
+          "usage": 0.4818
         },
         {
-          "species": "Sceptile-Mega",
-          "usage": 0.4906
+          "species": "Archaludon",
+          "usage": 0.4708
         },
         {
           "species": "Basculegion",
-          "usage": 0.4088
+          "usage": 0.4124
         },
         {
           "species": "Sneasler",
-          "usage": 0.2704
+          "usage": 0.281
         },
         {
           "species": "Sinistcha",
-          "usage": 0.2642
+          "usage": 0.2701
         },
         {
-          "species": "Aerodactyl",
-          "usage": 0.2579
+          "species": "Swampert-Mega",
+          "usage": 0.2263
+        }
+      ]
+    },
+    "Blastoise-Mega": {
+      "species": "Blastoise-Mega",
+      "usage": 0.0246,
+      "moves": [
+        {
+          "name": "Water Spout",
+          "usage": 0.9416
+        },
+        {
+          "name": "Dark Pulse",
+          "usage": 0.8872
+        },
+        {
+          "name": "Protect",
+          "usage": 0.6732
+        },
+        {
+          "name": "Shell Smash",
+          "usage": 0.6342
+        },
+        {
+          "name": "Aura Sphere",
+          "usage": 0.323
+        },
+        {
+          "name": "Fake Out",
+          "usage": 0.3191
+        },
+        {
+          "name": "Water Pulse",
+          "usage": 0.0662
+        },
+        {
+          "name": "Ice Beam",
+          "usage": 0.0545
+        },
+        {
+          "name": "Dragon Pulse",
+          "usage": 0.0311
+        },
+        {
+          "name": "Hydro Cannon",
+          "usage": 0.0195
+        }
+      ],
+      "items": [
+        {
+          "name": "Blastoisinite",
+          "usage": 1
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Rain Dish",
+          "usage": 0.7471
+        },
+        {
+          "name": "Torrent",
+          "usage": 0.2296
+        },
+        {
+          "name": "Mega Launcher",
+          "usage": 0.0234
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Sinistcha",
+          "usage": 0.607
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.5448
+        },
+        {
+          "species": "Sneasler",
+          "usage": 0.5253
+        },
+        {
+          "species": "Kingambit",
+          "usage": 0.4553
+        },
+        {
+          "species": "Delphox-Mega",
+          "usage": 0.4319
+        },
+        {
+          "species": "Farigiraf",
+          "usage": 0.3074
+        }
+      ]
+    },
+    "Toxapex": {
+      "species": "Toxapex",
+      "usage": 0.0237,
+      "moves": [
+        {
+          "name": "Infestation",
+          "usage": 0.9516
+        },
+        {
+          "name": "Toxic",
+          "usage": 0.9476
+        },
+        {
+          "name": "Baneful Bunker",
+          "usage": 0.9113
+        },
+        {
+          "name": "Wide Guard",
+          "usage": 0.8548
+        },
+        {
+          "name": "Recover",
+          "usage": 0.121
+        },
+        {
+          "name": "Protect",
+          "usage": 0.0605
+        },
+        {
+          "name": "Haze",
+          "usage": 0.0121
+        },
+        {
+          "name": "Chilling Water",
+          "usage": 0.0121
+        }
+      ],
+      "items": [
+        {
+          "name": "Leftovers",
+          "usage": 0.9355
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0242
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.0121
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Regenerator",
+          "usage": 0.9274
+        },
+        {
+          "name": "Merciless",
+          "usage": 0.0363
+        },
+        {
+          "name": "Limber",
+          "usage": 0.0121
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Charizard-Mega-Y",
+          "usage": 0.625
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.5686
+        },
+        {
+          "species": "Hydreigon",
+          "usage": 0.5444
+        },
+        {
+          "species": "Grimmsnarl",
+          "usage": 0.4718
+        },
+        {
+          "species": "Metagross-Mega",
+          "usage": 0.4234
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.3629
+        }
+      ]
+    },
+    "Politoed": {
+      "species": "Politoed",
+      "usage": 0.0217,
+      "moves": [
+        {
+          "name": "Protect",
+          "usage": 0.9604
+        },
+        {
+          "name": "Weather Ball",
+          "usage": 0.8502
+        },
+        {
+          "name": "Perish Song",
+          "usage": 0.5683
+        },
+        {
+          "name": "Encore",
+          "usage": 0.4141
+        },
+        {
+          "name": "Ice Beam",
+          "usage": 0.2247
+        },
+        {
+          "name": "Muddy Water",
+          "usage": 0.2115
+        },
+        {
+          "name": "Icy Wind",
+          "usage": 0.1806
+        },
+        {
+          "name": "Helping Hand",
+          "usage": 0.1674
+        },
+        {
+          "name": "Hypnosis",
+          "usage": 0.1278
+        },
+        {
+          "name": "Earth Power",
+          "usage": 0.1278
+        }
+      ],
+      "items": [
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.5727
+        },
+        {
+          "name": "Damp Rock",
+          "usage": 0.1498
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.1322
+        },
+        {
+          "name": "Mystic Water",
+          "usage": 0.0705
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.022
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.0132
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Drizzle",
+          "usage": 0.9868
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Archaludon",
+          "usage": 0.5639
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.5463
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.5242
+        },
+        {
+          "species": "Gengar-Mega",
+          "usage": 0.511
+        },
+        {
+          "species": "Swampert-Mega",
+          "usage": 0.3656
+        },
+        {
+          "species": "Grimmsnarl",
+          "usage": 0.2071
+        }
+      ]
+    },
+    "Excadrill": {
+      "species": "Excadrill",
+      "usage": 0.0199,
+      "moves": [
+        {
+          "name": "Iron Head",
+          "usage": 0.9712
+        },
+        {
+          "name": "Protect",
+          "usage": 0.9615
+        },
+        {
+          "name": "Rock Slide",
+          "usage": 0.8317
+        },
+        {
+          "name": "Earthquake",
+          "usage": 0.6202
+        },
+        {
+          "name": "High Horsepower",
+          "usage": 0.4135
+        },
+        {
+          "name": "Rock Tomb",
+          "usage": 0.0385
+        },
+        {
+          "name": "Swords Dance",
+          "usage": 0.0337
+        },
+        {
+          "name": "Drill Run",
+          "usage": 0.0144
+        }
+      ],
+      "items": [
+        {
+          "name": "Focus Sash",
+          "usage": 0.8414
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.0962
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.024
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.0144
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Sand Rush",
+          "usage": 0.9519
+        },
+        {
+          "name": "Mold Breaker",
+          "usage": 0.0192
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Tyranitar-Mega",
+          "usage": 0.774
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.3606
+        },
+        {
+          "species": "Corviknight",
+          "usage": 0.2933
+        },
+        {
+          "species": "Rotom-Wash",
+          "usage": 0.2644
+        },
+        {
+          "species": "Staraptor-Mega",
+          "usage": 0.25
+        },
+        {
+          "species": "Houndstone",
+          "usage": 0.2404
+        }
+      ]
+    },
+    "Corviknight": {
+      "species": "Corviknight",
+      "usage": 0.0196,
+      "moves": [
+        {
+          "name": "Brave Bird",
+          "usage": 0.7658
+        },
+        {
+          "name": "Tailwind",
+          "usage": 0.6976
+        },
+        {
+          "name": "Roost",
+          "usage": 0.6439
+        },
+        {
+          "name": "Iron Head",
+          "usage": 0.4781
+        },
+        {
+          "name": "Bulk Up",
+          "usage": 0.4146
+        },
+        {
+          "name": "Body Press",
+          "usage": 0.3415
+        },
+        {
+          "name": "Protect",
+          "usage": 0.2537
+        },
+        {
+          "name": "Iron Defense",
+          "usage": 0.1902
+        },
+        {
+          "name": "U-turn",
+          "usage": 0.0732
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.039
+        }
+      ],
+      "items": [
+        {
+          "name": "Leftovers",
+          "usage": 0.7122
+        },
+        {
+          "name": "Occa Berry",
+          "usage": 0.1122
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.0927
+        },
+        {
+          "name": "Metal Coat",
+          "usage": 0.0293
+        },
+        {
+          "name": "Nothing",
+          "usage": 0.0146
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Mirror Armor",
+          "usage": 0.9512
+        },
+        {
+          "name": "Pressure",
+          "usage": 0.0244
+        }
+      ],
+      "teammates": [
+        {
+          "species": "Tyranitar-Mega",
+          "usage": 0.4829
+        },
+        {
+          "species": "Garchomp",
+          "usage": 0.4049
+        },
+        {
+          "species": "Excadrill",
+          "usage": 0.2976
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.2439
+        },
+        {
+          "species": "Rotom-Wash",
+          "usage": 0.2195
+        },
+        {
+          "species": "Hydreigon",
+          "usage": 0.2098
         }
       ]
     },
     "Eelektross-Mega": {
       "species": "Eelektross-Mega",
-      "usage": 0.0216,
+      "usage": 0.0193,
       "moves": [
         {
           "name": "Protect",
-          "usage": 0.8987
+          "usage": 0.9109
         },
         {
           "name": "Thunderbolt",
-          "usage": 0.5949
+          "usage": 0.6089
         },
         {
           "name": "Giga Drain",
-          "usage": 0.4557
+          "usage": 0.4753
         },
         {
           "name": "Flamethrower",
-          "usage": 0.4304
+          "usage": 0.4703
         },
         {
           "name": "Discharge",
-          "usage": 0.3861
+          "usage": 0.3465
         },
         {
           "name": "Dragon Pulse",
-          "usage": 0.2279
+          "usage": 0.198
         },
         {
           "name": "Grass Knot",
-          "usage": 0.1772
-        },
-        {
-          "name": "Thunder",
-          "usage": 0.1013
-        },
-        {
-          "name": "Coil",
-          "usage": 0.0886
+          "usage": 0.1782
         },
         {
           "name": "Drain Punch",
-          "usage": 0.0823
+          "usage": 0.104
+        },
+        {
+          "name": "Coil",
+          "usage": 0.0941
+        },
+        {
+          "name": "Thunder",
+          "usage": 0.0891
         }
       ],
       "items": [
@@ -5120,517 +5496,129 @@
       "abilities": [
         {
           "name": "Levitate",
-          "usage": 0.943
+          "usage": 0.9505
         }
       ],
       "teammates": [
         {
           "species": "Garchomp",
-          "usage": 0.6013
+          "usage": 0.599
+        },
+        {
+          "species": "Sinistcha",
+          "usage": 0.3218
         },
         {
           "species": "Whimsicott",
-          "usage": 0.3481
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.3228
+          "usage": 0.3218
         },
         {
           "species": "Basculegion",
-          "usage": 0.3228
+          "usage": 0.2921
+        },
+        {
+          "species": "Incineroar",
+          "usage": 0.2228
         },
         {
           "species": "Grimmsnarl",
-          "usage": 0.2342
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.2279
-        }
-      ]
-    },
-    "Sceptile-Mega": {
-      "species": "Sceptile-Mega",
-      "usage": 0.021,
-      "moves": [
-        {
-          "name": "Dragon Pulse",
-          "usage": 1
-        },
-        {
-          "name": "Earth Power",
-          "usage": 0.9091
-        },
-        {
-          "name": "Detect",
-          "usage": 0.5
-        },
-        {
-          "name": "Protect",
-          "usage": 0.4805
-        },
-        {
-          "name": "Energy Ball",
-          "usage": 0.4675
-        },
-        {
-          "name": "Leaf Storm",
-          "usage": 0.2662
-        },
-        {
-          "name": "Grass Knot",
-          "usage": 0.1623
-        },
-        {
-          "name": "Giga Drain",
-          "usage": 0.1169
-        },
-        {
-          "name": "Shed Tail",
-          "usage": 0.0455
-        },
-        {
-          "name": "Vacuum Wave",
-          "usage": 0.026
-        }
-      ],
-      "items": [
-        {
-          "name": "Sceptilite",
-          "usage": 1
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Overgrow",
-          "usage": 0.8507
-        },
-        {
-          "name": "Unburden",
-          "usage": 0.1039
-        },
-        {
-          "name": "Lightning Rod",
-          "usage": 0.0455
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Garchomp",
-          "usage": 0.5584
-        },
-        {
-          "species": "Rotom-Heat",
-          "usage": 0.5065
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.4286
-        },
-        {
-          "species": "Aerodactyl",
-          "usage": 0.2792
-        },
-        {
-          "species": "Sneasler",
-          "usage": 0.2403
-        },
-        {
-          "species": "Rotom-Wash",
-          "usage": 0.2078
-        }
-      ]
-    },
-    "Corviknight": {
-      "species": "Corviknight",
-      "usage": 0.0199,
-      "moves": [
-        {
-          "name": "Brave Bird",
-          "usage": 0.774
-        },
-        {
-          "name": "Tailwind",
-          "usage": 0.6781
-        },
-        {
-          "name": "Roost",
-          "usage": 0.6438
-        },
-        {
-          "name": "Iron Head",
-          "usage": 0.4726
-        },
-        {
-          "name": "Bulk Up",
-          "usage": 0.411
-        },
-        {
-          "name": "Body Press",
-          "usage": 0.3425
-        },
-        {
-          "name": "Protect",
-          "usage": 0.274
-        },
-        {
-          "name": "Iron Defense",
-          "usage": 0.2055
-        },
-        {
-          "name": "Taunt",
-          "usage": 0.0548
-        },
-        {
-          "name": "U-turn",
-          "usage": 0.0411
-        }
-      ],
-      "items": [
-        {
-          "name": "Leftovers",
-          "usage": 0.6986
-        },
-        {
-          "name": "Occa Berry",
-          "usage": 0.1301
-        },
-        {
-          "name": "Sitrus Berry",
-          "usage": 0.0753
-        },
-        {
-          "name": "Metal Coat",
-          "usage": 0.0411
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0206
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Mirror Armor",
-          "usage": 0.9658
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Tyranitar-Mega",
-          "usage": 0.4863
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.4315
-        },
-        {
-          "species": "Excadrill",
-          "usage": 0.2808
-        },
-        {
-          "species": "Hydreigon",
-          "usage": 0.2397
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.2329
-        },
-        {
-          "species": "Rotom-Wash",
-          "usage": 0.1918
-        }
-      ]
-    },
-    "Raichu-Mega-X": {
-      "species": "Raichu-Mega-X",
-      "usage": 0.0198,
-      "moves": [
-        {
-          "name": "Fake Out",
-          "usage": 0.8
-        },
-        {
-          "name": "Volt Tackle",
-          "usage": 0.6552
-        },
-        {
-          "name": "Protect",
-          "usage": 0.6207
-        },
-        {
-          "name": "Volt Switch",
-          "usage": 0.4069
-        },
-        {
-          "name": "Play Rough",
-          "usage": 0.2966
-        },
-        {
-          "name": "Rising Voltage",
-          "usage": 0.2759
-        },
-        {
-          "name": "Drain Punch",
-          "usage": 0.131
-        },
-        {
-          "name": "Encore",
-          "usage": 0.1035
-        },
-        {
-          "name": "Knock Off",
-          "usage": 0.0897
-        },
-        {
-          "name": "Trailblaze",
-          "usage": 0.0828
-        }
-      ],
-      "items": [
-        {
-          "name": "Raichunite X",
-          "usage": 0.9931
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Lightning Rod",
-          "usage": 0.8828
-        },
-        {
-          "name": "Static",
-          "usage": 0.0621
-        },
-        {
-          "name": "Electric Surge",
-          "usage": 0.0552
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Pelipper",
-          "usage": 0.4138
-        },
-        {
-          "species": "Archaludon",
-          "usage": 0.3379
-        },
-        {
-          "species": "Sinistcha",
-          "usage": 0.331
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.3035
-        },
-        {
-          "species": "Incineroar",
-          "usage": 0.2759
-        },
-        {
-          "species": "Swampert-Mega",
-          "usage": 0.2414
-        }
-      ]
-    },
-    "Staraptor": {
-      "species": "Staraptor",
-      "usage": 0.0186,
-      "moves": [
-        {
-          "name": "Brave Bird",
-          "usage": 0.6985
-        },
-        {
-          "name": "Final Gambit",
-          "usage": 0.6912
-        },
-        {
-          "name": "U-turn",
-          "usage": 0.6544
-        },
-        {
-          "name": "Close Combat",
-          "usage": 0.6103
-        },
-        {
-          "name": "Protect",
-          "usage": 0.2941
-        },
-        {
-          "name": "Sunny Day",
-          "usage": 0.0882
-        },
-        {
-          "name": "Dual Wingbeat",
-          "usage": 0.0809
-        },
-        {
-          "name": "Roost",
-          "usage": 0.0662
-        },
-        {
-          "name": "Double-Edge",
-          "usage": 0.0515
-        },
-        {
-          "name": "Tailwind",
-          "usage": 0.0441
-        }
-      ],
-      "items": [
-        {
-          "name": "Choice Scarf",
-          "usage": 0.6912
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.1912
-        },
-        {
-          "name": "Focus Sash",
-          "usage": 0.0147
-        },
-        {
-          "name": "Starminite",
-          "usage": 0.0147
-        }
-      ],
-      "abilities": [
-        {
-          "name": "Intimidate",
-          "usage": 0.7574
-        },
-        {
-          "name": "Reckless",
-          "usage": 0.0441
-        }
-      ],
-      "teammates": [
-        {
-          "species": "Farigiraf",
-          "usage": 0.6471
-        },
-        {
-          "species": "Torkoal",
-          "usage": 0.4927
-        },
-        {
-          "species": "Mawile-Mega",
-          "usage": 0.2573
-        },
-        {
-          "species": "Basculegion",
-          "usage": 0.1985
-        },
-        {
-          "species": "Garchomp",
-          "usage": 0.1985
-        },
-        {
-          "species": "Vileplume",
-          "usage": 0.1838
+          "usage": 0.2178
         }
       ]
     },
     "Vileplume": {
       "species": "Vileplume",
-      "usage": 0.0186,
+      "usage": 0.0192,
       "moves": [
         {
           "name": "After You",
-          "usage": 0.9485
+          "usage": 0.9503
         },
         {
           "name": "Sleep Powder",
-          "usage": 0.9044
+          "usage": 0.9304
         },
         {
           "name": "Sludge Bomb",
-          "usage": 0.8603
+          "usage": 0.8657
         },
         {
           "name": "Energy Ball",
-          "usage": 0.3382
+          "usage": 0.2786
         },
         {
           "name": "Protect",
-          "usage": 0.3015
-        },
-        {
-          "name": "Solar Beam",
-          "usage": 0.2279
+          "usage": 0.2687
         },
         {
           "name": "Leaf Storm",
-          "usage": 0.2132
+          "usage": 0.2637
+        },
+        {
+          "name": "Solar Beam",
+          "usage": 0.2537
         },
         {
           "name": "Giga Drain",
-          "usage": 0.0809
+          "usage": 0.0846
         },
         {
           "name": "Pollen Puff",
-          "usage": 0.0294
+          "usage": 0.0299
         },
         {
           "name": "Acid Spray",
-          "usage": 0.0147
+          "usage": 0.0149
         }
       ],
       "items": [
         {
           "name": "Focus Sash",
-          "usage": 0.8897
+          "usage": 0.8806
         },
         {
           "name": "Wide Lens",
-          "usage": 0.0515
+          "usage": 0.0597
         },
         {
           "name": "Life Orb",
-          "usage": 0.0221
-        },
-        {
-          "name": "Nothing",
-          "usage": 0.0147
+          "usage": 0.0348
         }
       ],
       "abilities": [
         {
           "name": "Chlorophyll",
-          "usage": 0.9632
+          "usage": 0.9751
         },
         {
           "name": "Effect Spore",
-          "usage": 0.0221
+          "usage": 0.0149
         }
       ],
       "teammates": [
         {
           "species": "Torkoal",
-          "usage": 0.9706
+          "usage": 0.9602
         },
         {
           "species": "Farigiraf",
-          "usage": 0.9559
+          "usage": 0.9453
         },
         {
           "species": "Mawile-Mega",
-          "usage": 0.4632
+          "usage": 0.4179
         },
         {
           "species": "Sylveon",
-          "usage": 0.2573
+          "usage": 0.2736
         },
         {
-          "species": "Kangaskhan-Mega",
-          "usage": 0.25
+          "species": "Staraptor",
+          "usage": 0.2388
         },
         {
-          "species": "Pyroar-Mega",
-          "usage": 0.1985
+          "species": "Scrafty-Mega",
+          "usage": 0.2139
         }
       ]
     }
