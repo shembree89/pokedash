@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-15",
+  "refreshedAt": "2026-07-17",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
