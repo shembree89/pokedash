@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-07-26",
+  "refreshedAt": "2026-08-01",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -6608,6 +6608,24 @@
           "ability": "Defiant",
           "requiredItem": "Falinksite"
         }
+      ]
+    },
+    "Clefable-Mega": {
+      "name": "Clefable-Mega",
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "atk": 80,
+        "def": 93,
+        "spa": 135,
+        "spd": 110,
+        "spe": 70
+      },
+      "abilities": [
+        "Magic Bounce"
       ]
     }
   }
