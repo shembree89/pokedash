@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-12",
+  "refreshedAt": "2026-08-14",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -6626,6 +6626,60 @@
       },
       "abilities": [
         "Magic Bounce"
+      ]
+    },
+    "Medicham-Mega": {
+      "name": "Medicham-Mega",
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "atk": 100,
+        "def": 85,
+        "spa": 80,
+        "spd": 85,
+        "spe": 100
+      },
+      "abilities": [
+        "Pure Power"
+      ]
+    },
+    "Barbaracle-Mega": {
+      "name": "Barbaracle-Mega",
+      "types": [
+        "Rock",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 72,
+        "atk": 140,
+        "def": 130,
+        "spa": 64,
+        "spd": 106,
+        "spe": 88
+      },
+      "abilities": [
+        "Tough Claws"
+      ]
+    },
+    "Pidgeot-Mega": {
+      "name": "Pidgeot-Mega",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 83,
+        "atk": 80,
+        "def": 80,
+        "spa": 135,
+        "spd": 80,
+        "spe": 121
+      },
+      "abilities": [
+        "No Guard"
       ]
     }
   }
