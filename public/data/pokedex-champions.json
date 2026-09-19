@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-04",
+  "refreshedAt": "2026-09-19",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -6680,6 +6680,604 @@
       },
       "abilities": [
         "No Guard"
+      ]
+    },
+    "Salamence-Mega": {
+      "name": "Salamence-Mega",
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "atk": 145,
+        "def": 130,
+        "spa": 120,
+        "spd": 90,
+        "spe": 120
+      },
+      "abilities": [
+        "Aerilate"
+      ]
+    },
+    "Golisopod-Mega": {
+      "name": "Golisopod-Mega",
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "atk": 150,
+        "def": 175,
+        "spa": 70,
+        "spd": 120,
+        "spe": 40
+      },
+      "abilities": [
+        "Tough Claws"
+      ]
+    },
+    "Indeedee": {
+      "name": "Indeedee",
+      "types": [
+        "Psychic",
+        "Normal"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 55,
+        "spa": 105,
+        "spd": 95,
+        "spe": 95
+      },
+      "abilities": [
+        "Inner Focus",
+        "Synchronize",
+        "Psychic Surge"
+      ]
+    },
+    "Lucario-Mega-Z": {
+      "name": "Lucario-Mega-Z",
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 100,
+        "def": 70,
+        "spa": 164,
+        "spd": 70,
+        "spe": 151
+      },
+      "abilities": [
+        "Aura Guard"
+      ]
+    },
+    "Baxcalibur-Mega": {
+      "name": "Baxcalibur-Mega",
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "baseStats": {
+        "hp": 115,
+        "atk": 175,
+        "def": 117,
+        "spa": 105,
+        "spd": 101,
+        "spe": 87
+      },
+      "abilities": [
+        "Thermal Exchange"
+      ]
+    },
+    "Pawmot": {
+      "name": "Pawmot",
+      "types": [
+        "Electric",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 115,
+        "def": 70,
+        "spa": 70,
+        "spd": 60,
+        "spe": 105
+      },
+      "abilities": [
+        "Volt Absorb",
+        "Natural Cure",
+        "Iron Fist"
+      ]
+    },
+    "Garchomp-Mega-Z": {
+      "name": "Garchomp-Mega-Z",
+      "types": [
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 108,
+        "atk": 130,
+        "def": 85,
+        "spa": 141,
+        "spd": 85,
+        "spe": 151
+      },
+      "abilities": [
+        "Levitate"
+      ]
+    },
+    "Absol-Mega-Z": {
+      "name": "Absol-Mega-Z",
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 154,
+        "def": 60,
+        "spa": 75,
+        "spd": 60,
+        "spe": 151
+      },
+      "abilities": [
+        "Sharpness"
+      ]
+    },
+    "Salamence": {
+      "name": "Salamence",
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "atk": 135,
+        "def": 80,
+        "spa": 110,
+        "spd": 80,
+        "spe": 100
+      },
+      "abilities": [
+        "Intimidate",
+        "Moxie"
+      ],
+      "megas": [
+        {
+          "name": "Mega Salamence",
+          "types": [
+            "Dragon",
+            "Flying"
+          ],
+          "baseStats": {
+            "hp": 95,
+            "atk": 145,
+            "def": 130,
+            "spa": 120,
+            "spd": 90,
+            "spe": 120
+          },
+          "ability": "Aerilate",
+          "requiredItem": "Salamenceite"
+        }
+      ]
+    },
+    "Pincurchin": {
+      "name": "Pincurchin",
+      "types": [
+        "Electric"
+      ],
+      "baseStats": {
+        "hp": 48,
+        "atk": 101,
+        "def": 95,
+        "spa": 91,
+        "spd": 85,
+        "spe": 15
+      },
+      "abilities": [
+        "Lightning Rod",
+        "Electric Surge"
+      ]
+    },
+    "Baxcalibur": {
+      "name": "Baxcalibur",
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "baseStats": {
+        "hp": 115,
+        "atk": 145,
+        "def": 92,
+        "spa": 75,
+        "spd": 86,
+        "spe": 87
+      },
+      "abilities": [
+        "Thermal Exchange",
+        "Ice Body"
+      ],
+      "megas": [
+        {
+          "name": "Mega Baxcalibur",
+          "types": [
+            "Dragon",
+            "Ice"
+          ],
+          "baseStats": {
+            "hp": 115,
+            "atk": 175,
+            "def": 117,
+            "spa": 105,
+            "spd": 101,
+            "spe": 87
+          },
+          "ability": "Thermal Exchange",
+          "requiredItem": "Baxcaliburite"
+        }
+      ]
+    },
+    "Toxtricity": {
+      "name": "Toxtricity",
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "atk": 98,
+        "def": 70,
+        "spa": 114,
+        "spd": 70,
+        "spe": 75
+      },
+      "abilities": [
+        "Punk Rock",
+        "Plus",
+        "Technician"
+      ]
+    },
+    "Greninja-Mega": {
+      "name": "Greninja-Mega",
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "baseStats": {
+        "hp": 72,
+        "atk": 125,
+        "def": 77,
+        "spa": 133,
+        "spd": 81,
+        "spe": 142
+      },
+      "abilities": [
+        "Protean"
+      ]
+    },
+    "Heracross-Mega": {
+      "name": "Heracross-Mega",
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 185,
+        "def": 115,
+        "spa": 40,
+        "spd": 105,
+        "spe": 75
+      },
+      "abilities": [
+        "Skill Link"
+      ]
+    },
+    "Arboliva": {
+      "name": "Arboliva",
+      "types": [
+        "Grass",
+        "Normal"
+      ],
+      "baseStats": {
+        "hp": 78,
+        "atk": 69,
+        "def": 90,
+        "spa": 125,
+        "spd": 109,
+        "spe": 39
+      },
+      "abilities": [
+        "Seed Sower",
+        "Harvest"
+      ]
+    },
+    "Wigglytuff": {
+      "name": "Wigglytuff",
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "baseStats": {
+        "hp": 140,
+        "atk": 70,
+        "def": 45,
+        "spa": 85,
+        "spd": 50,
+        "spe": 45
+      },
+      "abilities": [
+        "Cute Charm",
+        "Competitive",
+        "Frisk"
+      ]
+    },
+    "Persian": {
+      "name": "Persian",
+      "types": [
+        "Normal"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 70,
+        "def": 60,
+        "spa": 65,
+        "spd": 65,
+        "spe": 115
+      },
+      "abilities": [
+        "Limber",
+        "Technician",
+        "Unnerve"
+      ]
+    },
+    "Farfetch'd": {
+      "name": "Farfetch'd",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "baseStats": {
+        "hp": 52,
+        "atk": 90,
+        "def": 55,
+        "spa": 58,
+        "spd": 62,
+        "spe": 60
+      },
+      "abilities": [
+        "Keen Eye",
+        "Inner Focus",
+        "Defiant"
+      ]
+    },
+    "Mr. Mime": {
+      "name": "Mr. Mime",
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "atk": 45,
+        "def": 65,
+        "spa": 100,
+        "spd": 120,
+        "spe": 90
+      },
+      "abilities": [
+        "Soundproof",
+        "Filter",
+        "Technician"
+      ]
+    },
+    "Swalot": {
+      "name": "Swalot",
+      "types": [
+        "Poison"
+      ],
+      "baseStats": {
+        "hp": 100,
+        "atk": 73,
+        "def": 83,
+        "spa": 73,
+        "spd": 83,
+        "spe": 55
+      },
+      "abilities": [
+        "Liquid Ooze",
+        "Sticky Hold",
+        "Gluttony"
+      ]
+    },
+    "Gogoat": {
+      "name": "Gogoat",
+      "types": [
+        "Grass"
+      ],
+      "baseStats": {
+        "hp": 123,
+        "atk": 100,
+        "def": 62,
+        "spa": 97,
+        "spd": 81,
+        "spe": 68
+      },
+      "abilities": [
+        "Sap Sipper",
+        "Grass Pelt"
+      ]
+    },
+    "Golisopod": {
+      "name": "Golisopod",
+      "types": [
+        "Bug",
+        "Water"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "atk": 125,
+        "def": 140,
+        "spa": 60,
+        "spd": 90,
+        "spe": 40
+      },
+      "abilities": [
+        "Emergency Exit"
+      ],
+      "megas": [
+        {
+          "name": "Mega Golisopod",
+          "types": [
+            "Bug",
+            "Steel"
+          ],
+          "baseStats": {
+            "hp": 75,
+            "atk": 150,
+            "def": 175,
+            "spa": 70,
+            "spd": 120,
+            "spe": 40
+          },
+          "ability": "Tough Claws",
+          "requiredItem": "Golisopodite"
+        }
+      ]
+    },
+    "Cinderace": {
+      "name": "Cinderace",
+      "types": [
+        "Fire"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 116,
+        "def": 75,
+        "spa": 65,
+        "spd": 75,
+        "spe": 119
+      },
+      "abilities": [
+        "Blaze",
+        "Libero"
+      ]
+    },
+    "Inteleon": {
+      "name": "Inteleon",
+      "types": [
+        "Water"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 85,
+        "def": 65,
+        "spa": 125,
+        "spd": 65,
+        "spe": 120
+      },
+      "abilities": [
+        "Torrent",
+        "Sniper"
+      ]
+    },
+    "Thievul": {
+      "name": "Thievul",
+      "types": [
+        "Dark"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 58,
+        "def": 58,
+        "spa": 87,
+        "spd": 92,
+        "spe": 90
+      },
+      "abilities": [
+        "Run Away",
+        "Unburden",
+        "Stakeout"
+      ]
+    },
+    "Grapploct": {
+      "name": "Grapploct",
+      "types": [
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 118,
+        "def": 90,
+        "spa": 70,
+        "spd": 80,
+        "spe": 42
+      },
+      "abilities": [
+        "Limber",
+        "Technician"
+      ]
+    },
+    "Perrserker": {
+      "name": "Perrserker",
+      "types": [
+        "Steel"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "atk": 110,
+        "def": 100,
+        "spa": 50,
+        "spd": 60,
+        "spe": 50
+      },
+      "abilities": [
+        "Battle Armor",
+        "Tough Claws",
+        "Steely Spirit"
+      ]
+    },
+    "Sirfetch'd": {
+      "name": "Sirfetch'd",
+      "types": [
+        "Fighting"
+      ],
+      "baseStats": {
+        "hp": 62,
+        "atk": 135,
+        "def": 95,
+        "spa": 68,
+        "spd": 82,
+        "spe": 65
+      },
+      "abilities": [
+        "Steadfast",
+        "Scrappy"
+      ]
+    },
+    "Mabosstiff": {
+      "name": "Mabosstiff",
+      "types": [
+        "Dark"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "atk": 120,
+        "def": 90,
+        "spa": 60,
+        "spd": 70,
+        "spe": 85
+      },
+      "abilities": [
+        "Intimidate",
+        "Guard Dog",
+        "Stakeout"
       ]
     }
   }
