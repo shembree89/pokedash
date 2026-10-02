@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-20",
+  "refreshedAt": "2026-10-02",
   "source": "sample; enriched via pokeapi.co/api/v2/pokemon; megas from pokeapi.co",
   "pokemon": {
     "Amoonguss": {
@@ -7278,6 +7278,43 @@
         "Intimidate",
         "Guard Dog",
         "Stakeout"
+      ]
+    },
+    "Persian-Alola": {
+      "name": "Persian-Alola",
+      "types": [
+        "Dark"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "atk": 60,
+        "def": 60,
+        "spa": 75,
+        "spd": 65,
+        "spe": 115
+      },
+      "abilities": [
+        "Fur Coat",
+        "Technician",
+        "Rattled"
+      ]
+    },
+    "Feraligatr-Mega": {
+      "name": "Feraligatr-Mega",
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "atk": 160,
+        "def": 125,
+        "spa": 89,
+        "spd": 93,
+        "spe": 78
+      },
+      "abilities": [
+        "Dragonize"
       ]
     }
   }
